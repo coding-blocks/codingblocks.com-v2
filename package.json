@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/coding-blocks/codingblocks.com-v2/issues"
   },
-  "homepage": "https://github.com/coding-blocks/codingblocks.com-v2#readme"
+  "homepage": "https://github.com/coding-blocks/codingblocks.com-v2#readme",
+  "dependencies": {
+    "nuxt": "^2.14.6"
+  }
 }

@@ -1,8 +1,8 @@
 {
   "StatsCard": {
-    "description": "Auto imported from components/StatsCard.vue"
+    "description": "Auto imported from components/home/StatsCard.vue"
   },
   "LazyStatsCard": {
-    "description": "Auto imported from components/StatsCard.vue"
+    "description": "Auto imported from components/home/StatsCard.vue"
   }
 }

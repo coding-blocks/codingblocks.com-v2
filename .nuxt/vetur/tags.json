@@ -1,14 +1,14 @@
 {
-  "StatsCard": {
-    "description": "Auto imported from components/home/StatsCard.vue"
-  },
-  "LazyStatsCard": {
-    "description": "Auto imported from components/home/StatsCard.vue"
-  },
   "WelcomeSection": {
     "description": "Auto imported from components/home/WelcomeSection.vue"
   },
   "LazyWelcomeSection": {
     "description": "Auto imported from components/home/WelcomeSection.vue"
+  },
+  "StatsCard": {
+    "description": "Auto imported from components/misc/StatsCard.vue"
+  },
+  "LazyStatsCard": {
+    "description": "Auto imported from components/misc/StatsCard.vue"
   }
 }

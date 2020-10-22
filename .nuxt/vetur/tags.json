@@ -4,5 +4,11 @@
   },
   "LazyStatsCard": {
     "description": "Auto imported from components/home/StatsCard.vue"
+  },
+  "WelcomeSection": {
+    "description": "Auto imported from components/home/WelcomeSection.vue"
+  },
+  "LazyWelcomeSection": {
+    "description": "Auto imported from components/home/WelcomeSection.vue"
   }
 }

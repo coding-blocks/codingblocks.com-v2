@@ -32,12 +32,24 @@
                   icon="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/workshops.svg"
                 />
                 <div class="mt-30"></div>
-                <StatsCard />
+                <StatsCard
+                  stat_number="80LPA"
+                  stat_title="Package Offered"
+                  icon="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/package.svg"
+                />
               </div>
               <div class="col-sm-6 pt-sm-30">
-                <!-- <StatsCard /> -->
+                <StatsCard
+                  stat_number="30K+"
+                  stat_title="Students Placed"
+                  icon="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/students_placed.svg"
+                />
                 <div class="mt-30"></div>
-                <!-- <StatsCard /> -->
+                <StatsCard
+                  stat_number="200%"
+                  stat_title="Salary Hike"
+                  icon="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/placement-training.svg"
+                />
               </div>
             </div>
           </div>

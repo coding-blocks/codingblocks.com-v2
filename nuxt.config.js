@@ -8,7 +8,8 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', type: 'text/css', href: 'https://unpkg.com/@coding-blocks/motley@2.5.5/dist/coding-blocks/app.min.css' }
     ]
   },
 

@@ -1,11 +1,7 @@
 <template>
   <div class="bg-grey-dark-1 br-5 p-30">
     <div class="row no-gutters align-items-center">
-      <img
-        :src="{ icon }"
-        class="mb-sm-3"
-        style="height: 50px"
-      />
+      <img :src="icon" class="mb-sm-3" style="height: 50px" />
       <div class="flex-1 d-sm-none d-block pl-20">
         <div
           class="text-gradient-orange-light bold"
@@ -27,6 +23,6 @@
 
 <script>
 export default {
-  props: [ "stat_number", "stat_title", "icon" ]
+  props: ["stat_number", "stat_title", "icon"],
 };
 </script>

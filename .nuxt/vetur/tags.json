@@ -11,6 +11,12 @@
   "LazyCardCarousel": {
     "description": "Auto imported from components/misc/CardCarousel.vue"
   },
+  "EventsCard": {
+    "description": "Auto imported from components/misc/EventsCard.vue"
+  },
+  "LazyEventsCard": {
+    "description": "Auto imported from components/misc/EventsCard.vue"
+  },
   "StatsCard": {
     "description": "Auto imported from components/misc/StatsCard.vue"
   },

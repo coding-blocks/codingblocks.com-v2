@@ -5,6 +5,12 @@
   "LazyWelcomeSection": {
     "description": "Auto imported from components/home/WelcomeSection.vue"
   },
+  "CardCarousel": {
+    "description": "Auto imported from components/misc/CardCarousel.vue"
+  },
+  "LazyCardCarousel": {
+    "description": "Auto imported from components/misc/CardCarousel.vue"
+  },
   "StatsCard": {
     "description": "Auto imported from components/misc/StatsCard.vue"
   },

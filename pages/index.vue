@@ -226,16 +226,58 @@
           </div>
         </div>
       </div>
+
+      <!-- Events Section -->
+      <div class="landing-page__section">
+        <div class="row no-gutters align-items-center justify-content-between">
+          <div class="flex-1">
+            <div
+              class="row no-gutters align-items-center justify-content-between"
+            >
+              <div class="flex-1">
+                <div class="heading-font stroke-font text-black">LATEST</div>
+                <div class="heading-font">EVENTS</div>
+                <img
+                  src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_events.svg"
+                />
+              </div>
+              <div
+                class="col-xl-12 col-4 t-align-xl-l t-align-r d-sm-block d-none"
+              >
+                <button class="button-primary mt-xl-50">
+                  View all
+                  <img
+                    src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg"
+                    class="ml-2"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <CardCarousel />
+          <div class="col-12 d-sm-none d-block">
+            <button class="button-primary mt-50">
+              View all
+              <img
+                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg"
+                class="ml-2"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import WelcomeSection from "@/components/home/WelcomeSection.vue";
+import CardCarousel from "@/components/misc/CardCarousel.vue";
 
 export default {
   components: {
     WelcomeSection,
+    CardCarousel,
   },
 };
 </script>

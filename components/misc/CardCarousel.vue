@@ -212,3 +212,13 @@
     </div>
   </div>
 </template>
+
+<script>
+import EventsCard from "@/components/misc/EventsCard.vue";
+
+export default {
+  components: {
+    EventsCard,
+  },
+};
+</script>

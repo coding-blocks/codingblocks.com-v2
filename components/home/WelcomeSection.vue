@@ -55,7 +55,7 @@
 </template>
 
 <script>
-import StatsCard from "@/components/misc/StatsCard.vue"
+import StatsCard from "@/components/misc/StatsCard.vue";
 
 export default {
   components: {

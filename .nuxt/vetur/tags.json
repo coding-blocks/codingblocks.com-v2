@@ -1,4 +1,10 @@
 {
+  "CollegesAndCompaniesSection": {
+    "description": "Auto imported from components/home/CollegesAndCompaniesSection.vue"
+  },
+  "LazyCollegesAndCompaniesSection": {
+    "description": "Auto imported from components/home/CollegesAndCompaniesSection.vue"
+  },
   "WelcomeSection": {
     "description": "Auto imported from components/home/WelcomeSection.vue"
   },

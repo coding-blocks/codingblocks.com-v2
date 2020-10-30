@@ -1,0 +1,145 @@
+<template>
+  <div class="landing-page__section landing-page__section--divided-section">
+    <div class="row">
+      <div
+        class="col-lg-6 landing-page__section--divided-section__left-section"
+      >
+        <div>
+          <div class="heading-font stroke-font text-grey-dark-2">FOR</div>
+          <div class="heading-font">COLLEGES</div>
+          <img
+            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_colleges.svg"
+          />
+          <div class="my-50">
+            <div class="row no-gutters">
+              <div class="col-sm-4 pr-sm-40 mb-sm-none mb-40">
+                <div
+                  class="row no-gutters align-items-center justify-content-between"
+                >
+                  <div class="col-sm-12 col-3">
+                    <img
+                      src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/placement-training.svg"
+                      class="mb-sm-40"
+                      style="height: 50px"
+                    />
+                  </div>
+                  <div class="flex-1">
+                    <div class="heading-5">Placement Training</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 pr-sm-40 mb-sm-none mb-40">
+                <div
+                  class="row no-gutters align-items-center justify-content-between"
+                >
+                  <div class="col-sm-12 col-3">
+                    <img
+                      src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/online-platform.svg"
+                      class="mb-sm-40"
+                      style="height: 50px"
+                    />
+                  </div>
+                  <div class="flex-1">
+                    <div class="heading-5">Online Exam Platform</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div
+                  class="row no-gutters align-items-center justify-content-between"
+                >
+                  <div class="col-sm-12 col-3">
+                    <img
+                      src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/workshops.svg"
+                      class="mb-sm-40"
+                      style="height: 50px"
+                    />
+                  </div>
+                  <div class="flex-1">
+                    <div class="heading-5">Workshops & More</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button class="button-secondary">
+            Let's Connect
+            <img
+              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg"
+              class="ml-2"
+            />
+          </button>
+        </div>
+      </div>
+      <div class="divider-h d-lg-none d-block my-50"></div>
+      <div
+        class="col-lg-6 landing-page__section--divided-section__right-section"
+      >
+        <div>
+          <div class="heading-font stroke-font text-grey-dark-2">FOR</div>
+          <div class="heading-font">COMPANIES</div>
+          <img
+            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_colleges.svg"
+          />
+          <div class="my-50">
+            <div class="row no-gutters">
+              <div class="col-sm-4 pr-sm-40 mb-sm-none mb-40">
+                <div class="row no-gutters align-items-center">
+                  <div class="col-sm-12 col-3">
+                    <img
+                      src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/training-program.svg"
+                      class="mb-sm-40"
+                      style="height: 50px"
+                    />
+                  </div>
+                  <div class="flex-1">
+                    <div class="heading-5">Training Programs</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 pr-sm-40 mb-sm-none mb-40">
+                <div class="row no-gutters align-items-center">
+                  <div class="col-sm-12 col-3">
+                    <img
+                      src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/hire-students.svg"
+                      class="mb-sm-40"
+                      style="height: 50px"
+                    />
+                  </div>
+                  <div class="flex-1">
+                    <div class="heading-5">Hire Students</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="row no-gutters align-items-center">
+                  <div class="col-sm-12 col-3">
+                    <img
+                      src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/evaluations.svg"
+                      class="mb-sm-40"
+                      style="height: 50px"
+                    />
+                  </div>
+                  <div class="flex-1">
+                    <div class="heading-5">Evaluations & More</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button class="button-secondary">
+            Let's Connect
+            <img
+              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg"
+              class="ml-2"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

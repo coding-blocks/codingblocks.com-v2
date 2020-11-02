@@ -7,16 +7,8 @@
       />
       <div class="row mx-lg-40 mx-md-20 c-card-carousel">
         <div class="col-lg-6 col-sm-8 col-12">
-          <EventsCard />
-        </div>
-        <div class="col-lg-6 col-sm-8 col-12">
-          <EventsCard />
-        </div>
-        <div class="col-lg-6 col-sm-8 col-12">
-          <EventsCard />
-        </div>
-        <div class="col-lg-6 col-sm-8 col-12">
-          <EventsCard />
+          <!-- <EventsCard /> -->
+          <slot></slot>
         </div>
       </div>
       <img
@@ -28,11 +20,11 @@
 </template>
 
 <script>
-import EventsCard from "@/components/misc/EventsCard.vue";
+// import EventsCard from "@/components/misc/EventsCard.vue";
 
-export default {
-  components: {
-    EventsCard,
-  },
-};
+// export default {
+//   components: {
+//     EventsCard,
+//   },
+// };
 </script>

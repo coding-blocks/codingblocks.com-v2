@@ -274,6 +274,31 @@
 
       <!-- Colleges and Companies Section -->
       <CollegesAndCompaniesSection />
+
+      <!-- News Section -->
+      <div class="landing-page__section">
+        <div class="row no-gutters justify-content-between align-items-center">
+          <div class="flex-1 pr-5">
+            <div class="heading-font stroke-font text-black">IN THE</div>
+            <div class="heading-font">NEWS</div>
+            <img
+              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_news.svg"
+            />
+          </div>
+          <CardCarousel>
+            <NewsCard />
+            <NewsCard />
+            <NewsCard />
+            <NewsCard />
+          </CardCarousel>
+        </div>
+      </div>
+
+      <!-- Success Stories Section -->
+      <SuccessStoriesSection />
+
+      <!-- Help Section -->
+      <HelpSection />
     </div>
   </div>
 </template>
@@ -282,14 +307,20 @@
 import WelcomeSection from "@/components/home/WelcomeSection.vue";
 import CardCarousel from "@/components/misc/CardCarousel.vue";
 import EventsCard from "@/components/misc/EventsCard.vue";
+import NewsCard from "@/components/misc/NewsCard.vue";
 import CollegesAndCompaniesSection from "@/components/home/CollegesAndCompaniesSection.vue";
+import SuccessStoriesSection from "@/components/home/SuccessStoriesSection.vue";
+import HelpSection from "@/components/home/HelpSection.vue";
 
 export default {
   components: {
     WelcomeSection,
     CardCarousel,
     EventsCard,
+    NewsCard,
     CollegesAndCompaniesSection,
+    SuccessStoriesSection,
+    HelpSection,
   },
 };
 </script>

@@ -5,6 +5,18 @@
   "LazyCollegesAndCompaniesSection": {
     "description": "Auto imported from components/home/CollegesAndCompaniesSection.vue"
   },
+  "HelpSection": {
+    "description": "Auto imported from components/home/HelpSection.vue"
+  },
+  "LazyHelpSection": {
+    "description": "Auto imported from components/home/HelpSection.vue"
+  },
+  "SuccessStoriesSection": {
+    "description": "Auto imported from components/home/SuccessStoriesSection.vue"
+  },
+  "LazySuccessStoriesSection": {
+    "description": "Auto imported from components/home/SuccessStoriesSection.vue"
+  },
   "WelcomeSection": {
     "description": "Auto imported from components/home/WelcomeSection.vue"
   },
@@ -22,6 +34,12 @@
   },
   "LazyEventsCard": {
     "description": "Auto imported from components/misc/EventsCard.vue"
+  },
+  "NewsCard": {
+    "description": "Auto imported from components/misc/NewsCard.vue"
+  },
+  "LazyNewsCard": {
+    "description": "Auto imported from components/misc/NewsCard.vue"
   },
   "StatsCard": {
     "description": "Auto imported from components/misc/StatsCard.vue"

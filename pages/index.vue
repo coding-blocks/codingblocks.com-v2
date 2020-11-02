@@ -299,6 +299,9 @@
 
       <!-- Help Section -->
       <HelpSection />
+
+      <!-- Blogs Section -->
+      <BlogsSection />
     </div>
   </div>
 </template>
@@ -311,6 +314,7 @@ import NewsCard from "@/components/misc/NewsCard.vue";
 import CollegesAndCompaniesSection from "@/components/home/CollegesAndCompaniesSection.vue";
 import SuccessStoriesSection from "@/components/home/SuccessStoriesSection.vue";
 import HelpSection from "@/components/home/HelpSection.vue";
+import BlogsSection from "@/components/home/BlogsSection";
 
 export default {
   components: {
@@ -321,6 +325,7 @@ export default {
     CollegesAndCompaniesSection,
     SuccessStoriesSection,
     HelpSection,
+    BlogsSection,
   },
 };
 </script>

@@ -1,4 +1,10 @@
 {
+  "BlogsSection": {
+    "description": "Auto imported from components/home/BlogsSection.vue"
+  },
+  "LazyBlogsSection": {
+    "description": "Auto imported from components/home/BlogsSection.vue"
+  },
   "CollegesAndCompaniesSection": {
     "description": "Auto imported from components/home/CollegesAndCompaniesSection.vue"
   },

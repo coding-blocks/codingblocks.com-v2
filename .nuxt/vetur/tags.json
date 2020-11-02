@@ -41,6 +41,12 @@
   "LazyCardCarousel": {
     "description": "Auto imported from components/misc/CardCarousel.vue"
   },
+  "DividedSection": {
+    "description": "Auto imported from components/misc/DividedSection.vue"
+  },
+  "LazyDividedSection": {
+    "description": "Auto imported from components/misc/DividedSection.vue"
+  },
   "EventsCard": {
     "description": "Auto imported from components/misc/EventsCard.vue"
   },

@@ -256,6 +256,9 @@
           </div>
           <CardCarousel>
             <EventsCard />
+            <EventsCard />
+            <EventsCard />
+            <EventsCard />
           </CardCarousel>
           <div class="col-12 d-sm-none d-block">
             <button class="button-primary mt-50">

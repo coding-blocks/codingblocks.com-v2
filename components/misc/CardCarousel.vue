@@ -6,7 +6,6 @@
         class="pointer d-md-block d-none"
       />
       <div class="row mx-lg-40 mx-md-20 c-card-carousel">
-        <!-- <EventsCard /> -->
         <slot></slot>
       </div>
       <img

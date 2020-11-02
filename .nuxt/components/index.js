@@ -1,3 +1,4 @@
+export { default as Footer } from '../../components/footer.vue'
 export { default as BlogsSection } from '../../components/home/BlogsSection.vue'
 export { default as CollegesAndCompaniesSection } from '../../components/home/CollegesAndCompaniesSection.vue'
 export { default as HelpSection } from '../../components/home/HelpSection.vue'
@@ -8,6 +9,7 @@ export { default as EventsCard } from '../../components/misc/EventsCard.vue'
 export { default as NewsCard } from '../../components/misc/NewsCard.vue'
 export { default as StatsCard } from '../../components/misc/StatsCard.vue'
 
+export const LazyFooter = import('../../components/footer.vue' /* webpackChunkName: "components/footer" */).then(c => c.default || c)
 export const LazyBlogsSection = import('../../components/home/BlogsSection.vue' /* webpackChunkName: "components/home/BlogsSection" */).then(c => c.default || c)
 export const LazyCollegesAndCompaniesSection = import('../../components/home/CollegesAndCompaniesSection.vue' /* webpackChunkName: "components/home/CollegesAndCompaniesSection" */).then(c => c.default || c)
 export const LazyHelpSection = import('../../components/home/HelpSection.vue' /* webpackChunkName: "components/home/HelpSection" */).then(c => c.default || c)

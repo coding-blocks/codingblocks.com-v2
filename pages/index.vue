@@ -302,6 +302,9 @@
 
       <!-- Blogs Section -->
       <BlogsSection />
+
+      <!-- Footer Section -->
+      <Footer />
     </div>
   </div>
 </template>
@@ -315,6 +318,7 @@ import CollegesAndCompaniesSection from "@/components/home/CollegesAndCompaniesS
 import SuccessStoriesSection from "@/components/home/SuccessStoriesSection.vue";
 import HelpSection from "@/components/home/HelpSection.vue";
 import BlogsSection from "@/components/home/BlogsSection";
+import Footer from "@/components/footer.vue";
 
 export default {
   components: {
@@ -326,6 +330,7 @@ export default {
     SuccessStoriesSection,
     HelpSection,
     BlogsSection,
+    Footer,
   },
 };
 </script>

@@ -1,0 +1,37 @@
+[
+  {
+    "name": "community",
+    "path": "/community",
+    "component": "/home/bipinkalra/Documents/Projects/codingblocks.com-v2/pages/community/index.vue",
+    "chunkName": "pages/community/index",
+    "_name": "_061798d3"
+  },
+  {
+    "name": "company",
+    "path": "/company",
+    "component": "/home/bipinkalra/Documents/Projects/codingblocks.com-v2/pages/company/index.vue",
+    "chunkName": "pages/company/index",
+    "_name": "_0310f427"
+  },
+  {
+    "name": "contact",
+    "path": "/contact",
+    "component": "/home/bipinkalra/Documents/Projects/codingblocks.com-v2/pages/contact/index.vue",
+    "chunkName": "pages/contact/index",
+    "_name": "_b16c27ec"
+  },
+  {
+    "name": "events",
+    "path": "/events",
+    "component": "/home/bipinkalra/Documents/Projects/codingblocks.com-v2/pages/events/index.vue",
+    "chunkName": "pages/events/index",
+    "_name": "_57249e45"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/home/bipinkalra/Documents/Projects/codingblocks.com-v2/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_337eea39"
+  }
+]

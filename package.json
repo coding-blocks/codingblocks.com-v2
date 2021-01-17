@@ -1,0 +1,26 @@
+{
+  "name": "codingblocks-v2",
+  "version": "1.0.0",
+  "description": "Complete redesign of Coding Blocks landing website.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coding-blocks/codingblocks.com-v2.git"
+  },
+  "author": "Bipin Kalra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coding-blocks/codingblocks.com-v2/issues"
+  },
+  "homepage": "https://github.com/coding-blocks/codingblocks.com-v2#readme",
+  "dependencies": {
+    "nuxt": "^2.14.6"
+  }
+}

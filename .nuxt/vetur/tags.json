@@ -35,6 +35,12 @@
   "LazySuccessStoriesSection": {
     "description": "Auto imported from components/home/SuccessStoriesSection.vue"
   },
+  "Universe": {
+    "description": "Auto imported from components/home/Universe.vue"
+  },
+  "LazyUniverse": {
+    "description": "Auto imported from components/home/Universe.vue"
+  },
   "WelcomeSection": {
     "description": "Auto imported from components/home/WelcomeSection.vue"
   },

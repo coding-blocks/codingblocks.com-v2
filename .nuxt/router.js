@@ -7,6 +7,7 @@ const _061798d3 = () => interopDefault(import('../pages/community/index.vue' /* 
 const _0310f427 = () => interopDefault(import('../pages/company/index.vue' /* webpackChunkName: "pages/company/index" */))
 const _b16c27ec = () => interopDefault(import('../pages/contact/index.vue' /* webpackChunkName: "pages/contact/index" */))
 const _57249e45 = () => interopDefault(import('../pages/events/index.vue' /* webpackChunkName: "pages/events/index" */))
+const _3f9d5793 = () => interopDefault(import('../pages/index-old.vue' /* webpackChunkName: "pages/index-old" */))
 const _337eea39 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
@@ -41,6 +42,10 @@ export const routerOptions = {
     path: "/events",
     component: _57249e45,
     name: "events"
+  }, {
+    path: "/index-old",
+    component: _3f9d5793,
+    name: "index-old"
   }, {
     path: "/",
     component: _337eea39,

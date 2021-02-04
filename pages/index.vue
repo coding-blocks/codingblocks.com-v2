@@ -162,7 +162,7 @@
           <div
             class="row align-items-center justify-content-between no-gutters"
           >
-            <div class="flex-1 pr-75">
+            <div class="flex-1 pr-xl-75 pr-25 d-lg-block d-none">
               <div class="heading-3 bold text-grey mb-30">
                 Become a
                 <div
@@ -197,7 +197,120 @@
                 </div>
               </div>
             </div>
-            <div class="t-align-c">
+            <div class="col-12 d-lg-none d-block t-align-c">
+              <div class="heading-3 bold text-grey mb-30">
+                Become a
+                <div
+                  class="d-inline-block text-black underline-highlight underline-highlight--gradient-orange"
+                >
+                  App Developer
+                </div>
+              </div>
+              <div class="heading-font stroke-font">
+                LEARN THE MOST
+              </div>
+              <div class="heading-font">
+                WANTED SKILLS.
+              </div>
+              <img
+                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_welcome.svg"
+              />
+              <div class="t-align-c" style="margin: 0 -2.5rem;">
+                <div class="universe universe--small mx-auto">
+                  <div class="universe__star p-sm-20 p-10">
+                    <img
+                      src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/js-cyan.svg"
+                    />
+                  </div>
+                  <div class="universe__orbit universe__orbit--1">
+                    <div class="position-relative h-100 w-100">
+                      <div class="universe__orbit__planet">
+                        <img
+                          src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg"
+                        />
+                      </div>
+                      <div class="universe__orbit__planet">
+                        <img
+                          src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="universe__orbit universe__orbit--2">
+                    <div class="position-relative h-100 w-100">
+                      <div class="universe__orbit__planet">
+                        <img
+                          src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg"
+                        />
+                      </div>
+                      <div class="universe__orbit__planet">
+                        <img
+                          src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg"
+                        />
+                      </div>
+                      <div class="universe__orbit__planet">
+                        <img
+                          src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="universe__orbit universe__orbit--3">
+                    <div class="position-relative h-100 w-100">
+                      <div class="universe__orbit__planet">
+                        <img
+                          src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg"
+                        />
+                      </div>
+                      <div class="universe__orbit__planet">
+                        <img
+                          src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg"
+                        />
+                      </div>
+                      <div class="universe__orbit__planet">
+                        <img
+                          src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg"
+                        />
+                      </div>
+                      <div class="universe__orbit__planet">
+                        <img
+                          src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="heading-6 mt-30">
+                  Helping people get their dream job.
+                </div>
+                <button class="button-tertiary mt-10">
+                  View all our Alumni
+                  <img
+                    src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
+                    class="ml-2"
+                  />
+                </button>
+              </div>
+              <div class="mt-30 mb-40">
+                <div
+                  class="row no-gutters align-items-center justify-content-center"
+                >
+                  <button class="button-primary">
+                    Get Started
+                  </button>
+                  <div class="ml-30 heading-5 text-grey">
+                    Learn. Practice. Ace.
+                  </div>
+                </div>
+              </div>
+              <div class="mini-banner position-relative br-5">
+                <div class="bg-purple br-5" style="height: 110px;"></div>
+                <div class="mini-banner__tag">
+                  <div class="font-2">Offer valid till 30th Jan</div>
+                </div>
+              </div>
+            </div>
+            <div class="t-align-c mx-auto d-sm-block d-none">
               <div class="universe">
                 <div class="universe__star p-20">
                   <img
@@ -278,8 +391,8 @@
             <div class="t-align-c heading-3 bold mb-50">
               Why Coding Blocks
             </div>
-            <div class="row align-items-center">
-              <div class="col-3">
+            <div class="row align-items-center justify-content-center">
+              <div class="col-xl-3 col-sm-5 col-12 mb-25">
                 <div class="card bg-grey-light-3">
                   <div class="row no-gutters align-items-center">
                     <img
@@ -308,7 +421,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-3">
+              <div class="col-xl-3 col-sm-5 col-12 mb-25">
                 <div class="card bg-grey-light-3">
                   <div class="row no-gutters align-items-center">
                     <img
@@ -337,7 +450,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-3">
+              <div class="col-xl-3 col-sm-5 col-12 mb-25">
                 <div class="card bg-grey-light-3">
                   <div class="row no-gutters align-items-center">
                     <img
@@ -366,7 +479,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-3">
+              <div class="col-xl-3 col-sm-5 col-12 mb-25">
                 <div class="card bg-grey-light-3">
                   <div class="row no-gutters align-items-center">
                     <img
@@ -398,10 +511,12 @@
             </div>
           </div>
 
-          <div class="slideshow-container mt-75" id="slideshow-container">
-            <div class="slideshow-container__slide bg-purple-dark-2 p-100">
+          <div class="slideshow-container mt-50" id="slideshow-container">
+            <div
+              class="slideshow-container__slide bg-purple-dark-2 p-xl-100 p-lg-75 p-md-50 p-sm-40 p-25 pb-100"
+            >
               <div class="row align-items-center no-gutters">
-                <div class="col-xl-6 col-lg-7 z-pos">
+                <div class="col-xl-6 col-lg-8 z-pos t-align-lg-l t-align-c">
                   <div
                     class="br-5 d-inline-block p-2 bg-gradient-orange-light mb-10 font-4 white"
                   >
@@ -415,6 +530,10 @@
                   </div>
                   <img
                     src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_welcome.svg"
+                  />
+                  <img
+                    src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/light-theme-vector.svg"
+                    class="d-lg-none d-block"
                   />
                   <div class="my-50">
                     <div class="heading-2 bold text-orange">
@@ -434,12 +553,6 @@
                       />
                     </button>
                   </div>
-                </div>
-                <div class="col-12 d-lg-none d-block t-align-c">
-                  <img
-                    src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/light-theme-vector.svg"
-                    class="landing-page__section__vector"
-                  />
                 </div>
               </div>
               <img
@@ -467,7 +580,9 @@
       <div class="landing-page__section bg-white py-none course-section">
         <div class="width-limiter">
           <div class="row no-gutters mb-60">
-            <div class="col-4 bg-grey-light-3 pt-60 t-align-c">
+            <div
+              class="col-xl-4 bg-grey-light-3 pt-xl-60 pt-30 t-align-c course-section__navigation"
+            >
               <div class="heading-font stroke-font">
                 LEARN.
               </div>
@@ -476,54 +591,79 @@
               </div>
               <img
                 src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_learn.svg"
-                class="pb-60"
+                class="pb-xl-60 pb-30"
               />
               <div class="row no-gutters align-items-center">
-                <div class="col-12 py-30 course-section__option px-30">
+                <div
+                  class="col-xl-12 col-4 p-sm-30 p-10 course-section__option row no-gutters"
+                >
                   <img
                     src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/online-courses.svg"
-                    class="mr-15"
+                    class="mr-xl-15"
                   />
-                  <div class="heading-4 bold orange flex-1 t-align-l">
+                  <div
+                    class="heading-4 bold flex-1 t-align-l d-xl-block d-none"
+                  >
                     Online Courses
                   </div>
-                </div>
-                <div class="col-12 py-30 course-section__option px-30">
-                  <img
-                    src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/classroom-courses.svg"
-                    class="mr-15"
-                  />
-                  <div class="heading-4 bold orange flex-1 t-align-l">
-                    Classroom Courses
+                  <div
+                    class="col-12 heading-6 bold t-align-c d-xl-none d-block mt-15"
+                  >
+                    Online<br />Courses
                   </div>
                 </div>
-                <div class="col-12 py-30 course-section__option px-30">
+                <div
+                  class="col-xl-12 col-4 p-sm-30 p-10 course-section__option row no-gutters"
+                >
+                  <img
+                    src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/classroom-courses.svg"
+                    class="mr-xl-15"
+                  />
+                  <div
+                    class="heading-4 bold flex-1 t-align-l d-xl-block d-none"
+                  >
+                    Classroom Courses
+                  </div>
+                  <div
+                    class="col-12 heading-6 bold t-align-c d-xl-none d-block mt-15"
+                  >
+                    Classroom<br />Courses
+                  </div>
+                </div>
+                <div
+                  class="col-xl-12 col-4 p-sm-30 p-10 course-section__option row no-gutters"
+                >
                   <img
                     src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/live-courses.svg"
-                    class="mr-15"
+                    class="mr-xl-15"
                   />
-                  <div class="heading-4 bold orange flex-1 t-align-l">
+                  <div
+                    class="heading-4 bold flex-1 t-align-l d-xl-block d-none"
+                  >
                     Live Courses
+                  </div>
+                  <div
+                    class="col-12 heading-6 bold t-align-c d-xl-none d-block mt-15"
+                  >
+                    Live<br />Courses
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-8 pl-75 pt-60">
+            <div class="col-xl-8 course-section__cards pt-lg-60 pt-30">
               <div class="heading-4 bold">
                 Learn to code professionally in the industry!
               </div>
               <div class="heading-6 text-blue mb-40 mt-2">
                 Discover our most loved courses!
               </div>
-              <div class="row">
-                <div class="col-6 mb-30">
+              <div class="row justify-content-center">
+                <div class="col-md-6 col-sm-8 col-12 mb-30">
                   <div class="bg-gradient-pink p-4 card">
                     <div
                       class="row no-gutters justify-content-between align-items-center"
                     >
-                      <div
-                        class="col-xl-8 col-sm-9 white pr-3 order-sm-1 order-2"
-                      >
+                      <div class="col-xl-8 col-9 white pr-3">
                         <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
                         <h5 class="bold mt-1 text-ellipses">
                           Android App Dev.
@@ -579,7 +719,7 @@
                         </div>
                       </div>
                       <div
-                        class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit order-sm-2 order-1 mb-sm-0 mb-4"
+                        class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit"
                       >
                         <img
                           src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg"
@@ -588,14 +728,12 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6 mb-30">
+                <div class="col-md-6 col-sm-8 col-12 mb-30">
                   <div class="bg-gradient-pink p-4 card">
                     <div
                       class="row no-gutters justify-content-between align-items-center"
                     >
-                      <div
-                        class="col-xl-8 col-sm-9 white pr-3 order-sm-1 order-2"
-                      >
+                      <div class="col-xl-8 col-9 white pr-3">
                         <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
                         <h5 class="bold mt-1 text-ellipses">
                           Android App Dev.
@@ -651,7 +789,7 @@
                         </div>
                       </div>
                       <div
-                        class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit order-sm-2 order-1 mb-sm-0 mb-4"
+                        class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit"
                       >
                         <img
                           src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg"
@@ -660,14 +798,12 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6 mb-30">
+                <div class="col-md-6 col-sm-8 col-12 mb-30">
                   <div class="bg-gradient-pink p-4 card">
                     <div
                       class="row no-gutters justify-content-between align-items-center"
                     >
-                      <div
-                        class="col-xl-8 col-sm-9 white pr-3 order-sm-1 order-2"
-                      >
+                      <div class="col-xl-8 col-9 white pr-3">
                         <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
                         <h5 class="bold mt-1 text-ellipses">
                           Android App Dev.
@@ -723,7 +859,7 @@
                         </div>
                       </div>
                       <div
-                        class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit order-sm-2 order-1 mb-sm-0 mb-4"
+                        class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit"
                       >
                         <img
                           src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg"
@@ -732,14 +868,12 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6 mb-30">
+                <div class="col-md-6 col-sm-8 col-12 mb-30">
                   <div class="bg-gradient-pink p-4 card">
                     <div
                       class="row no-gutters justify-content-between align-items-center"
                     >
-                      <div
-                        class="col-xl-8 col-sm-9 white pr-3 order-sm-1 order-2"
-                      >
+                      <div class="col-xl-8 col-9 white pr-3">
                         <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
                         <h5 class="bold mt-1 text-ellipses">
                           Android App Dev.
@@ -795,7 +929,7 @@
                         </div>
                       </div>
                       <div
-                        class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit order-sm-2 order-1 mb-sm-0 mb-4"
+                        class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit"
                       >
                         <img
                           src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg"
@@ -842,11 +976,11 @@
 
       <div class="landing-page__section landing-page__section--divided-section">
         <div class="width-limiter">
-          <div class="row c-card-carousel-lg">
+          <div class="row">
             <div
               class="col-lg-6 col-12 landing-page__section--divided-section__left-section"
             >
-              <div>
+              <div class="t-align-sm-l t-align-c">
                 <div class="heading-font stroke-font">
                   PRACTICE.
                 </div>
@@ -865,7 +999,9 @@
                   </div>
                 </div>
               </div>
-              <div>
+              <div
+                class="row no-gutters justify-content-sm-start justify-content-center"
+              >
                 <button class="button-primary">
                   Start Practicing
                   <img
@@ -874,57 +1010,14 @@
                   />
                 </button>
               </div>
-              {{!--
-              <div
-                class="row no-gutters align-items-center d-xl-flex d-lg-none d-sm-flex d-none"
-              >
-                <button
-                  class="button-secondary flex-1"
-                  style="max-width: fit-content;"
-                >
-                  <div class="flex-1 t-align-l">
-                    Visit Youtube channel
-                  </div>
-                  <img
-                    src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/youtube_button.svg"
-                    class="ml-2"
-                  />
-                </button>
-                <button
-                  class="button-secondary ml-4 flex-1"
-                  style="max-width: fit-content;"
-                >
-                  <div class="flex-1 t-align-l">
-                    Join Telegram channel
-                  </div>
-                  <img
-                    src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/telegram_button.svg"
-                    class="ml-2"
-                  />
-                </button>
-              </div>
-              <div class="d-xl-none d-lg-block d-sm-none d-block">
-                <button class="button-secondary">
-                  Visit Youtube channel
-                  <img
-                    src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/youtube_button.svg"
-                    class="ml-2"
-                  />
-                </button>
-                <button class="button-secondary mt-30">
-                  Join Telegram channel
-                  <img
-                    src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/telegram_button.svg"
-                    class="ml-2"
-                  />
-                </button>
-              </div>
-              --}}
             </div>
+            <div
+              class="divider-h d-lg-none d-block my-50 bg-grey-light-1"
+            ></div>
             <div
               class="col-lg-6 col-12 landing-page__section--divided-section__right-section"
             >
-              <div>
+              <div class="t-align-sm-l t-align-c">
                 <div class="heading-font stroke-font">
                   GET HIRED.
                 </div>
@@ -932,7 +1025,7 @@
                   GET HIRED.
                 </div>
                 <img
-                  src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_superhero.svg"
+                  src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_news.svg"
                 />
                 <div class="my-50">
                   <div class="heading-2 bold">
@@ -944,7 +1037,9 @@
                   </div>
                 </div>
               </div>
-              <div>
+              <div
+                class="row no-gutters justify-content-sm-start justify-content-center"
+              >
                 <button class="button-primary">
                   Apply for jobs
                   <img
@@ -963,7 +1058,7 @@
           <div
             class="row no-gutters justify-content-between align-items-center"
           >
-            <div class="flex-1">
+            <div class="flex-1 t-align-sm-l t-align-c">
               <div class="heading-font stroke-font">
                 ALUMNI NETWORK.
               </div>
@@ -974,10 +1069,6 @@
                 src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_news.svg"
               />
             </div>
-            <img
-              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/apostrophe.svg"
-              class="d-md-block d-none"
-            />
           </div>
           <div class="mt-50"></div>
         </div>
@@ -988,7 +1079,7 @@
           <div
             class="row no-gutters justify-content-between align-items-center"
           >
-            <div class="flex-1">
+            <div class="flex-1 t-align-sm-l t-align-c">
               <div class="heading-font stroke-font">
                 HALL OF FAME
               </div>
@@ -1013,7 +1104,7 @@
               <div class="row mx-lg-40 mx-md-25 c-card-carousel">
                 <div class="col-12">
                   <div
-                    class="success-story row no-gutters align-items-center justify-content-between"
+                    class="success-story row no-gutters align-items-center justify-content-between t-align-sm-l t-align-c"
                   >
                     <div class="col-12 d-md-none d-block mb-40">
                       <div class="row no-gutters align-items-center">
@@ -1033,7 +1124,7 @@
                     </div>
                     <img
                       src="https://i2.wp.com/digital-photography-school.com/wp-content/uploads/2011/07/outdoor-portraits-1.jpg?resize=2000%2C1160&ssl=1"
-                      class="success-story__image"
+                      class="success-story__image d-md-block d-none"
                     />
                     <div class="flex-1">
                       <div class="d-md-block d-none">
@@ -1071,7 +1162,7 @@
           <div
             class="row no-gutters justify-content-between align-items-center"
           >
-            <div class="flex-1">
+            <div class="flex-1 t-align-sm-l t-align-c">
               <div class="heading-font stroke-font">
                 OUR EXPERT
               </div>
@@ -1082,7 +1173,9 @@
                 src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_events.svg"
               />
             </div>
-            <div class="col-md-3 col-12 mt-md-none mt-40 t-align-md-r talign-l">
+            <div
+              class="col-md-3 col-12 mt-md-none mt-40 t-align-md-r talign-l d-sm-block d-none"
+            >
               <button class="button-secondary">
                 Learn more about us
                 <img
@@ -1092,37 +1185,66 @@
               </button>
             </div>
           </div>
-          <div class="mt-50">
-            <div class="row no-gutters justify-content-between">
+          <div class="mt-sm-50 mt-25">
+            <div class="row no-gutters justify-content-center">
               <div class="t-align-c px-20 mb-25">
                 <img
                   src="https://i2.wp.com/digital-photography-school.com/wp-content/uploads/2011/07/outdoor-portraits-1.jpg?resize=2000%2C1160&ssl=1"
                   class="big-photo"
                 />
-                <div class="mt-25 heading-4 bold">Kartik Mathur</div>
+                <div class="mt-25 heading-4 bold d-sm-block d-none">
+                  Kartik Mathur
+                </div>
+                <div class="mt-25 heading-6 bold d-sm-none d-block">
+                  Kartik Mathur
+                </div>
               </div>
               <div class="t-align-c px-20 mb-25">
                 <img
                   src="https://i2.wp.com/digital-photography-school.com/wp-content/uploads/2011/07/outdoor-portraits-1.jpg?resize=2000%2C1160&ssl=1"
                   class="big-photo"
                 />
-                <div class="mt-25 heading-4 bold">Kartik Mathur</div>
+                <div class="mt-25 heading-4 bold d-sm-block d-none">
+                  Kartik Mathur
+                </div>
+                <div class="mt-25 heading-6 bold d-sm-none d-block">
+                  Kartik Mathur
+                </div>
               </div>
               <div class="t-align-c px-20 mb-25">
                 <img
                   src="https://i2.wp.com/digital-photography-school.com/wp-content/uploads/2011/07/outdoor-portraits-1.jpg?resize=2000%2C1160&ssl=1"
                   class="big-photo"
                 />
-                <div class="mt-25 heading-4 bold">Kartik Mathur</div>
+                <div class="mt-25 heading-4 bold d-sm-block d-none">
+                  Kartik Mathur
+                </div>
+                <div class="mt-25 heading-6 bold d-sm-none d-block">
+                  Kartik Mathur
+                </div>
               </div>
               <div class="t-align-c px-20 mb-25">
                 <img
                   src="https://i2.wp.com/digital-photography-school.com/wp-content/uploads/2011/07/outdoor-portraits-1.jpg?resize=2000%2C1160&ssl=1"
                   class="big-photo"
                 />
-                <div class="mt-25 heading-4 bold">Kartik Mathur</div>
+                <div class="mt-25 heading-4 bold d-sm-block d-none">
+                  Kartik Mathur
+                </div>
+                <div class="mt-25 heading-6 bold d-sm-none d-block">
+                  Kartik Mathur
+                </div>
               </div>
             </div>
+          </div>
+          <div class="row no-gutters justify-content-center d-sm-none d-block">
+            <button class="button-secondary">
+              Learn more about us
+              <img
+                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
+                class="ml-2"
+              />
+            </button>
           </div>
         </div>
       </div>
@@ -1143,16 +1265,15 @@
                 <img
                   src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_colleges.svg"
                 />
-                <div class="my-50">
+                <div class="my-sm-50 my-25">
                   <div class="row no-gutters">
                     <div class="col-sm-4 pr-sm-40 mb-sm-none mb-40">
                       <div
                         class="row no-gutters align-items-center justify-content-between"
                       >
-                        <div class="col-sm-12 col-3">
+                        <div class="col-sm-12 col-3 mb-sm-25">
                           <img
                             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/placement-training-dark.svg"
-                            class="mb-sm-40"
                             style="height: 50px;"
                           />
                         </div>
@@ -1165,10 +1286,9 @@
                       <div
                         class="row no-gutters align-items-center justify-content-between"
                       >
-                        <div class="col-sm-12 col-3">
+                        <div class="col-sm-12 col-3 mb-sm-25">
                           <img
                             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/online-platform-dark.svg"
-                            class="mb-sm-40"
                             style="height: 50px;"
                           />
                         </div>
@@ -1181,10 +1301,9 @@
                       <div
                         class="row no-gutters align-items-center justify-content-between"
                       >
-                        <div class="col-sm-12 col-3">
+                        <div class="col-sm-12 col-3 mb-sm-25">
                           <img
                             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/workshops-dark.svg"
-                            class="mb-sm-40"
                             style="height: 50px;"
                           />
                         </div>
@@ -1198,16 +1317,17 @@
               </div>
               <div>
                 <button class="button-primary">
-                  Let's Connect {{!--
+                  Let's Connect
                   <img
                     src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg"
                     class="ml-2"
                   />
-                  --}}
                 </button>
               </div>
             </div>
-            <div class="divider-h d-lg-none d-block my-50"></div>
+            <div
+              class="divider-h d-lg-none d-block my-50 bg-grey-light-1"
+            ></div>
             <div
               class="col-lg-6 landing-page__section--divided-section__right-section"
             >
@@ -1225,10 +1345,9 @@
                   <div class="row no-gutters">
                     <div class="col-sm-4 pr-sm-40 mb-sm-none mb-40">
                       <div class="row no-gutters align-items-center">
-                        <div class="col-sm-12 col-3">
+                        <div class="col-sm-12 col-3 mb-sm-25">
                           <img
                             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/training-program-dark.svg"
-                            class="mb-sm-40"
                             style="height: 50px;"
                           />
                         </div>
@@ -1239,10 +1358,9 @@
                     </div>
                     <div class="col-sm-4 pr-sm-40 mb-sm-none mb-40">
                       <div class="row no-gutters align-items-center">
-                        <div class="col-sm-12 col-3">
+                        <div class="col-sm-12 col-3 mb-sm-25">
                           <img
                             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/hire-students-dark.svg"
-                            class="mb-sm-40"
                             style="height: 50px;"
                           />
                         </div>
@@ -1253,10 +1371,9 @@
                     </div>
                     <div class="col-sm-4">
                       <div class="row no-gutters align-items-center">
-                        <div class="col-sm-12 col-3">
+                        <div class="col-sm-12 col-3 mb-sm-25">
                           <img
                             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/evaluations-dark.svg"
-                            class="mb-sm-40"
                             style="height: 50px;"
                           />
                         </div>
@@ -1270,12 +1387,11 @@
               </div>
               <div>
                 <button class="button-primary">
-                  Let's Connect {{!--
+                  Let's Connect
                   <img
                     src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg"
                     class="ml-2"
                   />
-                  --}}
                 </button>
               </div>
             </div>
@@ -1288,7 +1404,7 @@
           <div
             class="row no-gutters justify-content-between align-items-center"
           >
-            <div class="flex-1">
+            <div class="flex-1 t-align-sm-l t-align-c">
               <div class="heading-font stroke-font">
                 LATEST
               </div>
@@ -1299,7 +1415,9 @@
                 src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_blog.svg"
               />
             </div>
-            <div class="col-md-3 col-12 mt-md-none mt-40 t-align-md-r talign-l">
+            <div
+              class="col-md-3 col-12 mt-md-none mt-40 t-align-md-r talign-l d-sm-block d-none"
+            >
               <button class="button-secondary">
                 Read All Blogs
                 <img
@@ -1309,7 +1427,7 @@
               </button>
             </div>
           </div>
-          <div class="mt-50">
+          <div class="mt-sm-50 mt-25">
             <div class="row no-gutters c-card-carousel-md">
               <div
                 class="col-md-4 col-sm-5 col-8 flex-col justify-content-between blog-post"
@@ -1400,6 +1518,17 @@
               </div>
             </div>
           </div>
+          <div
+            class="d-sm-none d-block mt-25 row no-gutters justify-content-center"
+          >
+            <button class="button-secondary">
+              Read All Blogs
+              <img
+                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
+                class="ml-2"
+              />
+            </button>
+          </div>
         </div>
       </div>
 
@@ -1408,7 +1537,7 @@
           <div
             class="row no-gutters justify-content-between align-items-center"
           >
-            <div class="flex-1 pr-5">
+            <div class="flex-1 pr-lg-40 t-align-sm-l t-align-c">
               <div class="heading-font stroke-font">
                 IN THE
               </div>
@@ -1693,3 +1822,13 @@
     </div>
   </div>
 </template>
+
+<script>
+import Universe from "@/components/home/Universe.vue";
+
+export default {
+  components: {
+    Universe,
+  },
+};
+</script>

@@ -1,66 +1,70 @@
 <template>
-  <div class="universe">
-    <div class="universe__star p-20">
-      <img
-        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/js-cyan.svg"
-      />
-    </div>
-    <div class="universe__orbit universe__orbit--1">
-      <div class="position-relative h-100 w-100">
-        <div class="universe__orbit__planet">
+  <div>
+    <client-only>
+      <div class="universe">
+        <div class="universe__star p-20">
           <img
-            src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg"
+            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/js-cyan.svg"
           />
         </div>
-        <div class="universe__orbit__planet">
-          <img
-            src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg"
-          />
+        <div class="universe__orbit universe__orbit--1">
+          <div class="position-relative h-100 w-100">
+            <div class="universe__orbit__planet">
+              <img
+                src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg"
+              />
+            </div>
+            <div class="universe__orbit__planet">
+              <img
+                src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="universe__orbit universe__orbit--2">
+          <div class="position-relative h-100 w-100">
+            <div class="universe__orbit__planet">
+              <img
+                src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg"
+              />
+            </div>
+            <div class="universe__orbit__planet">
+              <img
+                src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg"
+              />
+            </div>
+            <div class="universe__orbit__planet">
+              <img
+                src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="universe__orbit universe__orbit--3">
+          <div class="position-relative h-100 w-100">
+            <div class="universe__orbit__planet">
+              <img
+                src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg"
+              />
+            </div>
+            <div class="universe__orbit__planet">
+              <img
+                src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg"
+              />
+            </div>
+            <div class="universe__orbit__planet">
+              <img
+                src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg"
+              />
+            </div>
+            <div class="universe__orbit__planet">
+              <img
+                src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg"
+              />
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="universe__orbit universe__orbit--2">
-      <div class="position-relative h-100 w-100">
-        <div class="universe__orbit__planet">
-          <img
-            src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg"
-          />
-        </div>
-        <div class="universe__orbit__planet">
-          <img
-            src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg"
-          />
-        </div>
-        <div class="universe__orbit__planet">
-          <img
-            src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg"
-          />
-        </div>
-      </div>
-    </div>
-    <div class="universe__orbit universe__orbit--3">
-      <div class="position-relative h-100 w-100">
-        <div class="universe__orbit__planet">
-          <img
-            src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg"
-          />
-        </div>
-        <div class="universe__orbit__planet">
-          <img
-            src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg"
-          />
-        </div>
-        <div class="universe__orbit__planet">
-          <img
-            src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg"
-          />
-        </div>
-        <div class="universe__orbit__planet">
-          <img
-            src="https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg"
-          />
-        </div>
-      </div>
-    </div>
+    </client-only>
   </div>
 </template>

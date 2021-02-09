@@ -326,10 +326,12 @@
 
 <script>
 import StatsCard from "@/components/misc/StatsCard.vue";
+import BannerCarousel from "@/components/misc/BannerCarousel";
 
 export default {
   components: {
     StatsCard,
+    BannerCarousel,
   },
 };
 </script>

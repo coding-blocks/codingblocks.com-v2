@@ -1,4 +1,10 @@
 {
+  "Navigation": {
+    "description": "Auto imported from components/Navigation.vue"
+  },
+  "LazyNavigation": {
+    "description": "Auto imported from components/Navigation.vue"
+  },
   "Footer": {
     "description": "Auto imported from components/footer.vue"
   },

@@ -1,6 +1,6 @@
 <template>
-  <div class="universe">
-    <div class="universe__star p-20">
+  <div class="universe universe--small mx-auto">
+    <div class="universe__star p-sm-20 p-10">
       <img
         src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/js-cyan.svg"
       />

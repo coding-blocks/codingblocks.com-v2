@@ -5,7 +5,9 @@ export { default as CommunityAndSuperheroSection } from '../../components/home/C
 export { default as HelpSection } from '../../components/home/HelpSection.vue'
 export { default as SuccessStoriesSection } from '../../components/home/SuccessStoriesSection.vue'
 export { default as Universe } from '../../components/home/Universe.vue'
+export { default as UniverseSmall } from '../../components/home/UniverseSmall.vue'
 export { default as WelcomeSection } from '../../components/home/WelcomeSection.vue'
+export { default as BannerCarousel } from '../../components/misc/BannerCarousel.vue'
 export { default as CardCarousel } from '../../components/misc/CardCarousel.vue'
 export { default as DividedSection } from '../../components/misc/DividedSection.vue'
 export { default as EventsCard } from '../../components/misc/EventsCard.vue'
@@ -19,7 +21,9 @@ export const LazyCommunityAndSuperheroSection = import('../../components/home/Co
 export const LazyHelpSection = import('../../components/home/HelpSection.vue' /* webpackChunkName: "components/home/HelpSection" */).then(c => c.default || c)
 export const LazySuccessStoriesSection = import('../../components/home/SuccessStoriesSection.vue' /* webpackChunkName: "components/home/SuccessStoriesSection" */).then(c => c.default || c)
 export const LazyUniverse = import('../../components/home/Universe.vue' /* webpackChunkName: "components/home/Universe" */).then(c => c.default || c)
+export const LazyUniverseSmall = import('../../components/home/UniverseSmall.vue' /* webpackChunkName: "components/home/UniverseSmall" */).then(c => c.default || c)
 export const LazyWelcomeSection = import('../../components/home/WelcomeSection.vue' /* webpackChunkName: "components/home/WelcomeSection" */).then(c => c.default || c)
+export const LazyBannerCarousel = import('../../components/misc/BannerCarousel.vue' /* webpackChunkName: "components/misc/BannerCarousel" */).then(c => c.default || c)
 export const LazyCardCarousel = import('../../components/misc/CardCarousel.vue' /* webpackChunkName: "components/misc/CardCarousel" */).then(c => c.default || c)
 export const LazyDividedSection = import('../../components/misc/DividedSection.vue' /* webpackChunkName: "components/misc/DividedSection" */).then(c => c.default || c)
 export const LazyEventsCard = import('../../components/misc/EventsCard.vue' /* webpackChunkName: "components/misc/EventsCard" */).then(c => c.default || c)

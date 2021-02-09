@@ -41,11 +41,23 @@
   "LazyUniverse": {
     "description": "Auto imported from components/home/Universe.vue"
   },
+  "UniverseSmall": {
+    "description": "Auto imported from components/home/UniverseSmall.vue"
+  },
+  "LazyUniverseSmall": {
+    "description": "Auto imported from components/home/UniverseSmall.vue"
+  },
   "WelcomeSection": {
     "description": "Auto imported from components/home/WelcomeSection.vue"
   },
   "LazyWelcomeSection": {
     "description": "Auto imported from components/home/WelcomeSection.vue"
+  },
+  "BannerCarousel": {
+    "description": "Auto imported from components/misc/BannerCarousel.vue"
+  },
+  "LazyBannerCarousel": {
+    "description": "Auto imported from components/misc/BannerCarousel.vue"
   },
   "CardCarousel": {
     "description": "Auto imported from components/misc/CardCarousel.vue"

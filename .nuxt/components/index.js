@@ -1,4 +1,6 @@
+export { default as MainNav } from '../../components/MainNav.vue'
 export { default as Navigation } from '../../components/Navigation.vue'
+export { default as SubNavMegaNav } from '../../components/SubNavMegaNav.vue'
 export { default as Footer } from '../../components/footer.vue'
 export { default as BlogsSection } from '../../components/home/BlogsSection.vue'
 export { default as CollegesAndCompaniesSection } from '../../components/home/CollegesAndCompaniesSection.vue'
@@ -15,7 +17,9 @@ export { default as EventsCard } from '../../components/misc/EventsCard.vue'
 export { default as NewsCard } from '../../components/misc/NewsCard.vue'
 export { default as StatsCard } from '../../components/misc/StatsCard.vue'
 
+export const LazyMainNav = import('../../components/MainNav.vue' /* webpackChunkName: "components/MainNav" */).then(c => c.default || c)
 export const LazyNavigation = import('../../components/Navigation.vue' /* webpackChunkName: "components/Navigation" */).then(c => c.default || c)
+export const LazySubNavMegaNav = import('../../components/SubNavMegaNav.vue' /* webpackChunkName: "components/SubNavMegaNav" */).then(c => c.default || c)
 export const LazyFooter = import('../../components/footer.vue' /* webpackChunkName: "components/footer" */).then(c => c.default || c)
 export const LazyBlogsSection = import('../../components/home/BlogsSection.vue' /* webpackChunkName: "components/home/BlogsSection" */).then(c => c.default || c)
 export const LazyCollegesAndCompaniesSection = import('../../components/home/CollegesAndCompaniesSection.vue' /* webpackChunkName: "components/home/CollegesAndCompaniesSection" */).then(c => c.default || c)

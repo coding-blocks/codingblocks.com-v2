@@ -227,120 +227,32 @@
         </div>
         <div class="row align-items-center justify-content-center">
           <div class="col-xl-3 col-sm-5 col-12 mb-25">
-            <div class="card bg-grey-light-3">
-              <div class="row no-gutters align-items-center">
-                <img
-                  src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/workshops-dark.svg"
-                  class="mb-sm-3"
-                  style="height: 50px;"
-                />
-                <div class="flex-1 d-sm-none d-block pl-20">
-                  <div
-                    class="text-gradient-orange-light bold"
-                    style="font-size: 3.428rem;"
-                  >
-                    40K+
-                  </div>
-                  <div class="mt-1 font-4">Students Taught</div>
-                </div>
-              </div>
-              <div class="d-sm-block d-none">
-                <div
-                  class="text-gradient-orange-light bold"
-                  style="font-size: 3.428rem;"
-                >
-                  40K+
-                </div>
-                <div class="mt-1 font-4">Students Taught</div>
-              </div>
-            </div>
+            <StatsCard
+              stat_number="40K+"
+              stat_title="Students Taught"
+              icon="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/workshops.svg"
+            />
           </div>
           <div class="col-xl-3 col-sm-5 col-12 mb-25">
-            <div class="card bg-grey-light-3">
-              <div class="row no-gutters align-items-center">
-                <img
-                  src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/package-dark.svg"
-                  class="mb-sm-3"
-                  style="height: 50px;"
-                />
-                <div class="flex-1 d-sm-none d-block pl-20">
-                  <div
-                    class="text-gradient-orange-light bold"
-                    style="font-size: 3.428rem;"
-                  >
-                    80LPA
-                  </div>
-                  <div class="mt-1 font-4">Package Offered</div>
-                </div>
-              </div>
-              <div class="d-sm-block d-none">
-                <div
-                  class="text-gradient-orange-light bold"
-                  style="font-size: 3.428rem;"
-                >
-                  80LPA
-                </div>
-                <div class="mt-1 font-4">Package Offered</div>
-              </div>
-            </div>
+            <StatsCard
+              stat_number="80LPA"
+              stat_title="Package Offered"
+              icon="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/package.svg"
+            />
           </div>
           <div class="col-xl-3 col-sm-5 col-12 mb-25">
-            <div class="card bg-grey-light-3">
-              <div class="row no-gutters align-items-center">
-                <img
-                  src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/students-placed-dark.svg"
-                  class="mb-sm-3"
-                  style="height: 50px;"
-                />
-                <div class="flex-1 d-sm-none d-block pl-20">
-                  <div
-                    class="text-gradient-orange-light bold"
-                    style="font-size: 3.428rem;"
-                  >
-                    30K+
-                  </div>
-                  <div class="mt-1 font-4">Students Placed</div>
-                </div>
-              </div>
-              <div class="d-sm-block d-none">
-                <div
-                  class="text-gradient-orange-light bold"
-                  style="font-size: 3.428rem;"
-                >
-                  30K+
-                </div>
-                <div class="mt-1 font-4">Students Placed</div>
-              </div>
-            </div>
+            <StatsCard
+              stat_number="30K+"
+              stat_title="Students Placed"
+              icon="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/students_placed.svg"
+            />
           </div>
           <div class="col-xl-3 col-sm-5 col-12 mb-25">
-            <div class="card bg-grey-light-3">
-              <div class="row no-gutters align-items-center">
-                <img
-                  src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/placement-training-dark.svg"
-                  class="mb-sm-3"
-                  style="height: 50px;"
-                />
-                <div class="flex-1 d-sm-none d-block pl-20">
-                  <div
-                    class="text-gradient-orange-light bold"
-                    style="font-size: 3.428rem;"
-                  >
-                    200%
-                  </div>
-                  <div class="mt-1 font-4">Salary Hike</div>
-                </div>
-              </div>
-              <div class="d-sm-block d-none">
-                <div
-                  class="text-gradient-orange-light bold"
-                  style="font-size: 3.428rem;"
-                >
-                  200%
-                </div>
-                <div class="mt-1 font-4">Salary Hike</div>
-              </div>
-            </div>
+            <StatsCard
+              stat_number="200%"
+              stat_title="Salary Hike"
+              icon="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/placement-training.svg"
+            />
           </div>
         </div>
       </div>

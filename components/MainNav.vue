@@ -1,7 +1,10 @@
 <template>
   <div class="super-navbar border-bottom">
     <!-- Hamburger Nav -->
-    <div class="hamburger-nav hamburger-nav--hidden border-left">
+    <div
+      class="hamburger-nav hamburger-nav--hidden border-left"
+      id="hamburger-nav"
+    >
       <div
         class="row no-gutters justify-content-end align-items-center border-bottom position-sticky tl bg-white z-pos"
         style="height: 89px;"
@@ -10,6 +13,7 @@
           src="\images\wrong_g.png"
           alt="#"
           class="mr-4 hamburger-nav__cross pointer"
+          id="hamburger-close"
         />
       </div>
       <div class="t-align-c py-20">
@@ -351,7 +355,10 @@
                 <div class="font-3 mt-10 d-md-block d-none">IDE</div>
               </div>
             </div>
-            <div class="hamburger-menu d-md-none d-block ml-25">
+            <div
+              class="hamburger-menu d-md-none d-block ml-25"
+              id="hamburger-open"
+            >
               <div class="ham-toggle">
                 <div class="hamburger">
                   <span></span>
@@ -369,3 +376,21 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  mounted() {
+    const hamburgerOpenToggle = document.querySelector("#hamburger-open");
+    const hamburgerCloseToggle = document.querySelector("#hamburger-close");
+    const hamburgerNav = document.querySelector("#hamburger-nav");
+
+    hamburgerOpenToggle.addEventListener("click", () => {
+      hamburgerNav.classList.remove("hamburger-nav--hidden");
+    });
+
+    hamburgerCloseToggle.addEventListener("click", () => {
+      hamburgerNav.classList.add("hamburger-nav--hidden");
+    });
+  },
+};
+</script>

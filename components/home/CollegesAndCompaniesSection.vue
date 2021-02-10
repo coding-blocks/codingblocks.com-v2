@@ -60,8 +60,6 @@
             </div>
           </div>
         </div>
-      </div>
-      <div>
         <button class="button-primary">
           Let's Connect
           <img
@@ -125,15 +123,12 @@
             </div>
           </div>
         </div>
-      </div>
-      <div>
         <button class="button-primary">
-          Let's Connect {{!--
+          Let's Connect
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg"
             class="ml-2"
           />
-          --}}
         </button>
       </div>
     </template>

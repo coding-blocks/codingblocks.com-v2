@@ -2,7 +2,7 @@
   <div class="landing-page__section">
     <div class="width-limiter">
       <div class="row no-gutters justify-content-between align-items-center">
-        <div class="flex-1 t-align-sm-l t-align-c">
+        <div class="flex-1 t-align-md-l t-align-c">
           <div class="heading-font stroke-font">
             LATEST
           </div>
@@ -14,7 +14,7 @@
           />
         </div>
         <div
-          class="col-md-3 col-12 mt-md-none mt-40 t-align-md-r talign-l d-sm-block d-none"
+          class="col-3 d-md-block d-none "
         >
           <button class="button-secondary">
             Read All Blogs
@@ -117,7 +117,7 @@
         </div>
       </div>
       <div
-        class="d-sm-none d-block mt-25 row no-gutters justify-content-center"
+        class="d-md-none d-block mt-25 t-align-c"
       >
         <button class="button-secondary">
           Read All Blogs

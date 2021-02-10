@@ -860,12 +860,14 @@
 import Navigation from "@/components/Navigation.vue";
 import WelcomeSection from "@/components/home/WelcomeSection.vue";
 import CoursesSection from "@/components/home/CoursesSection.vue";
+import PracticeAndHireSection from "@/components/home/PracticeAndHireSection.vue";
 
 export default {
   components: {
     Navigation,
     WelcomeSection,
     CoursesSection,
+    PracticeAndHireSection,
   },
 };
 </script>

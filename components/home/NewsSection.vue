@@ -1,25 +1,26 @@
 <template>
-  <!-- Success Stories Section -->
   <div class="landing-page__section">
     <div class="width-limiter">
       <div class="row no-gutters justify-content-between align-items-center">
-        <div class="flex-1 t-align-lg-l t-align-c">
+        <div class="flex-1 pr-xl-40 pr-lg-20 t-align-lg-l t-align-c">
           <div class="heading-font stroke-font">
-            HALL OF FAME
+            IN THE
           </div>
           <div class="heading-font">
-            SUCCESS STORIES
+            NEWS
           </div>
           <img
-            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_success.svg"
+            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_news.svg"
           />
         </div>
-      </div>
-      <div class="mt-sm-50 mt-25">
-        <CardCarousel>
-          <SuccessStory />
-          <SuccessStory />
-        </CardCarousel>
+        <div class="col-lg-9 mt-lg-none mt-50">
+          <CardCarousel>
+            <NewsCard />
+            <NewsCard />
+            <NewsCard />
+            <NewsCard />
+          </CardCarousel>
+        </div>
       </div>
     </div>
   </div>
@@ -27,12 +28,12 @@
 
 <script>
 import CardCarousel from "@/components/misc/CardCarousel.vue";
-import SuccessStory from "@/components/misc/SuccessStory.vue";
+import NewsCard from "@/components/misc/NewsCard.vue";
 
 export default {
   components: {
     CardCarousel,
-    SuccessStory,
+    NewsCard,
   },
 };
 </script>

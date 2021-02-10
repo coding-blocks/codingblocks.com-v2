@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-grey-dark-1 br-5 p-30">
+  <div class="card bg-grey-light-3">
     <div class="row no-gutters align-items-center">
       <img :src="icon" class="mb-sm-3" style="height: 50px" />
       <div class="flex-1 d-sm-none d-block pl-20">

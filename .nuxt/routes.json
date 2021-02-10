@@ -28,6 +28,13 @@
     "_name": "_57249e45"
   },
   {
+    "name": "index-old",
+    "path": "/index-old",
+    "component": "/home/bipinkalra/Documents/Projects/codingblocks.com-v2/pages/index-old.vue",
+    "chunkName": "pages/index-old",
+    "_name": "_3f9d5793"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/home/bipinkalra/Documents/Projects/codingblocks.com-v2/pages/index.vue",

@@ -41,6 +41,12 @@
   "LazyCommunityAndSuperheroSection": {
     "description": "Auto imported from components/home/CommunityAndSuperheroSection.vue"
   },
+  "CoursesSection": {
+    "description": "Auto imported from components/home/CoursesSection.vue"
+  },
+  "LazyCoursesSection": {
+    "description": "Auto imported from components/home/CoursesSection.vue"
+  },
   "HelpSection": {
     "description": "Auto imported from components/home/HelpSection.vue"
   },

@@ -10,7 +10,7 @@
         style="height: 89px;"
       >
         <img
-          src="\images\wrong_g.png"
+          src="https://minio.codingblocks.com/amoeba/wrong-close.png"
           alt="#"
           class="mr-4 hamburger-nav__cross pointer"
           id="hamburger-close"

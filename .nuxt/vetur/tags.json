@@ -53,6 +53,12 @@
   "LazyHelpSection": {
     "description": "Auto imported from components/home/HelpSection.vue"
   },
+  "MentorSection": {
+    "description": "Auto imported from components/home/MentorSection.vue"
+  },
+  "LazyMentorSection": {
+    "description": "Auto imported from components/home/MentorSection.vue"
+  },
   "PracticeAndHireSection": {
     "description": "Auto imported from components/home/PracticeAndHireSection.vue"
   },

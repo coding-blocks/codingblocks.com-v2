@@ -7,6 +7,7 @@ export { default as CollegesAndCompaniesSection } from '../../components/home/Co
 export { default as CommunityAndSuperheroSection } from '../../components/home/CommunityAndSuperheroSection.vue'
 export { default as CoursesSection } from '../../components/home/CoursesSection.vue'
 export { default as HelpSection } from '../../components/home/HelpSection.vue'
+export { default as MentorSection } from '../../components/home/MentorSection.vue'
 export { default as PracticeAndHireSection } from '../../components/home/PracticeAndHireSection.vue'
 export { default as SuccessStoriesSection } from '../../components/home/SuccessStoriesSection.vue'
 export { default as Universe } from '../../components/home/Universe.vue'
@@ -28,6 +29,7 @@ export const LazyCollegesAndCompaniesSection = import('../../components/home/Col
 export const LazyCommunityAndSuperheroSection = import('../../components/home/CommunityAndSuperheroSection.vue' /* webpackChunkName: "components/home/CommunityAndSuperheroSection" */).then(c => c.default || c)
 export const LazyCoursesSection = import('../../components/home/CoursesSection.vue' /* webpackChunkName: "components/home/CoursesSection" */).then(c => c.default || c)
 export const LazyHelpSection = import('../../components/home/HelpSection.vue' /* webpackChunkName: "components/home/HelpSection" */).then(c => c.default || c)
+export const LazyMentorSection = import('../../components/home/MentorSection.vue' /* webpackChunkName: "components/home/MentorSection" */).then(c => c.default || c)
 export const LazyPracticeAndHireSection = import('../../components/home/PracticeAndHireSection.vue' /* webpackChunkName: "components/home/PracticeAndHireSection" */).then(c => c.default || c)
 export const LazySuccessStoriesSection = import('../../components/home/SuccessStoriesSection.vue' /* webpackChunkName: "components/home/SuccessStoriesSection" */).then(c => c.default || c)
 export const LazyUniverse = import('../../components/home/Universe.vue' /* webpackChunkName: "components/home/Universe" */).then(c => c.default || c)

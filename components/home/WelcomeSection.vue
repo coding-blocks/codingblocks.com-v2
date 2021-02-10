@@ -67,13 +67,20 @@
             </button>
           </div>
           <div class="mt-30 mb-40">
+            <div class="mb-15">
+              <div class="heading-5 text-grey d-xl-none d-block">
+                Learn. Practice. Ace.
+              </div>
+            </div>
             <div
               class="row no-gutters align-items-center justify-content-center"
             >
               <button class="button-primary">
                 Get Started
               </button>
-              <div class="ml-30 heading-5 text-grey">Learn. Practice. Ace.</div>
+              <div class="ml-30 heading-5 text-grey d-xl-block d-none">
+                Learn. Practice. Ace.
+              </div>
             </div>
           </div>
           <div class="mini-banner position-relative br-5">
@@ -83,7 +90,7 @@
             </div>
           </div>
         </div>
-        <div class="t-align-c mx-auto d-sm-block d-none">
+        <div class="t-align-c mx-auto d-lg-block d-none">
           <Universe />
           <div class="heading-6 mt-30">Helping people get their dream job.</div>
           <button class="button-tertiary mt-10">

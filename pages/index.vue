@@ -250,131 +250,7 @@
         </div>
       </div>
 
-      <div class="landing-page__section">
-        <div class="width-limiter">
-          <div
-            class="row no-gutters justify-content-between align-items-center"
-          >
-            <div class="flex-1 pr-lg-40 t-align-sm-l t-align-c">
-              <div class="heading-font stroke-font">
-                IN THE
-              </div>
-              <div class="heading-font">
-                NEWS
-              </div>
-              <img
-                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_news.svg"
-              />
-            </div>
-            <div class="col-lg-9 mt-lg-none mt-50">
-              <div class="flex-row align-items-center">
-                <img
-                  src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/nav-big-left-inactive.svg"
-                  class="pointer d-sm-block d-none"
-                />
-                <div class="row mx-sm-40 c-card-carousel">
-                  <div class="col-6 h-inherit">
-                    <div
-                      class="flex-col justify-content-between h-100 align-items-start"
-                    >
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/et_logo.svg"
-                      />
-                      <div>
-                        <div
-                          class="heading-5 my-50 text-clamp-ellipses text-clamp-ellipses--2"
-                        >
-                          Coding Blocks is the most promising edtech startup
-                        </div>
-                        <div class="button-tertiary">
-                          Read More
-                          <img
-                            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
-                            class="ml-2"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-6 h-inherit">
-                    <div
-                      class="flex-col justify-content-between h-100 align-items-start"
-                    >
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android_white.png"
-                      />
-                      <div>
-                        <div
-                          class="heading-5 my-50 text-clamp-ellipses text-clamp-ellipses--2"
-                        >
-                          Coding Blocks is the most promising edtech startup
-                        </div>
-                        <div class="button-tertiary">
-                          Read More
-                          <img
-                            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
-                            class="ml-2"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-6 h-inherit">
-                    <div
-                      class="flex-col justify-content-between h-100 align-items-start"
-                    >
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/et_logo.svg"
-                      />
-                      <div>
-                        <div
-                          class="heading-5 my-50 text-clamp-ellipses text-clamp-ellipses--2"
-                        >
-                          Coding Blocks is the most promising edtech startup
-                        </div>
-                        <div class="button-tertiary">
-                          Read More
-                          <img
-                            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
-                            class="ml-2"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-6 h-inherit">
-                    <div
-                      class="flex-col justify-content-between h-100 align-items-start"
-                    >
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/et_logo.svg"
-                      />
-                      <div>
-                        <div
-                          class="heading-5 my-50 text-clamp-ellipses text-clamp-ellipses--2"
-                        >
-                          Coding Blocks is the most promising edtech startup
-                        </div>
-                        <div class="button-tertiary">
-                          Read More
-                          <img
-                            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
-                            class="ml-2"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <img
-                  src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/nav-big-right-active.svg"
-                  class="pointer d-sm-block d-none"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <NewsSection />
 
       <Footer />
     </div>
@@ -388,6 +264,7 @@ import CoursesSection from "@/components/home/CoursesSection.vue";
 import PracticeAndHireSection from "@/components/home/PracticeAndHireSection.vue";
 import MentorSection from "@/components/home/MentorSection.vue";
 import CollegesAndCompaniesSection from "@/components/home/CollegesAndCompaniesSection.vue";
+import NewsSection from "@/components/home/NewsSection.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
@@ -398,6 +275,7 @@ export default {
     PracticeAndHireSection,
     MentorSection,
     CollegesAndCompaniesSection,
+    NewsSection,
     Footer,
   },
 };

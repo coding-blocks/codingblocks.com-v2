@@ -26,11 +26,17 @@ export default {
     const carousel = document.querySelector("#carousel");
 
     leftButton.addEventListener("click", () => {
-      carousel.scrollLeft += carousel.clientWidth;
+      for (let i = 0; i < 30000; i++) {
+        carousel.scrollLeft += carousel.clientWidth / 30000;
+      }
+      // carousel.scrollLeft += carousel.clientWidth;
     });
 
     rightButton.addEventListener("click", () => {
-      carousel.scrollLeft -= carousel.clientWidth;
+      for (let i = 0; i < 30000; i++) {
+        carousel.scrollLeft -= carousel.clientWidth / 30000;
+      }
+      // carousel.scrollLeft -= carousel.clientWidth;
     });
   },
 };

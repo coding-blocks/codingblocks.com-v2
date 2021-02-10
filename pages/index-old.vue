@@ -228,7 +228,7 @@ import CollegesAndCompaniesSection from "@/components/home/CollegesAndCompaniesS
 import SuccessStoriesSection from "@/components/home/SuccessStoriesSection.vue";
 import HelpSection from "@/components/home/HelpSection.vue";
 import BlogsSection from "@/components/home/BlogsSection";
-import Footer from "@/components/footer.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   components: {

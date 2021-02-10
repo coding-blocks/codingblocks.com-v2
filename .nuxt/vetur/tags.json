@@ -1,4 +1,10 @@
 {
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "LazyFooter": {
+    "description": "Auto imported from components/Footer.vue"
+  },
   "MainNav": {
     "description": "Auto imported from components/MainNav.vue"
   },
@@ -16,12 +22,6 @@
   },
   "LazySubNavMegaNav": {
     "description": "Auto imported from components/SubNavMegaNav.vue"
-  },
-  "Footer": {
-    "description": "Auto imported from components/footer.vue"
-  },
-  "LazyFooter": {
-    "description": "Auto imported from components/footer.vue"
   },
   "BlogsSection": {
     "description": "Auto imported from components/home/BlogsSection.vue"

@@ -133,7 +133,7 @@
       </div>
 
       <!-- Community Section -->
-      <CommunityAndSuperheroSection />
+      <!-- <CommunityAndSuperheroSection /> -->
 
       <!-- Events Section -->
       <div class="landing-page__section">
@@ -223,7 +223,7 @@ import CardCarousel from "@/components/misc/CardCarousel.vue";
 import EventsCard from "@/components/misc/EventsCard.vue";
 import NewsCard from "@/components/misc/NewsCard.vue";
 import DividedSection from "@/components/misc/DividedSection.vue";
-import CommunityAndSuperheroSection from "@/components/home/CommunityAndSuperheroSection.vue";
+// import CommunityAndSuperheroSection from "@/components/home/CommunityAndSuperheroSection.vue";
 import CollegesAndCompaniesSection from "@/components/home/CollegesAndCompaniesSection.vue";
 import SuccessStoriesSection from "@/components/home/SuccessStoriesSection.vue";
 import HelpSection from "@/components/home/HelpSection.vue";
@@ -237,7 +237,7 @@ export default {
     EventsCard,
     NewsCard,
     DividedSection,
-    CommunityAndSuperheroSection,
+    // CommunityAndSuperheroSection,
     CollegesAndCompaniesSection,
     SuccessStoriesSection,
     HelpSection,

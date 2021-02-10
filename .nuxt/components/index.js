@@ -4,7 +4,6 @@ export { default as Navigation } from '../../components/Navigation.vue'
 export { default as SubNavMegaNav } from '../../components/SubNavMegaNav.vue'
 export { default as BlogsSection } from '../../components/home/BlogsSection.vue'
 export { default as CollegesAndCompaniesSection } from '../../components/home/CollegesAndCompaniesSection.vue'
-export { default as CommunityAndSuperheroSection } from '../../components/home/CommunityAndSuperheroSection.vue'
 export { default as CoursesSection } from '../../components/home/CoursesSection.vue'
 export { default as HelpSection } from '../../components/home/HelpSection.vue'
 export { default as MentorSection } from '../../components/home/MentorSection.vue'
@@ -28,7 +27,6 @@ export const LazyNavigation = import('../../components/Navigation.vue' /* webpac
 export const LazySubNavMegaNav = import('../../components/SubNavMegaNav.vue' /* webpackChunkName: "components/SubNavMegaNav" */).then(c => c.default || c)
 export const LazyBlogsSection = import('../../components/home/BlogsSection.vue' /* webpackChunkName: "components/home/BlogsSection" */).then(c => c.default || c)
 export const LazyCollegesAndCompaniesSection = import('../../components/home/CollegesAndCompaniesSection.vue' /* webpackChunkName: "components/home/CollegesAndCompaniesSection" */).then(c => c.default || c)
-export const LazyCommunityAndSuperheroSection = import('../../components/home/CommunityAndSuperheroSection.vue' /* webpackChunkName: "components/home/CommunityAndSuperheroSection" */).then(c => c.default || c)
 export const LazyCoursesSection = import('../../components/home/CoursesSection.vue' /* webpackChunkName: "components/home/CoursesSection" */).then(c => c.default || c)
 export const LazyHelpSection = import('../../components/home/HelpSection.vue' /* webpackChunkName: "components/home/HelpSection" */).then(c => c.default || c)
 export const LazyMentorSection = import('../../components/home/MentorSection.vue' /* webpackChunkName: "components/home/MentorSection" */).then(c => c.default || c)

@@ -13,12 +13,14 @@
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_news.svg"
           />
         </div>
-        <CardCarousel>
-          <NewsCard />
-          <NewsCard />
-          <NewsCard />
-          <NewsCard />
-        </CardCarousel>
+        <div class="col-lg-9 mt-lg-none mt-50">
+          <CardCarousel>
+            <NewsCard />
+            <NewsCard />
+            <NewsCard />
+            <NewsCard />
+          </CardCarousel>
+        </div>
       </div>
     </div>
   </div>

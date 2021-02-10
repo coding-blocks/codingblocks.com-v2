@@ -3,7 +3,7 @@
   <div class="landing-page__section">
     <div class="width-limiter">
       <div class="row no-gutters justify-content-between align-items-center">
-        <div class="flex-1 t-align-sm-l t-align-c">
+        <div class="flex-1 t-align-lg-l t-align-c">
           <div class="heading-font stroke-font">
             HALL OF FAME
           </div>
@@ -14,10 +14,6 @@
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_success.svg"
           />
         </div>
-        <img
-          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/apostrophe.svg"
-          class="d-md-block d-none"
-        />
       </div>
       <div class="mt-50">
         <CardCarousel>

@@ -14,7 +14,7 @@
           <div
             class="row no-gutters justify-content-between align-items-center"
           >
-            <div class="flex-1 t-align-sm-l t-align-c">
+            <div class="flex-1 t-align-lg-l t-align-c">
               <div class="heading-font stroke-font">
                 ALUMNI NETWORK.
               </div>

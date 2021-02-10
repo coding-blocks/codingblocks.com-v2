@@ -7,7 +7,7 @@
         >
           <slot name="left_section"></slot>
         </div>
-        <div class="divider-h d-lg-none d-block my-50"></div>
+        <div class="divider-h d-lg-none d-block my-50 bg-grey-light-1"></div>
         <div
           class="col-lg-6 col-12 landing-page__section--divided-section__right-section"
         >

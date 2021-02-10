@@ -1,7 +1,7 @@
 <template>
   <DividedSection>
     <template v-slot:left_section>
-      <div class="t-align-sm-l t-align-c">
+      <div class="t-align-lg-l t-align-c">
         <div class="heading-font stroke-font">
           PRACTICE.
         </div>
@@ -21,7 +21,7 @@
         </div>
       </div>
       <div
-        class="row no-gutters justify-content-sm-start justify-content-center"
+        class="row no-gutters justify-content-lg-start justify-content-center"
       >
         <button class="button-primary">
           Start Practicing
@@ -34,7 +34,7 @@
     </template>
 
     <template v-slot:right_section>
-      <div class="t-align-sm-l t-align-c">
+      <div class="t-align-lg-l t-align-c">
         <div class="heading-font stroke-font">
           GET HIRED.
         </div>
@@ -55,7 +55,7 @@
         </div>
       </div>
       <div
-        class="row no-gutters justify-content-sm-start justify-content-center"
+        class="row no-gutters justify-content-lg-start justify-content-center"
       >
         <button class="button-primary">
           Apply for jobs

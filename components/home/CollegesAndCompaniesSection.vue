@@ -23,7 +23,7 @@
                     style="height: 50px;"
                   />
                 </div>
-                <div class="flex-1">
+                <div class="flex-1 t-align-lg-l t-align-sm-c t-align-l">
                   <div class="heading-5">Placement Training</div>
                 </div>
               </div>
@@ -38,7 +38,7 @@
                     style="height: 50px;"
                   />
                 </div>
-                <div class="flex-1">
+                <div class="flex-1 t-align-lg-l t-align-sm-c t-align-l">
                   <div class="heading-5">Online Exam Platform</div>
                 </div>
               </div>
@@ -53,7 +53,7 @@
                     style="height: 50px;"
                   />
                 </div>
-                <div class="flex-1">
+                <div class="flex-1 t-align-lg-l t-align-sm-c t-align-l">
                   <div class="heading-5">Workshops &amp; More</div>
                 </div>
               </div>
@@ -90,7 +90,7 @@
                     style="height: 50px;"
                   />
                 </div>
-                <div class="flex-1">
+                <div class="flex-1 t-align-lg-l t-align-sm-c t-align-l">
                   <div class="heading-5">Training Programs</div>
                 </div>
               </div>
@@ -103,7 +103,7 @@
                     style="height: 50px;"
                   />
                 </div>
-                <div class="flex-1">
+                <div class="flex-1 t-align-lg-l t-align-sm-c t-align-l">
                   <div class="heading-5">Hire Students</div>
                 </div>
               </div>
@@ -116,7 +116,7 @@
                     style="height: 50px;"
                   />
                 </div>
-                <div class="flex-1">
+                <div class="flex-1 t-align-lg-l t-align-sm-c t-align-l">
                   <div class="heading-5">Evaluations &amp; More</div>
                 </div>
               </div>

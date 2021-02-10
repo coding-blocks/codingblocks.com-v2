@@ -5,13 +5,13 @@
     >
       <div class="col-12 d-md-none d-block mb-40">
         <div class="row no-gutters align-items-center">
-          <div class="col-sm-5 col-12 mb-sm-none mb-40">
+          <div class="col-sm-6 col-12 mb-sm-none mb-40">
             <img
               src="https://i2.wp.com/digital-photography-school.com/wp-content/uploads/2011/07/outdoor-portraits-1.jpg?resize=2000%2C1160&ssl=1"
               class="success-story__image"
             />
           </div>
-          <div class="flex-1">
+          <div class="flex-1 pl-20">
             <div class="heading-2 bold text-orange mb-3">
               Nilesh placed at Apple, 72LPA
             </div>

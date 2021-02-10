@@ -15,7 +15,7 @@
           />
         </div>
       </div>
-      <div class="mt-50">
+      <div class="mt-sm-50 mt-25">
         <CardCarousel>
           <SuccessStory />
         </CardCarousel>

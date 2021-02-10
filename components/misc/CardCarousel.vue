@@ -20,24 +20,28 @@
 
 <script>
 export default {
-  // mounted() {
-  //   const leftButton = document.querySelector("#move-left");
-  //   const rightButton = document.querySelector("#move-right");
-  //   const carousel = document.querySelector("#carousel");
+  mounted() {
+    const leftButton = document.querySelector("#move-left");
+    const rightButton = document.querySelector("#move-right");
+    const carousel = document.querySelector("#carousel");
 
-  //   leftButton.addEventListener("click", () => {
-  //     for (let i = 0; i < 30000; i++) {
-  //       carousel.scrollLeft += carousel.clientWidth / 30000;
-  //     }
-  //     // carousel.scrollLeft += carousel.clientWidth;
-  //   });
+    leftButton.addEventListener("click", () => {
+      carousel.scrollTo({
+        top: 0,
+        left: -carousel.clientWidth,
+        behavior: "smooth",
+      });
+      // carousel.scrollLeft += carousel.clientWidth;
+    });
 
-  //   rightButton.addEventListener("click", () => {
-  //     for (let i = 0; i < 30000; i++) {
-  //       carousel.scrollLeft -= carousel.clientWidth / 30000;
-  //     }
-  //     // carousel.scrollLeft -= carousel.clientWidth;
-  //   });
-  // },
+    rightButton.addEventListener("click", () => {
+      carousel.scrollTo({
+        top: 0,
+        left: carousel.clientWidth,
+        behavior: "smooth",
+      });
+      // carousel.scrollLeft -= carousel.clientWidth;
+    });
+  },
 };
 </script>

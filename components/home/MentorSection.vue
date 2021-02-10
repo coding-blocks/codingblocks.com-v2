@@ -2,7 +2,7 @@
   <div class="landing-page__section">
     <div class="width-limiter">
       <div class="row no-gutters justify-content-between align-items-center">
-        <div class="flex-1 t-align-sm-l t-align-c">
+        <div class="flex-1 t-align-md-l t-align-c">
           <div class="heading-font stroke-font">
             OUR EXPERT
           </div>
@@ -14,7 +14,7 @@
           />
         </div>
         <div
-          class="col-md-3 col-12 mt-md-none mt-40 t-align-md-r talign-l d-sm-block d-none"
+          class="col-3 t-align-r d-md-block d-none"
         >
           <button class="button-secondary">
             Learn more about us
@@ -77,7 +77,7 @@
           </div>
         </div>
       </div>
-      <div class="row no-gutters justify-content-center d-sm-none d-block">
+      <div class="t-align-c d-md-none d-block">
         <button class="button-secondary">
           Learn more about us
           <img

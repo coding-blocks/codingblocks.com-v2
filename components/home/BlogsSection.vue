@@ -14,7 +14,7 @@
           />
         </div>
         <div
-          class="col-3 d-md-block d-none "
+          class="col-3 d-md-block d-none t-align-r"
         >
           <button class="button-secondary">
             Read All Blogs

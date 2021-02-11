@@ -3,7 +3,7 @@
     <div class="width-limiter">
       <div class="row no-gutters mb-60">
         <div
-          class="col-xl-4 bg-grey-light-3 pt-xl-60 pt-30 t-align-c course-section__navigation"
+          class="col-xl-4 bg-grey-light-3 pt-xl-60 pt-30 t-align-c course-section__navigation z-pos"
         >
           <div class="heading-font stroke-font">
             LEARN.
@@ -69,802 +69,804 @@
             </div>
           </div>
         </div>
-        <div
-          class="col-xl-8 course-section__cards pt-lg-60 pt-30"
-          id="online-courses-section"
-        >
-          <div class="heading-4 bold">
-            Learn to code professionally in the industry!
-          </div>
-          <div class="heading-6 text-blue mb-40 mt-2">
-            Discover our most loved courses!
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-md-6 col-sm-8 col-12 mb-30">
-              <div class="bg-gradient-pink p-4 card">
-                <div
-                  class="row no-gutters justify-content-between align-items-center"
-                >
-                  <div class="col-xl-8 col-9 white pr-3">
-                    <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
-                    <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
-                    <div class="row no-gutters align-items-center mt-2">
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <div class="flex-1 card-md ml-1 mt-1">
-                        <strong>4.8/5.0,&nbsp;</strong>
-                        435&nbsp;ratings
+        <div class="row c-card-carousel col-xl-8" id="course-sections-carousel z-neg">
+          <div
+            class="col-12 course-section__cards pt-lg-60 pt-30"
+            id="online-courses-section"
+          >
+            <div class="heading-4 bold">
+              Learn to code professionally in the industry!
+            </div>
+            <div class="heading-6 text-blue mb-40 mt-2">
+              Discover our most loved courses!
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-6 col-sm-8 col-12 mb-30">
+                <div class="bg-gradient-pink p-4 card">
+                  <div
+                    class="row no-gutters justify-content-between align-items-center"
+                  >
+                    <div class="col-xl-8 col-9 white pr-3">
+                      <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
+                      <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
+                      <div class="row no-gutters align-items-center mt-2">
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <div class="flex-1 card-md ml-1 mt-1">
+                          <strong>4.8/5.0,&nbsp;</strong>
+                          435&nbsp;ratings
+                        </div>
                       </div>
-                    </div>
-                    <div class="divider-h my-4 bg-white"></div>
-                    <div
-                      class="row no-gutters justify-content-between align-items-center"
-                    >
-                      <div class="flex-1 pr-2">
-                        <div class="card-sm bold">Starting from</div>
-                        <div class="v-align-ma">
-                          <span class="mr-2 font-lg bold"
-                            >&#8377;&nbsp;3499</span
-                          >
-                          <span class="font-sm bold med-grey"
-                            ><del>&#8377;&nbsp;12999</del></span
-                          >
+                      <div class="divider-h my-4 bg-white"></div>
+                      <div
+                        class="row no-gutters justify-content-between align-items-center"
+                      >
+                        <div class="flex-1 pr-2">
+                          <div class="card-sm bold">Starting from</div>
+                          <div class="v-align-ma">
+                            <span class="mr-2 font-lg bold"
+                              >&#8377;&nbsp;3499</span
+                            >
+                            <span class="font-sm bold med-grey"
+                              ><del>&#8377;&nbsp;12999</del></span
+                            >
+                          </div>
                         </div>
                       </div>
                     </div>
+                    <div
+                      class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit"
+                    >
+                      <img
+                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg"
+                      />
+                    </div>
                   </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-8 col-12 mb-30">
+                <div class="bg-gradient-pink p-4 card">
                   <div
-                    class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit"
+                    class="row no-gutters justify-content-between align-items-center"
                   >
-                    <img
-                      src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg"
-                    />
+                    <div class="col-xl-8 col-9 white pr-3">
+                      <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
+                      <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
+                      <div class="row no-gutters align-items-center mt-2">
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <div class="flex-1 card-md ml-1 mt-1">
+                          <strong>4.8/5.0,&nbsp;</strong>
+                          435&nbsp;ratings
+                        </div>
+                      </div>
+                      <div class="divider-h my-4 bg-white"></div>
+                      <div
+                        class="row no-gutters justify-content-between align-items-center"
+                      >
+                        <div class="flex-1 pr-2">
+                          <div class="card-sm bold">Starting from</div>
+                          <div class="v-align-ma">
+                            <span class="mr-2 font-lg bold"
+                              >&#8377;&nbsp;3499</span
+                            >
+                            <span class="font-sm bold med-grey"
+                              ><del>&#8377;&nbsp;12999</del></span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit"
+                    >
+                      <img
+                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-8 col-12 mb-30">
+                <div class="bg-gradient-pink p-4 card">
+                  <div
+                    class="row no-gutters justify-content-between align-items-center"
+                  >
+                    <div class="col-xl-8 col-9 white pr-3">
+                      <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
+                      <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
+                      <div class="row no-gutters align-items-center mt-2">
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <div class="flex-1 card-md ml-1 mt-1">
+                          <strong>4.8/5.0,&nbsp;</strong>
+                          435&nbsp;ratings
+                        </div>
+                      </div>
+                      <div class="divider-h my-4 bg-white"></div>
+                      <div
+                        class="row no-gutters justify-content-between align-items-center"
+                      >
+                        <div class="flex-1 pr-2">
+                          <div class="card-sm bold">Starting from</div>
+                          <div class="v-align-ma">
+                            <span class="mr-2 font-lg bold"
+                              >&#8377;&nbsp;3499</span
+                            >
+                            <span class="font-sm bold med-grey"
+                              ><del>&#8377;&nbsp;12999</del></span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit"
+                    >
+                      <img
+                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-8 col-12 mb-30">
+                <div class="bg-gradient-pink p-4 card">
+                  <div
+                    class="row no-gutters justify-content-between align-items-center"
+                  >
+                    <div class="col-xl-8 col-9 white pr-3">
+                      <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
+                      <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
+                      <div class="row no-gutters align-items-center mt-2">
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <div class="flex-1 card-md ml-1 mt-1">
+                          <strong>4.8/5.0,&nbsp;</strong>
+                          435&nbsp;ratings
+                        </div>
+                      </div>
+                      <div class="divider-h my-4 bg-white"></div>
+                      <div
+                        class="row no-gutters justify-content-between align-items-center"
+                      >
+                        <div class="flex-1 pr-2">
+                          <div class="card-sm bold">Starting from</div>
+                          <div class="v-align-ma">
+                            <span class="mr-2 font-lg bold"
+                              >&#8377;&nbsp;3499</span
+                            >
+                            <span class="font-sm bold med-grey"
+                              ><del>&#8377;&nbsp;12999</del></span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit"
+                    >
+                      <img
+                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-sm-8 col-12 mb-30">
-              <div class="bg-gradient-pink p-4 card">
-                <div
-                  class="row no-gutters justify-content-between align-items-center"
-                >
-                  <div class="col-xl-8 col-9 white pr-3">
-                    <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
-                    <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
-                    <div class="row no-gutters align-items-center mt-2">
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <div class="flex-1 card-md ml-1 mt-1">
-                        <strong>4.8/5.0,&nbsp;</strong>
-                        435&nbsp;ratings
-                      </div>
-                    </div>
-                    <div class="divider-h my-4 bg-white"></div>
-                    <div
-                      class="row no-gutters justify-content-between align-items-center"
-                    >
-                      <div class="flex-1 pr-2">
-                        <div class="card-sm bold">Starting from</div>
-                        <div class="v-align-ma">
-                          <span class="mr-2 font-lg bold"
-                            >&#8377;&nbsp;3499</span
-                          >
-                          <span class="font-sm bold med-grey"
-                            ><del>&#8377;&nbsp;12999</del></span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit"
-                  >
-                    <img
-                      src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-8 col-12 mb-30">
-              <div class="bg-gradient-pink p-4 card">
-                <div
-                  class="row no-gutters justify-content-between align-items-center"
-                >
-                  <div class="col-xl-8 col-9 white pr-3">
-                    <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
-                    <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
-                    <div class="row no-gutters align-items-center mt-2">
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <div class="flex-1 card-md ml-1 mt-1">
-                        <strong>4.8/5.0,&nbsp;</strong>
-                        435&nbsp;ratings
-                      </div>
-                    </div>
-                    <div class="divider-h my-4 bg-white"></div>
-                    <div
-                      class="row no-gutters justify-content-between align-items-center"
-                    >
-                      <div class="flex-1 pr-2">
-                        <div class="card-sm bold">Starting from</div>
-                        <div class="v-align-ma">
-                          <span class="mr-2 font-lg bold"
-                            >&#8377;&nbsp;3499</span
-                          >
-                          <span class="font-sm bold med-grey"
-                            ><del>&#8377;&nbsp;12999</del></span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit"
-                  >
-                    <img
-                      src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-8 col-12 mb-30">
-              <div class="bg-gradient-pink p-4 card">
-                <div
-                  class="row no-gutters justify-content-between align-items-center"
-                >
-                  <div class="col-xl-8 col-9 white pr-3">
-                    <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
-                    <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
-                    <div class="row no-gutters align-items-center mt-2">
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <div class="flex-1 card-md ml-1 mt-1">
-                        <strong>4.8/5.0,&nbsp;</strong>
-                        435&nbsp;ratings
-                      </div>
-                    </div>
-                    <div class="divider-h my-4 bg-white"></div>
-                    <div
-                      class="row no-gutters justify-content-between align-items-center"
-                    >
-                      <div class="flex-1 pr-2">
-                        <div class="card-sm bold">Starting from</div>
-                        <div class="v-align-ma">
-                          <span class="mr-2 font-lg bold"
-                            >&#8377;&nbsp;3499</span
-                          >
-                          <span class="font-sm bold med-grey"
-                            ><del>&#8377;&nbsp;12999</del></span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit"
-                  >
-                    <img
-                      src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="t-align-c">
-            <button class="button-tertiary">
-              Explore All Online Courses
-              <img
-                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
-                class="ml-2"
-              />
-            </button>
-          </div>
-        </div>
-        <div
-          class="col-xl-8 course-section__cards pt-lg-60 pt-30 d-none"
-          id="classroom-courses-section"
-        >
-          <div class="heading-4 bold">
-            Learn to code professionally in the industry!
-          </div>
-          <div class="heading-6 text-blue mb-40 mt-2">
-            Discover our most loved courses!
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-md-6 col-sm-8 col-12 mb-30">
-              <div class="bg-gradient-blue p-4 card">
-                <div
-                  class="row no-gutters justify-content-between align-items-center"
-                >
-                  <div class="col-xl-8 col-9 white pr-3">
-                    <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
-                    <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
-                    <div class="row no-gutters align-items-center mt-2">
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <div class="flex-1 card-md ml-1 mt-1">
-                        <strong>4.8/5.0,&nbsp;</strong>
-                        435&nbsp;ratings
-                      </div>
-                    </div>
-                    <div class="divider-h my-4 bg-white"></div>
-                    <div
-                      class="row no-gutters justify-content-between align-items-center"
-                    >
-                      <div class="flex-1 pr-2">
-                        <div class="card-sm bold">Starting from</div>
-                        <div class="v-align-ma">
-                          <span class="mr-2 font-lg bold"
-                            >&#8377;&nbsp;3499</span
-                          >
-                          <span class="font-sm bold med-grey"
-                            ><del>&#8377;&nbsp;12999</del></span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit"
-                  >
-                    <img
-                      src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-8 col-12 mb-30">
-              <div class="bg-gradient-pink p-4 card">
-                <div
-                  class="row no-gutters justify-content-between align-items-center"
-                >
-                  <div class="col-xl-8 col-9 white pr-3">
-                    <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
-                    <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
-                    <div class="row no-gutters align-items-center mt-2">
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <div class="flex-1 card-md ml-1 mt-1">
-                        <strong>4.8/5.0,&nbsp;</strong>
-                        435&nbsp;ratings
-                      </div>
-                    </div>
-                    <div class="divider-h my-4 bg-white"></div>
-                    <div
-                      class="row no-gutters justify-content-between align-items-center"
-                    >
-                      <div class="flex-1 pr-2">
-                        <div class="card-sm bold">Starting from</div>
-                        <div class="v-align-ma">
-                          <span class="mr-2 font-lg bold"
-                            >&#8377;&nbsp;3499</span
-                          >
-                          <span class="font-sm bold med-grey"
-                            ><del>&#8377;&nbsp;12999</del></span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit"
-                  >
-                    <img
-                      src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-8 col-12 mb-30">
-              <div class="bg-gradient-pink p-4 card">
-                <div
-                  class="row no-gutters justify-content-between align-items-center"
-                >
-                  <div class="col-xl-8 col-9 white pr-3">
-                    <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
-                    <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
-                    <div class="row no-gutters align-items-center mt-2">
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <div class="flex-1 card-md ml-1 mt-1">
-                        <strong>4.8/5.0,&nbsp;</strong>
-                        435&nbsp;ratings
-                      </div>
-                    </div>
-                    <div class="divider-h my-4 bg-white"></div>
-                    <div
-                      class="row no-gutters justify-content-between align-items-center"
-                    >
-                      <div class="flex-1 pr-2">
-                        <div class="card-sm bold">Starting from</div>
-                        <div class="v-align-ma">
-                          <span class="mr-2 font-lg bold"
-                            >&#8377;&nbsp;3499</span
-                          >
-                          <span class="font-sm bold med-grey"
-                            ><del>&#8377;&nbsp;12999</del></span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit"
-                  >
-                    <img
-                      src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-8 col-12 mb-30">
-              <div class="bg-gradient-pink p-4 card">
-                <div
-                  class="row no-gutters justify-content-between align-items-center"
-                >
-                  <div class="col-xl-8 col-9 white pr-3">
-                    <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
-                    <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
-                    <div class="row no-gutters align-items-center mt-2">
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <div class="flex-1 card-md ml-1 mt-1">
-                        <strong>4.8/5.0,&nbsp;</strong>
-                        435&nbsp;ratings
-                      </div>
-                    </div>
-                    <div class="divider-h my-4 bg-white"></div>
-                    <div
-                      class="row no-gutters justify-content-between align-items-center"
-                    >
-                      <div class="flex-1 pr-2">
-                        <div class="card-sm bold">Starting from</div>
-                        <div class="v-align-ma">
-                          <span class="mr-2 font-lg bold"
-                            >&#8377;&nbsp;3499</span
-                          >
-                          <span class="font-sm bold med-grey"
-                            ><del>&#8377;&nbsp;12999</del></span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit"
-                  >
-                    <img
-                      src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg"
-                    />
-                  </div>
-                </div>
-              </div>
+            <div class="t-align-c">
+              <button class="button-tertiary">
+                Explore All Online Courses
+                <img
+                  src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
+                  class="ml-2"
+                />
+              </button>
             </div>
           </div>
-          <div class="t-align-c">
-            <button class="button-tertiary">
-              Explore All Online Courses
-              <img
-                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
-                class="ml-2"
-              />
-            </button>
-          </div>
-        </div>
-        <div
-          class="col-xl-8 course-section__cards pt-lg-60 pt-30 d-none"
-          id="live-courses-section"
-        >
-          <div class="heading-4 bold">
-            Learn to code professionally in the industry!
-          </div>
-          <div class="heading-6 text-blue mb-40 mt-2">
-            Discover our most loved courses!
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-md-6 col-sm-8 col-12 mb-30">
-              <div class="bg-gradient-green p-4 card">
-                <div
-                  class="row no-gutters justify-content-between align-items-center"
-                >
-                  <div class="col-xl-8 col-9 white pr-3">
-                    <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
-                    <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
-                    <div class="row no-gutters align-items-center mt-2">
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <div class="flex-1 card-md ml-1 mt-1">
-                        <strong>4.8/5.0,&nbsp;</strong>
-                        435&nbsp;ratings
+          <div
+            class="col-12 course-section__cards pt-lg-60 pt-30"
+            id="classroom-courses-section"
+          >
+            <div class="heading-4 bold">
+              Learn to code professionally in the industry!
+            </div>
+            <div class="heading-6 text-blue mb-40 mt-2">
+              Discover our most loved courses!
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-6 col-sm-8 col-12 mb-30">
+                <div class="bg-gradient-blue p-4 card">
+                  <div
+                    class="row no-gutters justify-content-between align-items-center"
+                  >
+                    <div class="col-xl-8 col-9 white pr-3">
+                      <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
+                      <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
+                      <div class="row no-gutters align-items-center mt-2">
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <div class="flex-1 card-md ml-1 mt-1">
+                          <strong>4.8/5.0,&nbsp;</strong>
+                          435&nbsp;ratings
+                        </div>
                       </div>
-                    </div>
-                    <div class="divider-h my-4 bg-white"></div>
-                    <div
-                      class="row no-gutters justify-content-between align-items-center"
-                    >
-                      <div class="flex-1 pr-2">
-                        <div class="card-sm bold">Starting from</div>
-                        <div class="v-align-ma">
-                          <span class="mr-2 font-lg bold"
-                            >&#8377;&nbsp;3499</span
-                          >
-                          <span class="font-sm bold med-grey"
-                            ><del>&#8377;&nbsp;12999</del></span
-                          >
+                      <div class="divider-h my-4 bg-white"></div>
+                      <div
+                        class="row no-gutters justify-content-between align-items-center"
+                      >
+                        <div class="flex-1 pr-2">
+                          <div class="card-sm bold">Starting from</div>
+                          <div class="v-align-ma">
+                            <span class="mr-2 font-lg bold"
+                              >&#8377;&nbsp;3499</span
+                            >
+                            <span class="font-sm bold med-grey"
+                              ><del>&#8377;&nbsp;12999</del></span
+                            >
+                          </div>
                         </div>
                       </div>
                     </div>
+                    <div
+                      class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit"
+                    >
+                      <img
+                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg"
+                      />
+                    </div>
                   </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-8 col-12 mb-30">
+                <div class="bg-gradient-pink p-4 card">
                   <div
-                    class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit"
+                    class="row no-gutters justify-content-between align-items-center"
                   >
-                    <img
-                      src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg"
-                    />
+                    <div class="col-xl-8 col-9 white pr-3">
+                      <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
+                      <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
+                      <div class="row no-gutters align-items-center mt-2">
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <div class="flex-1 card-md ml-1 mt-1">
+                          <strong>4.8/5.0,&nbsp;</strong>
+                          435&nbsp;ratings
+                        </div>
+                      </div>
+                      <div class="divider-h my-4 bg-white"></div>
+                      <div
+                        class="row no-gutters justify-content-between align-items-center"
+                      >
+                        <div class="flex-1 pr-2">
+                          <div class="card-sm bold">Starting from</div>
+                          <div class="v-align-ma">
+                            <span class="mr-2 font-lg bold"
+                              >&#8377;&nbsp;3499</span
+                            >
+                            <span class="font-sm bold med-grey"
+                              ><del>&#8377;&nbsp;12999</del></span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit"
+                    >
+                      <img
+                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-8 col-12 mb-30">
+                <div class="bg-gradient-pink p-4 card">
+                  <div
+                    class="row no-gutters justify-content-between align-items-center"
+                  >
+                    <div class="col-xl-8 col-9 white pr-3">
+                      <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
+                      <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
+                      <div class="row no-gutters align-items-center mt-2">
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <div class="flex-1 card-md ml-1 mt-1">
+                          <strong>4.8/5.0,&nbsp;</strong>
+                          435&nbsp;ratings
+                        </div>
+                      </div>
+                      <div class="divider-h my-4 bg-white"></div>
+                      <div
+                        class="row no-gutters justify-content-between align-items-center"
+                      >
+                        <div class="flex-1 pr-2">
+                          <div class="card-sm bold">Starting from</div>
+                          <div class="v-align-ma">
+                            <span class="mr-2 font-lg bold"
+                              >&#8377;&nbsp;3499</span
+                            >
+                            <span class="font-sm bold med-grey"
+                              ><del>&#8377;&nbsp;12999</del></span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit"
+                    >
+                      <img
+                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-8 col-12 mb-30">
+                <div class="bg-gradient-pink p-4 card">
+                  <div
+                    class="row no-gutters justify-content-between align-items-center"
+                  >
+                    <div class="col-xl-8 col-9 white pr-3">
+                      <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
+                      <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
+                      <div class="row no-gutters align-items-center mt-2">
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <div class="flex-1 card-md ml-1 mt-1">
+                          <strong>4.8/5.0,&nbsp;</strong>
+                          435&nbsp;ratings
+                        </div>
+                      </div>
+                      <div class="divider-h my-4 bg-white"></div>
+                      <div
+                        class="row no-gutters justify-content-between align-items-center"
+                      >
+                        <div class="flex-1 pr-2">
+                          <div class="card-sm bold">Starting from</div>
+                          <div class="v-align-ma">
+                            <span class="mr-2 font-lg bold"
+                              >&#8377;&nbsp;3499</span
+                            >
+                            <span class="font-sm bold med-grey"
+                              ><del>&#8377;&nbsp;12999</del></span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit"
+                    >
+                      <img
+                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-sm-8 col-12 mb-30">
-              <div class="bg-gradient-pink p-4 card">
-                <div
-                  class="row no-gutters justify-content-between align-items-center"
-                >
-                  <div class="col-xl-8 col-9 white pr-3">
-                    <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
-                    <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
-                    <div class="row no-gutters align-items-center mt-2">
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <div class="flex-1 card-md ml-1 mt-1">
-                        <strong>4.8/5.0,&nbsp;</strong>
-                        435&nbsp;ratings
-                      </div>
-                    </div>
-                    <div class="divider-h my-4 bg-white"></div>
-                    <div
-                      class="row no-gutters justify-content-between align-items-center"
-                    >
-                      <div class="flex-1 pr-2">
-                        <div class="card-sm bold">Starting from</div>
-                        <div class="v-align-ma">
-                          <span class="mr-2 font-lg bold"
-                            >&#8377;&nbsp;3499</span
-                          >
-                          <span class="font-sm bold med-grey"
-                            ><del>&#8377;&nbsp;12999</del></span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit"
-                  >
-                    <img
-                      src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-8 col-12 mb-30">
-              <div class="bg-gradient-pink p-4 card">
-                <div
-                  class="row no-gutters justify-content-between align-items-center"
-                >
-                  <div class="col-xl-8 col-9 white pr-3">
-                    <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
-                    <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
-                    <div class="row no-gutters align-items-center mt-2">
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <div class="flex-1 card-md ml-1 mt-1">
-                        <strong>4.8/5.0,&nbsp;</strong>
-                        435&nbsp;ratings
-                      </div>
-                    </div>
-                    <div class="divider-h my-4 bg-white"></div>
-                    <div
-                      class="row no-gutters justify-content-between align-items-center"
-                    >
-                      <div class="flex-1 pr-2">
-                        <div class="card-sm bold">Starting from</div>
-                        <div class="v-align-ma">
-                          <span class="mr-2 font-lg bold"
-                            >&#8377;&nbsp;3499</span
-                          >
-                          <span class="font-sm bold med-grey"
-                            ><del>&#8377;&nbsp;12999</del></span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit"
-                  >
-                    <img
-                      src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-8 col-12 mb-30">
-              <div class="bg-gradient-pink p-4 card">
-                <div
-                  class="row no-gutters justify-content-between align-items-center"
-                >
-                  <div class="col-xl-8 col-9 white pr-3">
-                    <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
-                    <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
-                    <div class="row no-gutters align-items-center mt-2">
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <img
-                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg"
-                        class="mr-1"
-                      />
-                      <div class="flex-1 card-md ml-1 mt-1">
-                        <strong>4.8/5.0,&nbsp;</strong>
-                        435&nbsp;ratings
-                      </div>
-                    </div>
-                    <div class="divider-h my-4 bg-white"></div>
-                    <div
-                      class="row no-gutters justify-content-between align-items-center"
-                    >
-                      <div class="flex-1 pr-2">
-                        <div class="card-sm bold">Starting from</div>
-                        <div class="v-align-ma">
-                          <span class="mr-2 font-lg bold"
-                            >&#8377;&nbsp;3499</span
-                          >
-                          <span class="font-sm bold med-grey"
-                            ><del>&#8377;&nbsp;12999</del></span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit"
-                  >
-                    <img
-                      src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg"
-                    />
-                  </div>
-                </div>
-              </div>
+            <div class="t-align-c">
+              <button class="button-tertiary">
+                Explore All Online Courses
+                <img
+                  src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
+                  class="ml-2"
+                />
+              </button>
             </div>
           </div>
-          <div class="t-align-c">
-            <button class="button-tertiary">
-              Explore All Online Courses
-              <img
-                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
-                class="ml-2"
-              />
-            </button>
+          <div
+            class="col-12 course-section__cards pt-lg-60 pt-30"
+            id="live-courses-section"
+          >
+            <div class="heading-4 bold">
+              Learn to code professionally in the industry!
+            </div>
+            <div class="heading-6 text-blue mb-40 mt-2">
+              Discover our most loved courses!
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-6 col-sm-8 col-12 mb-30">
+                <div class="bg-gradient-green p-4 card">
+                  <div
+                    class="row no-gutters justify-content-between align-items-center"
+                  >
+                    <div class="col-xl-8 col-9 white pr-3">
+                      <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
+                      <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
+                      <div class="row no-gutters align-items-center mt-2">
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <div class="flex-1 card-md ml-1 mt-1">
+                          <strong>4.8/5.0,&nbsp;</strong>
+                          435&nbsp;ratings
+                        </div>
+                      </div>
+                      <div class="divider-h my-4 bg-white"></div>
+                      <div
+                        class="row no-gutters justify-content-between align-items-center"
+                      >
+                        <div class="flex-1 pr-2">
+                          <div class="card-sm bold">Starting from</div>
+                          <div class="v-align-ma">
+                            <span class="mr-2 font-lg bold"
+                              >&#8377;&nbsp;3499</span
+                            >
+                            <span class="font-sm bold med-grey"
+                              ><del>&#8377;&nbsp;12999</del></span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit"
+                    >
+                      <img
+                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-8 col-12 mb-30">
+                <div class="bg-gradient-pink p-4 card">
+                  <div
+                    class="row no-gutters justify-content-between align-items-center"
+                  >
+                    <div class="col-xl-8 col-9 white pr-3">
+                      <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
+                      <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
+                      <div class="row no-gutters align-items-center mt-2">
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <div class="flex-1 card-md ml-1 mt-1">
+                          <strong>4.8/5.0,&nbsp;</strong>
+                          435&nbsp;ratings
+                        </div>
+                      </div>
+                      <div class="divider-h my-4 bg-white"></div>
+                      <div
+                        class="row no-gutters justify-content-between align-items-center"
+                      >
+                        <div class="flex-1 pr-2">
+                          <div class="card-sm bold">Starting from</div>
+                          <div class="v-align-ma">
+                            <span class="mr-2 font-lg bold"
+                              >&#8377;&nbsp;3499</span
+                            >
+                            <span class="font-sm bold med-grey"
+                              ><del>&#8377;&nbsp;12999</del></span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit"
+                    >
+                      <img
+                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-8 col-12 mb-30">
+                <div class="bg-gradient-pink p-4 card">
+                  <div
+                    class="row no-gutters justify-content-between align-items-center"
+                  >
+                    <div class="col-xl-8 col-9 white pr-3">
+                      <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
+                      <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
+                      <div class="row no-gutters align-items-center mt-2">
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <div class="flex-1 card-md ml-1 mt-1">
+                          <strong>4.8/5.0,&nbsp;</strong>
+                          435&nbsp;ratings
+                        </div>
+                      </div>
+                      <div class="divider-h my-4 bg-white"></div>
+                      <div
+                        class="row no-gutters justify-content-between align-items-center"
+                      >
+                        <div class="flex-1 pr-2">
+                          <div class="card-sm bold">Starting from</div>
+                          <div class="v-align-ma">
+                            <span class="mr-2 font-lg bold"
+                              >&#8377;&nbsp;3499</span
+                            >
+                            <span class="font-sm bold med-grey"
+                              ><del>&#8377;&nbsp;12999</del></span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit"
+                    >
+                      <img
+                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-8 col-12 mb-30">
+                <div class="bg-gradient-pink p-4 card">
+                  <div
+                    class="row no-gutters justify-content-between align-items-center"
+                  >
+                    <div class="col-xl-8 col-9 white pr-3">
+                      <div class="card-xs chars-spaced">BEGINNERS COURSE</div>
+                      <h5 class="bold mt-1 text-ellipses">Android App Dev.</h5>
+                      <div class="row no-gutters align-items-center mt-2">
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/pos-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <img
+                          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/neg-rating-small.svg"
+                          class="mr-1"
+                        />
+                        <div class="flex-1 card-md ml-1 mt-1">
+                          <strong>4.8/5.0,&nbsp;</strong>
+                          435&nbsp;ratings
+                        </div>
+                      </div>
+                      <div class="divider-h my-4 bg-white"></div>
+                      <div
+                        class="row no-gutters justify-content-between align-items-center"
+                      >
+                        <div class="flex-1 pr-2">
+                          <div class="card-sm bold">Starting from</div>
+                          <div class="v-align-ma">
+                            <span class="mr-2 font-lg bold"
+                              >&#8377;&nbsp;3499</span
+                            >
+                            <span class="font-sm bold med-grey"
+                              ><del>&#8377;&nbsp;12999</del></span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="s-60x60 round border p-2 all-center border-2 border-white bg-inherit"
+                    >
+                      <img
+                        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="t-align-c">
+              <button class="button-tertiary">
+                Explore All Online Courses
+                <img
+                  src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
+                  class="ml-2"
+                />
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -892,3 +894,22 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  mounted() {
+    const onlineButton = document.querySelector("#online-courses");
+    const classroomButton = document.querySelector("#classroom-courses");
+    const liveButton = document.querySelector("#live-courses");
+    const carousel = document.querySelector("#course-sections-carousel");
+
+    onlineButton.addEventListener("click", () => {
+      carousel.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
+    });
+  },
+};
+</script>

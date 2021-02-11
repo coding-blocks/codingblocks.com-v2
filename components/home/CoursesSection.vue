@@ -69,7 +69,10 @@
             </div>
           </div>
         </div>
-        <div class="row c-card-carousel col-xl-8" id="course-sections-carousel z-neg">
+        <div
+          class="row c-card-carousel col-xl-8 overflow-hidden"
+          id="course-sections-carousel"
+        >
           <div
             class="col-12 course-section__cards pt-lg-60 pt-30"
             id="online-courses-section"
@@ -907,6 +910,22 @@ export default {
       carousel.scrollTo({
         top: 0,
         left: 0,
+        behavior: "smooth",
+      });
+    });
+
+    classroomButton.addEventListener("click", () => {
+      carousel.scrollTo({
+        top: 0,
+        left: carousel.clientWidth,
+        behavior: "smooth",
+      });
+    });
+
+    liveButton.addEventListener("click", () => {
+      carousel.scrollTo({
+        top: 0,
+        left: 2 * carousel.clientWidth,
         behavior: "smooth",
       });
     });

@@ -11,7 +11,6 @@ export { default as NewsSection } from '../../components/home/NewsSection.vue'
 export { default as PracticeAndHireSection } from '../../components/home/PracticeAndHireSection.vue'
 export { default as SuccessStoriesSection } from '../../components/home/SuccessStoriesSection.vue'
 export { default as Universe } from '../../components/home/Universe.vue'
-export { default as UniverseSmall } from '../../components/home/UniverseSmall.vue'
 export { default as WelcomeSection } from '../../components/home/WelcomeSection.vue'
 export { default as BannerCarousel } from '../../components/misc/BannerCarousel.vue'
 export { default as CardCarousel } from '../../components/misc/CardCarousel.vue'
@@ -34,7 +33,6 @@ export const LazyNewsSection = import('../../components/home/NewsSection.vue' /*
 export const LazyPracticeAndHireSection = import('../../components/home/PracticeAndHireSection.vue' /* webpackChunkName: "components/home/PracticeAndHireSection" */).then(c => c.default || c)
 export const LazySuccessStoriesSection = import('../../components/home/SuccessStoriesSection.vue' /* webpackChunkName: "components/home/SuccessStoriesSection" */).then(c => c.default || c)
 export const LazyUniverse = import('../../components/home/Universe.vue' /* webpackChunkName: "components/home/Universe" */).then(c => c.default || c)
-export const LazyUniverseSmall = import('../../components/home/UniverseSmall.vue' /* webpackChunkName: "components/home/UniverseSmall" */).then(c => c.default || c)
 export const LazyWelcomeSection = import('../../components/home/WelcomeSection.vue' /* webpackChunkName: "components/home/WelcomeSection" */).then(c => c.default || c)
 export const LazyBannerCarousel = import('../../components/misc/BannerCarousel.vue' /* webpackChunkName: "components/misc/BannerCarousel" */).then(c => c.default || c)
 export const LazyCardCarousel = import('../../components/misc/CardCarousel.vue' /* webpackChunkName: "components/misc/CardCarousel" */).then(c => c.default || c)

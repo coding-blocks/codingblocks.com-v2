@@ -77,12 +77,6 @@
   "LazyUniverse": {
     "description": "Auto imported from components/home/Universe.vue"
   },
-  "UniverseSmall": {
-    "description": "Auto imported from components/home/UniverseSmall.vue"
-  },
-  "LazyUniverseSmall": {
-    "description": "Auto imported from components/home/UniverseSmall.vue"
-  },
   "WelcomeSection": {
     "description": "Auto imported from components/home/WelcomeSection.vue"
   },

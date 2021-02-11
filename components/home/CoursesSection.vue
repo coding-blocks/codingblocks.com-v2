@@ -906,12 +906,20 @@ export default {
     const liveButton = document.querySelector("#live-courses");
     const carousel = document.querySelector("#course-sections-carousel");
 
+    // [onlineButton, classroomButton, liveButton].forEach((courseButton) => {
+    //   courseButton.classList.remove("active");
+    // });
+
     onlineButton.addEventListener("click", () => {
       carousel.scrollTo({
         top: 0,
         left: 0,
         behavior: "smooth",
       });
+
+      onlineButton.classList.add("active");
+      classroomButton.classList.remove("active");
+      liveButton.classList.remove("active");
     });
 
     classroomButton.addEventListener("click", () => {
@@ -920,6 +928,10 @@ export default {
         left: carousel.clientWidth,
         behavior: "smooth",
       });
+
+      classroomButton.classList.add("active");
+      onlineButton.classList.remove("active");
+      liveButton.classList.remove("active");
     });
 
     liveButton.addEventListener("click", () => {
@@ -929,6 +941,10 @@ export default {
         behavior: "smooth",
       });
     });
+
+    liveButton.classList.add("active");
+    classroomButton.classList.remove("active");
+    onlineButton.classList.remove("active");
   },
 };
 </script>

@@ -940,11 +940,11 @@ export default {
         left: 2 * carousel.clientWidth,
         behavior: "smooth",
       });
-    });
 
-    liveButton.classList.add("active");
-    classroomButton.classList.remove("active");
-    onlineButton.classList.remove("active");
+      liveButton.classList.add("active");
+      classroomButton.classList.remove("active");
+      onlineButton.classList.remove("active");
+    });
   },
 };
 </script>

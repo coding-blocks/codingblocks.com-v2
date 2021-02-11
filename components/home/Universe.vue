@@ -1,5 +1,8 @@
 <template>
-  <div class="universe" :class="[size === 'small' ? 'universe--small mx-auto' : '']">
+  <div
+    class="universe"
+    :class="[size === 'small' ? 'universe--small mx-auto' : '']"
+  >
     <div class="universe__star p-20">
       <img
         src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/js-cyan.svg"

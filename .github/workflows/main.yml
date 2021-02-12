@@ -26,7 +26,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: codingblocks/codingblocks.com-v2:latest
+          tags: codingblocks/main-website:latest
       - 
         name: Restart Container
         uses: appleboy/ssh-action@master
@@ -34,4 +34,4 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.PRIVATE_KEY }}
-          script: cd ~/frontends/codingblocks.com-v2 && docker-compose pull && docker-compose down && docker-compose up -d
+          script: cd ~/servers/main-website && docker-compose pull && docker-compose down && docker-compose up -d

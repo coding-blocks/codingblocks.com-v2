@@ -10,6 +10,10 @@
       </div>
 
       <UpcomingEventsSection />
+
+      <UpcomingCourseSection />
+
+      <Footer />
     </div>
   </div>
 </template>
@@ -18,12 +22,14 @@
 import Navigation from "@/components/Navigation.vue";
 import BannerCarousel from "@/components/misc/BannerCarousel.vue";
 import UpcomingEventsSection from "@/components/events/UpcomingEventsSection.vue";
+import UpcomingCourseSection from "@/components/events/UpcomingCourseSection.vue";
 
 export default {
   components: {
     Navigation,
     BannerCarousel,
     UpcomingEventsSection,
+    UpcomingCourseSection,
   },
 };
 </script>

@@ -18,12 +18,12 @@
           <div
             class="row no-gutters align-items-center mr-30 font-4 text-grey pointer"
           >
-            <span>Events</span>
-            <img
+            <a href="/events">Events</a>
+            <!-- <img
               src="https://minio.cb.lk/public/fa-5.13/svgs/solid/chevron-down.svg"
               class="ml-10"
               style="height: 15px;"
-            />
+            /> -->
           </div>
           <div
             class="row no-gutters align-items-center mr-30 font-4 text-grey pointer"

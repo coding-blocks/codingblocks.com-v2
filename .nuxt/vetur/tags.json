@@ -23,6 +23,18 @@
   "LazySubNavMegaNav": {
     "description": "Auto imported from components/SubNavMegaNav.vue"
   },
+  "UpcomingCourseSection": {
+    "description": "Auto imported from components/events/UpcomingCourseSection.vue"
+  },
+  "LazyUpcomingCourseSection": {
+    "description": "Auto imported from components/events/UpcomingCourseSection.vue"
+  },
+  "UpcomingEventsSection": {
+    "description": "Auto imported from components/events/UpcomingEventsSection.vue"
+  },
+  "LazyUpcomingEventsSection": {
+    "description": "Auto imported from components/events/UpcomingEventsSection.vue"
+  },
   "BlogsSection": {
     "description": "Auto imported from components/home/BlogsSection.vue"
   },
@@ -124,17 +136,5 @@
   },
   "LazySuccessStory": {
     "description": "Auto imported from components/misc/SuccessStory.vue"
-  },
-  "UpcomingCourseSection": {
-    "description": "Auto imported from components/events/UpcomingCourseSection.vue"
-  },
-  "LazyUpcomingCourseSection": {
-    "description": "Auto imported from components/events/UpcomingCourseSection.vue"
-  },
-  "UpcomingEventsSection": {
-    "description": "Auto imported from components/events/UpcomingEventsSection.vue"
-  },
-  "LazyUpcomingEventsSection": {
-    "description": "Auto imported from components/events/UpcomingEventsSection.vue"
   }
 }

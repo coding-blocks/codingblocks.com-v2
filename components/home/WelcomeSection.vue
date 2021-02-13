@@ -104,7 +104,7 @@
       </div>
 
       <!-- Stats Section -->
-      <div class="mt-60">
+      <div class="mt-60 mb-50">
         <div class="t-align-c heading-3 bold mb-50">
           Why Coding Blocks
         </div>

@@ -18,7 +18,9 @@
           <div
             class="row no-gutters align-items-center mr-30 font-4 text-grey pointer"
           >
-            <a href="/events">Events</a>
+            <NuxtLink to="/events">
+              Events
+            </NuxtLink>
             <!-- <img
               src="https://minio.cb.lk/public/fa-5.13/svgs/solid/chevron-down.svg"
               class="ml-10"

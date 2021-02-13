@@ -30,12 +30,12 @@
           <div
             class="row no-gutters align-items-center mr-30 font-4 text-grey pointer"
           >
-            <span>Blogs</span>
-            <img
+            <a href="https://blog.codingblocks.com/">Blogs</a>
+            <!-- <img
               src="https://minio.cb.lk/public/fa-5.13/svgs/solid/chevron-down.svg"
               class="ml-10"
               style="height: 15px;"
-            />
+            /> -->
           </div>
           <div
             class="row no-gutters align-items-center mr-30 font-4 text-grey pointer"

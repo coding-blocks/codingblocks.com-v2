@@ -24,7 +24,7 @@
                 src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/online-courses.svg"
                 class="mr-xl-15"
               />
-              <div class="heading-4 bold flex-1 t-align-l d-xl-block d-none">
+              <div class="heading-5 bold flex-1 t-align-l d-xl-block d-none">
                 Online Courses
               </div>
               <div
@@ -41,7 +41,7 @@
                 src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/classroom-courses.svg"
                 class="mr-xl-15"
               />
-              <div class="heading-4 bold flex-1 t-align-l d-xl-block d-none">
+              <div class="heading-5 bold flex-1 t-align-l d-xl-block d-none">
                 Classroom Courses
               </div>
               <div
@@ -58,7 +58,7 @@
                 src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/live-courses.svg"
                 class="mr-xl-15"
               />
-              <div class="heading-4 bold flex-1 t-align-l d-xl-block d-none">
+              <div class="heading-5 bold flex-1 t-align-l d-xl-block d-none">
                 Live Courses
               </div>
               <div

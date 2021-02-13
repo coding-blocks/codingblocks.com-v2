@@ -8,6 +8,8 @@
           <BannerCarousel />
         </div>
       </div>
+
+      <UpcomingEventsSection />
     </div>
   </div>
 </template>

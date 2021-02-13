@@ -316,44 +316,46 @@
       <div
         class="row no-gutters align-items-center justify-content-between h-100"
       >
-        <img
-          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-logo.svg"
-        />
+        <NuxtLink to="/">
+          <img
+            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-logo.svg"
+          />
+        </NuxtLink>
         <div class="flex-1 h-100">
           <div
             class="row no-gutters align-items-center justify-content-end h-100"
           >
             <div class="super-navbar__link">
-              <div>
+              <a href="https://online.codingblocks.com/" target="_blank">
                 <img
                   src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-learn.svg"
                 />
                 <div class="font-3 mt-10 d-md-block d-none">Learn</div>
-              </div>
+              </a>
             </div>
             <div class="super-navbar__link">
-              <div>
+              <a href="https://hack.codingblocks.com/" target="_blank">
                 <img
                   src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-practice.svg"
                 />
                 <div class="font-3 mt-10 d-md-block d-none">Practice</div>
-              </div>
+              </a>
             </div>
             <div class="super-navbar__link">
-              <div>
+              <a href="https://hire.codingblocks.com/applicants" target="_blank">
                 <img
                   src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-hire.svg"
                 />
                 <div class="font-3 mt-10 d-md-block d-none">Get<br />Hired</div>
-              </div>
+              </a>
             </div>
             <div class="super-navbar__link">
-              <div>
+              <a href="https://ide.codingblocks.com/" target="_blank">
                 <img
                   src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-ide.svg"
                 />
                 <div class="font-3 mt-10 d-md-block d-none">IDE</div>
-              </div>
+              </a>
             </div>
             <div
               class="hamburger-menu d-md-none d-block ml-25"

@@ -1,5 +1,5 @@
 <template>
-  <div class="slideshow-container mt-50" id="slideshow-container">
+  <div class="slideshow-container" id="slideshow-container">
     <div
       class="slideshow-container__slide bg-purple-dark-2 p-xl-100 p-lg-75 p-md-50 p-sm-40 p-25 pb-100"
     >

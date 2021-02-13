@@ -54,7 +54,7 @@
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_welcome.svg"
           />
           <div class="t-align-c" style="margin: 0 -2.5rem;">
-            <UniverseSmall />
+            <Universe size="small" />
             <div class="heading-6 mt-30">
               Helping people get their dream job.
             </div>
@@ -104,7 +104,7 @@
       </div>
 
       <!-- Stats Section -->
-      <div class="mt-60">
+      <div class="mt-60 mb-50">
         <div class="t-align-c heading-3 bold mb-50">
           Why Coding Blocks
         </div>
@@ -150,14 +150,12 @@
 import StatsCard from "@/components/misc/StatsCard.vue";
 import BannerCarousel from "@/components/misc/BannerCarousel";
 import Universe from "@/components/home/Universe.vue";
-import UniverseSmall from "@/components/home/UniverseSmall.vue";
 
 export default {
   components: {
     StatsCard,
     BannerCarousel,
     Universe,
-    UniverseSmall,
   },
 };
 </script>

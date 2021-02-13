@@ -1,0 +1,140 @@
+{
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "LazyFooter": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "MainNav": {
+    "description": "Auto imported from components/MainNav.vue"
+  },
+  "LazyMainNav": {
+    "description": "Auto imported from components/MainNav.vue"
+  },
+  "Navigation": {
+    "description": "Auto imported from components/Navigation.vue"
+  },
+  "LazyNavigation": {
+    "description": "Auto imported from components/Navigation.vue"
+  },
+  "SubNavMegaNav": {
+    "description": "Auto imported from components/SubNavMegaNav.vue"
+  },
+  "LazySubNavMegaNav": {
+    "description": "Auto imported from components/SubNavMegaNav.vue"
+  },
+  "UpcomingCourseSection": {
+    "description": "Auto imported from components/events/UpcomingCourseSection.vue"
+  },
+  "LazyUpcomingCourseSection": {
+    "description": "Auto imported from components/events/UpcomingCourseSection.vue"
+  },
+  "UpcomingEventsSection": {
+    "description": "Auto imported from components/events/UpcomingEventsSection.vue"
+  },
+  "LazyUpcomingEventsSection": {
+    "description": "Auto imported from components/events/UpcomingEventsSection.vue"
+  },
+  "BlogsSection": {
+    "description": "Auto imported from components/home/BlogsSection.vue"
+  },
+  "LazyBlogsSection": {
+    "description": "Auto imported from components/home/BlogsSection.vue"
+  },
+  "CollegesAndCompaniesSection": {
+    "description": "Auto imported from components/home/CollegesAndCompaniesSection.vue"
+  },
+  "LazyCollegesAndCompaniesSection": {
+    "description": "Auto imported from components/home/CollegesAndCompaniesSection.vue"
+  },
+  "CoursesSection": {
+    "description": "Auto imported from components/home/CoursesSection.vue"
+  },
+  "LazyCoursesSection": {
+    "description": "Auto imported from components/home/CoursesSection.vue"
+  },
+  "HelpSection": {
+    "description": "Auto imported from components/home/HelpSection.vue"
+  },
+  "LazyHelpSection": {
+    "description": "Auto imported from components/home/HelpSection.vue"
+  },
+  "MentorSection": {
+    "description": "Auto imported from components/home/MentorSection.vue"
+  },
+  "LazyMentorSection": {
+    "description": "Auto imported from components/home/MentorSection.vue"
+  },
+  "NewsSection": {
+    "description": "Auto imported from components/home/NewsSection.vue"
+  },
+  "LazyNewsSection": {
+    "description": "Auto imported from components/home/NewsSection.vue"
+  },
+  "PracticeAndHireSection": {
+    "description": "Auto imported from components/home/PracticeAndHireSection.vue"
+  },
+  "LazyPracticeAndHireSection": {
+    "description": "Auto imported from components/home/PracticeAndHireSection.vue"
+  },
+  "SuccessStoriesSection": {
+    "description": "Auto imported from components/home/SuccessStoriesSection.vue"
+  },
+  "LazySuccessStoriesSection": {
+    "description": "Auto imported from components/home/SuccessStoriesSection.vue"
+  },
+  "Universe": {
+    "description": "Auto imported from components/home/Universe.vue"
+  },
+  "LazyUniverse": {
+    "description": "Auto imported from components/home/Universe.vue"
+  },
+  "WelcomeSection": {
+    "description": "Auto imported from components/home/WelcomeSection.vue"
+  },
+  "LazyWelcomeSection": {
+    "description": "Auto imported from components/home/WelcomeSection.vue"
+  },
+  "BannerCarousel": {
+    "description": "Auto imported from components/misc/BannerCarousel.vue"
+  },
+  "LazyBannerCarousel": {
+    "description": "Auto imported from components/misc/BannerCarousel.vue"
+  },
+  "CardCarousel": {
+    "description": "Auto imported from components/misc/CardCarousel.vue"
+  },
+  "LazyCardCarousel": {
+    "description": "Auto imported from components/misc/CardCarousel.vue"
+  },
+  "DividedSection": {
+    "description": "Auto imported from components/misc/DividedSection.vue"
+  },
+  "LazyDividedSection": {
+    "description": "Auto imported from components/misc/DividedSection.vue"
+  },
+  "EventsCard": {
+    "description": "Auto imported from components/misc/EventsCard.vue"
+  },
+  "LazyEventsCard": {
+    "description": "Auto imported from components/misc/EventsCard.vue"
+  },
+  "NewsCard": {
+    "description": "Auto imported from components/misc/NewsCard.vue"
+  },
+  "LazyNewsCard": {
+    "description": "Auto imported from components/misc/NewsCard.vue"
+  },
+  "StatsCard": {
+    "description": "Auto imported from components/misc/StatsCard.vue"
+  },
+  "LazyStatsCard": {
+    "description": "Auto imported from components/misc/StatsCard.vue"
+  },
+  "SuccessStory": {
+    "description": "Auto imported from components/misc/SuccessStory.vue"
+  },
+  "LazySuccessStory": {
+    "description": "Auto imported from components/misc/SuccessStory.vue"
+  }
+}

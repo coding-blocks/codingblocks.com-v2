@@ -1,5 +1,8 @@
 <template>
-  <div class="universe">
+  <div
+    class="universe"
+    :class="[size === 'small' ? 'universe--small mx-auto' : '']"
+  >
     <div class="universe__star p-20">
       <img
         src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/js-cyan.svg"
@@ -67,6 +70,7 @@
 
 <script>
 export default {
+  props: ["size"],
   mounted() {
     document.querySelectorAll(".universe").forEach((universe) => {
       let reduceAngle = 60;

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-row align-items-center">
+  <div class="flex-row align-items-center carousel-container">
     <img
       src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/nav-left-black.svg"
       class="pointer"
@@ -20,24 +20,29 @@
 
 <script>
 export default {
-  // mounted() {
-  //   const leftButton = document.querySelector("#move-left");
-  //   const rightButton = document.querySelector("#move-right");
-  //   const carousel = document.querySelector("#carousel");
+  mounted() {
+    const carouselContainers = document.querySelectorAll(".carousel-container");
+    [...carouselContainers].forEach((container) => {
+      const leftButton = container.querySelector("#move-left");
+      const rightButton = container.querySelector("#move-right");
+      const carousel = container.querySelector("#carousel");
 
-  //   leftButton.addEventListener("click", () => {
-  //     for (let i = 0; i < 30000; i++) {
-  //       carousel.scrollLeft += carousel.clientWidth / 30000;
-  //     }
-  //     // carousel.scrollLeft += carousel.clientWidth;
-  //   });
+      leftButton.addEventListener("click", () => {
+        carousel.scrollTo({
+          top: 0,
+          left: -carousel.clientWidth,
+          behavior: "smooth",
+        });
+      });
 
-  //   rightButton.addEventListener("click", () => {
-  //     for (let i = 0; i < 30000; i++) {
-  //       carousel.scrollLeft -= carousel.clientWidth / 30000;
-  //     }
-  //     // carousel.scrollLeft -= carousel.clientWidth;
-  //   });
-  // },
+      rightButton.addEventListener("click", () => {
+        carousel.scrollTo({
+          top: 0,
+          left: carousel.clientWidth,
+          behavior: "smooth",
+        });
+      });
+    });
+  },
 };
 </script>

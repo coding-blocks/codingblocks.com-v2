@@ -45,7 +45,9 @@
           <div
             class="row no-gutters align-items-center font-4 text-grey pointer"
           >
-            <span>Contact</span>
+            <NuxtLink to="/company">
+              Contact
+            </NuxtLink>
           </div>
         </div>
       </div>

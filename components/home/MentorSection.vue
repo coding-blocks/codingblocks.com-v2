@@ -14,13 +14,13 @@
           />
         </div>
         <div class="col-3 t-align-r d-md-block d-none">
-          <button class="button-secondary">
+          <NuxtLink to="/company" class="button-secondary">
             Learn more about us
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
               class="ml-2"
             />
-          </button>
+          </NuxtLink>
         </div>
       </div>
       <div class="mt-sm-50 mt-25">

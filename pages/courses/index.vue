@@ -359,6 +359,8 @@
         </div>
       </div>
 
+      <TracksSection />
+
       <Footer />
     </div>
   </div>
@@ -367,11 +369,14 @@
 <script>
 import CourseList from "@/components/courses/CourseList.vue";
 import CourseBySubjectSection from "@/components/courses/CourseBySubjectSection.vue";
+import TracksSection from "@/components/courses/TracksSection.vue";
+
 
 export default {
   components: {
     CourseList,
     CourseBySubjectSection,
+    TracksSection,
   },
 };
 </script>

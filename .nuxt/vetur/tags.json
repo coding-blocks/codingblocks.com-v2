@@ -35,6 +35,12 @@
   "LazyCourseList": {
     "description": "Auto imported from components/courses/CourseList.vue"
   },
+  "TracksSection": {
+    "description": "Auto imported from components/courses/TracksSection.vue"
+  },
+  "LazyTracksSection": {
+    "description": "Auto imported from components/courses/TracksSection.vue"
+  },
   "UpcomingCourseSection": {
     "description": "Auto imported from components/events/UpcomingCourseSection.vue"
   },

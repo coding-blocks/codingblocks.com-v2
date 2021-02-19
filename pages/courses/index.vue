@@ -343,6 +343,22 @@
 
       <CourseBySubjectSection />
 
+      <div class="landing-page__section">
+        <div class="width-limiter">
+          <CourseList
+            title="Mini Courses"
+            subtitle="Short Courses, Big Impact! Take the big leap through our Mini Courses!"
+          />
+
+          <div class="mt-sm-50 mt-25">
+            <CourseList
+              title="Foundation Courses"
+              subtitle="Short Courses, Big Impact! Take the big leap through our Mini Courses!"
+            />
+          </div>
+        </div>
+      </div>
+
       <Footer />
     </div>
   </div>

@@ -10,7 +10,22 @@
           >
             <div class="col-lg-6 t-align-lg-l t-align-c">
               <div
-                class="mini-banner position-relative br-5 mb-30 mx-auto"
+                class="mini-banner position-relative br-5 mb-30 mx-auto d-lg-none d-block"
+                style="width: fit-content;"
+              >
+                <div class="bg-purple br-5 all-center p-20 mt-30">
+                  <div class="font-4 white">
+                    <strong class="heading-6">75% OFF </strong>
+                    on all online courses
+                  </div>
+                </div>
+                <div class="mini-banner__tag">
+                  <div class="font-2">Offer valid till 30th Jan</div>
+                </div>
+              </div>
+
+              <div
+                class="mini-banner position-relative br-5 mb-30 d-lg-block d-none"
                 style="width: fit-content;"
               >
                 <div class="bg-purple br-5 all-center p-20 mt-30">
@@ -361,6 +376,8 @@
 
       <TracksSection />
 
+      <SuccessStoriesSection />
+
       <Footer />
     </div>
   </div>
@@ -370,13 +387,14 @@
 import CourseList from "@/components/courses/CourseList.vue";
 import CourseBySubjectSection from "@/components/courses/CourseBySubjectSection.vue";
 import TracksSection from "@/components/courses/TracksSection.vue";
-
+import SuccessStoriesSection from "@/components/home/SuccessStoriesSection.vue";
 
 export default {
   components: {
     CourseList,
     CourseBySubjectSection,
     TracksSection,
+    SuccessStoriesSection,
   },
 };
 </script>

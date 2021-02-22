@@ -85,7 +85,7 @@
             </div>
             <div class="row justify-content-center">
               <div class="col-md-6 col-sm-8 col-12 mb-30">
-                <div class="bg-gradient-pink p-4 card">
+                <!-- <div class="bg-gradient-pink p-4 card">
                   <div
                     class="row no-gutters justify-content-between align-items-center"
                   >
@@ -143,7 +143,8 @@
                       />
                     </div>
                   </div>
-                </div>
+                </div> -->
+                <CourseCardSmall />
               </div>
               <div class="col-md-6 col-sm-8 col-12 mb-30">
                 <div class="bg-gradient-pink p-4 card">
@@ -899,7 +900,12 @@
 </template>
 
 <script>
+import CourseCardSmall from "@/components/courses/CourseCardSmall.vue";
+
 export default {
+  components: {
+    CourseCardSmall,
+  },
   mounted() {
     const onlineButton = document.querySelector("#online-courses");
     const classroomButton = document.querySelector("#classroom-courses");

@@ -14,7 +14,7 @@
         </div>
       </div>
       <div class="flex-1 pl-20">
-        <div class="heading-5 bold theme-color">Python for Devs</div>
+        <div class="heading-5 bold theme-text">Python for Devs</div>
         <div class="row no-gutters align-items-center mt-10">
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_filled.svg"

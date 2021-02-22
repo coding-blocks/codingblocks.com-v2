@@ -1,0 +1,22 @@
+[
+  {
+    "tag": "New",
+    "heading1": "INDUSTRIAL",
+    "heading2": "TRAINING",
+    "tagline": "Get Flat 50% OFF!",
+    "subTagline": "Use Code - MONSOON | Valid till 01 Aug 2020",
+    "cta": "Explore Now",
+    "image": "https://cb-thumbnails.s3.ap-south-1.amazonaws.com/light-theme-vector.svg",
+    "background": "bg-purple-dark-2"
+  },
+  {
+    "tag": "New",
+    "heading1": "CAREER",
+    "heading2": "BOOTCAMP",
+    "tagline": "Get placed at Nagarro!",
+    "subTagline": "Use Code - MONSOON | Valid till 01 Aug 2020",
+    "cta": "Explore Now",
+    "image": "https://cb-thumbnails.s3.ap-south-1.amazonaws.com/light-theme-vector.svg",
+    "background": "bg-pink-dark-2"
+  }
+]

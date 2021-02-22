@@ -6,15 +6,19 @@
       <div class="heading-4 bold flex-1">
         Confused about which course to pick?
       </div>
-      <button class="button-secondary">
-        Seek Help
+      <button class="button-secondary" id="help-section-toggle">
+        <span>Seek Help</span>
         <img
           src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
           class="ml-2"
         />
       </button>
     </div>
-    <div class="py-sm-50 py-30" style="border-top: solid 1px #dddddd;">
+    <div
+      class="py-sm-50 py-30 d-none"
+      style="border-top: solid 1px #dddddd;"
+      id="help-section"
+    >
       <div class="">
         <div class="row">
           <div class="col-lg-3 flex-col justify-content-between h-inherit">
@@ -252,3 +256,22 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  mounted() {
+    const toggleButton = document.querySelector("#help-section-toggle");
+    const helpSection = document.querySelector("#help-section");
+
+    toggleButton.addEventListener("click", function() {
+      if (toggleButton.textContent == "Seek Help") {
+        toggleButton.textContent = "Close";
+        helpSection.classList.remove("d-none");
+      } else {
+        toggleButton.textContent = "Seek Help";
+        helpSection.classList, add("d-none");
+      }
+    });
+  },
+};
+</script>

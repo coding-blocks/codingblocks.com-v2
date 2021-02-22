@@ -12,6 +12,7 @@ export { default as UpcomingEventsSection } from '../../components/events/Upcomi
 export { default as BlogsSection } from '../../components/home/BlogsSection.vue'
 export { default as CollegesAndCompaniesSection } from '../../components/home/CollegesAndCompaniesSection.vue'
 export { default as CoursesSection } from '../../components/home/CoursesSection.vue'
+export { default as CoursesSectionCardsSection } from '../../components/home/CoursesSectionCardsSection.vue'
 export { default as MentorSection } from '../../components/home/MentorSection.vue'
 export { default as NewsSection } from '../../components/home/NewsSection.vue'
 export { default as PracticeAndHireSection } from '../../components/home/PracticeAndHireSection.vue'
@@ -40,6 +41,7 @@ export const LazyUpcomingEventsSection = import('../../components/events/Upcomin
 export const LazyBlogsSection = import('../../components/home/BlogsSection.vue' /* webpackChunkName: "components/home/BlogsSection" */).then(c => c.default || c)
 export const LazyCollegesAndCompaniesSection = import('../../components/home/CollegesAndCompaniesSection.vue' /* webpackChunkName: "components/home/CollegesAndCompaniesSection" */).then(c => c.default || c)
 export const LazyCoursesSection = import('../../components/home/CoursesSection.vue' /* webpackChunkName: "components/home/CoursesSection" */).then(c => c.default || c)
+export const LazyCoursesSectionCardsSection = import('../../components/home/CoursesSectionCardsSection.vue' /* webpackChunkName: "components/home/CoursesSectionCardsSection" */).then(c => c.default || c)
 export const LazyMentorSection = import('../../components/home/MentorSection.vue' /* webpackChunkName: "components/home/MentorSection" */).then(c => c.default || c)
 export const LazyNewsSection = import('../../components/home/NewsSection.vue' /* webpackChunkName: "components/home/NewsSection" */).then(c => c.default || c)
 export const LazyPracticeAndHireSection = import('../../components/home/PracticeAndHireSection.vue' /* webpackChunkName: "components/home/PracticeAndHireSection" */).then(c => c.default || c)

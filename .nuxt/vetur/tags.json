@@ -83,6 +83,12 @@
   "LazyCoursesSection": {
     "description": "Auto imported from components/home/CoursesSection.vue"
   },
+  "CoursesSectionCardsSection": {
+    "description": "Auto imported from components/home/CoursesSectionCardsSection.vue"
+  },
+  "LazyCoursesSectionCardsSection": {
+    "description": "Auto imported from components/home/CoursesSectionCardsSection.vue"
+  },
   "MentorSection": {
     "description": "Auto imported from components/home/MentorSection.vue"
   },

@@ -9,6 +9,7 @@ export { default as HelpSection } from '../../components/courses/HelpSection.vue
 export { default as TracksSection } from '../../components/courses/TracksSection.vue'
 export { default as UpcomingCourseSection } from '../../components/events/UpcomingCourseSection.vue'
 export { default as UpcomingEventsSection } from '../../components/events/UpcomingEventsSection.vue'
+export { default as BlogCard } from '../../components/home/BlogCard.vue'
 export { default as BlogsSection } from '../../components/home/BlogsSection.vue'
 export { default as CollegesAndCompaniesSection } from '../../components/home/CollegesAndCompaniesSection.vue'
 export { default as CoursesSection } from '../../components/home/CoursesSection.vue'
@@ -38,6 +39,7 @@ export const LazyHelpSection = import('../../components/courses/HelpSection.vue'
 export const LazyTracksSection = import('../../components/courses/TracksSection.vue' /* webpackChunkName: "components/courses/TracksSection" */).then(c => c.default || c)
 export const LazyUpcomingCourseSection = import('../../components/events/UpcomingCourseSection.vue' /* webpackChunkName: "components/events/UpcomingCourseSection" */).then(c => c.default || c)
 export const LazyUpcomingEventsSection = import('../../components/events/UpcomingEventsSection.vue' /* webpackChunkName: "components/events/UpcomingEventsSection" */).then(c => c.default || c)
+export const LazyBlogCard = import('../../components/home/BlogCard.vue' /* webpackChunkName: "components/home/BlogCard" */).then(c => c.default || c)
 export const LazyBlogsSection = import('../../components/home/BlogsSection.vue' /* webpackChunkName: "components/home/BlogsSection" */).then(c => c.default || c)
 export const LazyCollegesAndCompaniesSection = import('../../components/home/CollegesAndCompaniesSection.vue' /* webpackChunkName: "components/home/CollegesAndCompaniesSection" */).then(c => c.default || c)
 export const LazyCoursesSection = import('../../components/home/CoursesSection.vue' /* webpackChunkName: "components/home/CoursesSection" */).then(c => c.default || c)

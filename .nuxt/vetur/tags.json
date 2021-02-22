@@ -65,6 +65,12 @@
   "LazyUpcomingEventsSection": {
     "description": "Auto imported from components/events/UpcomingEventsSection.vue"
   },
+  "BlogCard": {
+    "description": "Auto imported from components/home/BlogCard.vue"
+  },
+  "LazyBlogCard": {
+    "description": "Auto imported from components/home/BlogCard.vue"
+  },
   "BlogsSection": {
     "description": "Auto imported from components/home/BlogsSection.vue"
   },

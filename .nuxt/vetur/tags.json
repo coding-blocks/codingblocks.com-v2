@@ -35,6 +35,12 @@
   "LazyCourseList": {
     "description": "Auto imported from components/courses/CourseList.vue"
   },
+  "HelpSection": {
+    "description": "Auto imported from components/courses/HelpSection.vue"
+  },
+  "LazyHelpSection": {
+    "description": "Auto imported from components/courses/HelpSection.vue"
+  },
   "TracksSection": {
     "description": "Auto imported from components/courses/TracksSection.vue"
   },
@@ -70,12 +76,6 @@
   },
   "LazyCoursesSection": {
     "description": "Auto imported from components/home/CoursesSection.vue"
-  },
-  "HelpSection": {
-    "description": "Auto imported from components/home/HelpSection.vue"
-  },
-  "LazyHelpSection": {
-    "description": "Auto imported from components/home/HelpSection.vue"
   },
   "MentorSection": {
     "description": "Auto imported from components/home/MentorSection.vue"

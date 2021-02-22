@@ -226,7 +226,7 @@ import DividedSection from "@/components/misc/DividedSection.vue";
 // import CommunityAndSuperheroSection from "@/components/home/CommunityAndSuperheroSection.vue";
 import CollegesAndCompaniesSection from "@/components/home/CollegesAndCompaniesSection.vue";
 import SuccessStoriesSection from "@/components/home/SuccessStoriesSection.vue";
-import HelpSection from "@/components/home/HelpSection.vue";
+import HelpSection from "@/components/courses/HelpSection.vue";
 import BlogsSection from "@/components/home/BlogsSection";
 import Footer from "@/components/Footer.vue";
 

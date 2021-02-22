@@ -264,12 +264,12 @@ export default {
     const helpSection = document.querySelector("#help-section");
 
     toggleButton.addEventListener("click", function() {
-      if (toggleButton.textContent == "Seek Help") {
-        toggleButton.textContent = "Close";
+      if (toggleButton.querySelector("span").innerHTML == "Seek Help") {
         helpSection.classList.remove("d-none");
+        toggleButton.querySelector("span").innerHTML = "Close";
       } else {
-        toggleButton.textContent = "Seek Help";
-        helpSection.classList, add("d-none");
+        helpSection.classList.add("d-none");
+        toggleButton.querySelector("span").innerHTML = "Seek Help";
       }
     });
   },

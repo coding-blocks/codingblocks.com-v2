@@ -22,5 +22,8 @@
   "homepage": "https://github.com/coding-blocks/codingblocks.com-v2#readme",
   "dependencies": {
     "nuxt": "^2.14.6"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
   }
 }

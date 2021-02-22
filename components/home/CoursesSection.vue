@@ -70,13 +70,14 @@
           </div>
         </div>
         <div class="col-xl-8 h-inherit">
-        <div
-          class="row no-gutters c-card-carousel overflow-hidden h-100"
-          id="course-sections-carousel"
-        >
-        
-
-        </div>
+          <div
+            class="row no-gutters c-card-carousel overflow-hidden h-100"
+            id="course-sections-carousel"
+          >
+            <CoursesSectionCardsSection courseType="Online" />
+            <CoursesSectionCardsSection courseType="Classroom" />
+            <CoursesSectionCardsSection courseType="Live" />
+          </div>
         </div>
       </div>
       <div class="card bg-grey-light-3">
@@ -106,10 +107,12 @@
 
 <script>
 import CourseCardSmall from "@/components/courses/CourseCardSmall.vue";
+import CoursesSectionCardsSection from "@/components/home/CoursesSectionCardsSection.vue";
 
 export default {
   components: {
     CourseCardSmall,
+    CoursesSectionCardsSection,
   },
   mounted() {
     const onlineButton = document.querySelector("#online-courses");

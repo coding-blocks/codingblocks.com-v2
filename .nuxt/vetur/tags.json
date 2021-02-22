@@ -29,6 +29,12 @@
   "LazyCourseBySubjectSection": {
     "description": "Auto imported from components/courses/CourseBySubjectSection.vue"
   },
+  "CourseCard": {
+    "description": "Auto imported from components/courses/CourseCard.vue"
+  },
+  "LazyCourseCard": {
+    "description": "Auto imported from components/courses/CourseCard.vue"
+  },
   "CourseCardSmall": {
     "description": "Auto imported from components/courses/CourseCardSmall.vue"
   },

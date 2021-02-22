@@ -3,6 +3,7 @@ export { default as MainNav } from '../../components/MainNav.vue'
 export { default as Navigation } from '../../components/Navigation.vue'
 export { default as SubNavMegaNav } from '../../components/SubNavMegaNav.vue'
 export { default as CourseBySubjectSection } from '../../components/courses/CourseBySubjectSection.vue'
+export { default as CourseCard } from '../../components/courses/CourseCard.vue'
 export { default as CourseCardSmall } from '../../components/courses/CourseCardSmall.vue'
 export { default as CourseList } from '../../components/courses/CourseList.vue'
 export { default as HelpSection } from '../../components/courses/HelpSection.vue'
@@ -33,6 +34,7 @@ export const LazyMainNav = import('../../components/MainNav.vue' /* webpackChunk
 export const LazyNavigation = import('../../components/Navigation.vue' /* webpackChunkName: "components/Navigation" */).then(c => c.default || c)
 export const LazySubNavMegaNav = import('../../components/SubNavMegaNav.vue' /* webpackChunkName: "components/SubNavMegaNav" */).then(c => c.default || c)
 export const LazyCourseBySubjectSection = import('../../components/courses/CourseBySubjectSection.vue' /* webpackChunkName: "components/courses/CourseBySubjectSection" */).then(c => c.default || c)
+export const LazyCourseCard = import('../../components/courses/CourseCard.vue' /* webpackChunkName: "components/courses/CourseCard" */).then(c => c.default || c)
 export const LazyCourseCardSmall = import('../../components/courses/CourseCardSmall.vue' /* webpackChunkName: "components/courses/CourseCardSmall" */).then(c => c.default || c)
 export const LazyCourseList = import('../../components/courses/CourseList.vue' /* webpackChunkName: "components/courses/CourseList" */).then(c => c.default || c)
 export const LazyHelpSection = import('../../components/courses/HelpSection.vue' /* webpackChunkName: "components/courses/HelpSection" */).then(c => c.default || c)

@@ -11,11 +11,32 @@
   "SubNavMegaNav": {
     "description": "Auto imported from components/SubNavMegaNav.vue"
   },
+  "CoursesCourseBySubjectSection": {
+    "description": "Auto imported from components/courses/CourseBySubjectSection.vue"
+  },
+  "CoursesCourseCard": {
+    "description": "Auto imported from components/courses/CourseCard.vue"
+  },
+  "CoursesCourseCardSmall": {
+    "description": "Auto imported from components/courses/CourseCardSmall.vue"
+  },
+  "CoursesCourseList": {
+    "description": "Auto imported from components/courses/CourseList.vue"
+  },
+  "CoursesHelpSection": {
+    "description": "Auto imported from components/courses/HelpSection.vue"
+  },
+  "CoursesTracksSection": {
+    "description": "Auto imported from components/courses/TracksSection.vue"
+  },
   "EventsUpcomingCourseSection": {
     "description": "Auto imported from components/events/UpcomingCourseSection.vue"
   },
   "EventsUpcomingEventsSection": {
     "description": "Auto imported from components/events/UpcomingEventsSection.vue"
+  },
+  "HomeBlogCard": {
+    "description": "Auto imported from components/home/BlogCard.vue"
   },
   "HomeBlogsSection": {
     "description": "Auto imported from components/home/BlogsSection.vue"
@@ -26,8 +47,8 @@
   "HomeCoursesSection": {
     "description": "Auto imported from components/home/CoursesSection.vue"
   },
-  "HomeHelpSection": {
-    "description": "Auto imported from components/home/HelpSection.vue"
+  "HomeCoursesSectionCardsSection": {
+    "description": "Auto imported from components/home/CoursesSectionCardsSection.vue"
   },
   "HomeMentorSection": {
     "description": "Auto imported from components/home/MentorSection.vue"

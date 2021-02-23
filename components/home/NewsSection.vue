@@ -15,10 +15,11 @@
         </div>
         <div class="col-lg-9 mt-lg-none mt-50">
           <CardCarousel>
-            <NewsCard />
-            <NewsCard />
-            <NewsCard />
-            <NewsCard />
+            <NewsCard
+              news_text="Coding Blocks is the most promising edtech startup"
+              news_logo="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/et_logo.svg"
+              news_link=""
+            />
           </CardCarousel>
         </div>
       </div>

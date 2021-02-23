@@ -39,7 +39,7 @@
       </div>
 
       <div class="landing-page__section position-relative">
-        <div class="width-limiter">
+        <div class="width-limiter position-relative">
           <div class="journey-track"></div>
           <div class="t-align-sm-l t-align-c">
             <div class="heading-font stroke-font">

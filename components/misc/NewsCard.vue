@@ -1,20 +1,18 @@
 <template>
   <div class="col-6 h-inherit">
     <div class="flex-col justify-content-between h-100 align-items-start">
-      <img
-        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/et_logo.svg"
-      />
+      <img :src="news_logo" />
       <div>
         <div class="heading-5 my-50 text-clamp-ellipses text-clamp-ellipses--2">
-          Coding Blocks is the most promising edtech startup
+          {{ news_text }}
         </div>
-        <div class="button-tertiary">
+        <a class="button-tertiary" :href="news_link">
           Read More
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
             class="ml-2"
           />
-        </div>
+        </a>
       </div>
     </div>
   </div>
@@ -22,6 +20,6 @@
 
 <script>
 export default {
-  props: ["news_logo", "news_text"],
+  props: ["news_logo", "news_text", "news_link"],
 };
 </script>

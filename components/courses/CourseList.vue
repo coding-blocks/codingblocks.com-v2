@@ -33,6 +33,9 @@
 import CourseCard from "@/components/courses/CourseCard.vue";
 
 export default {
+  components: {
+    CourseCard
+  },
   props: ["title", "subtitle"],
 };
 </script>

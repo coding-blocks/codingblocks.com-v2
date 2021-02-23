@@ -40,7 +40,11 @@
 </template>
 
 <script>
+import CourseCardSmall from "@/components/courses/CourseCardSmall.vue";
 export default {
+  components: {
+    CourseCardSmall
+  },
   props: ["courseType"],
 };
 </script>

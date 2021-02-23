@@ -1,39 +1,41 @@
 <template>
-  <div class="slideshow-container" id="slideshow-container">
-    <div
-      class="slideshow-container__slide bg-purple-dark-2 p-xl-100 p-lg-75 p-md-50 p-sm-40 p-25 pb-100"
+  <div class="slideshow-container mt-50" id="slideshow-container">
+    <div v-if="banner.length != 0"
+      class="slideshow-container__slide p-xl-100 p-lg-75 p-md-50 p-sm-40 p-25 pb-100"
+      :class="banner[0].background"
     >
       <div class="row align-items-center no-gutters">
         <div class="col-xl-6 col-lg-8 z-pos t-align-lg-l t-align-c">
           <div
             class="br-5 d-inline-block p-2 bg-gradient-orange-light mb-10 font-4 white"
           >
-            New
+            {{banner[0].tag}}
           </div>
           <div class="heading-font stroke-font stroke-font--white">
-            INDUSTRIAL.
+            {{banner[0].heading1}}
           </div>
           <div class="heading-font white">
-            TRAINING.
+            {{banner[0].heading2}}
           </div>
           <img
+          
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_welcome.svg"
           />
           <img
-            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/light-theme-vector.svg"
+            :src="banner[0].image"
             class="d-lg-none d-block"
           />
           <div class="my-50">
             <div class="heading-2 bold text-orange">
-              Get flat 50% off!
+              {{banner[0].tagline}}
             </div>
             <div class="mt-2 white heading-5">
-              Use Code - <strong>MONSOON</strong> | Valid till 01 Aug, 2020.
+              {{banner[0].subTagline}}
             </div>
           </div>
           <div>
             <button class="button-primary">
-              Explore Now
+              {{banner[0].cta}}
               <img
                 src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg"
                 class="ml-2"
@@ -64,7 +66,9 @@
 </template>
 
 <script>
+import BannerRespository from '/repositories/banner';
 export default {
+
   mounted() {
     var sliderContainer = document.getElementById("slideshow-container");
     var slideIndex = 1;
@@ -126,5 +130,14 @@ export default {
       });
     });
   },
+  data(){
+    return {
+      banner: []
+    }
+  },
+  async fetch(){
+    this.banner = await BannerRespository.fetchBanners();
+  
+  }
 };
 </script>

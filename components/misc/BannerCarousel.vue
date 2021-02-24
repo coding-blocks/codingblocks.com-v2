@@ -66,7 +66,7 @@
 </template>
 
 <script>
-import BannerRespository from '/repositories/banner';
+import BannerRespository from '@/repositories/banner';
 export default {
 
   mounted() {

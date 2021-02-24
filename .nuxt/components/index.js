@@ -20,6 +20,8 @@ export { default as HomeNewsSection } from '../../components/home/NewsSection.vu
 export { default as HomePracticeAndHireSection } from '../../components/home/PracticeAndHireSection.vue'
 export { default as HomeSuccessStoriesSection } from '../../components/home/SuccessStoriesSection.vue'
 export { default as HomeUniverse } from '../../components/home/Universe.vue'
+export { default as HomeUniverseOrbit } from '../../components/home/UniverseOrbit.vue'
+export { default as HomeUniversePlanet } from '../../components/home/UniversePlanet.vue'
 export { default as HomeWelcomeSection } from '../../components/home/WelcomeSection.vue'
 export { default as MiscBannerCarousel } from '../../components/misc/BannerCarousel.vue'
 export { default as MiscCardCarousel } from '../../components/misc/CardCarousel.vue'
@@ -51,6 +53,8 @@ export const LazyHomeNewsSection = import('../../components/home/NewsSection.vue
 export const LazyHomePracticeAndHireSection = import('../../components/home/PracticeAndHireSection.vue' /* webpackChunkName: "components/home-practice-and-hire-section" */).then(c => c.default || c)
 export const LazyHomeSuccessStoriesSection = import('../../components/home/SuccessStoriesSection.vue' /* webpackChunkName: "components/home-success-stories-section" */).then(c => c.default || c)
 export const LazyHomeUniverse = import('../../components/home/Universe.vue' /* webpackChunkName: "components/home-universe" */).then(c => c.default || c)
+export const LazyHomeUniverseOrbit = import('../../components/home/UniverseOrbit.vue' /* webpackChunkName: "components/home-universe-orbit" */).then(c => c.default || c)
+export const LazyHomeUniversePlanet = import('../../components/home/UniversePlanet.vue' /* webpackChunkName: "components/home-universe-planet" */).then(c => c.default || c)
 export const LazyHomeWelcomeSection = import('../../components/home/WelcomeSection.vue' /* webpackChunkName: "components/home-welcome-section" */).then(c => c.default || c)
 export const LazyMiscBannerCarousel = import('../../components/misc/BannerCarousel.vue' /* webpackChunkName: "components/misc-banner-carousel" */).then(c => c.default || c)
 export const LazyMiscCardCarousel = import('../../components/misc/CardCarousel.vue' /* webpackChunkName: "components/misc-card-carousel" */).then(c => c.default || c)

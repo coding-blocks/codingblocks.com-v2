@@ -65,6 +65,12 @@
   "HomeUniverse": {
     "description": "Auto imported from components/home/Universe.vue"
   },
+  "HomeUniverseOrbit": {
+    "description": "Auto imported from components/home/UniverseOrbit.vue"
+  },
+  "HomeUniversePlanet": {
+    "description": "Auto imported from components/home/UniversePlanet.vue"
+  },
   "HomeWelcomeSection": {
     "description": "Auto imported from components/home/WelcomeSection.vue"
   },

@@ -20,6 +20,9 @@
   "CoursesCourseCardSmall": {
     "description": "Auto imported from components/courses/CourseCardSmall.vue"
   },
+  "CoursesCourseDescriptionSection": {
+    "description": "Auto imported from components/courses/CourseDescriptionSection.vue"
+  },
   "CoursesCourseList": {
     "description": "Auto imported from components/courses/CourseList.vue"
   },

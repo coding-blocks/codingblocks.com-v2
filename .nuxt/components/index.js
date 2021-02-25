@@ -5,6 +5,7 @@ export { default as SubNavMegaNav } from '../../components/SubNavMegaNav.vue'
 export { default as CoursesCourseBySubjectSection } from '../../components/courses/CourseBySubjectSection.vue'
 export { default as CoursesCourseCard } from '../../components/courses/CourseCard.vue'
 export { default as CoursesCourseCardSmall } from '../../components/courses/CourseCardSmall.vue'
+export { default as CoursesCourseDescriptionSection } from '../../components/courses/CourseDescriptionSection.vue'
 export { default as CoursesCourseList } from '../../components/courses/CourseList.vue'
 export { default as CoursesHelpSection } from '../../components/courses/HelpSection.vue'
 export { default as CoursesTracksSection } from '../../components/courses/TracksSection.vue'
@@ -38,6 +39,7 @@ export const LazySubNavMegaNav = import('../../components/SubNavMegaNav.vue' /* 
 export const LazyCoursesCourseBySubjectSection = import('../../components/courses/CourseBySubjectSection.vue' /* webpackChunkName: "components/courses-course-by-subject-section" */).then(c => c.default || c)
 export const LazyCoursesCourseCard = import('../../components/courses/CourseCard.vue' /* webpackChunkName: "components/courses-course-card" */).then(c => c.default || c)
 export const LazyCoursesCourseCardSmall = import('../../components/courses/CourseCardSmall.vue' /* webpackChunkName: "components/courses-course-card-small" */).then(c => c.default || c)
+export const LazyCoursesCourseDescriptionSection = import('../../components/courses/CourseDescriptionSection.vue' /* webpackChunkName: "components/courses-course-description-section" */).then(c => c.default || c)
 export const LazyCoursesCourseList = import('../../components/courses/CourseList.vue' /* webpackChunkName: "components/courses-course-list" */).then(c => c.default || c)
 export const LazyCoursesHelpSection = import('../../components/courses/HelpSection.vue' /* webpackChunkName: "components/courses-help-section" */).then(c => c.default || c)
 export const LazyCoursesTracksSection = import('../../components/courses/TracksSection.vue' /* webpackChunkName: "components/courses-tracks-section" */).then(c => c.default || c)

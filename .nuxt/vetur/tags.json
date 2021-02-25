@@ -23,8 +23,20 @@
   "CoursesCourseDescriptionSection": {
     "description": "Auto imported from components/courses/CourseDescriptionSection.vue"
   },
+  "CoursesCourseHighlights": {
+    "description": "Auto imported from components/courses/CourseHighlights.vue"
+  },
   "CoursesCourseList": {
     "description": "Auto imported from components/courses/CourseList.vue"
+  },
+  "CoursesCoursePageMentorsSection": {
+    "description": "Auto imported from components/courses/CoursePageMentorsSection.vue"
+  },
+  "CoursesCourseProjects": {
+    "description": "Auto imported from components/courses/CourseProjects.vue"
+  },
+  "CoursesCourseSyllabus": {
+    "description": "Auto imported from components/courses/CourseSyllabus.vue"
   },
   "CoursesHelpSection": {
     "description": "Auto imported from components/courses/HelpSection.vue"

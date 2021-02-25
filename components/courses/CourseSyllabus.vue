@@ -15,9 +15,6 @@
       <div style="border-left: solid 2px #f5f5f5">
         <div class="accordion-container">
           <div class="p-30 accordion-container__accordion-head">
-            {{!--
-            <div class="accordion-indicator">•</div>
-            --}}
             <div
               class="row no-gutters align-items-center justify-content-between"
             >
@@ -43,9 +40,6 @@
 
         <div class="accordion-container">
           <div class="p-30 accordion-container__accordion-head">
-            {{!--
-            <div class="accordion-indicator">•</div>
-            --}}
             <div
               class="row no-gutters align-items-center justify-content-between"
             >
@@ -71,9 +65,6 @@
 
         <div class="accordion-container">
           <div class="p-30 accordion-container__accordion-head">
-            {{!--
-            <div class="accordion-indicator">•</div>
-            --}}
             <div
               class="row no-gutters align-items-center justify-content-between"
             >

@@ -36,6 +36,7 @@ export { default as MiscEventsCard } from '../../components/misc/EventsCard.vue'
 export { default as MiscNewsCard } from '../../components/misc/NewsCard.vue'
 export { default as MiscStatsCard } from '../../components/misc/StatsCard.vue'
 export { default as MiscSuccessStory } from '../../components/misc/SuccessStory.vue'
+export { default as MiscSuccessStoryCard } from '../../components/misc/SuccessStoryCard.vue'
 
 export const LazyFooter = import('../../components/Footer.vue' /* webpackChunkName: "components/footer" */).then(c => c.default || c)
 export const LazyMainNav = import('../../components/MainNav.vue' /* webpackChunkName: "components/main-nav" */).then(c => c.default || c)
@@ -75,3 +76,4 @@ export const LazyMiscEventsCard = import('../../components/misc/EventsCard.vue' 
 export const LazyMiscNewsCard = import('../../components/misc/NewsCard.vue' /* webpackChunkName: "components/misc-news-card" */).then(c => c.default || c)
 export const LazyMiscStatsCard = import('../../components/misc/StatsCard.vue' /* webpackChunkName: "components/misc-stats-card" */).then(c => c.default || c)
 export const LazyMiscSuccessStory = import('../../components/misc/SuccessStory.vue' /* webpackChunkName: "components/misc-success-story" */).then(c => c.default || c)
+export const LazyMiscSuccessStoryCard = import('../../components/misc/SuccessStoryCard.vue' /* webpackChunkName: "components/misc-success-story-card" */).then(c => c.default || c)

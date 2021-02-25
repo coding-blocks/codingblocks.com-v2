@@ -11,6 +11,9 @@
   "SubNavMegaNav": {
     "description": "Auto imported from components/SubNavMegaNav.vue"
   },
+  "CoursesCourseBatch": {
+    "description": "Auto imported from components/courses/CourseBatch.vue"
+  },
   "CoursesCourseBySubjectSection": {
     "description": "Auto imported from components/courses/CourseBySubjectSection.vue"
   },
@@ -20,8 +23,23 @@
   "CoursesCourseCardSmall": {
     "description": "Auto imported from components/courses/CourseCardSmall.vue"
   },
+  "CoursesCourseDescriptionSection": {
+    "description": "Auto imported from components/courses/CourseDescriptionSection.vue"
+  },
+  "CoursesCourseHighlights": {
+    "description": "Auto imported from components/courses/CourseHighlights.vue"
+  },
   "CoursesCourseList": {
     "description": "Auto imported from components/courses/CourseList.vue"
+  },
+  "CoursesCoursePageMentorsSection": {
+    "description": "Auto imported from components/courses/CoursePageMentorsSection.vue"
+  },
+  "CoursesCourseProjects": {
+    "description": "Auto imported from components/courses/CourseProjects.vue"
+  },
+  "CoursesCourseSyllabus": {
+    "description": "Auto imported from components/courses/CourseSyllabus.vue"
   },
   "CoursesHelpSection": {
     "description": "Auto imported from components/courses/HelpSection.vue"
@@ -34,27 +52,6 @@
   },
   "EventsUpcomingEventsSection": {
     "description": "Auto imported from components/events/UpcomingEventsSection.vue"
-  },
-  "MiscBannerCarousel": {
-    "description": "Auto imported from components/misc/BannerCarousel.vue"
-  },
-  "MiscCardCarousel": {
-    "description": "Auto imported from components/misc/CardCarousel.vue"
-  },
-  "MiscDividedSection": {
-    "description": "Auto imported from components/misc/DividedSection.vue"
-  },
-  "MiscEventsCard": {
-    "description": "Auto imported from components/misc/EventsCard.vue"
-  },
-  "MiscNewsCard": {
-    "description": "Auto imported from components/misc/NewsCard.vue"
-  },
-  "MiscStatsCard": {
-    "description": "Auto imported from components/misc/StatsCard.vue"
-  },
-  "MiscSuccessStory": {
-    "description": "Auto imported from components/misc/SuccessStory.vue"
   },
   "HomeBlogCard": {
     "description": "Auto imported from components/home/BlogCard.vue"
@@ -94,5 +91,29 @@
   },
   "HomeWelcomeSection": {
     "description": "Auto imported from components/home/WelcomeSection.vue"
+  },
+  "MiscBannerCarousel": {
+    "description": "Auto imported from components/misc/BannerCarousel.vue"
+  },
+  "MiscCardCarousel": {
+    "description": "Auto imported from components/misc/CardCarousel.vue"
+  },
+  "MiscDividedSection": {
+    "description": "Auto imported from components/misc/DividedSection.vue"
+  },
+  "MiscEventsCard": {
+    "description": "Auto imported from components/misc/EventsCard.vue"
+  },
+  "MiscNewsCard": {
+    "description": "Auto imported from components/misc/NewsCard.vue"
+  },
+  "MiscStatsCard": {
+    "description": "Auto imported from components/misc/StatsCard.vue"
+  },
+  "MiscSuccessStory": {
+    "description": "Auto imported from components/misc/SuccessStory.vue"
+  },
+  "MiscSuccessStoryCard": {
+    "description": "Auto imported from components/misc/SuccessStoryCard.vue"
   }
 }

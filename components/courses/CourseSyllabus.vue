@@ -91,3 +91,10 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+.accordion-container__accordion-head::after {
+  font-size: 30px;
+  left: -8px;
+}
+</style>

@@ -2,6 +2,7 @@ export { default as Footer } from '../../components/Footer.vue'
 export { default as MainNav } from '../../components/MainNav.vue'
 export { default as Navigation } from '../../components/Navigation.vue'
 export { default as SubNavMegaNav } from '../../components/SubNavMegaNav.vue'
+export { default as CoursesCourseBatch } from '../../components/courses/CourseBatch.vue'
 export { default as CoursesCourseBySubjectSection } from '../../components/courses/CourseBySubjectSection.vue'
 export { default as CoursesCourseCard } from '../../components/courses/CourseCard.vue'
 export { default as CoursesCourseCardSmall } from '../../components/courses/CourseCardSmall.vue'
@@ -40,6 +41,7 @@ export const LazyFooter = import('../../components/Footer.vue' /* webpackChunkNa
 export const LazyMainNav = import('../../components/MainNav.vue' /* webpackChunkName: "components/main-nav" */).then(c => c.default || c)
 export const LazyNavigation = import('../../components/Navigation.vue' /* webpackChunkName: "components/navigation" */).then(c => c.default || c)
 export const LazySubNavMegaNav = import('../../components/SubNavMegaNav.vue' /* webpackChunkName: "components/sub-nav-mega-nav" */).then(c => c.default || c)
+export const LazyCoursesCourseBatch = import('../../components/courses/CourseBatch.vue' /* webpackChunkName: "components/courses-course-batch" */).then(c => c.default || c)
 export const LazyCoursesCourseBySubjectSection = import('../../components/courses/CourseBySubjectSection.vue' /* webpackChunkName: "components/courses-course-by-subject-section" */).then(c => c.default || c)
 export const LazyCoursesCourseCard = import('../../components/courses/CourseCard.vue' /* webpackChunkName: "components/courses-course-card" */).then(c => c.default || c)
 export const LazyCoursesCourseCardSmall = import('../../components/courses/CourseCardSmall.vue' /* webpackChunkName: "components/courses-course-card-small" */).then(c => c.default || c)

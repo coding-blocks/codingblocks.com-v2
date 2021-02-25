@@ -17,6 +17,8 @@
               <CourseSyllabus />
 
               <CourseProjects />
+
+              <CourseHighlights />
             </div>
 
             <div class="col-lg-4 col-md-5">
@@ -148,6 +150,7 @@ import CourseDescriptionSection from '@/components/courses/CourseDescriptionSect
 import CourseSyllabus from '@/components/courses/CourseSyllabus.vue'
 import CourseProjects from '@/components/courses/CourseProjects.vue'
 import CourseBatch from '@/components/courses/CourseBatch.vue'
+import CourseHighlights from '@/components/courses/CourseHighlights.vue'
 
 export default {
   components: {
@@ -155,6 +158,7 @@ export default {
     CourseSyllabus,
     CourseProjects,
     CourseBatch,
+    CourseHighlights,
   },
 }
 </script>

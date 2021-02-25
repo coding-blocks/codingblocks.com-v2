@@ -66,7 +66,6 @@
 </template>
 
 <script>
-import BannerRespository from '@/repositories/banner';
 export default {
 
   mounted() {
@@ -136,7 +135,7 @@ export default {
     }
   },
   async fetch(){
-    this.banner = await BannerRespository.fetchBanners();
+    this.banner = await this.$repositories.home.banners();
   
   }
 };

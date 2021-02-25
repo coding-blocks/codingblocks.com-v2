@@ -62,40 +62,46 @@
       </div>
     </div>
     <div class="landing-page__section bg-white">
-      <div class="row">
-        <div class="col-md-6 mb-md-none mb-40 pr-md-60">
-          <div class="heading-4 mb-md-50 mb-30 bold">About the Workshop</div>
-          <div class="font-4 t-align-j">
-            Machine learning is the science of getting computers to act without
-            being explicitly programmed. In the past decade, machine learning
-            has given us self-driving cars, practical speech recognition,
-            effective web search, and very vastly improved understanding of the
-            human genome. Machine learning is so pervasive today that you
-            probably use it dozens of times a day without knowing it. Many
-            researchers also think it is the best way to make progress towards
-            human-level AI. In this class, you will learn about the most
-            effective machine learning techniques, and gain practice
-            implementing them and...more
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="heading-4 bold mb-md-50 mb-30">Mentors</div>
-          <div class="mb-md-50 mb-30 row no-gutters align-items-center">
-            <div class="s-100x100 round">
-              <img src="https://minio.codingblocks.com/amoeba/arnva-min.webp" />
-            </div>
-            <div class="flex-1 pl-30">
-              <div class="font-5 bold">Arnav Gupta</div>
-              <div class="mt-10 font-4 orange">Designation Here</div>
+      <div class="width-limiter">
+        <div class="row">
+          <div class="col-md-6 mb-md-none mb-40 pr-md-60">
+            <div class="heading-4 mb-md-50 mb-30 bold">About the Workshop</div>
+            <div class="font-4 t-align-j">
+              Machine learning is the science of getting computers to act
+              without being explicitly programmed. In the past decade, machine
+              learning has given us self-driving cars, practical speech
+              recognition, effective web search, and very vastly improved
+              understanding of the human genome. Machine learning is so
+              pervasive today that you probably use it dozens of times a day
+              without knowing it. Many researchers also think it is the best way
+              to make progress towards human-level AI. In this class, you will
+              learn about the most effective machine learning techniques, and
+              gain practice implementing them and...more
             </div>
           </div>
-          <div class="row no-gutters align-items-center">
-            <div class="s-100x100 round">
-              <img src="https://minio.codingblocks.com/amoeba/arnva-min.webp" />
+          <div class="col-md-6">
+            <div class="heading-4 bold mb-md-50 mb-30">Mentors</div>
+            <div class="mb-md-50 mb-30 row no-gutters align-items-center">
+              <div class="s-100x100 round">
+                <img
+                  src="https://minio.codingblocks.com/amoeba/arnva-min.webp"
+                />
+              </div>
+              <div class="flex-1 pl-30">
+                <div class="font-5 bold">Arnav Gupta</div>
+                <div class="mt-10 font-4 orange">Designation Here</div>
+              </div>
             </div>
-            <div class="flex-1 pl-30">
-              <div class="font-5 bold">Arnav Gupta</div>
-              <div class="mt-10 font-4 orange">Designation Here</div>
+            <div class="row no-gutters align-items-center">
+              <div class="s-100x100 round">
+                <img
+                  src="https://minio.codingblocks.com/amoeba/arnva-min.webp"
+                />
+              </div>
+              <div class="flex-1 pl-30">
+                <div class="font-5 bold">Arnav Gupta</div>
+                <div class="mt-10 font-4 orange">Designation Here</div>
+              </div>
             </div>
           </div>
         </div>
@@ -105,13 +111,3 @@
     <Footer />
   </div>
 </template>
-
-<script>
-import Navigation from '@/components/Navigation.vue'
-
-export default {
-  components: {
-    Navigation,
-  },
-}
-</script>

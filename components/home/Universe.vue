@@ -34,12 +34,12 @@ export default {
           index: 0,
           planets: [
             [
-              'https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg',
+              'https://minio.codingblocks.com/img/pulkit-min.webp',
               'https://minio.codingblocks.com/amoeba/arnva-min.webp',
               'https://minio.codingblocks.com/amoeba/prateek-min.webp',
             ],
             [
-              'https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg',
+              'https://minio.codingblocks.com/img/pulkit-min.webp',
               'https://minio.codingblocks.com/amoeba/arnva-min.webp',
               'https://minio.codingblocks.com/amoeba/prateek-min.webp',
             ],
@@ -49,17 +49,17 @@ export default {
           index: 1,
           planets: [
             [
-              'https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg',
+              'https://minio.codingblocks.com/img/pulkit-min.webp',
               'https://minio.codingblocks.com/amoeba/arnva-min.webp',
               'https://minio.codingblocks.com/amoeba/prateek-min.webp',
             ],
             [
-              'https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg',
+              'https://minio.codingblocks.com/img/pulkit-min.webp',
               'https://minio.codingblocks.com/amoeba/arnva-min.webp',
               'https://minio.codingblocks.com/amoeba/prateek-min.webp',
             ],
             [
-              'https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg',
+              'https://minio.codingblocks.com/img/pulkit-min.webp',
               'https://minio.codingblocks.com/amoeba/arnva-min.webp',
               'https://minio.codingblocks.com/amoeba/prateek-min.webp',
             ],
@@ -69,22 +69,22 @@ export default {
           index: 2,
           planets: [
             [
-              'https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg',
+              'https://minio.codingblocks.com/img/pulkit-min.webp',
               'https://minio.codingblocks.com/amoeba/arnva-min.webp',
               'https://minio.codingblocks.com/amoeba/prateek-min.webp',
             ],
             [
-              'https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg',
+              'https://minio.codingblocks.com/img/pulkit-min.webp',
               'https://minio.codingblocks.com/amoeba/arnva-min.webp',
               'https://minio.codingblocks.com/amoeba/prateek-min.webp',
             ],
             [
-              'https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg',
+              'https://minio.codingblocks.com/img/pulkit-min.webp',
               'https://minio.codingblocks.com/amoeba/arnva-min.webp',
               'https://minio.codingblocks.com/amoeba/prateek-min.webp',
             ],
             [
-              'https://news.artnet.com/app/news-upload/2017/10/Taylor-Dafoe_Head-Shot-256x256.jpg',
+              'https://minio.codingblocks.com/img/pulkit-min.webp',
               'https://minio.codingblocks.com/amoeba/arnva-min.webp',
               'https://minio.codingblocks.com/amoeba/prateek-min.webp',
             ],

@@ -13,7 +13,7 @@
     </div>
     <div>
       <div class="heading-5 bold mb-1">{{ story.student_name }}</div>
-      <div class="font-3 text-grey mb-20">{{ story.student_college }}</div>
+      <div class="font-3 text-orange mb-20">{{ story.student_college }}</div>
       <div class="font-4">
         {{ story.description }}
       </div>

@@ -32,7 +32,6 @@
       <img
         :src="story.image_link"
         class="success-story__image d-md-block d-none ml-lg-50 ml-md-30"
-        :style="{ marginRight: '0 !important;' }"
       />
     </div>
   </div>
@@ -43,3 +42,9 @@ export default {
   props: ['story'],
 }
 </script>
+
+<style scoped>
+.success-story__image {
+  margin-right: 0 !important;
+}
+</style>

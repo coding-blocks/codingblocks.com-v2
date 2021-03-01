@@ -2,7 +2,7 @@
   <!-- Success Stories Section -->
   <div class="landing-page__section">
     <div class="width-limiter">
-      <CardCarousel>
+      <CardCarousel class="card">
         <MajorSuccessStoryCard
           :story="story"
           v-for="(story, index) in majorStories"
@@ -10,10 +10,10 @@
         />
       </CardCarousel>
 
-      <div class="mt-50">
+      <div class="mt-sm-100 mt-50">
         <div class="row">
           <div
-            class="col-lg-4 col-md-6 h-inherit"
+            class="col-lg-4 col-md-6 h-inherit mb-sm-50 mb-30"
             v-for="(story, index) in otherStories"
             :key="index"
           >

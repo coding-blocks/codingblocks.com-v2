@@ -5,6 +5,12 @@
     <div class="landing-page">
       <MajorSuccessStories />
 
+      <div class="landing-page__section">
+        <div class="t-align-c">
+          <div class="heading-4 bold mb-50">Students got placed at</div>
+        </div>
+      </div>
+
       <Footer />
     </div>
   </div>

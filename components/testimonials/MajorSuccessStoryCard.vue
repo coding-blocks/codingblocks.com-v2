@@ -16,10 +16,6 @@
           </div>
         </div>
       </div>
-      <img
-        :src="story.image_link"
-        class="success-story__image d-md-block d-none"
-      />
       <div class="flex-1">
         <div class="d-md-block d-none">
           <div class="heading-2 bold text-orange mb-3">
@@ -33,6 +29,11 @@
           {{ story.description }}
         </div>
       </div>
+      <img
+        :src="story.image_link"
+        class="success-story__image d-md-block d-none ml-lg-50 ml-md-30"
+        :style="{ marginRight: '0 !important;' }"
+      />
     </div>
   </div>
 </template>

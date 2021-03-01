@@ -36,6 +36,6 @@
 
 <script>
 export default {
-  props: ["story_title", "story_subtitle", "image_link", "description"],
-};
+  props: ['story_title', 'story_subtitle', 'image_link', 'description'],
+}
 </script>

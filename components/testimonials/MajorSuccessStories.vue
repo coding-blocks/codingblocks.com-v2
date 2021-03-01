@@ -2,15 +2,13 @@
   <!-- Success Stories Section -->
   <div class="landing-page__section">
     <div class="width-limiter">
-      <div class="mt-sm-50 mt-25">
-        <CardCarousel>
-          <MajorSuccessStoryCard
-            :story="story"
-            v-for="(story, index) in stories"
-            :key="index"
-          />
-        </CardCarousel>
-      </div>
+      <CardCarousel>
+        <MajorSuccessStoryCard
+          :story="story"
+          v-for="(story, index) in stories"
+          :key="index"
+        />
+      </CardCarousel>
     </div>
   </div>
 </template>

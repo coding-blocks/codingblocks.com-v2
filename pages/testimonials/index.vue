@@ -3,7 +3,7 @@
     <Navigation />
 
     <div class="landing-page">
-      <SuccessStoriesSection />
+      <MajorSuccessStories />
 
       <Footer />
     </div>
@@ -11,11 +11,11 @@
 </template>
 
 <script>
-import SuccessStoriesSection from '@/components/home/SuccessStoriesSection.vue'
+import MajorSuccessStories from '@/components/testimonials/MajorSuccessStories.vue'
 
 export default {
   components: {
-    SuccessStoriesSection,
+    MajorSuccessStories,
   },
 }
 </script>

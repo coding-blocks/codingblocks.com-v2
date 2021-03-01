@@ -115,5 +115,11 @@
   },
   "MiscSuccessStoryCard": {
     "description": "Auto imported from components/misc/SuccessStoryCard.vue"
+  },
+  "TestimonialsMajorSuccessStories": {
+    "description": "Auto imported from components/testimonials/MajorSuccessStories.vue"
+  },
+  "TestimonialsMajorSuccessStoryCard": {
+    "description": "Auto imported from components/testimonials/MajorSuccessStoryCard.vue"
   }
 }

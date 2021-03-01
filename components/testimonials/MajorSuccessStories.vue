@@ -3,7 +3,13 @@
   <div class="landing-page__section">
     <div class="width-limiter">
       <div class="mt-sm-50 mt-25">
-        <CardCarousel> </CardCarousel>
+        <CardCarousel>
+          <MajorSuccessStoryCard
+            :story="story"
+            v-for="(story, index) in stories"
+            :key="index"
+          />
+        </CardCarousel>
       </div>
     </div>
   </div>
@@ -11,7 +17,7 @@
 
 <script>
 import CardCarousel from '@/components/misc/CardCarousel.vue'
-import SuccessStory from '@/components/misc/SuccessStory.vue'
+import MajorSuccessStoryCard from '@/components/testimonials/MajorSuccessStoryCard.vue'
 
 export default {
   data() {
@@ -38,7 +44,7 @@ export default {
   },
   components: {
     CardCarousel,
-    SuccessStory,
+    MajorSuccessStoryCard,
   },
 }
 </script>

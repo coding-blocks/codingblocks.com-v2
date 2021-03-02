@@ -47,6 +47,12 @@
   "CoursesTracksSection": {
     "description": "Auto imported from components/courses/TracksSection.vue"
   },
+  "EventsUpcomingCourseSection": {
+    "description": "Auto imported from components/events/UpcomingCourseSection.vue"
+  },
+  "EventsUpcomingEventsSection": {
+    "description": "Auto imported from components/events/UpcomingEventsSection.vue"
+  },
   "HomeBlogCard": {
     "description": "Auto imported from components/home/BlogCard.vue"
   },
@@ -61,6 +67,9 @@
   },
   "HomeCoursesSectionCardsSection": {
     "description": "Auto imported from components/home/CoursesSectionCardsSection.vue"
+  },
+  "HomeIntroductionSection": {
+    "description": "Auto imported from components/home/IntroductionSection.vue"
   },
   "HomeMentorSection": {
     "description": "Auto imported from components/home/MentorSection.vue"
@@ -109,12 +118,6 @@
   },
   "MiscSuccessStoryCard": {
     "description": "Auto imported from components/misc/SuccessStoryCard.vue"
-  },
-  "EventsUpcomingCourseSection": {
-    "description": "Auto imported from components/events/UpcomingCourseSection.vue"
-  },
-  "EventsUpcomingEventsSection": {
-    "description": "Auto imported from components/events/UpcomingEventsSection.vue"
   },
   "TestimonialsMajorSuccessStories": {
     "description": "Auto imported from components/testimonials/MajorSuccessStories.vue"

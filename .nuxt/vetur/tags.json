@@ -68,6 +68,9 @@
   "HomeCoursesSectionCardsSection": {
     "description": "Auto imported from components/home/CoursesSectionCardsSection.vue"
   },
+  "HomeIntroductionSection": {
+    "description": "Auto imported from components/home/IntroductionSection.vue"
+  },
   "HomeMentorSection": {
     "description": "Auto imported from components/home/MentorSection.vue"
   },

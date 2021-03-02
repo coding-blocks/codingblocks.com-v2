@@ -21,6 +21,7 @@ export { default as HomeBlogsSection } from '../../components/home/BlogsSection.
 export { default as HomeCollegesAndCompaniesSection } from '../../components/home/CollegesAndCompaniesSection.vue'
 export { default as HomeCoursesSection } from '../../components/home/CoursesSection.vue'
 export { default as HomeCoursesSectionCardsSection } from '../../components/home/CoursesSectionCardsSection.vue'
+export { default as HomeIntroductionSection } from '../../components/home/IntroductionSection.vue'
 export { default as HomeMentorSection } from '../../components/home/MentorSection.vue'
 export { default as HomeNewsSection } from '../../components/home/NewsSection.vue'
 export { default as HomePracticeAndHireSection } from '../../components/home/PracticeAndHireSection.vue'
@@ -63,6 +64,7 @@ export const LazyHomeBlogsSection = import('../../components/home/BlogsSection.v
 export const LazyHomeCollegesAndCompaniesSection = import('../../components/home/CollegesAndCompaniesSection.vue' /* webpackChunkName: "components/home-colleges-and-companies-section" */).then(c => c.default || c)
 export const LazyHomeCoursesSection = import('../../components/home/CoursesSection.vue' /* webpackChunkName: "components/home-courses-section" */).then(c => c.default || c)
 export const LazyHomeCoursesSectionCardsSection = import('../../components/home/CoursesSectionCardsSection.vue' /* webpackChunkName: "components/home-courses-section-cards-section" */).then(c => c.default || c)
+export const LazyHomeIntroductionSection = import('../../components/home/IntroductionSection.vue' /* webpackChunkName: "components/home-introduction-section" */).then(c => c.default || c)
 export const LazyHomeMentorSection = import('../../components/home/MentorSection.vue' /* webpackChunkName: "components/home-mentor-section" */).then(c => c.default || c)
 export const LazyHomeNewsSection = import('../../components/home/NewsSection.vue' /* webpackChunkName: "components/home-news-section" */).then(c => c.default || c)
 export const LazyHomePracticeAndHireSection = import('../../components/home/PracticeAndHireSection.vue' /* webpackChunkName: "components/home-practice-and-hire-section" */).then(c => c.default || c)

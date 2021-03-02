@@ -62,7 +62,7 @@
           </div>
           <div class="row mt-50">
             <div class="col-lg-4 col-md-5 col-sm-6 mb-25 h-inherit">
-              <SuccessStoryCard />
+              <!-- <SuccessStoryCard /> -->
             </div>
           </div>
         </div>

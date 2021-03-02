@@ -102,8 +102,8 @@ export default {
       for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
       }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
+      // slides[slideIndex - 1].style.display = "block";
+      // dots[slideIndex - 1].className += " active";
     }
 
     var prev = sliderContainer.getElementsByClassName(
@@ -132,12 +132,10 @@ export default {
   data(){
     return {
       banner: [],
-      courses:[]
     }
   },
   async fetch(){
     this.banner = await this.$repositories.home.banners();
-    this.courses = await this.$repositories.home.fetchCourses();
   }
 };
 </script>

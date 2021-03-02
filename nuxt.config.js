@@ -15,7 +15,7 @@ export default {
         rel: 'stylesheet',
         type: 'text/css',
         href:
-          'https://unpkg.com/@coding-blocks/motley@2.7.17/dist/coding-blocks/app.min.css',
+          'https://unpkg.com/@coding-blocks/motley@2.8.0/dist/coding-blocks/app.min.css',
       },
     ],
   },

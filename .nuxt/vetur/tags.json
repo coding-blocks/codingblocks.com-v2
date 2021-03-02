@@ -11,6 +11,9 @@
   "SubNavMegaNav": {
     "description": "Auto imported from components/SubNavMegaNav.vue"
   },
+  "CoursesCourseBatch": {
+    "description": "Auto imported from components/courses/CourseBatch.vue"
+  },
   "CoursesCourseBySubjectSection": {
     "description": "Auto imported from components/courses/CourseBySubjectSection.vue"
   },
@@ -20,8 +23,23 @@
   "CoursesCourseCardSmall": {
     "description": "Auto imported from components/courses/CourseCardSmall.vue"
   },
+  "CoursesCourseDescriptionSection": {
+    "description": "Auto imported from components/courses/CourseDescriptionSection.vue"
+  },
+  "CoursesCourseHighlights": {
+    "description": "Auto imported from components/courses/CourseHighlights.vue"
+  },
   "CoursesCourseList": {
     "description": "Auto imported from components/courses/CourseList.vue"
+  },
+  "CoursesCoursePageMentorsSection": {
+    "description": "Auto imported from components/courses/CoursePageMentorsSection.vue"
+  },
+  "CoursesCourseProjects": {
+    "description": "Auto imported from components/courses/CourseProjects.vue"
+  },
+  "CoursesCourseSyllabus": {
+    "description": "Auto imported from components/courses/CourseSyllabus.vue"
   },
   "CoursesHelpSection": {
     "description": "Auto imported from components/courses/HelpSection.vue"
@@ -34,6 +52,12 @@
   },
   "EventsUpcomingEventsSection": {
     "description": "Auto imported from components/events/UpcomingEventsSection.vue"
+  },
+  "TestimonialsMajorSuccessStories": {
+    "description": "Auto imported from components/testimonials/MajorSuccessStories.vue"
+  },
+  "TestimonialsMajorSuccessStoryCard": {
+    "description": "Auto imported from components/testimonials/MajorSuccessStoryCard.vue"
   },
   "MiscBannerCarousel": {
     "description": "Auto imported from components/misc/BannerCarousel.vue"
@@ -55,6 +79,9 @@
   },
   "MiscSuccessStory": {
     "description": "Auto imported from components/misc/SuccessStory.vue"
+  },
+  "MiscSuccessStoryCard": {
+    "description": "Auto imported from components/misc/SuccessStoryCard.vue"
   },
   "HomeBlogCard": {
     "description": "Auto imported from components/home/BlogCard.vue"

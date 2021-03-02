@@ -7,7 +7,7 @@
     >
       <div
         class="row no-gutters justify-content-end align-items-center border-bottom position-sticky tl bg-white z-pos"
-        style="height: 89px;"
+        style="height: 89px"
       >
         <img
           src="https://minio.codingblocks.com/amoeba/wrong-close.png"
@@ -21,7 +21,7 @@
       </div>
       <div class="px-40">
         <div class="mb-15 hamburger-nav__menu-element">
-          <div style="width: 50px;">
+          <div style="width: 50px">
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-learn.svg"
             />
@@ -29,7 +29,7 @@
           <div class="font-5 ml-15">Learn</div>
         </div>
         <div class="mb-15 hamburger-nav__menu-element">
-          <div style="width: 50px;">
+          <div style="width: 50px">
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-practice.svg"
             />
@@ -37,7 +37,7 @@
           <div class="font-5 ml-15">Practice</div>
         </div>
         <div class="mb-15 hamburger-nav__menu-element">
-          <div style="width: 50px;">
+          <div style="width: 50px">
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-hire.svg"
             />
@@ -45,7 +45,7 @@
           <div class="font-5 ml-15">Get Hired</div>
         </div>
         <div class="mb-15 hamburger-nav__menu-element">
-          <div style="width: 50px;">
+          <div style="width: 50px">
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-ide.svg"
             />
@@ -59,9 +59,7 @@
           class="hamburger-nav__accordion-menu-element__header"
           for="check1"
         >
-          <div class="flex-1 pr-20 font-5">
-            Courses
-          </div>
+          <div class="flex-1 pr-20 font-5">Courses</div>
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/accordion-open-grey.svg"
           />
@@ -70,7 +68,7 @@
           <div class="mb-50">
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/online-courses.svg"
-              style="height: 40px;"
+              style="height: 40px"
             />
             <div class="font-3 bold mt-15 text-grey-light-1">
               ONLINE COURSES
@@ -82,15 +80,13 @@
                 </a>
                 <div
                   class="bg-gradient-yellow white font-1 p-1 d-inline-block"
-                  style="border-radius: 2px;"
+                  style="border-radius: 2px"
                 >
                   NEW
                 </div>
               </div>
               <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#">
-                  JAVA Master Course
-                </a>
+                <a class="font-4 bold pointer" href="#"> JAVA Master Course </a>
               </div>
               <div class="mb-20 row no-gutters align-items-center">
                 <a class="font-4 bold pointer" href="#">
@@ -103,9 +99,7 @@
                 </a>
               </div>
               <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#">
-                  Data Science
-                </a>
+                <a class="font-4 bold pointer" href="#"> Data Science </a>
               </div>
               <div class="mb-20 row no-gutters align-items-center">
                 <a class="font-4 bold pointer" href="#">
@@ -124,21 +118,17 @@
           <div class="mb-50">
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/classroom-courses.svg"
-              style="height: 40px;"
+              style="height: 40px"
             />
             <div class="font-3 bold mt-15 text-grey-light-1">
               CLASSROOM COURSES
             </div>
             <div class="mt-35 mb-15">
               <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#">
-                  C++ Master Course
-                </a>
+                <a class="font-4 bold pointer" href="#"> C++ Master Course </a>
               </div>
               <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#">
-                  JAVA Master Course
-                </a>
+                <a class="font-4 bold pointer" href="#"> JAVA Master Course </a>
               </div>
               <div class="mb-20 row no-gutters align-items-center">
                 <a class="font-4 bold pointer" href="#">
@@ -151,12 +141,10 @@
                 </a>
               </div>
               <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer mr-20" href="#">
-                  Data Science
-                </a>
+                <a class="font-4 bold pointer mr-20" href="#"> Data Science </a>
                 <div
                   class="bg-gradient-yellow white font-1 p-1 d-inline-block"
-                  style="border-radius: 2px;"
+                  style="border-radius: 2px"
                 >
                   NEW
                 </div>
@@ -178,21 +166,15 @@
           <div class="mb-50">
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/live-courses.svg"
-              style="height: 40px;"
+              style="height: 40px"
             />
-            <div class="font-3 bold mt-15 text-grey-light-1">
-              LIVE COURSES
-            </div>
+            <div class="font-3 bold mt-15 text-grey-light-1">LIVE COURSES</div>
             <div class="mt-35 mb-15">
               <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#">
-                  C++ Master Course
-                </a>
+                <a class="font-4 bold pointer" href="#"> C++ Master Course </a>
               </div>
               <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#">
-                  JAVA Master Course
-                </a>
+                <a class="font-4 bold pointer" href="#"> JAVA Master Course </a>
               </div>
               <div class="mb-20 row no-gutters align-items-center">
                 <a class="font-4 bold pointer" href="#">
@@ -205,9 +187,7 @@
                 </a>
               </div>
               <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#">
-                  Data Science
-                </a>
+                <a class="font-4 bold pointer" href="#"> Data Science </a>
               </div>
               <div class="mb-20 row no-gutters align-items-center">
                 <a class="font-4 bold pointer" href="#">
@@ -226,7 +206,7 @@
           <div>
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/live-courses.svg"
-              style="height: 40px;"
+              style="height: 40px"
             />
             <div class="row no-gutters align-items-center mt-15">
               <div class="font-3 bold text-grey-light-1 mr-20">
@@ -234,21 +214,17 @@
               </div>
               <div
                 class="bg-gradient-yellow white font-1 p-1 d-inline-block"
-                style="border-radius: 2px;"
+                style="border-radius: 2px"
               >
                 NEW
               </div>
             </div>
             <div class="mt-35 mb-15">
               <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#">
-                  C++ Master Course
-                </a>
+                <a class="font-4 bold pointer" href="#"> C++ Master Course </a>
               </div>
               <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#">
-                  JAVA Master Course
-                </a>
+                <a class="font-4 bold pointer" href="#"> JAVA Master Course </a>
               </div>
               <div class="mb-20 row no-gutters align-items-center">
                 <a class="font-4 bold pointer" href="#">
@@ -265,9 +241,7 @@
           class="hamburger-nav__accordion-menu-element__header"
           for="check2"
         >
-          <div class="flex-1 pr-20 font-5">
-            Events
-          </div>
+          <div class="flex-1 pr-20 font-5">Events</div>
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/accordion-open-grey.svg"
           />
@@ -279,9 +253,7 @@
           class="hamburger-nav__accordion-menu-element__header"
           for="check3"
         >
-          <div class="flex-1 pr-20 font-5">
-            Blog
-          </div>
+          <div class="flex-1 pr-20 font-5">Blog</div>
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/accordion-open-grey.svg"
           />
@@ -293,9 +265,7 @@
           class="hamburger-nav__accordion-menu-element__header"
           for="check4"
         >
-          <div class="flex-1 pr-20 font-5">
-            Campus Superheros
-          </div>
+          <div class="flex-1 pr-20 font-5">Campus Superheros</div>
         </label>
       </div>
       <div class="hamburger-nav__accordion-menu-element">
@@ -304,9 +274,7 @@
           class="hamburger-nav__accordion-menu-element__header"
           for="check5"
         >
-          <div class="flex-1 pr-20 font-5">
-            Contact
-          </div>
+          <div class="flex-1 pr-20 font-5">Contact</div>
         </label>
       </div>
     </div>
@@ -342,7 +310,10 @@
               </a>
             </div>
             <div class="super-navbar__link">
-              <a href="https://hire.codingblocks.com/applicants" target="_blank">
+              <a
+                href="https://hire.codingblocks.com/applicants"
+                target="_blank"
+              >
                 <img
                   src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-hire.svg"
                 />
@@ -369,9 +340,13 @@
                 </div>
               </div>
             </div>
-            <button class="button-primary ml-20 d-md-block d-none">
+            <a
+              href="https://account.codingblocks.com/login"
+              class="button-primary ml-20 d-md-block d-none"
+              target="_blank"
+            >
               Login / Signup
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -382,17 +357,17 @@
 <script>
 export default {
   mounted() {
-    const hamburgerOpenToggle = document.querySelector("#hamburger-open");
-    const hamburgerCloseToggle = document.querySelector("#hamburger-close");
-    const hamburgerNav = document.querySelector("#hamburger-nav");
+    const hamburgerOpenToggle = document.querySelector('#hamburger-open')
+    const hamburgerCloseToggle = document.querySelector('#hamburger-close')
+    const hamburgerNav = document.querySelector('#hamburger-nav')
 
-    hamburgerOpenToggle.addEventListener("click", () => {
-      hamburgerNav.classList.remove("hamburger-nav--hidden");
-    });
+    hamburgerOpenToggle.addEventListener('click', () => {
+      hamburgerNav.classList.remove('hamburger-nav--hidden')
+    })
 
-    hamburgerCloseToggle.addEventListener("click", () => {
-      hamburgerNav.classList.add("hamburger-nav--hidden");
-    });
+    hamburgerCloseToggle.addEventListener('click', () => {
+      hamburgerNav.classList.add('hamburger-nav--hidden')
+    })
   },
-};
+}
 </script>

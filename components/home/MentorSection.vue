@@ -21,52 +21,18 @@
       </div>
       <div class="mt-sm-50 mt-25">
         <div class="row no-gutters justify-content-center">
-          <div class="t-align-c px-20 mb-25">
-            <img
-              src="https://i2.wp.com/digital-photography-school.com/wp-content/uploads/2011/07/outdoor-portraits-1.jpg?resize=2000%2C1160&ssl=1"
-              class="big-photo"
-            />
-            <div class="mt-25 heading-4 bold d-sm-block d-none">
-              Kartik Mathur
-            </div>
-            <div class="mt-25 heading-6 bold d-sm-none d-block">
-              Kartik Mathur
-            </div>
-          </div>
-          <div class="t-align-c px-20 mb-25">
-            <img
-              src="https://i2.wp.com/digital-photography-school.com/wp-content/uploads/2011/07/outdoor-portraits-1.jpg?resize=2000%2C1160&ssl=1"
-              class="big-photo"
-            />
-            <div class="mt-25 heading-4 bold d-sm-block d-none">
-              Kartik Mathur
-            </div>
-            <div class="mt-25 heading-6 bold d-sm-none d-block">
-              Kartik Mathur
-            </div>
-          </div>
-          <div class="t-align-c px-20 mb-25">
-            <img
-              src="https://i2.wp.com/digital-photography-school.com/wp-content/uploads/2011/07/outdoor-portraits-1.jpg?resize=2000%2C1160&ssl=1"
-              class="big-photo"
-            />
-            <div class="mt-25 heading-4 bold d-sm-block d-none">
-              Kartik Mathur
-            </div>
-            <div class="mt-25 heading-6 bold d-sm-none d-block">
-              Kartik Mathur
-            </div>
-          </div>
-          <div class="t-align-c px-20 mb-25">
-            <img
-              src="https://i2.wp.com/digital-photography-school.com/wp-content/uploads/2011/07/outdoor-portraits-1.jpg?resize=2000%2C1160&ssl=1"
-              class="big-photo"
-            />
-            <div class="mt-25 heading-4 bold d-sm-block d-none">
-              Kartik Mathur
-            </div>
-            <div class="mt-25 heading-6 bold d-sm-none d-block">
-              Kartik Mathur
+          <div v-for="(member, index) in teamMembers" :key="index">
+            <div
+              class="t-align-c px-20 mb-25"
+              v-if="member.member_type === 'Mentor'"
+            >
+              <img :src="member.member_image" class="big-photo" />
+              <div class="mt-25 heading-4 bold d-sm-block d-none">
+                {{ member.member_name }}
+              </div>
+              <div class="mt-25 heading-6 bold d-sm-none d-block">
+                {{ member.member_name }}
+              </div>
             </div>
           </div>
         </div>
@@ -88,7 +54,36 @@
 export default {
   data() {
     return {
-      members: [{}],
+      teamMembers: [
+        {
+          member_image: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
+          member_type: 'Mentor',
+          member_name: 'Arnav Gupta',
+          member_description: 'Champion Swimmer Gupta!',
+          member_contact: 'a@cb.lk',
+        },
+        {
+          member_image: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
+          member_type: 'Developer',
+          member_name: 'Arnav Gupta',
+          member_description: 'Champion Swimmer Gupta!',
+          member_contact: 'a@cb.lk',
+        },
+        {
+          member_image: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
+          member_type: 'Mentor',
+          member_name: 'Arnav Gupta',
+          member_description: 'Champion Swimmer Gupta!',
+          member_contact: 'a@cb.lk',
+        },
+        {
+          member_image: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
+          member_type: 'Management',
+          member_name: 'Arnav Gupta',
+          member_description: 'Champion Swimmer Gupta!',
+          member_contact: 'a@cb.lk',
+        },
+      ],
     }
   },
 }

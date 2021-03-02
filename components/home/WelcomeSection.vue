@@ -11,27 +11,21 @@
               App Developer
             </div>
           </div>
-          <div class="heading-font stroke-font">
-            LEARN THE MOST
-          </div>
-          <div class="heading-font">
-            WANTED SKILLS.
-          </div>
+          <div class="heading-font stroke-font">LEARN THE MOST</div>
+          <div class="heading-font">WANTED SKILLS.</div>
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_welcome.svg"
           />
           <div class="mt-30 mb-40">
             <div class="row no-gutters align-items-center">
-              <button class="button-primary">
-                Get Started
-              </button>
+              <button class="button-primary">Get Started</button>
               <div class="ml-30 heading-5 text-grey">Learn. Practice. Ace.</div>
             </div>
           </div>
-          <div class="mini-banner position-relative br-5">
-            <div class="bg-purple br-5" style="height: 110px;"></div>
+          <div v-if="miniBanner" class="mini-banner position-relative br-5">
+            <img :src="miniBanner.img_url" style="height: 110px" />
             <div class="mini-banner__tag">
-              <div class="font-2">Offer valid till 30th Jan</div>
+              <div class="font-2">{{ miniBanner.tag }}</div>
             </div>
           </div>
         </div>
@@ -44,16 +38,12 @@
               App Developer
             </div>
           </div>
-          <div class="heading-font stroke-font">
-            LEARN THE MOST
-          </div>
-          <div class="heading-font">
-            WANTED SKILLS.
-          </div>
+          <div class="heading-font stroke-font">LEARN THE MOST</div>
+          <div class="heading-font">WANTED SKILLS.</div>
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_welcome.svg"
           />
-          <div class="t-align-c" style="margin: 0 -2.5rem;">
+          <div class="t-align-c" style="margin: 0 -2.5rem">
             <Universe size="small" />
             <div class="heading-6 mt-30">
               Helping people get their dream job.
@@ -75,18 +65,16 @@
             <div
               class="row no-gutters align-items-center justify-content-center"
             >
-              <button class="button-primary">
-                Get Started
-              </button>
+              <button class="button-primary">Get Started</button>
               <div class="ml-30 heading-5 text-grey d-xl-block d-none">
                 Learn. Practice. Ace.
               </div>
             </div>
           </div>
-          <div class="mini-banner position-relative br-5">
-            <div class="bg-purple br-5" style="height: 110px;"></div>
+          <div v-if="miniBanner" class="mini-banner position-relative br-5">
+            <img :src="miniBanner.img_url" style="height: 110px" />
             <div class="mini-banner__tag">
-              <div class="font-2">Offer valid till 30th Jan</div>
+              <div class="font-2">{{ miniBanner.tag }}</div>
             </div>
           </div>
         </div>
@@ -105,9 +93,7 @@
 
       <!-- Stats Section -->
       <div class="mt-60 mb-50">
-        <div class="t-align-c heading-3 bold mb-50">
-          Why Coding Blocks
-        </div>
+        <div class="t-align-c heading-3 bold mb-50">Why Coding Blocks</div>
         <div class="row align-items-center justify-content-center">
           <div class="col-xl-3 col-sm-5 col-12 mb-25">
             <StatsCard
@@ -141,15 +127,17 @@
       </div>
 
       <!-- Banner Section -->
-      <BannerCarousel />
+      <client-only>
+        <BannerCarousel />
+      </client-only>
     </div>
   </div>
 </template>
 
 <script>
-import StatsCard from "@/components/misc/StatsCard.vue";
-import BannerCarousel from "@/components/misc/BannerCarousel";
-import Universe from "@/components/home/Universe.vue";
+import StatsCard from '@/components/misc/StatsCard.vue'
+import BannerCarousel from '@/components/misc/BannerCarousel'
+import Universe from '@/components/home/Universe.vue'
 
 export default {
   components: {
@@ -157,5 +145,13 @@ export default {
     BannerCarousel,
     Universe,
   },
-};
+  data() {
+    return {
+      miniBanner: null,
+    }
+  },
+  async fetch() {
+    this.miniBanner = await this.$repositories.home.miniBanner()
+  },
+}
 </script>

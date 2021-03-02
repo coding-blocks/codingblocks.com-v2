@@ -1,8 +1,8 @@
 <template>
   <div class="slideshow-container mt-50" id="slideshow-container">
-    <div v-if="banner.length != 0"
+    <div v-if="banner.length"
       class="slideshow-container__slide p-xl-100 p-lg-75 p-md-50 p-sm-40 p-25 pb-100"
-      :class="banner[0].background"
+      :class="banner[0].bg_color"
     >
       <div class="row align-items-center no-gutters">
         <div class="col-xl-6 col-lg-8 z-pos t-align-lg-l t-align-c">
@@ -22,7 +22,7 @@
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_welcome.svg"
           />
           <img
-            :src="banner[0].image"
+            :src="banner[0].img_url"
             class="d-lg-none d-block"
           />
           <div class="my-50">
@@ -30,7 +30,7 @@
               {{banner[0].tagline}}
             </div>
             <div class="mt-2 white heading-5">
-              {{banner[0].subTagline}}
+              {{banner[0].subText}}
             </div>
           </div>
           <div>
@@ -131,12 +131,13 @@ export default {
   },
   data(){
     return {
-      banner: []
+      banner: [],
+      courses:[]
     }
   },
   async fetch(){
     this.banner = await this.$repositories.home.banners();
-  
+    this.courses = await this.$repositories.home.fetchCourses();
   }
 };
 </script>

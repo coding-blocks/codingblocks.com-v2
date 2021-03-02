@@ -3,12 +3,8 @@
     <div class="width-limiter">
       <div class="row no-gutters justify-content-between align-items-center">
         <div class="flex-1 t-align-md-l t-align-c">
-          <div class="heading-font stroke-font">
-            OUR EXPERT
-          </div>
-          <div class="heading-font">
-            MENTORS
-          </div>
+          <div class="heading-font stroke-font">OUR EXPERT</div>
+          <div class="heading-font">MENTORS</div>
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_events.svg"
           />
@@ -87,3 +83,13 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      members: [{}],
+    }
+  },
+}
+</script>

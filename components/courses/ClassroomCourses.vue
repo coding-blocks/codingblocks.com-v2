@@ -33,39 +33,15 @@
                 <div class="font-2">Offer valid till 30th Jan</div>
               </div>
             </div>
-            <div class="heading-font stroke-font">LEARN ANYTIME</div>
-            <div class="heading-font">LEARN ANYWHERE</div>
+            <div class="heading-font stroke-font">CLASSROOM</div>
+            <div class="heading-font">COURSES</div>
             <img
-              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_events.svg"
+              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_news.svg"
             />
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/light-theme-vector.svg"
               class="d-lg-none d-block mt-50 mx-auto"
             />
-            <div
-              class="mt-50 row no-gutters justify-content-lg-start justify-content-center"
-            >
-              <div class="card p-0" style="width: fit-content">
-                <div
-                  class="row no-gutters align-items-center justify-content-between py-15 px-30 pointer border-bottom"
-                >
-                  <div class="font-4 pr-100">Popular Courses</div>
-                  <div class="font-4">&#x3009;</div>
-                </div>
-                <div
-                  class="row no-gutters align-items-center justify-content-between py-15 px-30 pointer border-bottom"
-                >
-                  <div class="font-4 pr-100">Foundation Courses</div>
-                  <div class="font-4">&#x3009;</div>
-                </div>
-                <div
-                  class="row no-gutters align-items-center justify-content-between py-15 px-30 pointer"
-                >
-                  <div class="font-4 pr-100">Learning Tracks</div>
-                  <div class="font-4">&#x3009;</div>
-                </div>
-              </div>
-            </div>
           </div>
           <div class="col-6 d-lg-block d-none">
             <img
@@ -80,22 +56,6 @@
           <CourseList
             title="Trending Courses"
             subtitle="Learn and grow as a developer with our project based courses."
-          />
-        </div>
-      </div>
-    </div>
-
-    <div class="landing-page__section">
-      <div class="width-limiter">
-        <CourseList
-          title="Mini Courses"
-          subtitle="Short Courses, Big Impact! Take the big leap through our Mini Courses!"
-        />
-
-        <div class="mt-sm-50 mt-25">
-          <CourseList
-            title="Foundation Courses"
-            subtitle="Short Courses, Big Impact! Take the big leap through our Mini Courses!"
           />
         </div>
       </div>

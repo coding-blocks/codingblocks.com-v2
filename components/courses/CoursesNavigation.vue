@@ -12,9 +12,7 @@
             :class="{ active: activeTab === tab }"
             v-on:click="switchTab(tab)"
           >
-            <slot :name="tabHeadSlotName(tab)">
-              {{ tab }}
-            </slot>
+            {{ tab }}
           </div>
         </div>
       </div>
@@ -42,10 +40,10 @@ export default {
     },
   },
   methods: {
-    tabHeadSlotName(tabName) {
-      let tabNameSorted = tabName.toLowerCase().split(' ').join('-')
-      return `tab-${tabNameSorted}`
-    },
+    // tabHeadSlotName(tabName) {
+    //   let tabNameSorted = tabName.toLowerCase().split(' ').join('-')
+    //   return `tab-${tabNameSorted}`
+    // },
     switchTab(tabName) {
       this.activeTab = tabName
     },

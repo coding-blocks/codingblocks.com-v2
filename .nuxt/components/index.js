@@ -13,6 +13,7 @@ export { default as CoursesCoursePageMentorsSection } from '../../components/cou
 export { default as CoursesCourseProjects } from '../../components/courses/CourseProjects.vue'
 export { default as CoursesCourseSyllabus } from '../../components/courses/CourseSyllabus.vue'
 export { default as CoursesHelpSection } from '../../components/courses/HelpSection.vue'
+export { default as CoursesOnlineCourses } from '../../components/courses/OnlineCourses.vue'
 export { default as CoursesTracksSection } from '../../components/courses/TracksSection.vue'
 export { default as EventsUpcomingCourseSection } from '../../components/events/UpcomingCourseSection.vue'
 export { default as EventsUpcomingEventsSection } from '../../components/events/UpcomingEventsSection.vue'
@@ -56,6 +57,7 @@ export const LazyCoursesCoursePageMentorsSection = import('../../components/cour
 export const LazyCoursesCourseProjects = import('../../components/courses/CourseProjects.vue' /* webpackChunkName: "components/courses-course-projects" */).then(c => c.default || c)
 export const LazyCoursesCourseSyllabus = import('../../components/courses/CourseSyllabus.vue' /* webpackChunkName: "components/courses-course-syllabus" */).then(c => c.default || c)
 export const LazyCoursesHelpSection = import('../../components/courses/HelpSection.vue' /* webpackChunkName: "components/courses-help-section" */).then(c => c.default || c)
+export const LazyCoursesOnlineCourses = import('../../components/courses/OnlineCourses.vue' /* webpackChunkName: "components/courses-online-courses" */).then(c => c.default || c)
 export const LazyCoursesTracksSection = import('../../components/courses/TracksSection.vue' /* webpackChunkName: "components/courses-tracks-section" */).then(c => c.default || c)
 export const LazyEventsUpcomingCourseSection = import('../../components/events/UpcomingCourseSection.vue' /* webpackChunkName: "components/events-upcoming-course-section" */).then(c => c.default || c)
 export const LazyEventsUpcomingEventsSection = import('../../components/events/UpcomingEventsSection.vue' /* webpackChunkName: "components/events-upcoming-events-section" */).then(c => c.default || c)

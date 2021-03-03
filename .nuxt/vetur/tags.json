@@ -44,6 +44,9 @@
   "CoursesHelpSection": {
     "description": "Auto imported from components/courses/HelpSection.vue"
   },
+  "CoursesOnlineCourses": {
+    "description": "Auto imported from components/courses/OnlineCourses.vue"
+  },
   "CoursesTracksSection": {
     "description": "Auto imported from components/courses/TracksSection.vue"
   },

@@ -1,6 +1,16 @@
 <template>
-  <div class="a-cbm" style="margin-top: -70px;">
+  <div class="a-cbm" style="margin-top: -70px">
     <Navigation />
+
+    <div class="mt-50 px-xl-100 px-lg-85 px-md-60 px-sm-50 px-25">
+      <div class="width-limiter">
+        <div class="tabs-primary w-100 justify-content-between">
+          <div class="tab">Online Courses</div>
+          <div class="tab">Classroom Courses</div>
+          <div class="tab">Live Courses</div>
+        </div>
+      </div>
+    </div>
 
     <div class="landing-page">
       <div class="landing-page__section">
@@ -11,7 +21,7 @@
             <div class="col-lg-6 t-align-lg-l t-align-c">
               <div
                 class="mini-banner position-relative br-5 mb-30 mx-auto d-lg-none d-block"
-                style="width: fit-content;"
+                style="width: fit-content"
               >
                 <div class="bg-purple br-5 all-center p-20 mt-30">
                   <div class="font-4 white">
@@ -26,7 +36,7 @@
 
               <div
                 class="mini-banner position-relative br-5 mb-30 d-lg-block d-none"
-                style="width: fit-content;"
+                style="width: fit-content"
               >
                 <div class="bg-purple br-5 all-center p-20 mt-30">
                   <div class="font-4 white">
@@ -38,12 +48,8 @@
                   <div class="font-2">Offer valid till 30th Jan</div>
                 </div>
               </div>
-              <div class="heading-font stroke-font">
-                LEARN ANYTIME
-              </div>
-              <div class="heading-font">
-                LEARN ANYWHERE
-              </div>
+              <div class="heading-font stroke-font">LEARN ANYTIME</div>
+              <div class="heading-font">LEARN ANYWHERE</div>
               <img
                 src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_events.svg"
               />
@@ -54,7 +60,7 @@
               <div
                 class="mt-50 row no-gutters justify-content-lg-start justify-content-center"
               >
-                <div class="card p-0" style="width: fit-content;">
+                <div class="card p-0" style="width: fit-content">
                   <div
                     class="row no-gutters align-items-center justify-content-between py-15 px-30 pointer border-bottom"
                   >
@@ -122,11 +128,11 @@
 </template>
 
 <script>
-import CourseList from "@/components/courses/CourseList.vue";
-import HelpSection from "@/components/courses/HelpSection";
-import CourseBySubjectSection from "@/components/courses/CourseBySubjectSection.vue";
-import TracksSection from "@/components/courses/TracksSection.vue";
-import SuccessStoriesSection from "@/components/home/SuccessStoriesSection.vue";
+import CourseList from '@/components/courses/CourseList.vue'
+import HelpSection from '@/components/courses/HelpSection'
+import CourseBySubjectSection from '@/components/courses/CourseBySubjectSection.vue'
+import TracksSection from '@/components/courses/TracksSection.vue'
+import SuccessStoriesSection from '@/components/home/SuccessStoriesSection.vue'
 
 export default {
   components: {
@@ -136,5 +142,5 @@ export default {
     TracksSection,
     SuccessStoriesSection,
   },
-};
+}
 </script>

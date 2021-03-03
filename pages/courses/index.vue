@@ -7,11 +7,11 @@
 
       <template slot="tab-classroom-courses">Classroom Courses</template>
 
-      <ClassroomCourses />
+      <ClassroomCourses slot="body-classroom-courses" />
 
       <template slot="tab-live-courses">Live Courses</template>
 
-      <LiveCourses />
+      <LiveCourses slot="body-live-courses" />
     </CoursesNavigation>
   </div>
 </template>

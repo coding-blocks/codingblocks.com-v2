@@ -1,4 +1,4 @@
-<template slot="body-live-courses">
+<template>
   <div class="landing-page">
     <div class="landing-page__section">
       <div class="width-limiter">

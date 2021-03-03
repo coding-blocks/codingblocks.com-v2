@@ -127,9 +127,7 @@
       </div>
 
       <!-- Banner Section -->
-      <client-only>
-        <BannerCarousel />
-      </client-only>
+      <BannerCarousel />
     </div>
   </div>
 </template>

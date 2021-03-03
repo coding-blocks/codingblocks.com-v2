@@ -11,21 +11,27 @@ export default ($axios, $api) => ({
     return response.data
   },
 
+  async successStories() {
+    const response = await $axios.get(`successStories`)
+    return response.data
+  },
+
   async fetchCourses() {
     const response = await $api.get(`courses`, {
       params: {
-        exclude: `ratings,instructors.*`,
+        exclude: `ratings,instructors.*,jobs`,
         include: `instructors,runs`,
         filter: {
           unlisted: false,
-          domains: {
-            $contains: ['hellointern']
-          }
+          title: {
+            $iLike: `%${query}%`,
+          },
         },
         page: {
-          limit: 100
-        }
-      }
+          limit:10,
+          offset:0,
+        },
+      },
     })
     return response.data
   },

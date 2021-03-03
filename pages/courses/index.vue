@@ -128,19 +128,11 @@
 </template>
 
 <script>
-import CourseList from '@/components/courses/CourseList.vue'
-import HelpSection from '@/components/courses/HelpSection'
-import CourseBySubjectSection from '@/components/courses/CourseBySubjectSection.vue'
-import TracksSection from '@/components/courses/TracksSection.vue'
-import SuccessStoriesSection from '@/components/home/SuccessStoriesSection.vue'
+import OnlineCourses from '@/components/courses/OnlineCourses.vue'
 
 export default {
   components: {
-    CourseList,
-    HelpSection,
-    CourseBySubjectSection,
-    TracksSection,
-    SuccessStoriesSection,
+    OnlineCourses,
   },
 }
 </script>

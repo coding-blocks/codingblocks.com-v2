@@ -11,6 +11,9 @@
   "SubNavMegaNav": {
     "description": "Auto imported from components/SubNavMegaNav.vue"
   },
+  "CoursesClassroomCourses": {
+    "description": "Auto imported from components/courses/ClassroomCourses.vue"
+  },
   "CoursesCourseBatch": {
     "description": "Auto imported from components/courses/CourseBatch.vue"
   },
@@ -43,6 +46,9 @@
   },
   "CoursesHelpSection": {
     "description": "Auto imported from components/courses/HelpSection.vue"
+  },
+  "CoursesLiveCourses": {
+    "description": "Auto imported from components/courses/LiveCourses.vue"
   },
   "CoursesOnlineCourses": {
     "description": "Auto imported from components/courses/OnlineCourses.vue"

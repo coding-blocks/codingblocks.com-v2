@@ -1,7 +1,11 @@
 <template>
-  <div class="slideshow-container mt-50" id="slideshow-container">
-    <div v-if="banner.length != 0"
-      class="slideshow-container__slide p-xl-100 p-lg-75 p-md-50 p-sm-40 p-25 pb-100"
+  <div
+    class="slideshow-container mt-50 row no-gutters c-card-carousel"
+    id="carousel"
+  >
+    <div
+      v-if="banner.length != 0"
+      class="slideshow-container__slide col-12 p-xl-100 p-lg-75 p-md-50 p-sm-40 p-25 pb-100"
       :class="banner[0].background"
     >
       <div class="row align-items-center no-gutters">
@@ -9,33 +13,29 @@
           <div
             class="br-5 d-inline-block p-2 bg-gradient-orange-light mb-10 font-4 white"
           >
-            {{banner[0].tag}}
+            {{ banner[0].tag }}
           </div>
           <div class="heading-font stroke-font stroke-font--white">
-            {{banner[0].heading1}}
+            {{ banner[0].heading1 }}
           </div>
           <div class="heading-font white">
-            {{banner[0].heading2}}
+            {{ banner[0].heading2 }}
           </div>
           <img
-          
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_welcome.svg"
           />
-          <img
-            :src="banner[0].image"
-            class="d-lg-none d-block"
-          />
+          <img :src="banner[0].image" class="d-lg-none d-block" />
           <div class="my-50">
             <div class="heading-2 bold text-orange">
-              {{banner[0].tagline}}
+              {{ banner[0].tagline }}
             </div>
             <div class="mt-2 white heading-5">
-              {{banner[0].subTagline}}
+              {{ banner[0].subTagline }}
             </div>
           </div>
           <div>
             <button class="button-primary">
-              {{banner[0].cta}}
+              {{ banner[0].cta }}
               <img
                 src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg"
                 class="ml-2"
@@ -50,94 +50,46 @@
       />
     </div>
 
-    <a class="slideshow-container__prev pulse" onclick="plusSlides(-1)">
+    <a class="slideshow-container__prev pulse" id="move-left">
       <span>&#10094;</span>
     </a>
-    <a class="slideshow-container__next pulse" onclick="plusSlides(1)">
+    <a class="slideshow-container__next pulse" id="move-right">
       <span>&#10095;</span>
     </a>
-
-    <div class="slideshow-container__navigation-dots">
-      <span class="dot" onclick="currentSlide(0)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-    </div>
   </div>
 </template>
 
 <script>
-import BannerRespository from '@/repositories/banner';
+import BannerRespository from '@/repositories/banner'
 export default {
-
   mounted() {
-    var sliderContainer = document.getElementById("slideshow-container");
-    var slideIndex = 1;
+    const leftButton = document.querySelector('#move-left')
+    const rightButton = document.querySelector('#move-right')
+    const carousel = document.querySelector('#carousel')
 
-    showSlides(slideIndex);
+    leftButton.addEventListener('click', () => {
+      carousel.scrollTo({
+        top: 0,
+        left: -carousel.clientWidth,
+        behavior: 'smooth',
+      })
+    })
 
-    function plusSlides(n) {
-      showSlides((slideIndex += n));
-    }
-
-    function currentSlide(n) {
-      showSlides((slideIndex = n + 1));
-    }
-
-    window.currentSlide = currentSlide;
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName(
-        "slideshow-container__slide"
-      );
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {
-        slideIndex = 1;
-      }
-      if (n < 1) {
-        slideIndex = slides.length;
-      }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-    }
-
-    var prev = sliderContainer.getElementsByClassName(
-      "slideshow-container__prev"
-    )[0];
-    var next = sliderContainer.getElementsByClassName(
-      "slideshow-container__next"
-    )[0];
-
-    prev.addEventListener("click", function() {
-      plusSlides(-1);
-    });
-    next.addEventListener("click", function() {
-      plusSlides(1);
-    });
-
-    [...sliderContainer.getElementsByClassName("dot")].forEach(function(
-      dot,
-      i
-    ) {
-      dot.addEventListener("click", function() {
-        window.currentSlide(i);
-      });
-    });
+    rightButton.addEventListener('click', () => {
+      carousel.scrollTo({
+        top: 0,
+        left: carousel.clientWidth,
+        behavior: 'smooth',
+      })
+    })
   },
-  data(){
+  data() {
     return {
-      banner: []
+      banner: [],
     }
   },
-  async fetch(){
-    this.banner = await BannerRespository.fetchBanners();
-  
-  }
-};
+  async fetch() {
+    this.banner = await BannerRespository.fetchBanners()
+  },
+}
 </script>

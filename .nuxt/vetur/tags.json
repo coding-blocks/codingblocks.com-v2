@@ -44,6 +44,9 @@
   "CoursesCourseSyllabus": {
     "description": "Auto imported from components/courses/CourseSyllabus.vue"
   },
+  "CoursesNavigation": {
+    "description": "Auto imported from components/courses/CoursesNavigation.vue"
+  },
   "CoursesHelpSection": {
     "description": "Auto imported from components/courses/HelpSection.vue"
   },

@@ -1,4 +1,4 @@
-<template slot="online-courses">
+<template slot="body-classroom-courses">
   <div class="landing-page">
     <div class="landing-page__section">
       <div class="width-limiter">

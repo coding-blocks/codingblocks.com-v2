@@ -1,0 +1,54 @@
+<template>
+  <div class="a-cbm" style="margin-top: -70px">
+    <Navigation />
+
+    <div class="mt-50 px-xl-100 px-lg-85 px-md-60 px-sm-50 px-25">
+      <div class="width-limiter">
+        <div class="tabs-primary w-100 justify-content-between">
+          <div
+            class="tab"
+            v-for="tab in tabs"
+            :key="tab"
+            :class="{ active: activeTab === tab }"
+            v-on:click="switchTab(tab)"
+          >
+            <slot :name="tabHeadSlotName(tab)">
+              {{ tab }}
+            </slot>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <slot :name="tabPanelSlotName"></slot>
+  </div>
+</template>
+
+<script>
+export default {
+  props: {
+    initialTab: String,
+    tabs: Array,
+  },
+  data() {
+    return {
+      activeTab: this.initialTab,
+    }
+  },
+  computed: {
+    tabPanelSlotName() {
+      let tabName = this.activeTab.toLowerCase().split(' ').join('-')
+      return `body-${tabName}`
+    },
+  },
+  methods: {
+    tabHeadSlotName(tabName) {
+      let tabNameSorted = tabName.toLowerCase().split(' ').join('-')
+      return `tab-${tabNameSorted}`
+    },
+    switchTab(tabName) {
+      this.activeTab = tabName
+    },
+  },
+}
+</script>

@@ -13,6 +13,7 @@ export { default as CoursesCourseList } from '../../components/courses/CourseLis
 export { default as CoursesCoursePageMentorsSection } from '../../components/courses/CoursePageMentorsSection.vue'
 export { default as CoursesCourseProjects } from '../../components/courses/CourseProjects.vue'
 export { default as CoursesCourseSyllabus } from '../../components/courses/CourseSyllabus.vue'
+export { default as CoursesNavigation } from '../../components/courses/CoursesNavigation.vue'
 export { default as CoursesHelpSection } from '../../components/courses/HelpSection.vue'
 export { default as CoursesLiveCourses } from '../../components/courses/LiveCourses.vue'
 export { default as CoursesOnlineCourses } from '../../components/courses/OnlineCourses.vue'
@@ -59,6 +60,7 @@ export const LazyCoursesCourseList = import('../../components/courses/CourseList
 export const LazyCoursesCoursePageMentorsSection = import('../../components/courses/CoursePageMentorsSection.vue' /* webpackChunkName: "components/courses-course-page-mentors-section" */).then(c => c.default || c)
 export const LazyCoursesCourseProjects = import('../../components/courses/CourseProjects.vue' /* webpackChunkName: "components/courses-course-projects" */).then(c => c.default || c)
 export const LazyCoursesCourseSyllabus = import('../../components/courses/CourseSyllabus.vue' /* webpackChunkName: "components/courses-course-syllabus" */).then(c => c.default || c)
+export const LazyCoursesNavigation = import('../../components/courses/CoursesNavigation.vue' /* webpackChunkName: "components/courses-navigation" */).then(c => c.default || c)
 export const LazyCoursesHelpSection = import('../../components/courses/HelpSection.vue' /* webpackChunkName: "components/courses-help-section" */).then(c => c.default || c)
 export const LazyCoursesLiveCourses = import('../../components/courses/LiveCourses.vue' /* webpackChunkName: "components/courses-live-courses" */).then(c => c.default || c)
 export const LazyCoursesOnlineCourses = import('../../components/courses/OnlineCourses.vue' /* webpackChunkName: "components/courses-online-courses" */).then(c => c.default || c)

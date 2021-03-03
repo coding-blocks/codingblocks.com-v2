@@ -14,10 +14,7 @@
       <div class="mt-sm-50 mt-25">
         <CardCarousel >
           <SuccessStory v-for="(story, index) in stories" :key="index"
-            :story_title="story.title"
-            :story_subtitle="story.subTitle"
-            :description="story.body"
-            :image_link="story.img"
+            :story="story"
           />
         </CardCarousel>
       </div>

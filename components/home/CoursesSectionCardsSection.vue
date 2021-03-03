@@ -27,13 +27,14 @@
         </div>
       </div>
       <div class="t-align-c">
-        <button class="button-tertiary">
+
+        <NuxtLink class="button-tertiary" to="/courses">
           Explore All {{courseType}} Courses
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
             class="ml-2"
           />
-        </button>
+        </NuxtLink>
       </div>
     </div>
   </div>

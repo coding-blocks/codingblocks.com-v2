@@ -23,13 +23,13 @@
       <div
         class="row no-gutters justify-content-lg-start justify-content-center"
       >
-        <button class="button-primary">
+        <a class="button-primary" href="https://hack.codingblocks.com/">
           Start Practicing
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg"
             class="ml-2"
           />
-        </button>
+        </a>
       </div>
     </template>
 
@@ -57,13 +57,13 @@
       <div
         class="row no-gutters justify-content-lg-start justify-content-center"
       >
-        <button class="button-primary">
+        <a class="button-primary" href="https://hire.codingblocks.com/">
           Apply for jobs
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg"
             class="ml-2"
           />
-        </button>
+        </a>
       </div>
     </template>
   </DividedSection>

@@ -50,7 +50,7 @@
           </div>
         </div>
 
-        <HelpSection />
+        <HelpSection hide_main_section="true" />
 
         <div class="mt-sm-75 mt-50">
           <CourseList
@@ -61,7 +61,7 @@
       </div>
     </div>
 
-    <SuccessStoriesSection />
+    <SuccessStoriesSection class="bg-white pt-none" />
 
     <Footer />
   </div>

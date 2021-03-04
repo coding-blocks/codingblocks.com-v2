@@ -1,16 +1,15 @@
 <template>
-  <div class="landing-page__section bg-white py-none course-section">
+  <div
+    class="landing-page__section bg-white py-none course-section"
+    id="course-section"
+  >
     <div class="width-limiter">
       <div class="row no-gutters mb-60">
         <div
           class="col-xl-4 bg-grey-light-3 pt-xl-60 pt-30 t-align-c course-section__navigation z-pos h-inherit"
         >
-          <div class="heading-font stroke-font">
-            LEARN.
-          </div>
-          <div class="heading-font">
-            LEARN.
-          </div>
+          <div class="heading-font stroke-font">LEARN.</div>
+          <div class="heading-font">LEARN.</div>
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_learn.svg"
             class="pb-xl-60 pb-30"
@@ -91,7 +90,10 @@
             </div>
           </div>
           <div class="col-md-4 t-align-md-r t-align-l mt-md-none mt-40">
-            <button class="button-secondary">
+            <button
+              class="button-secondary"
+              v-on:click="setShowSyllabusModal(true)"
+            >
               Schedule a Session
               <img
                 src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
@@ -102,63 +104,81 @@
         </div>
       </div>
     </div>
+
+    <ModalForm v-if="showSyllabusModal" @close="setShowSyllabusModal(false)">
+      <ConsultationForm />
+    </ModalForm>
   </div>
 </template>
 
 <script>
-import CourseCardSmall from "@/components/courses/CourseCardSmall.vue";
-import CoursesSectionCardsSection from "@/components/home/CoursesSectionCardsSection.vue";
+import CourseCardSmall from '@/components/courses/CourseCardSmall.vue'
+import CoursesSectionCardsSection from '@/components/home/CoursesSectionCardsSection.vue'
+import ModalForm from '@/components/misc/ModalForm.vue'
+import ConsultationForm from '@/components/misc/ConsultationForm.vue'
 
 export default {
   components: {
     CourseCardSmall,
     CoursesSectionCardsSection,
+    ModalForm,
+    ConsultationForm,
   },
   mounted() {
-    const onlineButton = document.querySelector("#online-courses");
-    const classroomButton = document.querySelector("#classroom-courses");
-    const liveButton = document.querySelector("#live-courses");
-    const carousel = document.querySelector("#course-sections-carousel");
+    const onlineButton = document.querySelector('#online-courses')
+    const classroomButton = document.querySelector('#classroom-courses')
+    const liveButton = document.querySelector('#live-courses')
+    const carousel = document.querySelector('#course-sections-carousel')
 
     // [onlineButton, classroomButton, liveButton].forEach((courseButton) => {
     //   courseButton.classList.remove("active");
     // });
 
-    onlineButton.addEventListener("click", () => {
+    onlineButton.addEventListener('click', () => {
       carousel.scrollTo({
         top: 0,
         left: 0,
-        behavior: "smooth",
-      });
+        behavior: 'smooth',
+      })
 
-      onlineButton.classList.add("active");
-      classroomButton.classList.remove("active");
-      liveButton.classList.remove("active");
-    });
+      onlineButton.classList.add('active')
+      classroomButton.classList.remove('active')
+      liveButton.classList.remove('active')
+    })
 
-    classroomButton.addEventListener("click", () => {
+    classroomButton.addEventListener('click', () => {
       carousel.scrollTo({
         top: 0,
         left: carousel.clientWidth,
-        behavior: "smooth",
-      });
+        behavior: 'smooth',
+      })
 
-      classroomButton.classList.add("active");
-      onlineButton.classList.remove("active");
-      liveButton.classList.remove("active");
-    });
+      classroomButton.classList.add('active')
+      onlineButton.classList.remove('active')
+      liveButton.classList.remove('active')
+    })
 
-    liveButton.addEventListener("click", () => {
+    liveButton.addEventListener('click', () => {
       carousel.scrollTo({
         top: 0,
         left: 2 * carousel.clientWidth,
-        behavior: "smooth",
-      });
+        behavior: 'smooth',
+      })
 
-      liveButton.classList.add("active");
-      classroomButton.classList.remove("active");
-      onlineButton.classList.remove("active");
-    });
+      liveButton.classList.add('active')
+      classroomButton.classList.remove('active')
+      onlineButton.classList.remove('active')
+    })
   },
-};
+  data() {
+    return {
+      showSyllabusModal: false,
+    }
+  },
+  methods: {
+    setShowSyllabusModal(value) {
+      this.showSyllabusModal = value
+    },
+  },
+}
 </script>

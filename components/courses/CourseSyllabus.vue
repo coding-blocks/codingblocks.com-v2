@@ -1,18 +1,38 @@
 <template>
   <div class="card p-none mb-50">
-    <div class="row no-gutters align-items-center p-30 border-bottom">
-      <img
-        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/syllabus-grey-orange.svg"
-      />
-      <div class="flex-1 pl-15">
-        <div class="heading-6 bold">Course Syllabus</div>
+    <div class="p-30 border-bottom">
+      <div class="row no-gutters align-items-center">
+        <img
+          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/syllabus-grey-orange.svg"
+        />
+        <div class="flex-1 pl-15">
+          <div class="heading-6 bold">Course Syllabus</div>
+        </div>
+      </div>
+      <div class="mt-30">
+        <div class="card p-none overflow-hidden">
+          <div class="row no-gutters align-items-center">
+            <div class="col-3 syllabus-section-button px-15 py-10 t-align-c">
+              <div class="font-2 bold">Some Title</div>
+            </div>
+            <div class="col-3 syllabus-section-button px-15 py-10 t-align-c">
+              <div class="font-2 bold">Some Title</div>
+            </div>
+            <div class="col-3 syllabus-section-button px-15 py-10 t-align-c">
+              <div class="font-2 bold">Some Title</div>
+            </div>
+            <div class="col-3 syllabus-section-button px-15 py-10 t-align-c">
+              <div class="font-2 bold">Some Title</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div
-      class="px-40 overflow-y-auto gradient-orange-scroll"
+      class="px-40 overflow-y-auto gradient-orange-scroll row no-gutters c-card-carousel"
       style="max-height: 500px"
     >
-      <div style="border-left: solid 2px #f5f5f5">
+      <div style="border-left: solid 2px #f5f5f5" class="col-12">
         <div
           v-for="(content, index) in syllabus.firstSection.contents"
           :key="index"
@@ -77,5 +97,28 @@ export default {
 .accordion-container__accordion-head::after {
   font-size: 30px;
   left: -8px;
+}
+
+.syllabus-section-button {
+  border-left: 1px solid #f5f5f5;
+  border-right: 1px solid #f5f5f5;
+  cursor: pointer;
+}
+
+.syllabus-section-button:first-child {
+  border-left: none;
+}
+
+.syllabus-section-button:last-child {
+  border-right: none;
+}
+
+.syllabus-section-button:hover {
+  color: #f26a3e;
+}
+
+.syllabus-section-button.active {
+  color: white;
+  background: linear-gradient(90deg, #fb8133, #ffba08);
 }
 </style>

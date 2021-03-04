@@ -21,9 +21,9 @@
         </div>
       </div>
       <div class="mini-banner position-relative br-5">
-        <div class="bg-purple br-5" style="height: 110px"></div>
+        <img :src="miniBanner.img_url" style="height: 110px" />
         <div class="mini-banner__tag">
-          <div class="font-2">Offer valid till 30th Jan</div>
+          <div class="font-2">{{ miniBanner.tag }}</div>
         </div>
       </div>
     </div>
@@ -99,6 +99,7 @@ export default {
         'Data Scientist',
         'Competitive Programmer',
       ],
+      miniBanner: null,
     }
   },
   mounted() {
@@ -112,6 +113,9 @@ export default {
   },
   components: {
     Universe,
+  },
+  async fetch() {
+    this.miniBanner = await this.$repositories.home.miniBanner()
   },
 }
 </script>

@@ -4,6 +4,14 @@ export { default as Navigation } from '../../components/Navigation.vue'
 export { default as SubNavMegaNav } from '../../components/SubNavMegaNav.vue'
 export { default as EventsUpcomingCourseSection } from '../../components/events/UpcomingCourseSection.vue'
 export { default as EventsUpcomingEventsSection } from '../../components/events/UpcomingEventsSection.vue'
+export { default as MiscBannerCarousel } from '../../components/misc/BannerCarousel.vue'
+export { default as MiscCardCarousel } from '../../components/misc/CardCarousel.vue'
+export { default as MiscDividedSection } from '../../components/misc/DividedSection.vue'
+export { default as MiscEventsCard } from '../../components/misc/EventsCard.vue'
+export { default as MiscNewsCard } from '../../components/misc/NewsCard.vue'
+export { default as MiscStatsCard } from '../../components/misc/StatsCard.vue'
+export { default as MiscSuccessStory } from '../../components/misc/SuccessStory.vue'
+export { default as MiscSuccessStoryCard } from '../../components/misc/SuccessStoryCard.vue'
 export { default as CoursesClassroomCourses } from '../../components/courses/ClassroomCourses.vue'
 export { default as CoursesCourseBatch } from '../../components/courses/CourseBatch.vue'
 export { default as CoursesCourseBySubjectSection } from '../../components/courses/CourseBySubjectSection.vue'
@@ -20,14 +28,6 @@ export { default as CoursesHelpSection } from '../../components/courses/HelpSect
 export { default as CoursesLiveCourses } from '../../components/courses/LiveCourses.vue'
 export { default as CoursesOnlineCourses } from '../../components/courses/OnlineCourses.vue'
 export { default as CoursesTracksSection } from '../../components/courses/TracksSection.vue'
-export { default as MiscBannerCarousel } from '../../components/misc/BannerCarousel.vue'
-export { default as MiscCardCarousel } from '../../components/misc/CardCarousel.vue'
-export { default as MiscDividedSection } from '../../components/misc/DividedSection.vue'
-export { default as MiscEventsCard } from '../../components/misc/EventsCard.vue'
-export { default as MiscNewsCard } from '../../components/misc/NewsCard.vue'
-export { default as MiscStatsCard } from '../../components/misc/StatsCard.vue'
-export { default as MiscSuccessStory } from '../../components/misc/SuccessStory.vue'
-export { default as MiscSuccessStoryCard } from '../../components/misc/SuccessStoryCard.vue'
 export { default as TestimonialsMajorSuccessStories } from '../../components/testimonials/MajorSuccessStories.vue'
 export { default as TestimonialsMajorSuccessStoryCard } from '../../components/testimonials/MajorSuccessStoryCard.vue'
 export { default as HomeBlogCard } from '../../components/home/BlogCard.vue'
@@ -51,6 +51,14 @@ export const LazyNavigation = import('../../components/Navigation.vue' /* webpac
 export const LazySubNavMegaNav = import('../../components/SubNavMegaNav.vue' /* webpackChunkName: "components/sub-nav-mega-nav" */).then(c => c.default || c)
 export const LazyEventsUpcomingCourseSection = import('../../components/events/UpcomingCourseSection.vue' /* webpackChunkName: "components/events-upcoming-course-section" */).then(c => c.default || c)
 export const LazyEventsUpcomingEventsSection = import('../../components/events/UpcomingEventsSection.vue' /* webpackChunkName: "components/events-upcoming-events-section" */).then(c => c.default || c)
+export const LazyMiscBannerCarousel = import('../../components/misc/BannerCarousel.vue' /* webpackChunkName: "components/misc-banner-carousel" */).then(c => c.default || c)
+export const LazyMiscCardCarousel = import('../../components/misc/CardCarousel.vue' /* webpackChunkName: "components/misc-card-carousel" */).then(c => c.default || c)
+export const LazyMiscDividedSection = import('../../components/misc/DividedSection.vue' /* webpackChunkName: "components/misc-divided-section" */).then(c => c.default || c)
+export const LazyMiscEventsCard = import('../../components/misc/EventsCard.vue' /* webpackChunkName: "components/misc-events-card" */).then(c => c.default || c)
+export const LazyMiscNewsCard = import('../../components/misc/NewsCard.vue' /* webpackChunkName: "components/misc-news-card" */).then(c => c.default || c)
+export const LazyMiscStatsCard = import('../../components/misc/StatsCard.vue' /* webpackChunkName: "components/misc-stats-card" */).then(c => c.default || c)
+export const LazyMiscSuccessStory = import('../../components/misc/SuccessStory.vue' /* webpackChunkName: "components/misc-success-story" */).then(c => c.default || c)
+export const LazyMiscSuccessStoryCard = import('../../components/misc/SuccessStoryCard.vue' /* webpackChunkName: "components/misc-success-story-card" */).then(c => c.default || c)
 export const LazyCoursesClassroomCourses = import('../../components/courses/ClassroomCourses.vue' /* webpackChunkName: "components/courses-classroom-courses" */).then(c => c.default || c)
 export const LazyCoursesCourseBatch = import('../../components/courses/CourseBatch.vue' /* webpackChunkName: "components/courses-course-batch" */).then(c => c.default || c)
 export const LazyCoursesCourseBySubjectSection = import('../../components/courses/CourseBySubjectSection.vue' /* webpackChunkName: "components/courses-course-by-subject-section" */).then(c => c.default || c)
@@ -67,14 +75,6 @@ export const LazyCoursesHelpSection = import('../../components/courses/HelpSecti
 export const LazyCoursesLiveCourses = import('../../components/courses/LiveCourses.vue' /* webpackChunkName: "components/courses-live-courses" */).then(c => c.default || c)
 export const LazyCoursesOnlineCourses = import('../../components/courses/OnlineCourses.vue' /* webpackChunkName: "components/courses-online-courses" */).then(c => c.default || c)
 export const LazyCoursesTracksSection = import('../../components/courses/TracksSection.vue' /* webpackChunkName: "components/courses-tracks-section" */).then(c => c.default || c)
-export const LazyMiscBannerCarousel = import('../../components/misc/BannerCarousel.vue' /* webpackChunkName: "components/misc-banner-carousel" */).then(c => c.default || c)
-export const LazyMiscCardCarousel = import('../../components/misc/CardCarousel.vue' /* webpackChunkName: "components/misc-card-carousel" */).then(c => c.default || c)
-export const LazyMiscDividedSection = import('../../components/misc/DividedSection.vue' /* webpackChunkName: "components/misc-divided-section" */).then(c => c.default || c)
-export const LazyMiscEventsCard = import('../../components/misc/EventsCard.vue' /* webpackChunkName: "components/misc-events-card" */).then(c => c.default || c)
-export const LazyMiscNewsCard = import('../../components/misc/NewsCard.vue' /* webpackChunkName: "components/misc-news-card" */).then(c => c.default || c)
-export const LazyMiscStatsCard = import('../../components/misc/StatsCard.vue' /* webpackChunkName: "components/misc-stats-card" */).then(c => c.default || c)
-export const LazyMiscSuccessStory = import('../../components/misc/SuccessStory.vue' /* webpackChunkName: "components/misc-success-story" */).then(c => c.default || c)
-export const LazyMiscSuccessStoryCard = import('../../components/misc/SuccessStoryCard.vue' /* webpackChunkName: "components/misc-success-story-card" */).then(c => c.default || c)
 export const LazyTestimonialsMajorSuccessStories = import('../../components/testimonials/MajorSuccessStories.vue' /* webpackChunkName: "components/testimonials-major-success-stories" */).then(c => c.default || c)
 export const LazyTestimonialsMajorSuccessStoryCard = import('../../components/testimonials/MajorSuccessStoryCard.vue' /* webpackChunkName: "components/testimonials-major-success-story-card" */).then(c => c.default || c)
 export const LazyHomeBlogCard = import('../../components/home/BlogCard.vue' /* webpackChunkName: "components/home-blog-card" */).then(c => c.default || c)

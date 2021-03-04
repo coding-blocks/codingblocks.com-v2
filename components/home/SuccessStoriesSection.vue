@@ -1,7 +1,7 @@
 <template>
   <!-- Success Stories Section -->
-  <div class="landing-page__section">
-    <div v-if="!stories.legnth" class="width-limiter">
+  <div v-if="stories.length" class="landing-page__section">
+    <div class="width-limiter">
       <div class="row no-gutters justify-content-between align-items-center">
         <div class="flex-1 t-align-lg-l t-align-c">
           <div class="heading-font stroke-font">HALL OF FAME</div>

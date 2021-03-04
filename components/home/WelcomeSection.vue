@@ -55,13 +55,5 @@ export default {
     BannerCarousel,
     IntroductionSection,
   },
-  data() {
-    return {
-      miniBanner: null,
-    }
-  },
-  async fetch() {
-    this.miniBanner = await this.$repositories.home.miniBanner()
-  },
 }
 </script>

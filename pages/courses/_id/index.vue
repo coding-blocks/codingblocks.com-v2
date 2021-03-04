@@ -14,11 +14,11 @@
           </div>
           <div class="row mt-50">
             <div class="col-lg-8 col-md-7 mb-md-none mb-50">
-              <CourseSyllabus />
+              <CourseSyllabus :syllabus="syllabus" />
 
               <CourseProjects :projects="projects" />
 
-              <CourseHighlights />
+              <CourseHighlights :highlights="highlights" />
             </div>
 
             <div class="col-lg-4 col-md-5">
@@ -85,7 +85,196 @@ import SuccessStoryCard from '@/components/misc/SuccessStoryCard.vue'
 export default {
   data() {
     return {
-      syllabus: {},
+      syllabus: {
+        firstSection: {
+          name: 'Beginner Section',
+          contents: [
+            {
+              title: 'Networking and Something',
+              videos: [
+                {
+                  title: 'This is a video',
+                  duration: 15,
+                },
+                {
+                  title: 'This is a video',
+                  duration: 15,
+                },
+                {
+                  title: 'This is a video',
+                  duration: 15,
+                },
+                {
+                  title: 'This is a video',
+                  duration: 15,
+                },
+              ],
+            },
+            {
+              title: 'Networking and Something',
+              videos: [
+                {
+                  title: 'This is a video',
+                  duration: 15,
+                },
+                {
+                  title: 'This is a video',
+                  duration: 15,
+                },
+                {
+                  title: 'This is a video',
+                  duration: 15,
+                },
+                {
+                  title: 'This is a video',
+                  duration: 15,
+                },
+              ],
+            },
+          ],
+        },
+        secondSection: {
+          name: 'Beginner Section',
+          contents: [
+            {
+              title: 'Networking and Something',
+              videos: [
+                {
+                  title: 'This is a video',
+                  duration: 15,
+                },
+                {
+                  title: 'This is a video',
+                  duration: 15,
+                },
+                {
+                  title: 'This is a video',
+                  duration: 15,
+                },
+                {
+                  title: 'This is a video',
+                  duration: 15,
+                },
+              ],
+            },
+            {
+              title: 'Networking and Something',
+              videos: [
+                {
+                  title: 'This is a video',
+                  duration: 15,
+                },
+                {
+                  title: 'This is a video',
+                  duration: 15,
+                },
+                {
+                  title: 'This is a video',
+                  duration: 15,
+                },
+                {
+                  title: 'This is a video',
+                  duration: 15,
+                },
+              ],
+            },
+          ],
+        },
+        thirdSection: {
+          name: 'Beginner Section',
+          contents: [
+            {
+              title: 'Networking and Something',
+              videos: [
+                {
+                  title: 'This is a video',
+                  duration: 15,
+                },
+                {
+                  title: 'This is a video',
+                  duration: 15,
+                },
+                {
+                  title: 'This is a video',
+                  duration: 15,
+                },
+                {
+                  title: 'This is a video',
+                  duration: 15,
+                },
+              ],
+            },
+            {
+              title: 'Networking and Something',
+              videos: [
+                {
+                  title: 'This is a video',
+                  duration: 15,
+                },
+                {
+                  title: 'This is a video',
+                  duration: 15,
+                },
+                {
+                  title: 'This is a video',
+                  duration: 15,
+                },
+                {
+                  title: 'This is a video',
+                  duration: 15,
+                },
+              ],
+            },
+          ],
+        },
+        fourthSection: {
+          name: 'Beginner Section',
+          contents: [
+            {
+              title: 'Networking and Something',
+              videos: [
+                {
+                  title: 'This is a video',
+                  duration: 15,
+                },
+                {
+                  title: 'This is a video',
+                  duration: 15,
+                },
+                {
+                  title: 'This is a video',
+                  duration: 15,
+                },
+                {
+                  title: 'This is a video',
+                  duration: 15,
+                },
+              ],
+            },
+            {
+              title: 'Networking and Something',
+              videos: [
+                {
+                  title: 'This is a video',
+                  duration: 15,
+                },
+                {
+                  title: 'This is a video',
+                  duration: 15,
+                },
+                {
+                  title: 'This is a video',
+                  duration: 15,
+                },
+                {
+                  title: 'This is a video',
+                  duration: 15,
+                },
+              ],
+            },
+          ],
+        },
+      },
       projects: [
         {
           title: 'Some Project',
@@ -111,6 +300,11 @@ export default {
             "A task manager with features like 'mark as done', 'cear donetasks' and sorting tasks by their status.",
           img_url: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
         },
+      ],
+      highlights: [
+        'Something Something',
+        'Some other highlight',
+        'Some other other highlight',
       ],
     }
   },

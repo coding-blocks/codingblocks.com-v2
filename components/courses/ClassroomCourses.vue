@@ -50,6 +50,8 @@
           </div>
         </div>
 
+        <HelpSection hide_main_section="true" />
+
         <div class="mt-sm-75 mt-50">
           <CourseList
             title="Trending Courses"
@@ -79,6 +81,7 @@ export default {
     CourseBySubjectSection,
     TracksSection,
     SuccessStoriesSection,
+    HelpSection,
   },
 }
 </script>

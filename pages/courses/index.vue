@@ -1,137 +1,39 @@
 <template>
-  <div class="a-cbm" style="margin-top: -70px">
-    <Navigation />
+  <div>
+    <CoursesNavigation :tabs="tabs" :initialTab="initialTab">
+      <!-- <template slot="tab-online-courses">Online Courses</template> -->
 
-    <div class="landing-page">
-      <div class="landing-page__section">
-        <div class="width-limiter">
-          <div
-            class="row no-gutters align-items-center justify-content-between"
-          >
-            <div class="col-lg-6 t-align-lg-l t-align-c">
-              <div
-                class="mini-banner position-relative br-5 mb-30 mx-auto d-lg-none d-block"
-                style="width: fit-content"
-              >
-                <div class="bg-purple br-5 all-center p-20 mt-30">
-                  <div class="font-4 white">
-                    <strong class="heading-6">75% OFF </strong>
-                    on all online courses
-                  </div>
-                </div>
-                <div class="mini-banner__tag">
-                  <div class="font-2">Offer valid till 30th Jan</div>
-                </div>
-              </div>
+      <OnlineCourses slot="body-online-courses" />
 
-              <div
-                class="mini-banner position-relative br-5 mb-30 d-lg-block d-none"
-                style="width: fit-content"
-              >
-                <div class="bg-purple br-5 all-center p-20 mt-30">
-                  <div class="font-4 white">
-                    <strong class="heading-6">75% OFF </strong>
-                    on all online courses
-                  </div>
-                </div>
-                <div class="mini-banner__tag">
-                  <div class="font-2">Offer valid till 30th Jan</div>
-                </div>
-              </div>
-              <div class="heading-font stroke-font">LEARN ANYTIME</div>
-              <div class="heading-font">LEARN ANYWHERE</div>
-              <img
-                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_events.svg"
-              />
-              <img
-                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/light-theme-vector.svg"
-                class="d-lg-none d-block mt-50 mx-auto"
-              />
-              <div
-                class="mt-50 row no-gutters justify-content-lg-start justify-content-center"
-              >
-                <div class="card p-0" style="width: fit-content">
-                  <div
-                    class="row no-gutters align-items-center justify-content-between py-15 px-30 pointer border-bottom"
-                  >
-                    <div class="font-4 pr-100">Popular Courses</div>
-                    <div class="font-4">&#x3009;</div>
-                  </div>
-                  <div
-                    class="row no-gutters align-items-center justify-content-between py-15 px-30 pointer border-bottom"
-                  >
-                    <div class="font-4 pr-100">Foundation Courses</div>
-                    <div class="font-4">&#x3009;</div>
-                  </div>
-                  <div
-                    class="row no-gutters align-items-center justify-content-between py-15 px-30 pointer"
-                  >
-                    <div class="font-4 pr-100">Learning Tracks</div>
-                    <div class="font-4">&#x3009;</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 d-lg-block d-none">
-              <img
-                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/light-theme-vector.svg"
-              />
-            </div>
-          </div>
+      <!-- <template slot="tab-classroom-courses">Classroom Courses</template> -->
 
-          <HelpSection />
+      <ClassroomCourses slot="body-classroom-courses" />
 
-          <div class="mt-sm-75 mt-50">
-            <CourseList
-              :featuredTag="featuredTag"
-              v-for="featuredTag in featuredTags"
-              :key="`feature_${featuredTag.id}`"
-            />
-          </div>
-        </div>
-      </div>
-      <CourseBySubjectSection />
-      <TracksSection />
+      <!-- <template slot="tab-live-courses">Live Courses</template> -->
 
-      <SuccessStoriesSection />
-
-      <Footer />
-    </div>
+      <LiveCourses slot="body-live-courses" />
+    </CoursesNavigation>
   </div>
 </template>
 
 <script>
-import CourseList from '@/components/courses/CourseList.vue'
-import HelpSection from '@/components/courses/HelpSection'
-import CourseBySubjectSection from '@/components/courses/CourseBySubjectSection.vue'
-import TracksSection from '@/components/courses/TracksSection.vue'
-import SuccessStoriesSection from '@/components/home/SuccessStoriesSection.vue'
+import CoursesNavigation from '@/components/courses/CoursesNavigation.vue'
+import OnlineCourses from '@/components/courses/OnlineCourses.vue'
+import ClassroomCourses from '@/components/courses/ClassroomCourses.vue'
+import LiveCourses from '@/components/courses/LiveCourses.vue'
 
 export default {
-  components: {
-    CourseList,
-    HelpSection,
-    CourseBySubjectSection,
-    TracksSection,
-    SuccessStoriesSection,
-  },
   data() {
     return {
-      featuredTagsPayload: {},
+      initialTab: 'Online Courses',
+      tabs: ['Online Courses', 'Classroom Courses', 'Live Courses'],
     }
   },
-  computed: {
-    featuredTags() {
-      // somehow calling this server side fails; need to debug why
-      return process.client
-        ? this.$jsonApiStore
-            .sync(this.featuredTagsPayload)
-            .sort((a, b) => a.order - b.order)
-        : []
-    },
-  },
-  async fetch() {
-    this.featuredTagsPayload = await this.$repositories.courses.fetchFeaturedCourses()
+  components: {
+    CoursesNavigation,
+    OnlineCourses,
+    ClassroomCourses,
+    LiveCourses,
   },
 }
 </script>

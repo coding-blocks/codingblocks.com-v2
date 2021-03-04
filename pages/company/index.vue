@@ -1,5 +1,5 @@
 <template>
-  <div class="a-cbm" style="margin-top: -70px;">
+  <div class="a-cbm" style="margin-top: -70px">
     <Navigation />
 
     <div class="landing-page">
@@ -9,12 +9,8 @@
             class="row no-gutters align-items-center justify-content-between"
           >
             <div class="col-lg-6 col-md-5 t-align-md-l t-align-c">
-              <div class="heading-font stroke-font">
-                WHY
-              </div>
-              <div class="heading-font">
-                CODING BLOCKS
-              </div>
+              <div class="heading-font stroke-font">WHY</div>
+              <div class="heading-font">CODING BLOCKS</div>
               <img
                 src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_events.svg"
               />
@@ -42,12 +38,8 @@
         <div class="width-limiter position-relative">
           <div class="journey-track"></div>
           <div class="t-align-sm-l t-align-c">
-            <div class="heading-font stroke-font">
-              OUR
-            </div>
-            <div class="heading-font">
-              JOURNEY
-            </div>
+            <div class="heading-font stroke-font">OUR</div>
+            <div class="heading-font">JOURNEY</div>
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_welcome.svg"
             />
@@ -61,7 +53,7 @@
               >
                 <div
                   class="flex-1 pr-sm-25 pr-15 mr-sm-25 mr-15"
-                  style="border-right: solid 1px #3b4254;"
+                  style="border-right: solid 1px #3b4254"
                 >
                   <div class="heading-2 bold text-gradient-orange">2021</div>
                   <div class="mt-1 heading-5 bold">More than 50K graduates</div>
@@ -80,7 +72,7 @@
               >
                 <div
                   class="flex-1 pr-sm-25 pr-15 mr-sm-25 mr-15"
-                  style="border-right: solid 1px #3b4254;"
+                  style="border-right: solid 1px #3b4254"
                 >
                   <div class="heading-2 bold text-gradient-orange">2019</div>
                   <div class="mt-1 heading-5 bold">20+ Online Courses</div>
@@ -99,7 +91,7 @@
               >
                 <div
                   class="flex-1 pr-sm-25 pr-15 mr-sm-25 mr-15"
-                  style="border-right: solid 1px #3b4254;"
+                  style="border-right: solid 1px #3b4254"
                 >
                   <div class="heading-2 bold text-gradient-orange">2018</div>
                   <div class="mt-1 heading-5 bold">Scaled to Online</div>
@@ -118,7 +110,7 @@
               >
                 <div
                   class="flex-1 pr-sm-25 pr-15 mr-sm-25 mr-15"
-                  style="border-right: solid 1px #3b4254;"
+                  style="border-right: solid 1px #3b4254"
                 >
                   <div class="heading-2 bold text-gradient-orange">2017</div>
                   <div class="mt-1 heading-5 bold">
@@ -139,7 +131,7 @@
               >
                 <div
                   class="flex-1 pr-sm-25 pr-15 mr-sm-25 mr-15"
-                  style="border-right: solid 1px #3b4254;"
+                  style="border-right: solid 1px #3b4254"
                 >
                   <div class="heading-2 bold text-gradient-orange">2016</div>
                   <div class="mt-1 heading-5 bold">CB Dwarka opens</div>
@@ -158,7 +150,7 @@
               >
                 <div
                   class="flex-1 pr-sm-25 pr-15 mr-sm-25 mr-15"
-                  style="border-right: solid 1px #3b4254;"
+                  style="border-right: solid 1px #3b4254"
                 >
                   <div class="heading-2 bold text-gradient-orange">2015</div>
                   <div class="mt-1 heading-5 bold">First 1000 students</div>
@@ -177,7 +169,7 @@
               >
                 <div
                   class="flex-1 pr-sm-25 pr-15 mr-sm-25 mr-15"
-                  style="border-right: solid 1px #3b4254;"
+                  style="border-right: solid 1px #3b4254"
                 >
                   <div class="heading-2 bold text-gradient-orange">2014</div>
                   <div class="mt-1 heading-5 bold">
@@ -200,12 +192,8 @@
       <div class="landing-page__section">
         <div class="width-limiter">
           <div class="t-align-sm-l t-align-c">
-            <div class="heading-font stroke-font">
-              MEET
-            </div>
-            <div class="heading-font">
-              THE TEAM
-            </div>
+            <div class="heading-font stroke-font">MEET</div>
+            <div class="heading-font">THE TEAM</div>
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_news.svg"
             />
@@ -213,136 +201,21 @@
 
           <div class="mt-60">
             <div class="row no-gutters justify-content-between">
-              <div class="t-align-c px-15 mb-25">
-                <img
-                  src="https://i2.wp.com/digital-photography-school.com/wp-content/uploads/2011/07/outdoor-portraits-1.jpg?resize=2000%2C1160&ssl=1"
-                  class="big-photo"
-                />
+              <div
+                class="t-align-c px-15 mb-25"
+                v-for="(member, index) in teamMembers"
+                :key="index"
+              >
+                <img :src="member.member_image" class="big-photo" />
                 <div class="mt-sm-25 mt-15 d-sm-block d-none">
-                  <div class="bold heading-4">
-                    Kartik Mathur
-                  </div>
+                  <div class="bold heading-4">{{ member.member_name }}</div>
                   <div class="mt-2 orange heading-6">
-                    Academics Head
+                    {{ member.member_type }}
                   </div>
                 </div>
                 <div class="mt-sm-25 mt-15 d-sm-none d-block">
-                  <div class="bold heading-6">
-                    Kartik Mathur
-                  </div>
-                  <div class="mt-2 orange font-3">
-                    Academics Head
-                  </div>
-                </div>
-              </div>
-              <div class="t-align-c px-15 mb-25">
-                <img
-                  src="https://i2.wp.com/digital-photography-school.com/wp-content/uploads/2011/07/outdoor-portraits-1.jpg?resize=2000%2C1160&ssl=1"
-                  class="big-photo"
-                />
-                <div class="mt-sm-25 mt-15 d-sm-block d-none">
-                  <div class="bold heading-4">
-                    Kartik Mathur
-                  </div>
-                  <div class="mt-2 orange heading-6">
-                    Academics Head
-                  </div>
-                </div>
-                <div class="mt-sm-25 mt-15 d-sm-none d-block">
-                  <div class="bold heading-6">
-                    Kartik Mathur
-                  </div>
-                  <div class="mt-2 orange font-3">
-                    Academics Head
-                  </div>
-                </div>
-              </div>
-              <div class="t-align-c px-15 mb-25">
-                <img
-                  src="https://i2.wp.com/digital-photography-school.com/wp-content/uploads/2011/07/outdoor-portraits-1.jpg?resize=2000%2C1160&ssl=1"
-                  class="big-photo"
-                />
-                <div class="mt-sm-25 mt-15 d-sm-block d-none">
-                  <div class="bold heading-4">
-                    Kartik Mathur
-                  </div>
-                  <div class="mt-2 orange heading-6">
-                    Academics Head
-                  </div>
-                </div>
-                <div class="mt-sm-25 mt-15 d-sm-none d-block">
-                  <div class="bold heading-6">
-                    Kartik Mathur
-                  </div>
-                  <div class="mt-2 orange font-3">
-                    Academics Head
-                  </div>
-                </div>
-              </div>
-              <div class="t-align-c px-15 mb-25">
-                <img
-                  src="https://i2.wp.com/digital-photography-school.com/wp-content/uploads/2011/07/outdoor-portraits-1.jpg?resize=2000%2C1160&ssl=1"
-                  class="big-photo"
-                />
-                <div class="mt-sm-25 mt-15 d-sm-block d-none">
-                  <div class="bold heading-4">
-                    Kartik Mathur
-                  </div>
-                  <div class="mt-2 orange heading-6">
-                    Academics Head
-                  </div>
-                </div>
-                <div class="mt-sm-25 mt-15 d-sm-none d-block">
-                  <div class="bold heading-6">
-                    Kartik Mathur
-                  </div>
-                  <div class="mt-2 orange font-3">
-                    Academics Head
-                  </div>
-                </div>
-              </div>
-              <div class="t-align-c px-15 mb-25">
-                <img
-                  src="https://i2.wp.com/digital-photography-school.com/wp-content/uploads/2011/07/outdoor-portraits-1.jpg?resize=2000%2C1160&ssl=1"
-                  class="big-photo"
-                />
-                <div class="mt-sm-25 mt-15 d-sm-block d-none">
-                  <div class="bold heading-4">
-                    Kartik Mathur
-                  </div>
-                  <div class="mt-2 orange heading-6">
-                    Academics Head
-                  </div>
-                </div>
-                <div class="mt-sm-25 mt-15 d-sm-none d-block">
-                  <div class="bold heading-6">
-                    Kartik Mathur
-                  </div>
-                  <div class="mt-2 orange font-3">
-                    Academics Head
-                  </div>
-                </div>
-              </div>
-              <div class="t-align-c px-15 mb-25">
-                <img
-                  src="https://i2.wp.com/digital-photography-school.com/wp-content/uploads/2011/07/outdoor-portraits-1.jpg?resize=2000%2C1160&ssl=1"
-                  class="big-photo"
-                />
-                <div class="mt-sm-25 mt-15 d-sm-block d-none">
-                  <div class="bold heading-4">
-                    Kartik Mathur
-                  </div>
-                  <div class="mt-2 orange heading-6">
-                    Academics Head
-                  </div>
-                </div>
-                <div class="mt-sm-25 mt-15 d-sm-none d-block">
-                  <div class="bold heading-6">
-                    Kartik Mathur
-                  </div>
-                  <div class="mt-2 orange font-3">
-                    Academics Head
-                  </div>
+                  <div class="bold heading-6">{{ member.member_name }}</div>
+                  <div class="mt-2 orange font-3">{{ member.member_type }}</div>
                 </div>
               </div>
             </div>
@@ -356,11 +229,45 @@
 </template>
 
 <script>
-import Navigation from "@/components/Navigation.vue";
+import Navigation from '@/components/Navigation.vue'
 
 export default {
+  data() {
+    return {
+      teamMembers: [
+        {
+          member_image: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
+          member_type: 'Mentor',
+          member_name: 'Arnav Gupta',
+          member_description: 'Champion Swimmer Gupta!',
+          member_contact: 'a@cb.lk',
+        },
+        {
+          member_image: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
+          member_type: 'Developer',
+          member_name: 'Arnav Gupta',
+          member_description: 'Champion Swimmer Gupta!',
+          member_contact: 'a@cb.lk',
+        },
+        {
+          member_image: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
+          member_type: 'Mentor',
+          member_name: 'Arnav Gupta',
+          member_description: 'Champion Swimmer Gupta!',
+          member_contact: 'a@cb.lk',
+        },
+        {
+          member_image: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
+          member_type: 'Management',
+          member_name: 'Arnav Gupta',
+          member_description: 'Champion Swimmer Gupta!',
+          member_contact: 'a@cb.lk',
+        },
+      ],
+    }
+  },
   components: {
     Navigation,
   },
-};
+}
 </script>

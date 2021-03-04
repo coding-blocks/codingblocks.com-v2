@@ -2,6 +2,9 @@ export { default as Footer } from '../../components/Footer.vue'
 export { default as MainNav } from '../../components/MainNav.vue'
 export { default as Navigation } from '../../components/Navigation.vue'
 export { default as SubNavMegaNav } from '../../components/SubNavMegaNav.vue'
+export { default as EventsUpcomingCourseSection } from '../../components/events/UpcomingCourseSection.vue'
+export { default as EventsUpcomingEventsSection } from '../../components/events/UpcomingEventsSection.vue'
+export { default as CoursesClassroomCourses } from '../../components/courses/ClassroomCourses.vue'
 export { default as CoursesCourseBatch } from '../../components/courses/CourseBatch.vue'
 export { default as CoursesCourseBySubjectSection } from '../../components/courses/CourseBySubjectSection.vue'
 export { default as CoursesCourseCard } from '../../components/courses/CourseCard.vue'
@@ -12,10 +15,11 @@ export { default as CoursesCourseList } from '../../components/courses/CourseLis
 export { default as CoursesCoursePageMentorsSection } from '../../components/courses/CoursePageMentorsSection.vue'
 export { default as CoursesCourseProjects } from '../../components/courses/CourseProjects.vue'
 export { default as CoursesCourseSyllabus } from '../../components/courses/CourseSyllabus.vue'
+export { default as CoursesNavigation } from '../../components/courses/CoursesNavigation.vue'
 export { default as CoursesHelpSection } from '../../components/courses/HelpSection.vue'
+export { default as CoursesLiveCourses } from '../../components/courses/LiveCourses.vue'
+export { default as CoursesOnlineCourses } from '../../components/courses/OnlineCourses.vue'
 export { default as CoursesTracksSection } from '../../components/courses/TracksSection.vue'
-export { default as EventsUpcomingCourseSection } from '../../components/events/UpcomingCourseSection.vue'
-export { default as EventsUpcomingEventsSection } from '../../components/events/UpcomingEventsSection.vue'
 export { default as TestimonialsMajorSuccessStories } from '../../components/testimonials/MajorSuccessStories.vue'
 export { default as TestimonialsMajorSuccessStoryCard } from '../../components/testimonials/MajorSuccessStoryCard.vue'
 export { default as MiscBannerCarousel } from '../../components/misc/BannerCarousel.vue'
@@ -31,6 +35,7 @@ export { default as HomeBlogsSection } from '../../components/home/BlogsSection.
 export { default as HomeCollegesAndCompaniesSection } from '../../components/home/CollegesAndCompaniesSection.vue'
 export { default as HomeCoursesSection } from '../../components/home/CoursesSection.vue'
 export { default as HomeCoursesSectionCardsSection } from '../../components/home/CoursesSectionCardsSection.vue'
+export { default as HomeIntroductionSection } from '../../components/home/IntroductionSection.vue'
 export { default as HomeMentorSection } from '../../components/home/MentorSection.vue'
 export { default as HomeNewsSection } from '../../components/home/NewsSection.vue'
 export { default as HomePracticeAndHireSection } from '../../components/home/PracticeAndHireSection.vue'
@@ -44,6 +49,9 @@ export const LazyFooter = import('../../components/Footer.vue' /* webpackChunkNa
 export const LazyMainNav = import('../../components/MainNav.vue' /* webpackChunkName: "components/main-nav" */).then(c => c.default || c)
 export const LazyNavigation = import('../../components/Navigation.vue' /* webpackChunkName: "components/navigation" */).then(c => c.default || c)
 export const LazySubNavMegaNav = import('../../components/SubNavMegaNav.vue' /* webpackChunkName: "components/sub-nav-mega-nav" */).then(c => c.default || c)
+export const LazyEventsUpcomingCourseSection = import('../../components/events/UpcomingCourseSection.vue' /* webpackChunkName: "components/events-upcoming-course-section" */).then(c => c.default || c)
+export const LazyEventsUpcomingEventsSection = import('../../components/events/UpcomingEventsSection.vue' /* webpackChunkName: "components/events-upcoming-events-section" */).then(c => c.default || c)
+export const LazyCoursesClassroomCourses = import('../../components/courses/ClassroomCourses.vue' /* webpackChunkName: "components/courses-classroom-courses" */).then(c => c.default || c)
 export const LazyCoursesCourseBatch = import('../../components/courses/CourseBatch.vue' /* webpackChunkName: "components/courses-course-batch" */).then(c => c.default || c)
 export const LazyCoursesCourseBySubjectSection = import('../../components/courses/CourseBySubjectSection.vue' /* webpackChunkName: "components/courses-course-by-subject-section" */).then(c => c.default || c)
 export const LazyCoursesCourseCard = import('../../components/courses/CourseCard.vue' /* webpackChunkName: "components/courses-course-card" */).then(c => c.default || c)
@@ -54,10 +62,11 @@ export const LazyCoursesCourseList = import('../../components/courses/CourseList
 export const LazyCoursesCoursePageMentorsSection = import('../../components/courses/CoursePageMentorsSection.vue' /* webpackChunkName: "components/courses-course-page-mentors-section" */).then(c => c.default || c)
 export const LazyCoursesCourseProjects = import('../../components/courses/CourseProjects.vue' /* webpackChunkName: "components/courses-course-projects" */).then(c => c.default || c)
 export const LazyCoursesCourseSyllabus = import('../../components/courses/CourseSyllabus.vue' /* webpackChunkName: "components/courses-course-syllabus" */).then(c => c.default || c)
+export const LazyCoursesNavigation = import('../../components/courses/CoursesNavigation.vue' /* webpackChunkName: "components/courses-navigation" */).then(c => c.default || c)
 export const LazyCoursesHelpSection = import('../../components/courses/HelpSection.vue' /* webpackChunkName: "components/courses-help-section" */).then(c => c.default || c)
+export const LazyCoursesLiveCourses = import('../../components/courses/LiveCourses.vue' /* webpackChunkName: "components/courses-live-courses" */).then(c => c.default || c)
+export const LazyCoursesOnlineCourses = import('../../components/courses/OnlineCourses.vue' /* webpackChunkName: "components/courses-online-courses" */).then(c => c.default || c)
 export const LazyCoursesTracksSection = import('../../components/courses/TracksSection.vue' /* webpackChunkName: "components/courses-tracks-section" */).then(c => c.default || c)
-export const LazyEventsUpcomingCourseSection = import('../../components/events/UpcomingCourseSection.vue' /* webpackChunkName: "components/events-upcoming-course-section" */).then(c => c.default || c)
-export const LazyEventsUpcomingEventsSection = import('../../components/events/UpcomingEventsSection.vue' /* webpackChunkName: "components/events-upcoming-events-section" */).then(c => c.default || c)
 export const LazyTestimonialsMajorSuccessStories = import('../../components/testimonials/MajorSuccessStories.vue' /* webpackChunkName: "components/testimonials-major-success-stories" */).then(c => c.default || c)
 export const LazyTestimonialsMajorSuccessStoryCard = import('../../components/testimonials/MajorSuccessStoryCard.vue' /* webpackChunkName: "components/testimonials-major-success-story-card" */).then(c => c.default || c)
 export const LazyMiscBannerCarousel = import('../../components/misc/BannerCarousel.vue' /* webpackChunkName: "components/misc-banner-carousel" */).then(c => c.default || c)
@@ -73,6 +82,7 @@ export const LazyHomeBlogsSection = import('../../components/home/BlogsSection.v
 export const LazyHomeCollegesAndCompaniesSection = import('../../components/home/CollegesAndCompaniesSection.vue' /* webpackChunkName: "components/home-colleges-and-companies-section" */).then(c => c.default || c)
 export const LazyHomeCoursesSection = import('../../components/home/CoursesSection.vue' /* webpackChunkName: "components/home-courses-section" */).then(c => c.default || c)
 export const LazyHomeCoursesSectionCardsSection = import('../../components/home/CoursesSectionCardsSection.vue' /* webpackChunkName: "components/home-courses-section-cards-section" */).then(c => c.default || c)
+export const LazyHomeIntroductionSection = import('../../components/home/IntroductionSection.vue' /* webpackChunkName: "components/home-introduction-section" */).then(c => c.default || c)
 export const LazyHomeMentorSection = import('../../components/home/MentorSection.vue' /* webpackChunkName: "components/home-mentor-section" */).then(c => c.default || c)
 export const LazyHomeNewsSection = import('../../components/home/NewsSection.vue' /* webpackChunkName: "components/home-news-section" */).then(c => c.default || c)
 export const LazyHomePracticeAndHireSection = import('../../components/home/PracticeAndHireSection.vue' /* webpackChunkName: "components/home-practice-and-hire-section" */).then(c => c.default || c)

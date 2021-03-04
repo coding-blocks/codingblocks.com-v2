@@ -12,9 +12,11 @@
         </div>
       </div>
       <div class="mt-sm-50 mt-25">
-        <CardCarousel >
-          <SuccessStory v-for="(story, index) in stories" :key="index"
+        <CardCarousel>
+          <SuccessStory
             :story="story"
+            v-for="(story, index) in majorStories"
+            :key="index"
           />
         </CardCarousel>
       </div>
@@ -27,6 +29,36 @@ import CardCarousel from '@/components/misc/CardCarousel.vue'
 import SuccessStory from '@/components/misc/SuccessStory.vue'
 
 export default {
+  data() {
+    return {
+      majorStories: [
+        {
+          story_title: 'Bipin placed at Tesla, 90LPA',
+          story_subtitle: '(B.Tech | IT, MAIT)',
+          description:
+            'Hi, I am Nilesh from Delhi technology university. I have done competitive boot camp from coding blocks. This gave me a great exposure to problem solving mindset and helped me crack Apple interview. Thanks to Coding blocks!',
+          image_link: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
+          company_logo:
+            'https://www.freepnglogos.com/uploads/target-png/target-logo-png-transparent-svg-vector-bie-supply-35.png',
+          student_name: 'Bipin',
+          company_name: 'Target',
+          student_college: 'IITD',
+        },
+        {
+          story_title: 'Bipin placed at Tesla, 90LPA',
+          story_subtitle: '(B.Tech | IT, MAIT)',
+          description:
+            'Hi, I am Nilesh from Delhi technology university. I have done competitive boot camp from coding blocks. This gave me a great exposure to problem solving mindset and helped me crack Apple interview. Thanks to Coding blocks!',
+          image_link: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
+          company_logo:
+            'https://www.freepnglogos.com/uploads/target-png/target-logo-png-transparent-svg-vector-bie-supply-35.png',
+          student_name: 'Bipin',
+          company_name: 'Target',
+          student_college: 'IITD',
+        },
+      ],
+    }
+  },
   components: {
     CardCarousel,
     SuccessStory,

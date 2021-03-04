@@ -13,60 +13,34 @@
       style="max-height: 500px"
     >
       <div style="border-left: solid 2px #f5f5f5">
-        <div class="accordion-container">
-          <div class="p-30 accordion-container__accordion-head">
-            <div
-              class="row no-gutters align-items-center justify-content-between"
-            >
-              <div class="flex-1">
-                <div class="font-4 bold">Todo List App</div>
-                <div class="font-2 text-grey mt-10">
-                  A task manager with features like 'mark as done', 'cear done
-                  tasks' and sorting tasks by their status.
+        <div v-for="(project, index) in projects" :key="index">
+          <div class="accordion-container">
+            <div class="p-30 accordion-container__accordion-head">
+              <div
+                class="row no-gutters align-items-center justify-content-between"
+              >
+                <div class="flex-1 pr-20">
+                  <div class="font-4 bold">{{ project.title }}</div>
+                  <div class="font-2 text-grey mt-10">
+                    {{ project.description }}
+                  </div>
                 </div>
+                <img :src="project.img_url" class="s-60x60 br-5" />
               </div>
             </div>
           </div>
+          <div class="divider-h content-divider px-30 bg-grey-light-3"></div>
         </div>
-        <div class="divider-h content-divider px-30 bg-grey-light-3"></div>
-
-        <div class="accordion-container">
-          <div class="p-30 accordion-container__accordion-head">
-            <div
-              class="row no-gutters align-items-center justify-content-between"
-            >
-              <div class="flex-1">
-                <div class="font-4 bold">Todo List App</div>
-                <div class="font-2 text-grey mt-10">
-                  A task manager with features like 'mark as done', 'cear done
-                  tasks' and sorting tasks by their status.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="divider-h content-divider px-30 bg-grey-light-3"></div>
-
-        <div class="accordion-container">
-          <div class="p-30 accordion-container__accordion-head">
-            <div
-              class="row no-gutters align-items-center justify-content-between"
-            >
-              <div class="flex-1">
-                <div class="font-4 bold">Todo List App</div>
-                <div class="font-2 text-grey mt-10">
-                  A task manager with features like 'mark as done', 'cear done
-                  tasks' and sorting tasks by their status.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="divider-h content-divider px-30 bg-grey-light-3"></div>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: ['projects'],
+}
+</script>
 
 <style scoped>
 .accordion-container__accordion-head::after {

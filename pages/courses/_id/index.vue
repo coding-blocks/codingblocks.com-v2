@@ -16,7 +16,7 @@
             <div class="col-lg-8 col-md-7 mb-md-none mb-50">
               <CourseSyllabus />
 
-              <CourseProjects />
+              <CourseProjects :projects="projects" />
 
               <CourseHighlights />
             </div>
@@ -83,6 +83,37 @@ import CoursePageMentorsSection from '@/components/courses/CoursePageMentorsSect
 import SuccessStoryCard from '@/components/misc/SuccessStoryCard.vue'
 
 export default {
+  data() {
+    return {
+      syllabus: {},
+      projects: [
+        {
+          title: 'Some Project',
+          description:
+            "A task manager with features like 'mark as done', 'cear donetasks' and sorting tasks by their status.",
+          img_url: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
+        },
+        {
+          title: 'Some Project',
+          description:
+            "A task manager with features like 'mark as done', 'cear donetasks' and sorting tasks by their status.",
+          img_url: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
+        },
+        {
+          title: 'Some Project',
+          description:
+            "A task manager with features like 'mark as done', 'cear donetasks' and sorting tasks by their status.",
+          img_url: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
+        },
+        {
+          title: 'Some Project',
+          description:
+            "A task manager with features like 'mark as done', 'cear donetasks' and sorting tasks by their status.",
+          img_url: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
+        },
+      ],
+    }
+  },
   components: {
     CourseDescriptionSection,
     CourseSyllabus,

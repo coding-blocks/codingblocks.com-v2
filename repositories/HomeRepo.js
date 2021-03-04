@@ -28,11 +28,16 @@ export default ($axios, $api) => ({
           },
         },
         page: {
-          limit:10,
-          offset:0,
+          limit: 10,
+          offset: 0,
         },
       },
     })
+    return response.data
+  },
+
+  async fetchInstructors() {
+    const response = await $api.get(`instructors`)
     return response.data
   },
 })

@@ -114,12 +114,14 @@
 import CourseCardSmall from '@/components/courses/CourseCardSmall.vue'
 import CoursesSectionCardsSection from '@/components/home/CoursesSectionCardsSection.vue'
 import ModalForm from '@/components/misc/ModalForm.vue'
+import ConsultationForm from '@/components/misc/ConsultationForm.vue'
 
 export default {
   components: {
     CourseCardSmall,
     CoursesSectionCardsSection,
     ModalForm,
+    ConsultationForm,
   },
   mounted() {
     const onlineButton = document.querySelector('#online-courses')

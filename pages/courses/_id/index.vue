@@ -85,8 +85,8 @@ import SuccessStoryCard from '@/components/misc/SuccessStoryCard.vue'
 export default {
   data() {
     return {
-      syllabus: {
-        firstSection: {
+      syllabus: [
+        {
           name: 'Beginner Section',
           contents: [
             {
@@ -133,8 +133,8 @@ export default {
             },
           ],
         },
-        secondSection: {
-          name: 'Beginner Section',
+        {
+          name: 'Intermediate Section',
           contents: [
             {
               title: 'Networking and Something',
@@ -180,8 +180,8 @@ export default {
             },
           ],
         },
-        thirdSection: {
-          name: 'Beginner Section',
+        {
+          name: 'Intermediate Section 2',
           contents: [
             {
               title: 'Networking and Something',
@@ -227,8 +227,8 @@ export default {
             },
           ],
         },
-        fourthSection: {
-          name: 'Beginner Section',
+        {
+          name: 'Final Section',
           contents: [
             {
               title: 'Networking and Something',
@@ -274,7 +274,7 @@ export default {
             },
           ],
         },
-      },
+      ],
       projects: [
         {
           title: 'Some Project',

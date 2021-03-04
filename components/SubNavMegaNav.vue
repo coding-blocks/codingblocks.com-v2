@@ -55,34 +55,62 @@
             </div>
             <div class="mt-35 mb-15">
               <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer mr-20" href="#">
+                <a
+                  class="font-4 bold pointer mr-20"
+                  target="_blank"
+                  href="https://online.codingblocks.com/courses/c-plus-plus-online-course-for-beginners"
+                >
                   C++ Master Course
                 </a>
-                <div
+                <!-- <div
                   class="bg-gradient-yellow white font-1 p-1 d-inline-block"
                   style="border-radius: 2px"
                 >
                   NEW
-                </div>
+                </div> -->
               </div>
               <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#"> JAVA Master Course </a>
+                <a
+                  class="font-4 bold pointer"
+                  target="_blank"
+                  href="https://online.codingblocks.com/courses/complete-java-course-online"
+                >
+                  JAVA Master Course
+                </a>
               </div>
               <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#">
+                <a
+                  class="font-4 bold pointer"
+                  target="_blank"
+                  href="https://online.codingblocks.com/courses/python-for-beginners-developers"
+                >
                   Python for Developers
                 </a>
               </div>
               <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#">
+                <a
+                  class="font-4 bold pointer"
+                  target="_blank"
+                  href="https://online.codingblocks.com/courses/python-django"
+                >
                   Web Dev with Python - Django
                 </a>
               </div>
               <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#"> Data Science </a>
+                <a
+                  class="font-4 bold pointer"
+                  target="_blank"
+                  href="https://online.codingblocks.com/courses/data-science-online-course-python"
+                >
+                  Data Science
+                </a>
               </div>
               <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#">
+                <a
+                  class="font-4 bold pointer"
+                  target="_blank"
+                  href="https://online.codingblocks.com/courses/competitive-programming-course-online"
+                >
                   Competitive Programming
                 </a>
               </div>

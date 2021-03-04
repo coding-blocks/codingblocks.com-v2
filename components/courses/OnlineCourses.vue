@@ -117,10 +117,8 @@ export default {
   computed: {
     featuredTags() {
       // somehow calling this server side fails; need to debug why
-      return process.client
-        ? this.$jsonApiStore
-            .sync(this.featuredTagsPayload)
-            .sort((a, b) => a.order - b.order)
+      return this.featuredTagsPayload.length
+        ? this.featuredTagsPayload.sort((a, b) => a.order - b.order)
         : []
     },
   },

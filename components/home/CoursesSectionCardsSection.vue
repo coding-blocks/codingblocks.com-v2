@@ -36,6 +36,7 @@
 
 <script>
 import CourseCardSmall from '@/components/courses/CourseCardSmall.vue'
+
 export default {
   components: {
     CourseCardSmall,
@@ -43,18 +44,10 @@ export default {
   props: ['courseType'],
   data() {
     return {
-      featuredTagsPayload: {},
+      featuredTags: [],
     }
   },
   computed: {
-    featuredTags() {
-      // somehow calling this server side fails; need to debug why
-      return process.client
-        ? this.$jsonApiStore
-            .sync(this.featuredTagsPayload)
-            .sort((a, b) => a.order - b.order)
-        : []
-    },
     sortedCourses() {
       return this.featuredTags.map(
         (featuredTag) =>
@@ -68,7 +61,7 @@ export default {
     },
   },
   async fetch() {
-    this.featuredTagsPayload = await this.$repositories.courses.fetchFeaturedCourses()
+    this.featuredTags = await this.$repositories.courses.fetchFeaturedCourses()
   },
 }
 </script>

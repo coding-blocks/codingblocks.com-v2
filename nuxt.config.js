@@ -1,4 +1,4 @@
-const config = require('./config');
+const config = require('./config')
 
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
@@ -24,11 +24,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [
-    '~/plugins/api.js',
-    '~/plugins/repositories.js',
-    '~/plugins/jsonapi-datastore.js'
-  ],
+  plugins: ['~/plugins/api.js', '~/plugins/repositories.js'],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,

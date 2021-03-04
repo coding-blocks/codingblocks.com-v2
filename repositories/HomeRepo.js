@@ -1,4 +1,4 @@
-import banners from '../data/banners.json'
+import { deserialize } from 'deserialize-json-api'
 
 export default ($axios, $api) => ({
   async banners() {
@@ -38,6 +38,7 @@ export default ($axios, $api) => ({
 
   async fetchInstructors() {
     const response = await $api.get(`instructors`)
-    return response.data
+    const payload = deserialize(response.data)
+    return payload.data
   },
 })

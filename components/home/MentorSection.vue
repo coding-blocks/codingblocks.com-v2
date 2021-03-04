@@ -48,20 +48,15 @@
 </template>
 
 <script>
+
 export default {
   data() {
     return {
-      mentorsPayload: [],
+      mentors: [],
     }
   },
-  computed: {
-    // somehow calling this server side fails; need to debug why
-    mentors() {
-      return process.client ? this.$jsonApiStore.sync(this.mentorsPayload) : []
-    },
-  },
   async fetch() {
-    this.mentorsPayload = await this.$repositories.home.fetchInstructors()
+    this.mentors = await this.$repositories.home.fetchInstructors()
   },
 }
 </script>

@@ -20,7 +20,7 @@
           <div class="ml-30 heading-5 text-grey">Learn. Practice. Ace.</div>
         </div>
       </div>
-      <div class="mini-banner position-relative br-5">
+      <div class="mini-banner position-relative br-5" v-if="miniBanner">
         <img :src="miniBanner.img_url" style="height: 110px" />
         <div class="mini-banner__tag">
           <div class="font-2">{{ miniBanner.tag }}</div>

@@ -2855,6 +2855,15 @@ des.js@^1.0.0:
     inherits "^2.0.1"
     minimalistic-assert "^1.0.0"
 
+deserialize-json-api@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/deserialize-json-api/-/deserialize-json-api-1.4.0.tgz#776df0d56db1cab420d1d58e7b3d916f0140fda8"
+  integrity sha512-rfViAb34ATDUygZwuU8VSi/FC1T5m+eIAjPiTwcuwCvf3V6uWdnKSYZ1Y8myHW9RCKPhnBKMHp/3ZVF/uEZISQ==
+  dependencies:
+    lodash.camelcase "^4.3.0"
+    lodash.isarray "^4.0.0"
+    lodash.isplainobject "^4.0.6"
+
 destr@^1.0.0, destr@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/destr/-/destr-1.1.0.tgz#2da6add6ba71e04fd0abfb1e642d4f6763235095"
@@ -4315,11 +4324,6 @@ json5@^2.1.2:
   dependencies:
     minimist "^1.2.5"
 
-jsonapi-datastore@^0.4.0-beta:
-  version "0.4.0-beta"
-  resolved "https://registry.yarnpkg.com/jsonapi-datastore/-/jsonapi-datastore-0.4.0-beta.tgz#b499fce924d45e2bc3c6178681520063e2361f10"
-  integrity sha1-tJn86STUXivDxheGgVIAY+I2HxA=
-
 jsonfile@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/jsonfile/-/jsonfile-4.0.0.tgz#8771aae0799b64076b76640fca058f9c10e33ecb"
@@ -4430,6 +4434,21 @@ lodash._reinterpolate@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
   integrity sha1-DM8tiRZq8Ds2Y8eWU4t1rG4RTZ0=
+
+lodash.camelcase@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
+  integrity sha1-soqmKIorn8ZRA1x3EfZathkDMaY=
+
+lodash.isarray@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/lodash.isarray/-/lodash.isarray-4.0.0.tgz#2aca496b28c4ca6d726715313590c02e6ea34403"
+  integrity sha1-KspJayjEym1yZxUxNZDALm6jRAM=
+
+lodash.isplainobject@^4.0.6:
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz#7c526a52d89b45c45cc690b88163be0497f550cb"
+  integrity sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs=
 
 lodash.kebabcase@^4.1.1:
   version "4.1.1"

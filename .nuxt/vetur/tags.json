@@ -116,9 +116,6 @@
   "MiscConsultationForm": {
     "description": "Auto imported from components/misc/ConsultationForm.vue"
   },
-  "MiscConsultationFormModal": {
-    "description": "Auto imported from components/misc/ConsultationFormModal.vue"
-  },
   "MiscDividedSection": {
     "description": "Auto imported from components/misc/DividedSection.vue"
   },

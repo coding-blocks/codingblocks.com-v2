@@ -37,7 +37,6 @@ export { default as HomeWelcomeSection } from '../../components/home/WelcomeSect
 export { default as MiscBannerCarousel } from '../../components/misc/BannerCarousel.vue'
 export { default as MiscCardCarousel } from '../../components/misc/CardCarousel.vue'
 export { default as MiscConsultationForm } from '../../components/misc/ConsultationForm.vue'
-export { default as MiscConsultationFormModal } from '../../components/misc/ConsultationFormModal.vue'
 export { default as MiscDividedSection } from '../../components/misc/DividedSection.vue'
 export { default as MiscEventsCard } from '../../components/misc/EventsCard.vue'
 export { default as MiscModalForm } from '../../components/misc/ModalForm.vue'
@@ -87,7 +86,6 @@ export const LazyHomeWelcomeSection = import('../../components/home/WelcomeSecti
 export const LazyMiscBannerCarousel = import('../../components/misc/BannerCarousel.vue' /* webpackChunkName: "components/misc-banner-carousel" */).then(c => c.default || c)
 export const LazyMiscCardCarousel = import('../../components/misc/CardCarousel.vue' /* webpackChunkName: "components/misc-card-carousel" */).then(c => c.default || c)
 export const LazyMiscConsultationForm = import('../../components/misc/ConsultationForm.vue' /* webpackChunkName: "components/misc-consultation-form" */).then(c => c.default || c)
-export const LazyMiscConsultationFormModal = import('../../components/misc/ConsultationFormModal.vue' /* webpackChunkName: "components/misc-consultation-form-modal" */).then(c => c.default || c)
 export const LazyMiscDividedSection = import('../../components/misc/DividedSection.vue' /* webpackChunkName: "components/misc-divided-section" */).then(c => c.default || c)
 export const LazyMiscEventsCard = import('../../components/misc/EventsCard.vue' /* webpackChunkName: "components/misc-events-card" */).then(c => c.default || c)
 export const LazyMiscModalForm = import('../../components/misc/ModalForm.vue' /* webpackChunkName: "components/misc-modal-form" */).then(c => c.default || c)

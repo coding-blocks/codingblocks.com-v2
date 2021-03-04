@@ -19,21 +19,11 @@
             class="row no-gutters align-items-center mr-30 font-4 text-grey pointer"
           >
             <NuxtLink to="/events"> Events </NuxtLink>
-            <!-- <img
-              src="https://minio.cb.lk/public/fa-5.13/svgs/solid/chevron-down.svg"
-              class="ml-10"
-              style="height: 15px;"
-            /> -->
           </div>
           <div
             class="row no-gutters align-items-center mr-30 font-4 text-grey pointer"
           >
             <a href="https://blog.codingblocks.com/" target="_blank">Blogs</a>
-            <!-- <img
-              src="https://minio.cb.lk/public/fa-5.13/svgs/solid/chevron-down.svg"
-              class="ml-10"
-              style="height: 15px;"
-            /> -->
           </div>
           <div
             class="row no-gutters align-items-center mr-30 font-4 text-grey pointer"

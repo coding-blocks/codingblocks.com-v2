@@ -16,12 +16,13 @@
       />
       <div class="mt-30 mb-40">
         <div class="row no-gutters align-items-center">
-          <a
-            href="https://account.codingblocks.com/login"
+          <div
+            v-on:click="scrollNow(document.querySelector('#course-section'))"
             class="button-primary"
             target="_blank"
-            >Get Started</a
           >
+            Get Started
+          </div>
           <div class="ml-30 heading-5 text-grey">Learn. Practice. Ace.</div>
         </div>
       </div>
@@ -140,6 +141,35 @@ export default {
   },
   components: {
     Universe,
+  },
+  methods: {
+    scrollNow(target) {
+      var scrollContainer = target
+      do {
+        //find scroll container
+        scrollContainer = scrollContainer.parentNode
+        if (!scrollContainer) return
+        scrollContainer.scrollTop += 1
+      } while (scrollContainer.scrollTop == 0)
+
+      var targetY = 0
+      do {
+        // Find the top of target relatively to the container
+        if (target == scrollContainer) break
+        targetY += target.offsetTop
+      } while ((target = target.offsetParent))
+
+      scroll = function (c, a, b, i) {
+        i++
+        if (i > 30) return
+        c.scrollTop = a + ((b - a) / 30) * i
+        setTimeout(function () {
+          scroll(c, a, b, i)
+        }, 20)
+      }
+      // Scroll to target
+      scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0)
+    },
   },
 }
 </script>

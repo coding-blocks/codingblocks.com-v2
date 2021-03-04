@@ -5,16 +5,14 @@
         <div
           class="s-90x90 br-5 p-15 all-center position-relative card--course__logo theme-background"
         >
-          <img
-            :src="course.logo"
-          />
+          <img :src="course.logo" />
           <div class="card--course__logo__tag">{{ difficultyText }}</div>
         </div>
       </div>
       <div class="t-align-r">
         <div class="font-2">Starting from</div>
-        <div class="heading-4 bold">{{price > 0 ? `₹${price}` : 'Free' }}</div>
-        <del class="font-4 text-grey-light-1">{{`₹${mrp}`}}</del>
+        <div class="heading-4 bold">{{ price > 0 ? `₹${price}` : 'Free' }}</div>
+        <del class="font-4 text-grey-light-1">{{ `₹${mrp}` }}</del>
       </div>
     </div>
     <div>
@@ -53,10 +51,13 @@
         <div class="flex-1 pr-15">
           <div class="font-4">
             <div>NEXT BATCH</div>
-            <div class="font-5 bold mt-2">{{startDateString}}</div>
+            <div class="font-5 bold mt-2">{{ startDateString }}</div>
           </div>
         </div>
-        <a :href="`https://online.codingblocks.com/courses/${course.slug}`" class="button-tertiary">
+        <a
+          :href="`https://online.codingblocks.com/courses/${course.slug}`"
+          class="button-tertiary"
+        >
           Explore
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
@@ -70,7 +71,11 @@
 
 <script>
 import { formatTimestamp } from '~/utils/date'
-import { topRunForCourse, textForDifficulty, freeTrialRunForCourse } from '~/utils/course';
+import {
+  topRunForCourse,
+  textForDifficulty,
+  freeTrialRunForCourse,
+} from '~/utils/course'
 
 export default {
   props: {
@@ -94,7 +99,7 @@ export default {
     difficultyText() {
       return textForDifficulty(this.course.difficulty)
     },
-     startDateString () {
+    startDateString() {
       return formatTimestamp(this.topRun.start)
     },
   },

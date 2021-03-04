@@ -25,7 +25,8 @@
     "date-fns": "^2.18.0",
     "deserialize-json-api": "^1.4.0",
     "nuxt": "^2.14.6",
-    "qs": "^6.9.6"
+    "qs": "^6.9.6",
+    "vue-form-generator": "^2.3.4"
   },
   "devDependencies": {
     "prettier": "^2.2.1"

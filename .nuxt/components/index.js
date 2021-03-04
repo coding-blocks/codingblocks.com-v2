@@ -36,8 +36,10 @@ export { default as HomeUniversePlanet } from '../../components/home/UniversePla
 export { default as HomeWelcomeSection } from '../../components/home/WelcomeSection.vue'
 export { default as MiscBannerCarousel } from '../../components/misc/BannerCarousel.vue'
 export { default as MiscCardCarousel } from '../../components/misc/CardCarousel.vue'
+export { default as MiscConsultationForm } from '../../components/misc/ConsultationForm.vue'
 export { default as MiscDividedSection } from '../../components/misc/DividedSection.vue'
 export { default as MiscEventsCard } from '../../components/misc/EventsCard.vue'
+export { default as MiscModalForm } from '../../components/misc/ModalForm.vue'
 export { default as MiscNewsCard } from '../../components/misc/NewsCard.vue'
 export { default as MiscStatsCard } from '../../components/misc/StatsCard.vue'
 export { default as MiscSuccessStory } from '../../components/misc/SuccessStory.vue'
@@ -83,8 +85,10 @@ export const LazyHomeUniversePlanet = import('../../components/home/UniversePlan
 export const LazyHomeWelcomeSection = import('../../components/home/WelcomeSection.vue' /* webpackChunkName: "components/home-welcome-section" */).then(c => c.default || c)
 export const LazyMiscBannerCarousel = import('../../components/misc/BannerCarousel.vue' /* webpackChunkName: "components/misc-banner-carousel" */).then(c => c.default || c)
 export const LazyMiscCardCarousel = import('../../components/misc/CardCarousel.vue' /* webpackChunkName: "components/misc-card-carousel" */).then(c => c.default || c)
+export const LazyMiscConsultationForm = import('../../components/misc/ConsultationForm.vue' /* webpackChunkName: "components/misc-consultation-form" */).then(c => c.default || c)
 export const LazyMiscDividedSection = import('../../components/misc/DividedSection.vue' /* webpackChunkName: "components/misc-divided-section" */).then(c => c.default || c)
 export const LazyMiscEventsCard = import('../../components/misc/EventsCard.vue' /* webpackChunkName: "components/misc-events-card" */).then(c => c.default || c)
+export const LazyMiscModalForm = import('../../components/misc/ModalForm.vue' /* webpackChunkName: "components/misc-modal-form" */).then(c => c.default || c)
 export const LazyMiscNewsCard = import('../../components/misc/NewsCard.vue' /* webpackChunkName: "components/misc-news-card" */).then(c => c.default || c)
 export const LazyMiscStatsCard = import('../../components/misc/StatsCard.vue' /* webpackChunkName: "components/misc-stats-card" */).then(c => c.default || c)
 export const LazyMiscSuccessStory = import('../../components/misc/SuccessStory.vue' /* webpackChunkName: "components/misc-success-story" */).then(c => c.default || c)

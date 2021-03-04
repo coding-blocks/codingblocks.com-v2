@@ -113,11 +113,17 @@
   "MiscCardCarousel": {
     "description": "Auto imported from components/misc/CardCarousel.vue"
   },
+  "MiscConsultationForm": {
+    "description": "Auto imported from components/misc/ConsultationForm.vue"
+  },
   "MiscDividedSection": {
     "description": "Auto imported from components/misc/DividedSection.vue"
   },
   "MiscEventsCard": {
     "description": "Auto imported from components/misc/EventsCard.vue"
+  },
+  "MiscModalForm": {
+    "description": "Auto imported from components/misc/ModalForm.vue"
   },
   "MiscNewsCard": {
     "description": "Auto imported from components/misc/NewsCard.vue"

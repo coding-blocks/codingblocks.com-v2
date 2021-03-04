@@ -1,5 +1,5 @@
 <template>
-  <div class="a-cbm" style="margin-top: -70px;">
+  <div class="a-cbm" style="margin-top: -70px">
     <Navigation />
 
     <div class="landing-page">
@@ -15,12 +15,8 @@
             class="row no-gutters justify-content-between align-items-center"
           >
             <div class="flex-1 t-align-lg-l t-align-c">
-              <div class="heading-font stroke-font">
-                ALUMNI NETWORK.
-              </div>
-              <div class="heading-font">
-                ALUMNI NETWORK.
-              </div>
+              <div class="heading-font stroke-font">ALUMNI NETWORK.</div>
+              <div class="heading-font">ALUMNI NETWORK.</div>
               <img
                 src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_news.svg"
               />
@@ -46,16 +42,17 @@
 </template>
 
 <script>
-import Navigation from "@/components/Navigation.vue";
-import WelcomeSection from "@/components/home/WelcomeSection.vue";
-import CoursesSection from "@/components/home/CoursesSection.vue";
-import PracticeAndHireSection from "@/components/home/PracticeAndHireSection.vue";
-import MentorSection from "@/components/home/MentorSection.vue";
-import CollegesAndCompaniesSection from "@/components/home/CollegesAndCompaniesSection.vue";
-import SuccessStoriesSection from "@/components/home/SuccessStoriesSection.vue";
-import BlogsSection from "@/components/home/BlogsSection.vue";
-import NewsSection from "@/components/home/NewsSection.vue";
-import Footer from "@/components/Footer.vue";
+import Navigation from '@/components/Navigation.vue'
+import WelcomeSection from '@/components/home/WelcomeSection.vue'
+import CoursesSection from '@/components/home/CoursesSection.vue'
+import PracticeAndHireSection from '@/components/home/PracticeAndHireSection.vue'
+import MentorSection from '@/components/home/MentorSection.vue'
+import CollegesAndCompaniesSection from '@/components/home/CollegesAndCompaniesSection.vue'
+import SuccessStoriesSection from '@/components/home/SuccessStoriesSection.vue'
+import BlogsSection from '@/components/home/BlogsSection.vue'
+import NewsSection from '@/components/home/NewsSection.vue'
+import Footer from '@/components/Footer.vue'
+import ModalForm from '@/components/misc/ModalForm.vue'
 
 export default {
   components: {
@@ -69,6 +66,7 @@ export default {
     BlogsSection,
     NewsSection,
     Footer,
+    ModalForm,
   },
-};
+}
 </script>

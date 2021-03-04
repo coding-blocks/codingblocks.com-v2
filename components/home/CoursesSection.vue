@@ -90,7 +90,10 @@
             </div>
           </div>
           <div class="col-md-4 t-align-md-r t-align-l mt-md-none mt-40">
-            <button class="button-secondary">
+            <button
+              class="button-secondary"
+              v-on:click="setShowSyllabusModal(true)"
+            >
               Schedule a Session
               <img
                 src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
@@ -101,17 +104,22 @@
         </div>
       </div>
     </div>
+
+    <ModalForm v-if="showSyllabusModal" @close="setShowSyllabusModal(false)">
+    </ModalForm>
   </div>
 </template>
 
 <script>
 import CourseCardSmall from '@/components/courses/CourseCardSmall.vue'
 import CoursesSectionCardsSection from '@/components/home/CoursesSectionCardsSection.vue'
+import ModalForm from '@/components/misc/ModalForm.vue'
 
 export default {
   components: {
     CourseCardSmall,
     CoursesSectionCardsSection,
+    ModalForm,
   },
   mounted() {
     const onlineButton = document.querySelector('#online-courses')
@@ -158,6 +166,16 @@ export default {
       classroomButton.classList.remove('active')
       onlineButton.classList.remove('active')
     })
+  },
+  data() {
+    return {
+      showSyllabusModal: false,
+    }
+  },
+  methods: {
+    setShowSyllabusModal(value) {
+      this.showSyllabusModal = value
+    },
   },
 }
 </script>

@@ -50,8 +50,6 @@
           </div>
         </div>
 
-        <HelpSection />
-
         <div class="mt-sm-75 mt-50">
           <CourseList
             title="Trending Courses"
@@ -61,7 +59,7 @@
       </div>
     </div>
 
-    <SuccessStoriesSection />
+    <SuccessStoriesSection class="bg-white pt-none" />
 
     <Footer />
   </div>

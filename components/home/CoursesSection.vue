@@ -106,6 +106,7 @@
     </div>
 
     <ModalForm v-if="showSyllabusModal" @close="setShowSyllabusModal(false)">
+      <ConsultationForm />
     </ModalForm>
   </div>
 </template>

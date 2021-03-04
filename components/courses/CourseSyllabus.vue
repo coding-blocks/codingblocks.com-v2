@@ -25,51 +25,46 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="row no-gutters c-card-carousel" id="syllabus-sections-carousel">
       <div
-        class="row no-gutters c-card-carousel"
-        id="syllabus-sections-carousel"
+        class="px-40 overflow-y-auto gradient-orange-scroll col-12"
+        style="max-height: 500px"
+        v-for="(majorSection, index) in syllabus"
+        :key="index"
       >
-        <div
-          class="px-40 overflow-y-auto gradient-orange-scroll col-12"
-          style="max-height: 500px"
-          v-for="(majorSection, index) in syllabus"
-          :key="index"
-        >
-          <div style="border-left: solid 2px #f5f5f5">
-            <div v-for="(content, index) in majorSection.contents" :key="index">
-              <div class="accordion-container">
-                <div class="p-30 accordion-container__accordion-head">
-                  <div
-                    class="row no-gutters align-items-center justify-content-between"
-                  >
-                    <div class="flex-1">
-                      <div class="font-4 bold">{{ content.title }}</div>
-                      <div class="font-2 text-grey mt-10">
-                        {{ `${content.videos.length} Items | Duration : ` }}
-                      </div>
-                    </div>
-                    <img
-                      src="https://minio.codingblocks.com/amoeba/accordion-up.svg"
-                      style="transform: rotate(180deg)"
-                    />
-                  </div>
-                </div>
+        <div style="border-left: solid 2px #f5f5f5">
+          <div v-for="(content, index) in majorSection.contents" :key="index">
+            <div class="accordion-container">
+              <div class="p-30 accordion-container__accordion-head">
                 <div
-                  class="accordion-container__accordion-body px-30 pb-10 d-none"
+                  class="row no-gutters align-items-center justify-content-between"
                 >
-                  <div
-                    class="font-2 mb-20"
-                    v-for="(video, id) in content.videos"
-                    :key="id"
-                  >
-                    {{ video.title }}
+                  <div class="flex-1">
+                    <div class="font-4 bold">{{ content.title }}</div>
+                    <div class="font-2 text-grey mt-10">
+                      {{ `${content.videos.length} Items | Duration : ` }}
+                    </div>
                   </div>
+                  <img
+                    src="https://minio.codingblocks.com/amoeba/accordion-up.svg"
+                    style="transform: rotate(180deg)"
+                  />
                 </div>
               </div>
               <div
-                class="divider-h content-divider px-30 bg-grey-light-3"
-              ></div>
+                class="accordion-container__accordion-body px-30 pb-10 d-none"
+              >
+                <div
+                  class="font-2 mb-20"
+                  v-for="(video, id) in content.videos"
+                  :key="id"
+                >
+                  {{ video.title }}
+                </div>
+              </div>
             </div>
+            <div class="divider-h content-divider px-30 bg-grey-light-3"></div>
           </div>
         </div>
       </div>
@@ -101,6 +96,8 @@ export default {
     const syllabusSection3 = document.querySelector('#syllabus-section-3')
     const syllabusSection4 = document.querySelector('#syllabus-section-4')
     const carousel = document.querySelector('#syllabus-sections-carousel')
+
+    syllabusSection1.classList.add('active')
 
     syllabusSection1.addEventListener('click', () => {
       carousel.scrollTo({

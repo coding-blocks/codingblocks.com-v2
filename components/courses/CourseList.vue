@@ -2,12 +2,7 @@
   <div>
     <div class="t-align-sm-l t-align-c mb-50">
       <div class="heading-4 bold">
-        <!-- Trending -->
         {{ featuredTag.name }}
-      </div>
-      <div class="mt-10 text-grey font-4">
-        <!-- Learn and grow as a developer with our project based courses. -->
-        {{ subtitle }}
       </div>
     </div>
 

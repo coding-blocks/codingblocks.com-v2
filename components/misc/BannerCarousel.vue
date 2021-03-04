@@ -4,9 +4,7 @@
     id="carousel"
   >
     <div
-      v-if="banner.length != 0"
-      class="slideshow-container__slide col-12 p-xl-100 p-lg-75 p-md-50 p-sm-40 p-25 pb-100"
-      :class="banner[0].background"
+      class="slideshow-container__slide col-12 p-xl-100 p-lg-75 p-md-50 p-sm-40 p-25 pb-100 d-block"
     >
       <div class="row align-items-center no-gutters">
         <div class="col-xl-6 col-lg-8 z-pos t-align-lg-l t-align-c">
@@ -86,6 +84,9 @@ export default {
     return {
       banner: [],
     }
+  },
+  async fetch() {
+    this.banner = await this.$repositories.home.banners()
   },
 }
 </script>

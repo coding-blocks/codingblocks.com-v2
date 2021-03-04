@@ -14,7 +14,7 @@
       <div class="t-align-r">
         <div class="font-2">Starting from</div>
         <div class="heading-4 bold">{{price > 0 ? `₹${price}` : 'Free' }}</div>
-        <del class="font-4 text-grey-light-1">&#8377; 12999</del>
+        <del class="font-4 text-grey-light-1">{{`₹${mrp}`}}</del>
       </div>
     </div>
     <div>

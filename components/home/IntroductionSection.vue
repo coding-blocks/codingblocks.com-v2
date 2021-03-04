@@ -103,13 +103,13 @@
     <div class="t-align-c mx-auto d-lg-block d-none">
       <Universe />
       <div class="heading-6 mt-30">Helping people get their dream job.</div>
-      <button class="button-tertiary mt-10">
+      <NuxtLink to="/testimonials" class="button-tertiary mt-10">
         View all our Alumni
         <img
           src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
           class="ml-2"
         />
-      </button>
+      </NuxtLink>
     </div>
   </div>
 </template>

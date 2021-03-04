@@ -2,12 +2,8 @@
   <DividedSection>
     <template v-slot:left_section>
       <div class="t-align-lg-l t-align-c">
-        <div class="heading-font stroke-font">
-          FOR
-        </div>
-        <div class="heading-font">
-          COLLEGES
-        </div>
+        <div class="heading-font stroke-font">FOR</div>
+        <div class="heading-font">COLLEGES</div>
         <img
           src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_colleges.svg"
         />
@@ -20,7 +16,7 @@
                 <div class="col-sm-12 col-3 mb-sm-25">
                   <img
                     src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/placement-training-dark.svg"
-                    style="height: 50px;"
+                    style="height: 50px"
                   />
                 </div>
                 <div class="flex-1 t-align-lg-l t-align-sm-c t-align-l">
@@ -35,7 +31,7 @@
                 <div class="col-sm-12 col-3 mb-sm-25">
                   <img
                     src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/online-platform-dark.svg"
-                    style="height: 50px;"
+                    style="height: 50px"
                   />
                 </div>
                 <div class="flex-1 t-align-lg-l t-align-sm-c t-align-l">
@@ -50,7 +46,7 @@
                 <div class="col-sm-12 col-3 mb-sm-25">
                   <img
                     src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/workshops-dark.svg"
-                    style="height: 50px;"
+                    style="height: 50px"
                   />
                 </div>
                 <div class="flex-1 t-align-lg-l t-align-sm-c t-align-l">
@@ -60,23 +56,19 @@
             </div>
           </div>
         </div>
-        <button class="button-primary">
+        <a href="https://hack.codingblocks.com/" class="button-primary">
           Let's Connect
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg"
             class="ml-2"
           />
-        </button>
+        </a>
       </div>
     </template>
     <template v-slot:right_section>
       <div class="t-align-lg-l t-align-c">
-        <div class="heading-font stroke-font">
-          FOR
-        </div>
-        <div class="heading-font">
-          COMPANIES
-        </div>
+        <div class="heading-font stroke-font">FOR</div>
+        <div class="heading-font">COMPANIES</div>
         <img
           src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_colleges.svg"
         />
@@ -87,7 +79,7 @@
                 <div class="col-sm-12 col-3 mb-sm-25">
                   <img
                     src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/training-program-dark.svg"
-                    style="height: 50px;"
+                    style="height: 50px"
                   />
                 </div>
                 <div class="flex-1 t-align-lg-l t-align-sm-c t-align-l">
@@ -100,7 +92,7 @@
                 <div class="col-sm-12 col-3 mb-sm-25">
                   <img
                     src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/hire-students-dark.svg"
-                    style="height: 50px;"
+                    style="height: 50px"
                   />
                 </div>
                 <div class="flex-1 t-align-lg-l t-align-sm-c t-align-l">
@@ -113,7 +105,7 @@
                 <div class="col-sm-12 col-3 mb-sm-25">
                   <img
                     src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/evaluations-dark.svg"
-                    style="height: 50px;"
+                    style="height: 50px"
                   />
                 </div>
                 <div class="flex-1 t-align-lg-l t-align-sm-c t-align-l">
@@ -123,24 +115,24 @@
             </div>
           </div>
         </div>
-        <button class="button-primary">
+        <a href="https://hack.codingblocks.com/" class="button-primary">
           Let's Connect
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg"
             class="ml-2"
           />
-        </button>
+        </a>
       </div>
     </template>
   </DividedSection>
 </template>
 
 <script>
-import DividedSection from "@/components/misc/DividedSection.vue";
+import DividedSection from '@/components/misc/DividedSection.vue'
 
 export default {
   components: {
     DividedSection,
   },
-};
+}
 </script>

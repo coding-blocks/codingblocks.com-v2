@@ -8,36 +8,36 @@
         v-for="(banner, index) in banners"
         :key="index"
         class="slideshow-container__slide col-12 p-xl-100 p-lg-75 p-md-50 p-sm-40 p-25 pb-100"
-        :class="banner[0].background"
+        :class="banner.background"
       >
         <div class="row align-items-center no-gutters">
           <div class="col-xl-6 col-lg-8 z-pos t-align-lg-l t-align-c">
             <div
               class="br-5 d-inline-block p-2 bg-gradient-orange-light mb-10 font-4 white"
             >
-              {{ banner[0].tag }}
+              {{ banner.tag }}
             </div>
             <div class="heading-font stroke-font stroke-font--white">
-              {{ banner[0].heading1 }}
+              {{ banner.heading1 }}
             </div>
             <div class="heading-font white">
-              {{ banner[0].heading2 }}
+              {{ banner.heading2 }}
             </div>
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_welcome.svg"
             />
-            <img :src="banner[0].image" class="d-lg-none d-block" />
+            <img :src="banner.image" class="d-lg-none d-block" />
             <div class="my-50">
               <div class="heading-2 bold text-orange">
-                {{ banner[0].tagline }}
+                {{ banner.tagline }}
               </div>
               <div class="mt-2 white heading-5">
-                {{ banner[0].subTagline }}
+                {{ banner.subTagline }}
               </div>
             </div>
             <div>
               <button class="button-primary">
-                {{ banner[0].cta }}
+                {{ banner.cta }}
                 <img
                   src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg"
                   class="ml-2"

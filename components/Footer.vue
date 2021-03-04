@@ -16,16 +16,27 @@
                 <div class="font-4 bold w-100">PRODUCTS</div>
                 <div class="w-100 mt-50">
                   <div class="mb-30">
-                    <a href="#" class="font-4">Online Coding Blocks</a>
+                    <a href="https://online.codingblocks.com/" class="font-4">
+                      Online Coding Blocks
+                    </a>
                   </div>
                   <div class="mb-30">
-                    <a href="#" class="font-4">Hacker Blocks</a>
+                    <a href="https://hack.codingblocks.com/" class="font-4">
+                      Hacker Blocks
+                    </a>
                   </div>
                   <div class="mb-30">
-                    <a href="#" class="font-4">Hiring Blocks</a>
+                    <a
+                      href="https://hire.codingblocks.com/applicants"
+                      class="font-4"
+                    >
+                      Hiring Blocks
+                    </a>
                   </div>
                   <div>
-                    <a href="#" class="font-4">Online IDE</a>
+                    <a href="https://ide.codingblocks.com/" class="font-4">
+                      Online IDE
+                    </a>
                   </div>
                 </div>
               </div>
@@ -35,19 +46,25 @@
                 <div class="font-4 bold w-100">COMPANY</div>
                 <div class="w-100 mt-50">
                   <div class="mb-30">
-                    <a href="#" class="font-4">About Us</a>
+                    <NuxtLink to="/company" class="font-4">About Us</NuxtLink>
                   </div>
                   <div class="mb-30">
-                    <a href="#" class="font-4">Meet the Team</a>
+                    <NuxtLink to="/company" class="font-4">
+                      Meet the Team
+                    </NuxtLink>
                   </div>
                   <div class="mb-30">
-                    <a href="#" class="font-4">Success Stories</a>
+                    <NuxtLink to="/testimonials" class="font-4">
+                      Success Stories
+                    </NuxtLink>
                   </div>
                   <div class="mb-30">
                     <a href="#" class="font-4">Become a TA/Mentor</a>
                   </div>
                   <div>
-                    <a href="#" class="font-4">Blog</a>
+                    <a href="https://blog.codingblocks.com/" class="font-4">
+                      Blog
+                    </a>
                   </div>
                 </div>
               </div>
@@ -59,10 +76,17 @@
                 <div class="font-4 bold w-100">RESOURCES</div>
                 <div class="w-100 mt-50">
                   <div class="mb-30">
-                    <a href="#" class="font-4">Watch Youtube Videos</a>
+                    <a
+                      href="https://www.youtube.com/channel/UCICWIYEx2mo4wYZzLwJ7wVw"
+                      class="font-4"
+                    >
+                      Watch Youtube Videos
+                    </a>
                   </div>
                   <div class="mb-30">
-                    <a href="#" class="font-4">Blogs</a>
+                    <a href="https://blog.codingblocks.com/" class="font-4">
+                      Blogs
+                    </a>
                   </div>
                   <div class="mb-30">
                     <a href="#" class="font-4">Telegram Channel</a>
@@ -92,7 +116,9 @@
                     <a href="#" class="font-4">BOSS 2020</a>
                   </div>
                   <div>
-                    <a href="#" class="font-4">Online IDE</a>
+                    <a href="https://ide.codingblocks.com/" class="font-4"
+                      >Online IDE</a
+                    >
                   </div>
                 </div>
               </div>

@@ -16,13 +16,7 @@
       />
       <div class="mt-30 mb-40">
         <div class="row no-gutters align-items-center">
-          <div
-            v-on:click="scrollNow(document.querySelector('#course-section'))"
-            class="button-primary"
-            target="_blank"
-          >
-            Get Started
-          </div>
+          <div class="button-primary" target="_blank">Get Started</div>
           <div class="ml-30 heading-5 text-grey">Learn. Practice. Ace.</div>
         </div>
       </div>

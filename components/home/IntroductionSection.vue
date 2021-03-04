@@ -16,12 +16,25 @@
       />
       <div class="mt-30 mb-40">
         <div class="row no-gutters align-items-center">
-          <button class="button-primary">Get Started</button>
+          <a
+            href="https://account.codingblocks.com/login"
+            class="button-primary"
+            target="_blank"
+            >Get Started</a
+          >
           <div class="ml-30 heading-5 text-grey">Learn. Practice. Ace.</div>
         </div>
       </div>
-      <div class="mini-banner position-relative br-5">
-        <div class="bg-purple br-5" style="height: 110px"></div>
+      <div
+        class="mini-banner position-relative br-5"
+        style="max-width: 100%; width: fit-content"
+      >
+        <div class="br-5">
+          <img
+            src="https://minio.codingblocks.com/amoeba/arnva-min.webp"
+            class="br-5"
+          />
+        </div>
         <div class="mini-banner__tag">
           <div class="font-2">Offer valid till 30th Jan</div>
         </div>
@@ -59,16 +72,31 @@
           </div>
         </div>
         <div class="row no-gutters align-items-center justify-content-center">
-          <button class="button-primary">Get Started</button>
+          <a
+            href="https://account.codingblocks.com/login"
+            class="button-primary"
+            target="_blank"
+            >Get Started</a
+          >
           <div class="ml-30 heading-5 text-grey d-xl-block d-none">
             Learn. Practice. Ace.
           </div>
         </div>
       </div>
-      <div class="mini-banner position-relative br-5">
-        <div class="bg-purple br-5" style="height: 110px"></div>
-        <div class="mini-banner__tag">
-          <div class="font-2">Offer valid till 30th Jan</div>
+      <div class="row no-gutters justify-content-center">
+        <div
+          class="mini-banner position-relative br-5"
+          style="max-width: 100%; width: fit-content"
+        >
+          <div class="br-5">
+            <img
+              src="https://minio.codingblocks.com/amoeba/arnva-min.webp"
+              class="br-5"
+            />
+          </div>
+          <div class="mini-banner__tag">
+            <div class="font-2">Offer valid till 30th Jan</div>
+          </div>
         </div>
       </div>
     </div>

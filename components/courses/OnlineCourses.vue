@@ -78,31 +78,14 @@
 
         <div class="mt-sm-75 mt-50">
           <CourseList
-            title="Trending Courses"
-            subtitle="Learn and grow as a developer with our project based courses."
+            :featuredTag="featuredTag"
+            v-for="featuredTag in featuredTags"
+            :key="`feature_${featuredTag.id}`"
           />
         </div>
       </div>
     </div>
-
     <CourseBySubjectSection />
-
-    <div class="landing-page__section">
-      <div class="width-limiter">
-        <CourseList
-          title="Mini Courses"
-          subtitle="Short Courses, Big Impact! Take the big leap through our Mini Courses!"
-        />
-
-        <div class="mt-sm-50 mt-25">
-          <CourseList
-            title="Foundation Courses"
-            subtitle="Short Courses, Big Impact! Take the big leap through our Mini Courses!"
-          />
-        </div>
-      </div>
-    </div>
-
     <TracksSection />
 
     <SuccessStoriesSection />
@@ -125,6 +108,24 @@ export default {
     CourseBySubjectSection,
     TracksSection,
     SuccessStoriesSection,
+  },
+  data() {
+    return {
+      featuredTagsPayload: {},
+    }
+  },
+  computed: {
+    featuredTags() {
+      // somehow calling this server side fails; need to debug why
+      return process.client
+        ? this.$jsonApiStore
+            .sync(this.featuredTagsPayload)
+            .sort((a, b) => a.order - b.order)
+        : []
+    },
+  },
+  async fetch() {
+    this.featuredTagsPayload = await this.$repositories.courses.fetchFeaturedCourses()
   },
 }
 </script>

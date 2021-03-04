@@ -63,7 +63,6 @@
 </template>
 
 <script>
-import BannerRespository from '@/repositories/banner'
 export default {
   mounted() {
     const leftButton = document.querySelector('#move-left')
@@ -92,7 +91,7 @@ export default {
     }
   },
   async fetch() {
-    this.banners = await BannerRespository.fetchBanners()
+    this.banners = await this.$repositories.home.banners()
   },
 }
 </script>

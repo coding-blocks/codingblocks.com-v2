@@ -1,5 +1,5 @@
 <template>
-  <div class="landing-page__section">
+  <div v-if="mentors" class="landing-page__section">
     <div class="width-limiter">
       <div class="row no-gutters justify-content-between align-items-center">
         <div class="flex-1 t-align-md-l t-align-c">
@@ -21,17 +21,14 @@
       </div>
       <div class="mt-sm-50 mt-25">
         <div class="row no-gutters justify-content-center">
-          <div v-for="(member, index) in teamMembers" :key="index">
-            <div
-              class="t-align-c px-20 mb-25"
-              v-if="member.member_type === 'Mentor'"
-            >
-              <img :src="member.member_image" class="big-photo" />
+          <div v-for="(mentor, index) in mentors" :key="index">
+            <div class="t-align-c px-20 mb-25">
+              <img :src="mentor.photo" class="big-photo" />
               <div class="mt-25 heading-4 bold d-sm-block d-none">
-                {{ member.member_name }}
+                {{ mentor.name }}
               </div>
               <div class="mt-25 heading-6 bold d-sm-none d-block">
-                {{ member.member_name }}
+                {{ mentor.name }}
               </div>
             </div>
           </div>
@@ -54,37 +51,17 @@
 export default {
   data() {
     return {
-      teamMembers: [
-        {
-          member_image: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
-          member_type: 'Mentor',
-          member_name: 'Arnav Gupta',
-          member_description: 'Champion Swimmer Gupta!',
-          member_contact: 'a@cb.lk',
-        },
-        {
-          member_image: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
-          member_type: 'Developer',
-          member_name: 'Arnav Gupta',
-          member_description: 'Champion Swimmer Gupta!',
-          member_contact: 'a@cb.lk',
-        },
-        {
-          member_image: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
-          member_type: 'Mentor',
-          member_name: 'Arnav Gupta',
-          member_description: 'Champion Swimmer Gupta!',
-          member_contact: 'a@cb.lk',
-        },
-        {
-          member_image: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
-          member_type: 'Management',
-          member_name: 'Arnav Gupta',
-          member_description: 'Champion Swimmer Gupta!',
-          member_contact: 'a@cb.lk',
-        },
-      ],
+      mentorsPayload: [],
     }
+  },
+  computed: {
+    // somehow calling this server side fails; need to debug why
+    mentors() {
+      return process.client ? this.$jsonApiStore.sync(this.mentorsPayload) : []
+    },
+  },
+  async fetch() {
+    this.mentorsPayload = await this.$repositories.home.fetchInstructors()
   },
 }
 </script>

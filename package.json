@@ -21,7 +21,11 @@
   },
   "homepage": "https://github.com/coding-blocks/codingblocks.com-v2#readme",
   "dependencies": {
-    "nuxt": "^2.14.6"
+    "@nuxtjs/axios": "^5.13.1",
+    "date-fns": "^2.18.0",
+    "jsonapi-datastore": "^0.4.0-beta",
+    "nuxt": "^2.14.6",
+    "qs": "^6.9.6"
   },
   "devDependencies": {
     "prettier": "^2.2.1"

@@ -7,45 +7,83 @@
         <div
           class="s-90x90 br-5 p-15 all-center position-relative card--course__logo theme-background"
         >
-          <img
-            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/js_white.svg"
-          />
-          <div class="card--course__logo__tag">Beginner</div>
+          <img :src="course.logo" />
+          <div class="card--course__logo__tag">{{ difficultyText }}</div>
         </div>
       </div>
       <div class="flex-1 pl-20">
-        <div class="heading-5 bold theme-text">Python for Devs</div>
+        <div class="heading-5 bold theme-text">{{ course.title }}</div>
         <div class="row no-gutters align-items-center mt-10">
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_filled.svg"
             class="mr-1"
-            style="height: 10px;"
+            style="height: 10px"
           />
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_filled.svg"
             class="mr-1"
-            style="height: 10px;"
+            style="height: 10px"
           />
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_filled.svg"
             class="mr-1"
-            style="height: 10px;"
+            style="height: 10px"
           />
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_filled.svg"
             class="mr-1"
-            style="height: 10px;"
+            style="height: 10px"
           />
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_unfilled.svg"
             class="mr-1"
-            style="height: 10px;"
+            style="height: 10px"
           />
           <div class="font-1 text-grey ml-2 flex-1">
-            <strong>4.15/5,</strong>&nbsp;65 ratings
+            <strong>{{ this.course.rating }}/5,</strong>&nbsp;{{
+              this.course['review-count']
+            }}
+            ratings
           </div>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+import { formatTimestamp } from '~/utils/date'
+import {
+  topRunForCourse,
+  textForDifficulty,
+  freeTrialRunForCourse,
+} from '~/utils/course'
+
+export default {
+  props: {
+    course: {
+      type: Object,
+    },
+  },
+  computed: {
+    topRun() {
+      return topRunForCourse(this.course)
+    },
+    freeTrialRun() {
+      return freeTrialRunForCourse(this.course)
+    },
+    price() {
+      return this.freeTrialRun ? this.freeTrialRun.price : 9999
+    },
+    mrp() {
+      return this.freeTrialRun ? this.freeTrialRun.mrp : ''
+    },
+    difficultyText() {
+      return textForDifficulty(this.course.difficulty)
+    },
+    startDateString() {
+      return formatTimestamp(this.topRun.start)
+    },
+  },
+}
+</script>

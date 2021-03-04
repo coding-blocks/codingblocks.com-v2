@@ -31,13 +31,10 @@
         style="max-width: 100%; width: fit-content"
       >
         <div class="br-5">
-          <img
-            src="https://minio.codingblocks.com/amoeba/arnva-min.webp"
-            class="br-5"
-          />
+          <img :src="miniBanner.img_url" class="br-5" />
         </div>
         <div class="mini-banner__tag">
-          <div class="font-2">Offer valid till 30th Jan</div>
+          <div class="font-2">{{ miniBanner.tag }}</div>
         </div>
       </div>
     </div>
@@ -90,13 +87,10 @@
           style="max-width: 100%; width: fit-content"
         >
           <div class="br-5">
-            <img
-              src="https://minio.codingblocks.com/amoeba/arnva-min.webp"
-              class="br-5"
-            />
+            <img :src="miniBanner.img_url" class="br-5" />
           </div>
           <div class="mini-banner__tag">
-            <div class="font-2">Offer valid till 30th Jan</div>
+            <div class="font-2">{{ miniBanner.tag }}</div>
           </div>
         </div>
       </div>
@@ -128,6 +122,7 @@ export default {
         'Data Scientist',
         'Competitive Programmer',
       ],
+      miniBanner: null,
     }
   },
   mounted() {
@@ -170,6 +165,9 @@ export default {
       // Scroll to target
       scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0)
     },
+  },
+  async fetch() {
+    this.miniBanner = await this.$repositories.home.miniBanner()
   },
 }
 </script>

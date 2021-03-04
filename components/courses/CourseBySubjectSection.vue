@@ -112,9 +112,7 @@
         </div>
       </div>
 
-      <div class="mt-25">
-        <CourseList />
-      </div>
+    
     </div>
   </div>
 </template>

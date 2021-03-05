@@ -28,7 +28,7 @@
         </div>
       </div>
 
-      <CoursePageMentorsSection />
+      <CoursePageMentorsSection :mentors="mentors" />
 
       <div class="landing-page__section">
         <div class="width-limiter">
@@ -305,6 +305,22 @@ export default {
         'Something Something',
         'Some other highlight',
         'Some other other highlight',
+      ],
+      mentors: [
+        {
+          name: 'Arnav Gupta',
+          email: 'ag@cb.lk',
+          description:
+            'Arnav Gupta, also popular as ChampionSwimmer, is acclaimed Android Dev. and two timer GSoC-er. He has also presented at large conferences like...more',
+          img_url: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
+        },
+        {
+          name: 'Arnav Gupta',
+          email: 'ag@cb.lk',
+          description:
+            'Arnav Gupta, also popular as ChampionSwimmer, is acclaimed Android Dev. and two timer GSoC-er. He has also presented at large conferences like...more',
+          img_url: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
+        },
       ],
     }
   },

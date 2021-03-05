@@ -8,31 +8,19 @@
         </div>
       </div>
       <div>
-        <div class="row no-gutters align-items-center mb-50">
+        <div
+          class="row no-gutters align-items-center mentor-list-element"
+          v-for="(mentor, index) in mentors"
+          :key="index"
+        >
           <div class="s-150x150 round">
-            <img src="https://minio.codingblocks.com/amoeba/arnva-min.webp" />
+            <img :src="mentor.img_url" />
           </div>
           <div class="flex-1 pl-30">
-            <div class="heading-6 bold">Arnav Gupta</div>
-            <div class="mt-10 mb-20 font-2 orange">arnav@cb.lk</div>
+            <div class="heading-6 bold">{{ mentor.name }}</div>
+            <div class="mt-10 mb-20 font-2 orange">{{ mentor.email }}</div>
             <div class="font-4">
-              Arnav Gupta, also popular as ChampionSwimmer, is acclaimed Android
-              Dev. and two timer GSoC-er. He has also presented at large
-              conferences like...more
-            </div>
-          </div>
-        </div>
-        <div class="row no-gutters align-items-center">
-          <div class="s-150x150 round">
-            <img src="https://minio.codingblocks.com/amoeba/arnva-min.webp" />
-          </div>
-          <div class="flex-1 pl-30">
-            <div class="heading-6 bold">Arnav Gupta</div>
-            <div class="mt-10 mb-20 font-2 orange">arnav@cb.lk</div>
-            <div class="font-4">
-              Arnav Gupta, also popular as ChampionSwimmer, is acclaimed Android
-              Dev. and two timer GSoC-er. He has also presented at large
-              conferences like...more
+              {{ mentor.description }}
             </div>
           </div>
         </div>
@@ -40,3 +28,15 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: ['mentors'],
+}
+</script>
+
+<style scoped>
+.mentor-list-element:not(:last-child) {
+  margin-bottom: 50px;
+}
+</style>

@@ -13,30 +13,24 @@
       style="max-height: 500px"
     >
       <div style="border-left: solid 2px #f5f5f5">
-        <div class="accordion-container">
-          <div class="px-30 py-20 accordion-container__accordion-head">
-            <div class="font-4">Extensive Coverage</div>
+        <div v-for="(highlight, index) in highlights" :key="index">
+          <div class="accordion-container">
+            <div class="px-30 py-20 accordion-container__accordion-head">
+              <div class="font-4">{{ highlight }}</div>
+            </div>
           </div>
+          <div class="divider-h content-divider px-30 bg-grey-light-3"></div>
         </div>
-        <div class="divider-h content-divider px-30 bg-grey-light-3"></div>
-
-        <div class="accordion-container">
-          <div class="px-30 py-20 accordion-container__accordion-head">
-            <div class="font-4">Extensive Coverage</div>
-          </div>
-        </div>
-        <div class="divider-h content-divider px-30 bg-grey-light-3"></div>
-
-        <div class="accordion-container">
-          <div class="px-30 py-20 accordion-container__accordion-head">
-            <div class="font-4">Extensive Coverage</div>
-          </div>
-        </div>
-        <div class="divider-h content-divider px-30 bg-grey-light-3"></div>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: ['highlights'],
+}
+</script>
 
 <style scoped>
 .accordion-container__accordion-head::after {

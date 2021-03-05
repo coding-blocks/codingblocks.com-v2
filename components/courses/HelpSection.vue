@@ -308,3 +308,10 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+fieldset {
+  border: none !important;
+  margin: 0 !important;
+}
+</style>

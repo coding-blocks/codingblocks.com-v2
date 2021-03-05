@@ -94,3 +94,50 @@ export default {
   },
 }
 </script>
+
+<style>
+fieldset {
+  border: none !important;
+  margin: 0 !important;
+}
+
+.form-group {
+  display: flex;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #f5f5f5;
+  align-items: center;
+}
+
+.form-group:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+label {
+  margin-right: 20px;
+  width: 20%;
+}
+
+input[type='submit'] {
+  border: none !important;
+  font-size: 1.25rem;
+  padding: 1rem 2rem;
+  color: white;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(90deg, #f26a3e, #fb8133, #f26a3e);
+  background-size: 200%;
+  transition: background-position 0.25s;
+}
+
+input[type='submit']:hover {
+  background-position: right;
+}
+
+.field-wrap {
+  flex: 1;
+}
+</style>

@@ -16,6 +16,16 @@ export default ($axios, $api) => ({
     return response.data
   },
 
+  async submitQuery(payload) {
+    const response = await $axios.post(`query`, payload)
+    return response.data
+  },
+
+  async fetchMembers() {
+    const response = await $axios.get(`members`)
+    return response.data
+  },
+
   async fetchCourses() {
     const response = await $api.get(`courses`, {
       params: {

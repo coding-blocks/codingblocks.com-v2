@@ -22,7 +22,7 @@
         </div>
       </div>
       <div class="t-align-c">
-        <NuxtLink class="button-tertiary" to="/courses">
+        <NuxtLink class="button-tertiary" :to="{ path: '/courses', query: { type: `${courseType}` }}">
           Explore All {{ courseType }} Courses
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"

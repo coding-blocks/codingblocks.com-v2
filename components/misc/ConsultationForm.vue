@@ -16,14 +16,15 @@ import 'vue-form-generator/dist/vfg.css'
 Vue.use(VueFormGenerator)
 
 export default {
+  props: ['type'],
   data() {
     return {
       model: {
         name: '',
         email: '',
-        phone_number: '',
+        phoneNo: '',
         description: '',
-        type: '',
+        type: 'counselling',
       },
       schema: {
         fields: [
@@ -35,6 +36,7 @@ export default {
             placeholder: 'Your name here',
             featured: true,
             required: true,
+            validator: ['required'],
           },
           {
             type: 'input',
@@ -44,33 +46,51 @@ export default {
             placeholder: 'Your email here',
             featured: true,
             required: true,
+            validator: ['required'],
           },
           {
             type: 'input',
             inputType: 'text',
             label: 'Phone Number',
-            model: 'phone_number',
+            model: 'phoneNo',
             placeholder: 'Your Phone Number here',
             featured: true,
             required: true,
+            validator: ['required'],
           },
           {
-            type: 'input',
+            type: 'textArea',
             inputType: 'text',
             label: 'Description',
             model: 'description',
             placeholder: 'Describe your request here',
             featured: true,
             required: true,
+            rows: 3,
+            validator: ['required'],
+          },
+          {
+            type: 'submit',
+            onSubmit: (model) => {
+              this.saveQuery()
+            },
+            label: '',
+            buttonText: 'Submit',
+            validateBeforeSubmit: true,
           },
         ],
       },
       formOptions: {
-        validateAfterLoad: true,
+        validateAfterLoad: false,
         validateAfterChanged: true,
         validateAsync: true,
       },
     }
+  },
+  methods: {
+    async saveQuery() {
+      const response = await this.$repositories.home.submitQuery(this.model)
+    },
   },
 }
 </script>

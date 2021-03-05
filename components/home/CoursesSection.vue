@@ -73,9 +73,9 @@
             class="row no-gutters c-card-carousel overflow-hidden h-100"
             id="course-sections-carousel"
           >
-            <CoursesSectionCardsSection courseType="Online" />
-            <CoursesSectionCardsSection courseType="Classroom" />
-            <CoursesSectionCardsSection courseType="Live" />
+            <CoursesSectionCardsSection courseType="online" />
+            <CoursesSectionCardsSection courseType="classroom" />
+            <CoursesSectionCardsSection courseType="live" />
           </div>
         </div>
       </div>

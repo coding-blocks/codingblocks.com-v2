@@ -203,19 +203,19 @@
             <div class="row no-gutters justify-content-between">
               <div
                 class="t-align-c px-15 mb-25"
-                v-for="(member, index) in teamMembers"
+                v-for="(member, index) in members"
                 :key="index"
               >
-                <img :src="member.member_image" class="big-photo" />
+                <img :src="member.img" class="big-photo" />
                 <div class="mt-sm-25 mt-15 d-sm-block d-none">
-                  <div class="bold heading-4">{{ member.member_name }}</div>
+                  <div class="bold heading-4">{{ member.name }}</div>
                   <div class="mt-2 orange heading-6">
                     {{ member.member_type }}
                   </div>
                 </div>
                 <div class="mt-sm-25 mt-15 d-sm-none d-block">
-                  <div class="bold heading-6">{{ member.member_name }}</div>
-                  <div class="mt-2 orange font-3">{{ member.member_type }}</div>
+                  <div class="bold heading-6">{{ member.name }}</div>
+                  <div class="mt-2 orange font-3">{{ member.designation }}</div>
                 </div>
               </div>
             </div>
@@ -234,40 +234,14 @@ import Navigation from '@/components/Navigation.vue'
 export default {
   data() {
     return {
-      teamMembers: [
-        {
-          member_image: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
-          member_type: 'Mentor',
-          member_name: 'Arnav Gupta',
-          member_description: 'Champion Swimmer Gupta!',
-          member_contact: 'a@cb.lk',
-        },
-        {
-          member_image: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
-          member_type: 'Developer',
-          member_name: 'Arnav Gupta',
-          member_description: 'Champion Swimmer Gupta!',
-          member_contact: 'a@cb.lk',
-        },
-        {
-          member_image: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
-          member_type: 'Mentor',
-          member_name: 'Arnav Gupta',
-          member_description: 'Champion Swimmer Gupta!',
-          member_contact: 'a@cb.lk',
-        },
-        {
-          member_image: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
-          member_type: 'Management',
-          member_name: 'Arnav Gupta',
-          member_description: 'Champion Swimmer Gupta!',
-          member_contact: 'a@cb.lk',
-        },
-      ],
+      members: [],
     }
   },
   components: {
     Navigation,
+  },
+  async fetch() {
+    this.members = await this.$repositories.home.fetchMembers()
   },
 }
 </script>

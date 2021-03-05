@@ -37,13 +37,13 @@
               </div>
             </div>
             <div>
-              <button class="button-primary">
-                {{ banner.cta }}
+              <a :href="banner.cta" class="button-primary">
+                Explore
                 <img
                   src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg"
                   class="ml-2"
                 />
-              </button>
+              </a>
             </div>
           </div>
         </div>

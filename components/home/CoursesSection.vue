@@ -134,6 +134,8 @@ export default {
     //   courseButton.classList.remove("active");
     // });
 
+    onlineButton.classList.add('active')
+
     onlineButton.addEventListener('click', () => {
       carousel.scrollTo({
         top: 0,

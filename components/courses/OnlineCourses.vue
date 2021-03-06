@@ -42,7 +42,7 @@
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/light-theme-vector.svg"
               class="d-lg-none d-block mt-50 mx-auto"
             />
-            <div
+            <!-- <div
               class="mt-50 row no-gutters justify-content-lg-start justify-content-center"
             >
               <div class="card p-0" style="width: fit-content">
@@ -65,7 +65,7 @@
                   <div class="font-4">&#x3009;</div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="col-6 d-lg-block d-none">
             <img

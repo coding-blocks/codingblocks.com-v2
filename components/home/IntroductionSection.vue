@@ -16,13 +16,14 @@
       />
       <div class="mt-30 mb-40">
         <div class="row no-gutters align-items-center">
-          <div class="button-primary" target="_blank">Get Started</div>
+          <button class="button-primary get-started-button">Get Started</button>
           <div class="ml-30 heading-5 text-grey">Learn. Practice. Ace.</div>
         </div>
       </div>
       <div
         class="mini-banner position-relative br-5"
         style="max-width: 100%; width: fit-content"
+        v-if="miniBanner"
       >
         <div class="br-5">
           <img :src="miniBanner.img_url" class="br-5" />
@@ -64,12 +65,7 @@
           </div>
         </div>
         <div class="row no-gutters align-items-center justify-content-center">
-          <a
-            href="https://account.codingblocks.com/login"
-            class="button-primary"
-            target="_blank"
-            >Get Started</a
-          >
+          <button class="button-primary get-started-button">Get Started</button>
           <div class="ml-30 heading-5 text-grey d-xl-block d-none">
             Learn. Practice. Ace.
           </div>
@@ -79,6 +75,7 @@
         <div
           class="mini-banner position-relative br-5"
           style="max-width: 100%; width: fit-content"
+          v-if="miniBanner"
         >
           <div class="br-5">
             <img :src="miniBanner.img_url" class="br-5" />
@@ -130,35 +127,6 @@ export default {
   },
   components: {
     Universe,
-  },
-  methods: {
-    scrollNow(target) {
-      var scrollContainer = target
-      do {
-        //find scroll container
-        scrollContainer = scrollContainer.parentNode
-        if (!scrollContainer) return
-        scrollContainer.scrollTop += 1
-      } while (scrollContainer.scrollTop == 0)
-
-      var targetY = 0
-      do {
-        // Find the top of target relatively to the container
-        if (target == scrollContainer) break
-        targetY += target.offsetTop
-      } while ((target = target.offsetParent))
-
-      scroll = function (c, a, b, i) {
-        i++
-        if (i > 30) return
-        c.scrollTop = a + ((b - a) / 30) * i
-        setTimeout(function () {
-          scroll(c, a, b, i)
-        }, 20)
-      }
-      // Scroll to target
-      scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0)
-    },
   },
   async fetch() {
     this.miniBanner = await this.$repositories.home.miniBanner()

@@ -1,14 +1,15 @@
 <template>
-  <div
-    class="slideshow-container mt-50 row no-gutters c-card-carousel"
-    id="carousel"
-  >
-    <div v-if="banners.length != 0">
+  <div class="slideshow-container mt-50">
+    <div
+      v-if="banners.length != 0"
+      class="row no-gutters c-card-carousel"
+      id="carousel"
+    >
       <div
         v-for="(banner, index) in banners"
         :key="index"
-        class="slideshow-container__slide col-12 p-xl-100 p-lg-75 p-md-50 p-sm-40 p-25 pb-100"
-        :class="banner.background"
+        class="slideshow-container__slide col-12 p-xl-100 p-lg-75 p-md-50 p-sm-40 p-25 pb-100 d-block"
+        :class="`bg-gradient-${banner.bg_color}`"
       >
         <div class="row align-items-center no-gutters">
           <div class="col-xl-6 col-lg-8 z-pos t-align-lg-l t-align-c">
@@ -26,28 +27,28 @@
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_welcome.svg"
             />
-            <img :src="banner.image" class="d-lg-none d-block" />
+            <img :src="banner.img_url" class="d-lg-none d-block" />
             <div class="my-50">
               <div class="heading-2 bold text-orange">
                 {{ banner.tagline }}
               </div>
               <div class="mt-2 white heading-5">
-                {{ banner.subTagline }}
+                {{ banner.subText }}
               </div>
             </div>
             <div>
-              <button class="button-primary">
-                {{ banner.cta }}
+              <a :href="banner.cta" class="button-primary">
+                Explore
                 <img
                   src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg"
                   class="ml-2"
                 />
-              </button>
+              </a>
             </div>
           </div>
         </div>
         <img
-          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/light-theme-vector.svg"
+          :src="banner.img_url"
           class="landing-page__section__vector d-lg-block d-none"
         />
       </div>

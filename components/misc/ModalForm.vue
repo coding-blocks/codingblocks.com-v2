@@ -1,6 +1,10 @@
 <template>
   <transition name="Modal">
-    <div class="modal-mask" @click="$emit('close')">
+    <div
+      class="modal-mask"
+      @click="$emit('close')"
+      @keydown.esc="$emit('close')"
+    >
       <div class="modal-wrapper">
         <div class="modal-container" @click.stop="">
           <img
@@ -38,10 +42,7 @@
 .modal-container {
   position: relative;
   width: 70%;
-  /* min-height: 80%; */
-  /* height: 100%; */
-  /* max-height: 5000px;
-  height: auto; */
+  padding: 30px;
   max-height: 80vh;
   margin: 20px auto;
   background-color: #fff;
@@ -57,6 +58,8 @@
 .modal-content {
   overflow-y: auto;
   flex-grow: 1;
+  box-shadow: none;
+  border: none;
 }
 
 .fa-window-close {

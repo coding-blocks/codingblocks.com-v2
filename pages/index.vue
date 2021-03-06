@@ -68,5 +68,15 @@ export default {
     Footer,
     ModalForm,
   },
+  mounted() {
+    const getStartedButtons = document.querySelectorAll('.get-started-button')
+    const coursesSection = document.querySelector('#course-section')
+
+    getStartedButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        coursesSection.scrollIntoView({ behavior: 'smooth' })
+      })
+    })
+  },
 }
 </script>

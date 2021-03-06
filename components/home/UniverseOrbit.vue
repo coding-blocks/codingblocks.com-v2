@@ -32,7 +32,7 @@ export default {
     this.planetDistance = this.$el.clientWidth / 2
 
     setInterval(() => {
-      this.bias = (this.bias + 0.25 * (this.orbit.index + 1)) % 360
+      this.bias = (this.bias + 0.15 * (this.orbit.index + 1)) % 360
     }, 20)
   },
   computed: {

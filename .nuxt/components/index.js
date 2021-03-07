@@ -16,6 +16,7 @@ export { default as CoursesCourseSyllabus } from '../../components/courses/Cours
 export { default as CoursesNavigation } from '../../components/courses/CoursesNavigation.vue'
 export { default as CoursesHelpSection } from '../../components/courses/HelpSection.vue'
 export { default as CoursesLiveCourses } from '../../components/courses/LiveCourses.vue'
+export { default as CoursesOnlineCourseCard } from '../../components/courses/OnlineCourseCard.vue'
 export { default as CoursesOnlineCourses } from '../../components/courses/OnlineCourses.vue'
 export { default as CoursesTracksSection } from '../../components/courses/TracksSection.vue'
 export { default as EventsUpcomingCourseSection } from '../../components/events/UpcomingCourseSection.vue'
@@ -65,6 +66,7 @@ export const LazyCoursesCourseSyllabus = import('../../components/courses/Course
 export const LazyCoursesNavigation = import('../../components/courses/CoursesNavigation.vue' /* webpackChunkName: "components/courses-navigation" */).then(c => c.default || c)
 export const LazyCoursesHelpSection = import('../../components/courses/HelpSection.vue' /* webpackChunkName: "components/courses-help-section" */).then(c => c.default || c)
 export const LazyCoursesLiveCourses = import('../../components/courses/LiveCourses.vue' /* webpackChunkName: "components/courses-live-courses" */).then(c => c.default || c)
+export const LazyCoursesOnlineCourseCard = import('../../components/courses/OnlineCourseCard.vue' /* webpackChunkName: "components/courses-online-course-card" */).then(c => c.default || c)
 export const LazyCoursesOnlineCourses = import('../../components/courses/OnlineCourses.vue' /* webpackChunkName: "components/courses-online-courses" */).then(c => c.default || c)
 export const LazyCoursesTracksSection = import('../../components/courses/TracksSection.vue' /* webpackChunkName: "components/courses-tracks-section" */).then(c => c.default || c)
 export const LazyEventsUpcomingCourseSection = import('../../components/events/UpcomingCourseSection.vue' /* webpackChunkName: "components/events-upcoming-course-section" */).then(c => c.default || c)

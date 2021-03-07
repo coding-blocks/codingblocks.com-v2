@@ -14,11 +14,11 @@
           :key="index"
         >
           <div class="s-150x150 round">
-            <img :src="mentor.img_url" />
+            <img :src="mentor.img" />
           </div>
           <div class="flex-1 pl-30">
             <div class="heading-6 bold">{{ mentor.name }}</div>
-            <div class="mt-10 mb-20 font-2 orange">{{ mentor.email }}</div>
+            <div class="mt-10 mb-20 font-2 orange">{{ mentor.contact }}</div>
             <div class="font-4">
               {{ mentor.description }}
             </div>

@@ -61,7 +61,7 @@ export default {
     },
   },
   async fetch() {
-    this.featuredTags = await this.$repositories.courses.fetchFeaturedCourses()
+    this.featuredTags = await this.$repositories.courses.fetchOnlineFeaturedCourses()
   },
 }
 </script>

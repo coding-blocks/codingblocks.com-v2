@@ -21,9 +21,9 @@
         </div>
       </div>
       <div
+        v-if="miniBanner"
         class="mini-banner position-relative br-5"
         style="max-width: 100%; width: fit-content"
-        v-if="miniBanner"
       >
         <div class="br-5">
           <img :src="miniBanner.img_url" class="br-5" />
@@ -73,9 +73,9 @@
       </div>
       <div class="row no-gutters justify-content-center">
         <div
+          v-if="miniBanner"
           class="mini-banner position-relative br-5"
           style="max-width: 100%; width: fit-content"
-          v-if="miniBanner"
         >
           <div class="br-5">
             <img :src="miniBanner.img_url" class="br-5" />

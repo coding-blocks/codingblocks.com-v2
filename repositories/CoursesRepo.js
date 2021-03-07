@@ -1,11 +1,17 @@
 import { deserialize } from 'deserialize-json-api'
 
-export default ($api) => ({
+export default ($axios, $api) => ({
 
-  async fetchFeaturedCourses() {
+  async fetchOnlineFeaturedCourses() {
     const response = await $api.get(`featured_tags/courses`)
     
     const payload = deserialize(response.data)
     return payload.data;
+  },
+
+
+  async fetchLiveCourses() {
+    const response = await $$axios.get(`courses`)
+    return response.data;
   },
 })

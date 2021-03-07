@@ -11,7 +11,7 @@
               <div class="bg-purple br-5 all-center p-20 mt-30">
                 <div class="font-4 white">
                   <strong class="heading-6">75% OFF </strong>
-                  on all online courses
+                  on all live courses
                 </div>
               </div>
               <div class="mini-banner__tag">

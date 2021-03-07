@@ -64,6 +64,7 @@ export default {
     course: {
       type: Object,
     },
+    type: 'online',
   },
   computed: {
     topRun() {

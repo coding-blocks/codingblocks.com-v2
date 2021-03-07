@@ -2,7 +2,7 @@
   <div>
     <div class="t-align-sm-l t-align-c mb-50">
       <div class="heading-4 bold">
-        {{ featuredTag.name }}
+        {{ featuredTag ? featuredTag.name : 'Live Courses' }}
       </div>
     </div>
 
@@ -13,7 +13,7 @@
           :key="course.id"
           class="col-lg-4 col-md-5 col-sm-6 mb-50"
         >
-          <CourseCard :course="course" />
+          <OnlineCourseCard :course="course" /> 
         </div>
       </div>
     </div>
@@ -22,14 +22,19 @@
 
 <script>
 import CourseCard from '@/components/courses/CourseCard.vue'
+import OnlineCourseCard from '@/components/courses/OnlineCourseCard.vue'
 
 export default {
   components: {
     CourseCard,
+    OnlineCourseCard
   },
   props: {
     featuredTag: {
       type: Object,
+    },
+    courses: {
+      type: Array,
     },
   },
   computed: {
@@ -39,10 +44,7 @@ export default {
       )
     },
     collapsedCourses() {
-      return this.sortedCourses.slice(0, 3)
-    },
-    expandedCourses() {
-      return this.sortedCourses.slice(3)
+      return this.featuredTag ? this.sortedCourses.slice(0, 3) : this.courses
     },
   },
 }

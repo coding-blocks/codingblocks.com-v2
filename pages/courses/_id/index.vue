@@ -2,7 +2,7 @@
   <div class="a-cbm" style="margin-top: -70px">
     <Navigation />
     <div class="landing-page">
-      <CourseDescriptionSection />
+      <CourseDescriptionSection :course="course" />
 
       <div class="landing-page__section">
         <div class="width-limiter">
@@ -22,7 +22,7 @@
             </div>
 
             <div class="col-lg-4 col-md-5">
-              <CourseBatch />
+              <CourseBatch :batches="course.batches" />
             </div>
           </div>
         </div>
@@ -30,7 +30,7 @@
 
       <CoursePageMentorsSection :mentors="mentors" />
 
-      <div class="landing-page__section">
+      <!-- <div class="landing-page__section">
         <div class="width-limiter">
           <div class="heading-4 bold">Learning Tracks</div>
           <div class="my-40 row no-gutters align-items-center">
@@ -50,7 +50,7 @@
           </div>
           <button class="button-primary">Explore</button>
         </div>
-      </div>
+      </div> -->
 
       <div class="landing-page__section">
         <div class="width-limiter">
@@ -332,6 +332,10 @@ export default {
     CourseHighlights,
     CoursePageMentorsSection,
     SuccessStoryCard,
+  },
+  async asyncData({ params, $repositories }) {
+    const course = await $repositories.courses.fetchCourseBySlug(params.id)
+    return { course }
   },
 }
 </script>

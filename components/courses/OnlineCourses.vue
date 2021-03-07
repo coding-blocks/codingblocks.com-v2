@@ -116,7 +116,6 @@ export default {
   },
   computed: {
     featuredTags() {
-      // somehow calling this server side fails; need to debug why
       return this.featuredTagsPayload.length
         ? this.featuredTagsPayload.sort((a, b) => a.order - b.order)
         : []

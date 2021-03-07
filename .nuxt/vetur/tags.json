@@ -17,48 +17,6 @@
   "EventsUpcomingEventsSection": {
     "description": "Auto imported from components/events/UpcomingEventsSection.vue"
   },
-  "HomeBlogCard": {
-    "description": "Auto imported from components/home/BlogCard.vue"
-  },
-  "HomeBlogsSection": {
-    "description": "Auto imported from components/home/BlogsSection.vue"
-  },
-  "HomeCollegesAndCompaniesSection": {
-    "description": "Auto imported from components/home/CollegesAndCompaniesSection.vue"
-  },
-  "HomeCoursesSection": {
-    "description": "Auto imported from components/home/CoursesSection.vue"
-  },
-  "HomeCoursesSectionCardsSection": {
-    "description": "Auto imported from components/home/CoursesSectionCardsSection.vue"
-  },
-  "HomeIntroductionSection": {
-    "description": "Auto imported from components/home/IntroductionSection.vue"
-  },
-  "HomeMentorSection": {
-    "description": "Auto imported from components/home/MentorSection.vue"
-  },
-  "HomeNewsSection": {
-    "description": "Auto imported from components/home/NewsSection.vue"
-  },
-  "HomePracticeAndHireSection": {
-    "description": "Auto imported from components/home/PracticeAndHireSection.vue"
-  },
-  "HomeSuccessStoriesSection": {
-    "description": "Auto imported from components/home/SuccessStoriesSection.vue"
-  },
-  "HomeUniverse": {
-    "description": "Auto imported from components/home/Universe.vue"
-  },
-  "HomeUniverseOrbit": {
-    "description": "Auto imported from components/home/UniverseOrbit.vue"
-  },
-  "HomeUniversePlanet": {
-    "description": "Auto imported from components/home/UniversePlanet.vue"
-  },
-  "HomeWelcomeSection": {
-    "description": "Auto imported from components/home/WelcomeSection.vue"
-  },
   "CoursesClassroomCourses": {
     "description": "Auto imported from components/courses/ClassroomCourses.vue"
   },
@@ -101,11 +59,62 @@
   "CoursesLiveCourses": {
     "description": "Auto imported from components/courses/LiveCourses.vue"
   },
+  "CoursesOnlineCourseCard": {
+    "description": "Auto imported from components/courses/OnlineCourseCard.vue"
+  },
   "CoursesOnlineCourses": {
     "description": "Auto imported from components/courses/OnlineCourses.vue"
   },
   "CoursesTracksSection": {
     "description": "Auto imported from components/courses/TracksSection.vue"
+  },
+  "TestimonialsMajorSuccessStories": {
+    "description": "Auto imported from components/testimonials/MajorSuccessStories.vue"
+  },
+  "TestimonialsMajorSuccessStoryCard": {
+    "description": "Auto imported from components/testimonials/MajorSuccessStoryCard.vue"
+  },
+  "HomeBlogCard": {
+    "description": "Auto imported from components/home/BlogCard.vue"
+  },
+  "HomeBlogsSection": {
+    "description": "Auto imported from components/home/BlogsSection.vue"
+  },
+  "HomeCollegesAndCompaniesSection": {
+    "description": "Auto imported from components/home/CollegesAndCompaniesSection.vue"
+  },
+  "HomeCoursesSection": {
+    "description": "Auto imported from components/home/CoursesSection.vue"
+  },
+  "HomeCoursesSectionCardsSection": {
+    "description": "Auto imported from components/home/CoursesSectionCardsSection.vue"
+  },
+  "HomeIntroductionSection": {
+    "description": "Auto imported from components/home/IntroductionSection.vue"
+  },
+  "HomeMentorSection": {
+    "description": "Auto imported from components/home/MentorSection.vue"
+  },
+  "HomeNewsSection": {
+    "description": "Auto imported from components/home/NewsSection.vue"
+  },
+  "HomePracticeAndHireSection": {
+    "description": "Auto imported from components/home/PracticeAndHireSection.vue"
+  },
+  "HomeSuccessStoriesSection": {
+    "description": "Auto imported from components/home/SuccessStoriesSection.vue"
+  },
+  "HomeUniverse": {
+    "description": "Auto imported from components/home/Universe.vue"
+  },
+  "HomeUniverseOrbit": {
+    "description": "Auto imported from components/home/UniverseOrbit.vue"
+  },
+  "HomeUniversePlanet": {
+    "description": "Auto imported from components/home/UniversePlanet.vue"
+  },
+  "HomeWelcomeSection": {
+    "description": "Auto imported from components/home/WelcomeSection.vue"
   },
   "MiscBannerCarousel": {
     "description": "Auto imported from components/misc/BannerCarousel.vue"
@@ -136,11 +145,5 @@
   },
   "MiscSuccessStoryCard": {
     "description": "Auto imported from components/misc/SuccessStoryCard.vue"
-  },
-  "TestimonialsMajorSuccessStories": {
-    "description": "Auto imported from components/testimonials/MajorSuccessStories.vue"
-  },
-  "TestimonialsMajorSuccessStoryCard": {
-    "description": "Auto imported from components/testimonials/MajorSuccessStoryCard.vue"
   }
 }

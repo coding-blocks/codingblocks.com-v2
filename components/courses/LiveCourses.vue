@@ -50,13 +50,10 @@
           </div>
         </div>
 
-        <HelpSection hide_main_section="true" />
+        <HelpSection :hide_main_section="true" />
 
         <div class="mt-sm-75 mt-50">
-          <CourseList
-            title="Trending Courses"
-            subtitle="Learn and grow as a developer with our project based courses."
-          />
+          <CourseList :courses="coursesPayload" />
         </div>
       </div>
     </div>
@@ -81,6 +78,15 @@ export default {
     CourseBySubjectSection,
     TracksSection,
     SuccessStoriesSection,
+  },
+  data() {
+    return {
+      coursesPayload: [],
+    }
+  },
+
+  async fetch() {
+    this.coursesPayload = await this.$repositories.courses.fetchLiveCourses()
   },
 }
 </script>

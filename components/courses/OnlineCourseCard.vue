@@ -6,7 +6,7 @@
           class="s-90x90 br-5 p-15 all-center position-relative card--course__logo theme-background"
         >
           <img :src="course.logo" />
-          <div class="card--course__logo__tag">{{ difficultyText }}</div>
+          <div class="card--course__logo__tag">{{ course.difficulty }}</div>
         </div>
       </div>
       <div class="t-align-r">
@@ -84,10 +84,7 @@ export default {
       return this.topRun ? this.topRun.price : 9999
     },
     mrp() {
-      return this.topRun ? this.topRun.Mrp : ''
-    },
-    difficultyText() {
-      return 'Medium'
+      return this.topRun ? this.topRun.mrp : ''
     },
     startDateString() {
       return this.topRun.startDate

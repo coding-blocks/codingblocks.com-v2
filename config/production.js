@@ -1,7 +1,7 @@
 module.exports = {
   axios: {
-    host: 'api.codingblocks.com',
-    https: true,
-    prefix: '/api',
-  },
+    host: 'api.codingblocks.xyz',
+    port: 80,
+    prefix: '/api'
+  }
 }

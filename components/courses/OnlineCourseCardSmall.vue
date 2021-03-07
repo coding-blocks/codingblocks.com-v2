@@ -8,7 +8,7 @@
           class="s-90x90 br-5 p-15 all-center position-relative card--course__logo theme-background"
         >
           <img :src="course.logo" />
-          <div class="card--course__logo__tag">{{ course.difficulty }}</div>
+          <div class="card--course__logo__tag">{{ difficultyText }}</div>
         </div>
       </div>
       <div class="flex-1 pl-20">
@@ -41,7 +41,7 @@
           />
           <div class="font-1 text-grey ml-2 flex-1">
             <strong>{{ this.course.rating }}/5,</strong>&nbsp;{{
-              this.course['number_ratings']
+              this.course['review-count']
             }}
             ratings
           </div>
@@ -53,25 +53,37 @@
 
 <script>
 import { formatTimestamp } from '~/utils/date'
+import {
+  topRunForCourse,
+  textForDifficulty,
+  freeTrialRunForCourse,
+} from '~/utils/course'
 
 export default {
   props: {
     course: {
       type: Object,
     },
+    type: 'online',
   },
   computed: {
     topRun() {
-      return this.course.batches.sort((a, b) => a.price - b.price)[0]
+      return topRunForCourse(this.course)
+    },
+    freeTrialRun() {
+      return freeTrialRunForCourse(this.course)
     },
     price() {
-      return this.topRun ? this.topRun.price : 9999
+      return this.freeTrialRun ? this.freeTrialRun.price : 9999
     },
     mrp() {
-      return this.topRun ? this.topRun.mrp : ''
+      return this.freeTrialRun ? this.freeTrialRun.mrp : ''
+    },
+    difficultyText() {
+      return textForDifficulty(this.course.difficulty)
     },
     startDateString() {
-      return this.topRun.startDate
+      return formatTimestamp(this.topRun.start)
     },
   },
 }

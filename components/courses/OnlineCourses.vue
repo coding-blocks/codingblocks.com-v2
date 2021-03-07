@@ -78,6 +78,7 @@
 
         <div class="mt-sm-75 mt-50">
           <CourseList
+            type="online"
             :featuredTag="featuredTag"
             v-for="featuredTag in featuredTags"
             :key="`feature_${featuredTag.id}`"
@@ -122,7 +123,7 @@ export default {
     },
   },
   async fetch() {
-    this.featuredTagsPayload = await this.$repositories.courses.fetchFeaturedCourses()
+    this.featuredTagsPayload = await this.$repositories.courses.fetchOnlineFeaturedCourses()
   },
 }
 </script>

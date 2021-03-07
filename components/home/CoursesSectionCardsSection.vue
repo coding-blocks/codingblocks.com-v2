@@ -18,11 +18,19 @@
           :key="course.id"
           class="col-md-6 col-sm-8 col-12 mb-30"
         >
-          <CourseCardSmall :course="course" />
+          <div v-if="courseType == 'online'">
+            <OnlineCourseCardSmall :course="course" />
+          </div>
+          <div v-else>
+            <CourseCardSmall :course="course" />
+          </div>
         </div>
       </div>
       <div class="t-align-c">
-        <NuxtLink class="button-tertiary" :to="{ path: '/courses', query: { type: `${courseType}` }}">
+        <NuxtLink
+          class="button-tertiary"
+          :to="{ path: '/courses', query: { type: `${courseType}` } }"
+        >
           Explore All {{ courseType }} Courses
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
@@ -36,15 +44,18 @@
 
 <script>
 import CourseCardSmall from '@/components/courses/CourseCardSmall.vue'
+import OnlineCourseCardSmall from '@/components/courses/OnlineCourseCardSmall.vue'
 
 export default {
   components: {
     CourseCardSmall,
+    OnlineCourseCardSmall,
   },
   props: ['courseType'],
   data() {
     return {
       featuredTags: [],
+      courses: [],
     }
   },
   computed: {
@@ -57,11 +68,15 @@ export default {
       )
     },
     collapsedCourses() {
-      return this.sortedCourses.slice(0, 4)
+      return this.courseType == 'online'
+        ? this.sortedCourses.slice(0, 4)
+        : this.courses.slice(0, 4)
     },
   },
   async fetch() {
-    this.featuredTags = await this.$repositories.courses.fetchOnlineFeaturedCourses()
+    if (this.courseType == 'online')
+      this.featuredTags = await this.$repositories.courses.fetchOnlineFeaturedCourses()
+    else this.courses = await this.$repositories.courses.fetchLiveCourses()
   },
 }
 </script>

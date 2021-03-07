@@ -1,12 +1,12 @@
 <template>
-  <div class="card card--equal-height card--course theme-pink">
+  <div class="card card--equal-height card--course" :class="course.theme">
     <div class="card__header card__header--border-highlight">
       <div class="flex-1">
         <div
           class="s-90x90 br-5 p-15 all-center position-relative card--course__logo theme-background"
         >
           <img :src="course.logo" />
-          <div class="card--course__logo__tag">{{ difficultyText }}</div>
+          <div class="card--course__logo__tag">{{ course.difficulty }}</div>
         </div>
       </div>
       <div class="t-align-r">
@@ -40,7 +40,7 @@
         />
         <div class="font-3 text-grey ml-xl-10 ml-2 flex-1">
           <strong>{{ this.course.rating }}/5,</strong>&nbsp;{{
-            this.course['review-count']
+            this.course['number_ratings']
           }}
           ratings
         </div>
@@ -54,16 +54,14 @@
             <div class="font-5 bold mt-2">{{ startDateString }}</div>
           </div>
         </div>
-        <a
-          :href="`https://online.codingblocks.com/courses/${course.slug}`"
-          class="button-tertiary"
-        >
+
+        <nuxt-link :to="`/courses/${course.slug}`" class="button-tertiary">
           Explore
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
             class="ml-2"
           />
-        </a>
+        </nuxt-link>
       </div>
     </div>
   </div>
@@ -71,11 +69,6 @@
 
 <script>
 import { formatTimestamp } from '~/utils/date'
-import {
-  topRunForCourse,
-  textForDifficulty,
-  freeTrialRunForCourse,
-} from '~/utils/course'
 
 export default {
   props: {
@@ -85,22 +78,16 @@ export default {
   },
   computed: {
     topRun() {
-      return topRunForCourse(this.course)
-    },
-    freeTrialRun() {
-      return freeTrialRunForCourse(this.course)
+      return this.course.batches.sort((a, b) => a.price - b.price)[0]
     },
     price() {
-      return this.freeTrialRun ? this.freeTrialRun.price : 9999
+      return this.topRun ? this.topRun.price : 9999
     },
     mrp() {
-      return this.freeTrialRun ? this.freeTrialRun.mrp : ''
-    },
-    difficultyText() {
-      return textForDifficulty(this.course.difficulty)
+      return this.topRun ? this.topRun.mrp : ''
     },
     startDateString() {
-      return formatTimestamp(this.topRun.start)
+      return this.topRun.startDate
     },
   },
 }

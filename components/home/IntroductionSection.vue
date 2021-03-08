@@ -25,12 +25,14 @@
         class="mini-banner position-relative br-5"
         style="max-width: 100%; width: fit-content"
       >
-        <div class="br-5">
-          <img :src="miniBanner.img_url" class="br-5" />
-        </div>
-        <div class="mini-banner__tag">
-          <div class="font-2">{{ miniBanner.tag }}</div>
-        </div>
+        <a href="mini-banner.cta">
+          <div class="br-5">
+            <img :src="miniBanner.img_url" class="br-5" />
+          </div>
+          <div class="mini-banner__tag">
+            <div class="font-2">{{ miniBanner.tag }}</div>
+          </div>
+        </a>
       </div>
     </div>
     <div class="col-12 d-lg-none d-block t-align-c">
@@ -77,12 +79,14 @@
           class="mini-banner position-relative br-5"
           style="max-width: 100%; width: fit-content"
         >
-          <div class="br-5">
-            <img :src="miniBanner.img_url" class="br-5" />
-          </div>
-          <div class="mini-banner__tag">
-            <div class="font-2">{{ miniBanner.tag }}</div>
-          </div>
+          <a href="mini-banner.cta">
+            <div class="br-5">
+              <img :src="miniBanner.img_url" class="br-5" />
+            </div>
+            <div class="mini-banner__tag">
+              <div class="font-2">{{ miniBanner.tag }}</div>
+            </div>
+          </a>
         </div>
       </div>
     </div>

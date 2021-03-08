@@ -22,7 +22,12 @@
               />
             </div>
           </div>
-          <div class="mt-50"></div>
+          <div class="mt-50 row no-gutters justify-content-center">
+            <img
+              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/company_logos.svg"
+              class="w-100"
+            />
+          </div>
         </div>
       </div>
 

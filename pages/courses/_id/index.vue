@@ -83,6 +83,9 @@ import CoursePageMentorsSection from '@/components/courses/CoursePageMentorsSect
 import SuccessStoryCard from '@/components/misc/SuccessStoryCard.vue'
 
 export default {
+  mounted() {
+    console.log(this.course.batches)
+  },
   data() {
     return {
       syllabus: [

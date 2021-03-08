@@ -21,7 +21,7 @@
             <!-- Banner for bigger screens -->
             <div
               v-if="miniBanner"
-              class="mini-banner position-relative br-5 mb-30 mx-auto d-lg-none d-block"
+              class="mini-banner position-relative br-5 mb-30 mx-auto d-lg-block d-none"
               style="width: fit-content"
             >
               <div class="bg-purple br-5 all-center mt-30">
@@ -122,8 +122,8 @@ export default {
     },
   },
   async fetch() {
-    this.featuredTagsPayload = await this.$repositories.courses.fetchFeaturedCourses()
     this.miniBanner = await this.$repositories.home.miniBanner()
+    this.featuredTagsPayload = await this.$repositories.courses.fetchFeaturedCourses()
   },
 }
 </script>

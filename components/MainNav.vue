@@ -17,41 +17,55 @@
         />
       </div>
       <div class="t-align-c py-20">
-        <button class="button-primary">Login / Signup</button>
+        <a
+          href="https://account.codingblocks.com/login"
+          target="_blank"
+          class="button-primary"
+        >
+          Login / Signup
+        </a>
       </div>
       <div class="px-40">
-        <div class="mb-15 hamburger-nav__menu-element">
-          <div style="width: 50px">
-            <img
-              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-learn.svg"
-            />
+        <a href="https://online.codingblocks.com" target="_blank">
+          <div class="mb-15 hamburger-nav__menu-element">
+            <div style="width: 50px">
+              <img
+                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-learn.svg"
+              />
+            </div>
+            <div class="font-5 ml-15">Learn</div>
           </div>
-          <div class="font-5 ml-15">Learn</div>
-        </div>
-        <div class="mb-15 hamburger-nav__menu-element">
-          <div style="width: 50px">
-            <img
-              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-practice.svg"
-            />
+        </a>
+        <a href="https://online.codingblocks.com" target="_blank">
+          <div class="mb-15 hamburger-nav__menu-element">
+            <div style="width: 50px">
+              <img
+                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-practice.svg"
+              />
+            </div>
+            <div class="font-5 ml-15">Practice</div>
           </div>
-          <div class="font-5 ml-15">Practice</div>
-        </div>
-        <div class="mb-15 hamburger-nav__menu-element">
-          <div style="width: 50px">
-            <img
-              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-hire.svg"
-            />
+        </a>
+        <a href="https://online.codingblocks.com" target="_blank">
+          <div class="mb-15 hamburger-nav__menu-element">
+            <div style="width: 50px">
+              <img
+                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-hire.svg"
+              />
+            </div>
+            <div class="font-5 ml-15">Get Hired</div>
           </div>
-          <div class="font-5 ml-15">Get Hired</div>
-        </div>
-        <div class="mb-15 hamburger-nav__menu-element">
-          <div style="width: 50px">
-            <img
-              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-ide.svg"
-            />
+        </a>
+        <a href="https://online.codingblocks.com" target="_blank">
+          <div class="mb-15 hamburger-nav__menu-element">
+            <div style="width: 50px">
+              <img
+                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-ide.svg"
+              />
+            </div>
+            <div class="font-5 ml-15">IDE</div>
           </div>
-          <div class="font-5 ml-15">IDE</div>
-        </div>
+        </a>
       </div>
       <div class="hamburger-nav__accordion-menu-element">
         <input type="checkbox" id="check1" />

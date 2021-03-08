@@ -87,10 +87,6 @@ export default {
         : this.courses.slice(0, 4)
     },
   },
-  mounted() {
-    console.log(this.sortedCourses)
-    console.log(this.collapsedCourses)
-  },
   async fetch() {
     if (this.courseType == 'online')
       this.featuredTags = await this.$repositories.courses.fetchOnlineFeaturedCourses()

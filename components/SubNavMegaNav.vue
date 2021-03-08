@@ -116,13 +116,16 @@
                 </a>
               </div>
             </div>
-            <button class="button-tertiary mt-15">
+            <NuxtLink
+              class="button-tertiary"
+              :to="{ path: '/courses', query: { type: 'online' } }"
+            >
               Explore All
               <img
                 src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
                 class="ml-2"
               />
-            </button>
+            </NuxtLink>
           </div>
           <div class="col-4">
             <img
@@ -164,13 +167,16 @@
                 </a>
               </div>
             </div>
-            <button class="button-tertiary mt-15">
+            <NuxtLink
+              class="button-tertiary"
+              :to="{ path: '/courses', query: { type: 'classroom' } }"
+            >
               Explore All
               <img
                 src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
                 class="ml-2"
               />
-            </button>
+            </NuxtLink>
           </div>
           <div class="col-4">
             <img
@@ -204,13 +210,16 @@
                 </a>
               </div>
             </div>
-            <button class="button-tertiary mt-15">
+            <NuxtLink
+              class="button-tertiary"
+              :to="{ path: '/courses', query: { type: 'live' } }"
+            >
               Explore All
               <img
                 src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
                 class="ml-2"
               />
-            </button>
+            </NuxtLink>
           </div>
           <!-- <div class="col-3">
             <img

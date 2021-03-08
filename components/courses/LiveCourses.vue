@@ -21,7 +21,7 @@
             <!-- Banner for bigger screens -->
             <div
               v-if="miniBanner"
-              class="mini-banner position-relative br-5 mb-30 mx-auto d-lg-block d-none"
+              class="mini-banner position-relative br-5 mb-30 d-lg-block d-none"
               style="width: fit-content"
             >
               <div class="bg-purple br-5 all-center mt-30">

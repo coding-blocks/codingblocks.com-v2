@@ -2,7 +2,7 @@
   <div class="landing-page__section">
     <div class="width-limiter">
       <div class="row align-items-center">
-        <div class="col-lg-8 col-md-9 mb-md-none mb-40">
+        <div class="col-lg-9 mb-lg-none mb-40">
           <div class="row no-gutters align-items-center">
             <div
               class="card bg-gradient-pink all-center d-md-flex d-none"
@@ -30,7 +30,9 @@
               >
                 <div class="mr-30">
                   <div class="font-2">Course Language</div>
-                  <div class="font-4 bold mt-1">{{course.languages.join()}}</div>
+                  <div class="font-4 bold mt-1">
+                    {{ course.languages.join() }}
+                  </div>
                 </div>
                 <div>
                   <div class="font-2">Course Duration</div>
@@ -40,9 +42,9 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-3">
-          {{course.video_link}}
-          <!-- Youtube video to be embedded here -->
+        <div class="col-lg-3">
+          {{ course.video_link }}
+          <YoutubeVideoPlayer :url="course.video_link" />
         </div>
       </div>
     </div>
@@ -50,7 +52,11 @@
 </template>
 
 <script>
+import YoutubeVideoPlayer from '@/components/misc/YoutubeVideoPlayer.vue'
 export default {
+  components: {
+    YoutubeVideoPlayer,
+  },
   props: {
     course: {
       type: Object,

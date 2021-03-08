@@ -10,12 +10,14 @@
               class="mini-banner position-relative br-5 mb-30 mx-auto d-lg-none d-block"
               style="width: fit-content"
             >
-              <div class="bg-purple br-5 all-center mt-30">
-                <img :src="miniBanner.img_url" class="br-5" />
-              </div>
-              <div class="mini-banner__tag">
-                <div class="font-2">{{ miniBanner.tag }}</div>
-              </div>
+              <a href="mini-banner.cta">
+                <div class="bg-purple br-5 all-center mt-30">
+                  <img :src="miniBanner.img_url" class="br-5" />
+                </div>
+                <div class="mini-banner__tag">
+                  <div class="font-2">{{ miniBanner.tag }}</div>
+                </div>
+              </a>
             </div>
 
             <!-- Banner for bigger screens -->
@@ -24,12 +26,14 @@
               class="mini-banner position-relative br-5 mb-30 d-lg-block d-none"
               style="width: fit-content"
             >
-              <div class="bg-purple br-5 all-center mt-30">
-                <img :src="miniBanner.img_url" class="br-5" />
-              </div>
-              <div class="mini-banner__tag">
-                <div class="font-2">{{ miniBanner.tag }}</div>
-              </div>
+              <a href="mini-banner.cta">
+                <div class="bg-purple br-5 all-center mt-30">
+                  <img :src="miniBanner.img_url" class="br-5" />
+                </div>
+                <div class="mini-banner__tag">
+                  <div class="font-2">{{ miniBanner.tag }}</div>
+                </div>
+              </a>
             </div>
 
             <div class="heading-font stroke-font">LIVE</div>

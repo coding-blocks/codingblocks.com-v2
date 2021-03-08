@@ -2,7 +2,7 @@
   <div>
     <div class="t-align-sm-l t-align-c mb-50">
       <div class="heading-4 bold">
-        {{ featuredTag ? featuredTag.name : 'Live Courses' }}
+        {{ featuredTag ? featuredTag.name : 'Courses' }}
       </div>
     </div>
 

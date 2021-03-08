@@ -13,7 +13,12 @@
           :key="course.id"
           class="col-lg-4 col-md-5 col-sm-6 mb-50"
         >
-          <OnlineCourseCard :course="course" /> 
+          <div v-if="type == 'online'">
+            <OnlineCourseCard :course="course" />
+          </div>
+          <div v-else>
+            <CourseCard :course="course" />
+          </div>
         </div>
       </div>
     </div>
@@ -27,7 +32,7 @@ import OnlineCourseCard from '@/components/courses/OnlineCourseCard.vue'
 export default {
   components: {
     CourseCard,
-    OnlineCourseCard
+    OnlineCourseCard,
   },
   props: {
     featuredTag: {
@@ -35,6 +40,10 @@ export default {
     },
     courses: {
       type: Array,
+    },
+    type: {
+      type: String,
+      default: 'online',
     },
   },
   computed: {

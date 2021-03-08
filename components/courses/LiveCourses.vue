@@ -52,7 +52,7 @@
         <HelpSection :hide_main_section="true" />
 
         <div class="mt-sm-75 mt-50">
-          <CourseList :courses="coursesPayload" />
+          <CourseList type="live" :courses="coursesPayload" />
         </div>
       </div>
     </div>

@@ -4,35 +4,34 @@
       <div class="width-limiter">
         <div class="row no-gutters align-items-center justify-content-between">
           <div class="col-lg-6 t-align-lg-l t-align-c">
+            <!-- Banner for smaller screens -->
             <div
+              v-if="miniBanner"
               class="mini-banner position-relative br-5 mb-30 mx-auto d-lg-none d-block"
               style="width: fit-content"
             >
-              <div class="bg-purple br-5 all-center p-20 mt-30">
-                <div class="font-4 white">
-                  <strong class="heading-6">75% OFF </strong>
-                  on all live courses
-                </div>
+              <div class="bg-purple br-5 all-center mt-30">
+                <img :src="miniBanner.img_url" class="br-5" />
               </div>
               <div class="mini-banner__tag">
-                <div class="font-2">Offer valid till 30th Jan</div>
+                <div class="font-2">{{ miniBanner.tag }}</div>
               </div>
             </div>
 
+            <!-- Banner for bigger screens -->
             <div
+              v-if="miniBanner"
               class="mini-banner position-relative br-5 mb-30 d-lg-block d-none"
               style="width: fit-content"
             >
-              <div class="bg-purple br-5 all-center p-20 mt-30">
-                <div class="font-4 white">
-                  <strong class="heading-6">75% OFF </strong>
-                  on all online courses
-                </div>
+              <div class="bg-purple br-5 all-center mt-30">
+                <img :src="miniBanner.img_url" class="br-5" />
               </div>
               <div class="mini-banner__tag">
-                <div class="font-2">Offer valid till 30th Jan</div>
+                <div class="font-2">{{ miniBanner.tag }}</div>
               </div>
             </div>
+
             <div class="heading-font stroke-font">LIVE</div>
             <div class="heading-font">COURSES</div>
             <img
@@ -82,10 +81,12 @@ export default {
   data() {
     return {
       coursesPayload: [],
+      miniBanner: null,
     }
   },
 
   async fetch() {
+    this.miniBanner = await this.$repositories.home.miniBanner()
     this.coursesPayload = await this.$repositories.courses.fetchLiveCourses()
   },
 }

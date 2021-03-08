@@ -16,7 +16,11 @@
       </div>
     </div>
     <div>
-      <div class="heading-5 theme-text bold mb-10">{{ course.title }}</div>
+      <div
+        class="heading-5 theme-text bold mb-10 text-clamp-ellipses text-clamp-ellipses--2"
+      >
+        {{ course.title }}
+      </div>
       <div class="row no-gutters align-items-center">
         <img
           src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_filled.svg"

@@ -12,7 +12,7 @@
             :class="{ active: activeTab === tab }"
             v-on:click="switchTab(tab)"
           >
-            {{ tab }}
+            {{ tab.toUpperCase() }}
           </div>
         </div>
       </div>

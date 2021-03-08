@@ -18,7 +18,8 @@
           <div
             class="row no-gutters align-items-center mr-30 font-4 text-grey pointer"
           >
-            <NuxtLink to="/events"> Events </NuxtLink>
+            <div>Events</div>
+            <!-- <NuxtLink to="/events"> Events </NuxtLink> -->
           </div>
           <div
             class="row no-gutters align-items-center mr-30 font-4 text-grey pointer"
@@ -45,7 +46,7 @@
     <div class="py-50 border-bottom px-25 d-none bg-white" id="mega-nav">
       <div class="width-limiter">
         <div class="row">
-          <div class="col-3">
+          <div class="col-4">
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/online-courses.svg"
               style="height: 40px"
@@ -123,7 +124,7 @@
               />
             </button>
           </div>
-          <div class="col-3">
+          <div class="col-4">
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/classroom-courses.svg"
               style="height: 40px"
@@ -171,7 +172,7 @@
               />
             </button>
           </div>
-          <div class="col-3">
+          <div class="col-4">
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/live-courses.svg"
               style="height: 40px"
@@ -211,7 +212,7 @@
               />
             </button>
           </div>
-          <div class="col-3">
+          <!-- <div class="col-3">
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/live-courses.svg"
               style="height: 40px"
@@ -240,7 +241,7 @@
                 </a>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

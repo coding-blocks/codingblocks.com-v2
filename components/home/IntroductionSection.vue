@@ -123,7 +123,7 @@ export default {
       } else {
         this.careerNumber = 0
       }
-    }, 2000)
+    }, 4000)
   },
   components: {
     Universe,

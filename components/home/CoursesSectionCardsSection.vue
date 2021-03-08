@@ -19,10 +19,24 @@
           class="col-md-6 col-sm-8 col-12 mb-30"
         >
           <div v-if="courseType == 'online'">
-            <OnlineCourseCardSmall :course="course" />
+            <a
+              :href="`https://online.codingblocks.com/courses/${course.slug}`"
+              target="_blank"
+            >
+              <OnlineCourseCardSmall :course="course" />
+            </a>
           </div>
           <div v-else>
-            <CourseCardSmall :course="course" />
+            <NuxtLink
+              :to="{
+                path: `/courses/${course.slug}`,
+                query: {
+                  batch: `${courseType}`,
+                },
+              }"
+            >
+              <CourseCardSmall :course="course" />
+            </NuxtLink>
           </div>
         </div>
       </div>
@@ -72,6 +86,10 @@ export default {
         ? this.sortedCourses.slice(0, 4)
         : this.courses.slice(0, 4)
     },
+  },
+  mounted() {
+    console.log(this.sortedCourses)
+    console.log(this.collapsedCourses)
   },
   async fetch() {
     if (this.courseType == 'online')

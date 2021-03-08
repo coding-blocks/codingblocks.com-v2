@@ -11,8 +11,12 @@
           <div class="card--course__logo__tag">{{ difficultyText }}</div>
         </div>
       </div>
-      <div class="flex-1 pl-20">
-        <div class="heading-5 bold theme-text">{{ course.title }}</div>
+      <div class="flex-1 px-20">
+        <div
+          class="heading-5 bold theme-text text-clamp-ellipses text-clamp-ellipses--2"
+        >
+          {{ course.title }}
+        </div>
         <div class="row no-gutters align-items-center mt-10">
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_filled.svg"

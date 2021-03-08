@@ -90,10 +90,7 @@
             </div>
           </div>
           <div class="col-md-4 t-align-md-r t-align-l mt-md-none mt-40">
-            <button
-              class="button-secondary"
-              v-on:click="setShowSyllabusModal(true)"
-            >
+            <button class="button-secondary" v-on:click="setShowModal(true)">
               Schedule a Session
               <img
                 src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
@@ -105,7 +102,7 @@
       </div>
     </div>
 
-    <ModalForm v-if="showSyllabusModal" @close="setShowSyllabusModal(false)">
+    <ModalForm v-if="showModal" @close="setShowModal(false)">
       <ConsultationForm />
     </ModalForm>
   </div>
@@ -174,12 +171,12 @@ export default {
   },
   data() {
     return {
-      showSyllabusModal: false,
+      showModal: false,
     }
   },
   methods: {
-    setShowSyllabusModal(value) {
-      this.showSyllabusModal = value
+    setShowModal(value) {
+      this.showModal = value
     },
   },
 }

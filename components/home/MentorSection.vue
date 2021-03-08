@@ -22,13 +22,24 @@
       <div class="mt-sm-50 mt-25">
         <div class="row no-gutters justify-content-center">
           <div v-for="(mentor, index) in mentors" :key="index">
-            <div class="t-align-c px-20 mb-25">
-              <img :src="mentor.photo" class="big-photo" />
-              <div class="mt-25 heading-4 bold d-sm-block d-none">
-                {{ mentor.name }}
-              </div>
-              <div class="mt-25 heading-6 bold d-sm-none d-block">
-                {{ mentor.name }}
+            <div
+              v-if="
+                [
+                  'Prateek Narang',
+                  'Arnav Gupta',
+                  'Jatin Katyal',
+                  'Pulkit Aggarwal',
+                ].includes(mentor.name)
+              "
+            >
+              <div class="t-align-c px-20 mb-25">
+                <img :src="mentor.photo" class="big-photo" />
+                <div class="mt-25 heading-4 bold d-sm-block d-none">
+                  {{ mentor.name }}
+                </div>
+                <div class="mt-25 heading-6 bold d-sm-none d-block">
+                  {{ mentor.name }}
+                </div>
               </div>
             </div>
           </div>
@@ -48,7 +59,6 @@
 </template>
 
 <script>
-
 export default {
   data() {
     return {

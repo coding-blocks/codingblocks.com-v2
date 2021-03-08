@@ -36,7 +36,7 @@
             <div class="font-5 ml-15">Learn</div>
           </div>
         </a>
-        <a href="https://online.codingblocks.com" target="_blank">
+        <a href="https://hack.codingblocks.com" target="_blank">
           <div class="mb-15 hamburger-nav__menu-element">
             <div style="width: 50px">
               <img
@@ -46,7 +46,7 @@
             <div class="font-5 ml-15">Practice</div>
           </div>
         </a>
-        <a href="https://online.codingblocks.com" target="_blank">
+        <a href="https://hire.codingblocks.com" target="_blank">
           <div class="mb-15 hamburger-nav__menu-element">
             <div style="width: 50px">
               <img
@@ -56,7 +56,7 @@
             <div class="font-5 ml-15">Get Hired</div>
           </div>
         </a>
-        <a href="https://online.codingblocks.com" target="_blank">
+        <a href="https://ide.codingblocks.com" target="_blank">
           <div class="mb-15 hamburger-nav__menu-element">
             <div style="width: 50px">
               <img
@@ -89,7 +89,11 @@
             </div>
             <div class="mt-35 mb-15">
               <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer mr-20" href="#">
+                <a
+                  class="font-4 bold pointer mr-20"
+                  href="https://online.codingblocks.com/courses/c-plus-plus-online-course-for-beginners"
+                  target="_blank"
+                >
                   C++ Master Course
                 </a>
                 <div
@@ -100,34 +104,61 @@
                 </div>
               </div>
               <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#"> JAVA Master Course </a>
+                <a
+                  class="font-4 bold pointer"
+                  href="https://online.codingblocks.com/courses/complete-java-course-online"
+                  target="_blank"
+                >
+                  JAVA Master Course
+                </a>
               </div>
               <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#">
+                <a
+                  class="font-4 bold pointer"
+                  href="https://online.codingblocks.com/courses/python-for-beginners-developers"
+                  target="_blank"
+                >
                   Python for Developers
                 </a>
               </div>
               <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#">
+                <a
+                  class="font-4 bold pointer"
+                  href="https://online.codingblocks.com/courses/python-django"
+                  target="_blank"
+                >
                   Web Dev with Python - Django
                 </a>
               </div>
               <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#"> Data Science </a>
-              </div>
-              <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#">
+                <a
+                  class="font-4 bold pointer"
+                  href="https://online.codingblocks.com/courses/competitive-programming-course-online"
+                  target="_blank"
+                >
                   Competitive Programming
                 </a>
               </div>
+              <div class="mb-20 row no-gutters align-items-center">
+                <a
+                  class="font-4 bold pointer"
+                  href="https://online.codingblocks.com/courses/data-science-online-course-python"
+                  target="_blank"
+                >
+                  Data Science
+                </a>
+              </div>
             </div>
-            <button class="button-tertiary mt-15">
+            <NuxtLink
+              class="button-tertiary mt-15"
+              :to="{ path: '/courses', query: { type: 'online' } }"
+            >
               Explore All
               <img
                 src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
                 class="ml-2"
               />
-            </button>
+            </NuxtLink>
           </div>
           <div class="mb-50">
             <img
@@ -169,13 +200,16 @@
                 </a>
               </div>
             </div>
-            <button class="button-tertiary mt-15">
+            <NuxtLink
+              class="button-tertiary mt-15"
+              :to="{ path: '/courses', query: { type: 'classroom' } }"
+            >
               Explore All
               <img
                 src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
                 class="ml-2"
               />
-            </button>
+            </NuxtLink>
           </div>
           <div class="mb-50">
             <img
@@ -209,15 +243,18 @@
                 </a>
               </div>
             </div>
-            <button class="button-tertiary mt-15">
+            <NuxtLink
+              class="button-tertiary mt-15"
+              :to="{ path: '/courses', query: { type: 'live' } }"
+            >
               Explore All
               <img
                 src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
                 class="ml-2"
               />
-            </button>
+            </NuxtLink>
           </div>
-          <div>
+          <!-- <div>
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/live-courses.svg"
               style="height: 40px"
@@ -246,7 +283,7 @@
                 </a>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="hamburger-nav__accordion-menu-element">
@@ -256,40 +293,46 @@
           for="check2"
         >
           <div class="flex-1 pr-20 font-5">Events</div>
-          <img
+          <!-- <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/accordion-open-grey.svg"
-          />
+          /> -->
         </label>
       </div>
-      <div class="hamburger-nav__accordion-menu-element">
-        <input type="checkbox" id="check3" />
-        <label
-          class="hamburger-nav__accordion-menu-element__header"
-          for="check3"
-        >
-          <div class="flex-1 pr-20 font-5">Blog</div>
-          <img
+      <a href="https://blog.codingblocks.com/" target="_blank">
+        <div class="hamburger-nav__accordion-menu-element">
+          <input type="checkbox" id="check3" />
+          <label
+            class="hamburger-nav__accordion-menu-element__header"
+            for="check3"
+          >
+            <div class="flex-1 pr-20 font-5">Blog</div>
+            <!-- <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/accordion-open-grey.svg"
-          />
-        </label>
-      </div>
+          /> -->
+          </label>
+        </div>
+      </a>
+      <a href="https://superhero.codingblocks.com/" target="_blank">
+        <div class="hamburger-nav__accordion-menu-element">
+          <input type="checkbox" id="check4" />
+          <label
+            class="hamburger-nav__accordion-menu-element__header"
+            for="check4"
+          >
+            <div class="flex-1 pr-20 font-5">Campus Superheros</div>
+          </label>
+        </div>
+      </a>
       <div class="hamburger-nav__accordion-menu-element">
-        <input type="checkbox" id="check4" />
-        <label
-          class="hamburger-nav__accordion-menu-element__header"
-          for="check4"
-        >
-          <div class="flex-1 pr-20 font-5">Campus Superheros</div>
-        </label>
-      </div>
-      <div class="hamburger-nav__accordion-menu-element">
-        <input type="checkbox" id="check5" />
-        <label
-          class="hamburger-nav__accordion-menu-element__header"
-          for="check5"
-        >
-          <div class="flex-1 pr-20 font-5">Contact</div>
-        </label>
+        <NuxtLink to="/company">
+          <input type="checkbox" id="check5" />
+          <label
+            class="hamburger-nav__accordion-menu-element__header"
+            for="check5"
+          >
+            <div class="flex-1 pr-20 font-5">Contact</div>
+          </label>
+        </NuxtLink>
       </div>
     </div>
 

@@ -1,36 +1,34 @@
 <template>
-  <div class="a-cbm" style="margin-top: -70px">
-    <Navigation />
-    <div class="landing-page">
-      <CourseDescriptionSection :course="course" />
+  <div class="landing-page">
+    <CourseDescriptionSection :course="course" />
 
-      <div class="landing-page__section">
-        <div class="width-limiter">
-          <div class="t-align-sm-l t-align-c">
-            <div class="heading-4 bold mb-10">Course Insights</div>
-            <div class="font-4 text-grey">
-              Learn and grow as a developer with our project based courses.
-            </div>
+    <div class="landing-page__section">
+      <div class="width-limiter">
+        <div class="t-align-sm-l t-align-c">
+          <div class="heading-4 bold mb-10">Course Insights</div>
+          <div class="font-4 text-grey">
+            Learn and grow as a developer with our project based courses.
           </div>
-          <div class="row mt-50">
-            <div class="col-lg-8 col-md-7 mb-md-none mb-50">
-              <CourseSyllabus :syllabus="syllabus" />
+        </div>
+        <div class="row mt-50">
+          <div class="col-lg-8 col-md-7 mb-md-none mb-50">
+            <CourseSyllabus :syllabus="syllabus" />
 
-              <CourseProjects :projects="projects" />
+            <CourseProjects :projects="projects" />
 
-              <CourseHighlights :highlights="highlights" />
-            </div>
+            <CourseHighlights :highlights="highlights" />
+          </div>
 
-            <div class="col-lg-4 col-md-5">
-              <CourseBatch :batches="course.batches" />
-            </div>
+          <div class="col-lg-4 col-md-5">
+            <CourseBatch :batches="course.batches" />
           </div>
         </div>
       </div>
+    </div>
 
-      <CoursePageMentorsSection :mentors="course.mentors" />
+    <CoursePageMentorsSection :mentors="course.mentors" />
 
-      <!-- <div class="landing-page__section">
+    <!-- <div class="landing-page__section">
         <div class="width-limiter">
           <div class="heading-4 bold">Learning Tracks</div>
           <div class="my-40 row no-gutters align-items-center">
@@ -52,23 +50,20 @@
         </div>
       </div> -->
 
-      <div class="landing-page__section">
-        <div class="width-limiter">
-          <div class="t-align-sm-l t-align-c">
-            <div class="heading-4 bold mb-10">Testimonials</div>
-            <div class="font-4 text-grey">
-              Learn and grow as a developer with our project based courses.
-            </div>
+    <div class="landing-page__section">
+      <div class="width-limiter">
+        <div class="t-align-sm-l t-align-c">
+          <div class="heading-4 bold mb-10">Testimonials</div>
+          <div class="font-4 text-grey">
+            Learn and grow as a developer with our project based courses.
           </div>
-          <div class="row mt-50">
-            <div class="col-lg-4 col-md-5 col-sm-6 mb-25 h-inherit">
-              <!-- <SuccessStoryCard /> -->
-            </div>
+        </div>
+        <div class="row mt-50">
+          <div class="col-lg-4 col-md-5 col-sm-6 mb-25 h-inherit">
+            <!-- <SuccessStoryCard /> -->
           </div>
         </div>
       </div>
-
-      <Footer />
     </div>
   </div>
 </template>

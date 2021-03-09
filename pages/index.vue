@@ -1,7 +1,4 @@
 <template>
-  <div class="a-cbm" style="margin-top: -70px">
-    <Navigation />
-
     <div class="landing-page">
       <WelcomeSection />
 
@@ -41,8 +38,6 @@
 
       <NewsSection />
 
-      <Footer />
-    </div>
   </div>
 </template>
 

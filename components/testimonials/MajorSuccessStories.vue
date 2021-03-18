@@ -2,11 +2,12 @@
   <!-- Success Stories Section -->
   <div class="landing-page__section">
     <div class="width-limiter">
-      <CardCarousel class="card">
+      <CardCarousel class="card align-items-center">
         <MajorSuccessStoryCard
           :story="story"
           v-for="(story, index) in majorStories"
           :key="index"
+          :class="`carousel_slide`"
         />
       </CardCarousel>
 
@@ -33,88 +34,24 @@ import SuccessStoryCard from '@/components/misc/SuccessStoryCard.vue'
 export default {
   data() {
     return {
-      majorStories: [
-        {
-          story_title: 'Bipin placed at Tesla, 90LPA',
-          story_subtitle: '(B.Tech | IT, MAIT)',
-          description:
-            'Hi, I am Nilesh from Delhi technology university. I have done competitive boot camp from coding blocks. This gave me a great exposure to problem solving mindset and helped me crack Apple interview. Thanks to Coding blocks!',
-          image_link: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
-          company_logo:
-            'https://www.freepnglogos.com/uploads/target-png/target-logo-png-transparent-svg-vector-bie-supply-35.png',
-          student_name: 'Bipin',
-          company_name: 'Target',
-          student_college: 'IITD',
-        },
-        {
-          story_title: 'Bipin placed at Tesla, 90LPA',
-          story_subtitle: '(B.Tech | IT, MAIT)',
-          description:
-            'Hi, I am Nilesh from Delhi technology university. I have done competitive boot camp from coding blocks. This gave me a great exposure to problem solving mindset and helped me crack Apple interview. Thanks to Coding blocks!',
-          image_link: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
-          company_logo:
-            'https://www.freepnglogos.com/uploads/target-png/target-logo-png-transparent-svg-vector-bie-supply-35.png',
-          student_name: 'Bipin',
-          company_name: 'Target',
-          student_college: 'IITD',
-        },
-      ],
-      otherStories: [
-        {
-          story_title: 'Bipin placed at Tesla, 90LPA',
-          story_subtitle: '(B.Tech | IT, MAIT)',
-          description:
-            'Hi, I am Nilesh from Delhi technology university. I have done competitive boot camp from coding blocks. This gave me a great exposure to problem solving mindset and helped me crack Apple interview. Thanks to Coding blocks!',
-          image_link: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
-          company_logo:
-            'https://www.freepnglogos.com/uploads/target-png/target-logo-png-transparent-svg-vector-bie-supply-35.png',
-          student_name: 'Bipin',
-          company_name: 'Target',
-          student_college: 'IITD',
-        },
-        {
-          story_title: 'Bipin placed at Tesla, 90LPA',
-          story_subtitle: '(B.Tech | IT, MAIT)',
-          description:
-            'Hi, I am Nilesh from Delhi technology university. I have done competitive boot camp from coding blocks. This gave me a great exposure to problem solving mindset and helped me crack Apple interview. Thanks to Coding blocks!',
-          image_link: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
-          company_logo:
-            'https://www.freepnglogos.com/uploads/target-png/target-logo-png-transparent-svg-vector-bie-supply-35.png',
-          student_name: 'Bipin',
-          company_name: 'Target',
-          student_college: 'IITD',
-        },
-        {
-          story_title: 'Bipin placed at Tesla, 90LPA',
-          story_subtitle: '(B.Tech | IT, MAIT)',
-          description:
-            'Hi, I am Nilesh from Delhi technology university. I have done competitive boot camp from coding blocks. This gave me a great exposure to problem solving mindset and helped me crack Apple interview. Thanks to Coding blocks!',
-          image_link: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
-          company_logo:
-            'https://www.freepnglogos.com/uploads/target-png/target-logo-png-transparent-svg-vector-bie-supply-35.png',
-          student_name: 'Bipin',
-          company_name: 'Target',
-          student_college: 'IITD',
-        },
-        {
-          story_title: 'Bipin placed at Tesla, 90LPA',
-          story_subtitle: '(B.Tech | IT, MAIT)',
-          description:
-            'Hi, I am Nilesh from Delhi technology university. I have done competitive boot camp from coding blocks. This gave me a great exposure to problem solving mindset and helped me crack Apple interview. Thanks to Coding blocks!',
-          image_link: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
-          company_logo:
-            'https://www.freepnglogos.com/uploads/target-png/target-logo-png-transparent-svg-vector-bie-supply-35.png',
-          student_name: 'Bipin',
-          company_name: 'Target',
-          student_college: 'IITD',
-        },
-      ],
+      stories: [],
     }
+  },
+  computed: {
+    majorStories() {
+      return this.stories.slice(0, 3)
+    },
+    otherStories() {
+      return this.stories.slice(3)
+    },
   },
   components: {
     CardCarousel,
     MajorSuccessStoryCard,
     SuccessStoryCard,
+  },
+  async fetch() {
+    this.stories = await this.$repositories.home.successStories()
   },
 }
 </script>

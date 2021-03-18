@@ -1,7 +1,7 @@
 <template>
   <div class="col-12">
     <div
-      class="success-story row no-gutters align-items-center justify-content-between t-align-sm-l t-align-c"
+      class="success-story row no-gutters align-items-center justify-content-between t-align-sm-l t-align-c h-100"
     >
       <div class="col-12 d-md-none d-block mb-40">
         <div class="row no-gutters align-items-center">
@@ -10,7 +10,9 @@
           </div>
           <div class="flex-1 pl-20">
             <div class="heading-2 bold text-orange mb-3">
-              {{ story.title }}
+              {{
+                `${story.name} placed at ${story.company_name}, ${story.lpa}LPA`
+              }}
             </div>
             <div class="heading-4 bold">{{ story.subTitle }}</div>
           </div>
@@ -20,7 +22,9 @@
       <div class="flex-1">
         <div class="d-md-block d-none">
           <div class="heading-2 bold text-orange mb-3">
-            {{ story.title }}
+            {{
+              `${story.name} placed at ${story.company_name}, ${story.lpa}LPA`
+            }}
           </div>
           <div class="heading-4 bold mb-40">
             {{ story.subTitle }}

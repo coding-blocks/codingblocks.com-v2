@@ -3,7 +3,7 @@
     <img
       src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/nav-left-black.svg"
       class="pointer"
-      style="height: 30px;"
+      style="height: 30px"
       id="move-left"
     />
     <div class="row mx-sm-40 mx-20 c-card-carousel" id="carousel">
@@ -12,7 +12,7 @@
     <img
       src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/nav-right-black.svg"
       class="pointer"
-      style="height: 30px;"
+      style="height: 30px"
       id="move-right"
     />
   </div>
@@ -21,28 +21,30 @@
 <script>
 export default {
   mounted() {
-    const carouselContainers = document.querySelectorAll(".carousel-container");
-    [...carouselContainers].forEach((container) => {
-      const leftButton = container.querySelector("#move-left");
-      const rightButton = container.querySelector("#move-right");
-      const carousel = container.querySelector("#carousel");
+    const carouselContainers = document.querySelectorAll('.carousel-container')
+    ;[...carouselContainers].forEach((container) => {
+      const leftButton = container.querySelector('#move-left')
+      const rightButton = container.querySelector('#move-right')
+      const carousel = container.querySelector('#carousel')
 
-      leftButton.addEventListener("click", () => {
+      let counter = 0
+
+      leftButton.addEventListener('click', () => {
         carousel.scrollTo({
           top: 0,
-          left: -carousel.clientWidth,
-          behavior: "smooth",
-        });
-      });
+          left: --counter * carousel.clientWidth,
+          behavior: 'smooth',
+        })
+      })
 
-      rightButton.addEventListener("click", () => {
+      rightButton.addEventListener('click', () => {
         carousel.scrollTo({
           top: 0,
-          left: carousel.clientWidth,
-          behavior: "smooth",
-        });
-      });
-    });
+          left: ++counter * carousel.clientWidth,
+          behavior: 'smooth',
+        })
+      })
+    })
   },
-};
+}
 </script>

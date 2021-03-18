@@ -17,6 +17,7 @@
             :story="story"
             v-for="(story, index) in stories"
             :key="index"
+            :class="carousel_slide"
           />
         </CardCarousel>
       </div>
@@ -33,13 +34,13 @@ export default {
     CardCarousel,
     SuccessStory,
   },
-  data(){
+  data() {
     return {
       stories: [],
     }
   },
-  async fetch(){
-    this.stories = await this.$repositories.home.successStories();
-  }
+  async fetch() {
+    this.stories = await this.$repositories.home.successStories()
+  },
 }
 </script>

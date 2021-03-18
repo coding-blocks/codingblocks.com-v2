@@ -62,6 +62,16 @@ export default {
       this.selectedTrackID = trackID
       const trackButton = document.getElementById(`batch-${trackIndex + 1}`)
 
+      const trackButtonsSection = document.querySelector(
+        '#track-buttons-section'
+      )
+
+      trackButtonsSection
+        .querySelectorAll('.track-button')
+        .forEach((button) => {
+          button.classList.remove('active')
+        })
+
       trackButton.querySelector('.track-button').classList.add('active')
     },
   },

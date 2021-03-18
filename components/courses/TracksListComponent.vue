@@ -26,7 +26,7 @@
                   class="s-60x60 br-50"
                 />
               </div>
-              <div class="flex-1 pl-3">
+              <div class="flex-1 pl-30">
                 <h5 class="bold">C++ Fundamentals</h5>
                 <div class="font-normal mt-2">
                   Mentor: Prateek Narang , Kartik Mathur

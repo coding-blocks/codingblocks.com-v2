@@ -90,7 +90,9 @@ export default {
   async fetch() {
     if (this.courseType == 'online')
       this.featuredTags = await this.$repositories.courses.fetchOnlineFeaturedCourses()
-    else this.courses = await this.$repositories.courses.fetchLiveCourses()
+    else if (this.courseType == 'live')
+      this.courses = await this.$repositories.courses.fetchLiveCourses()
+    else this.courses = await this.$repositories.courses.fetchClassroomCourses()
   },
 }
 </script>

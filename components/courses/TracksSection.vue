@@ -10,98 +10,28 @@
       <div class="mt-50 row align-items-center justify-content-center">
         <div class="col-lg-4 col-md-5 col-sm-8">
           <div class="card p-0">
-            <div class="track-button p-30 bg-gradient-blue-light white">
-              <div class="row no-gutters align-items-center">
-                <img
-                  src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/cpp_white.svg"
-                />
-                <div class="flex-1 pl-20 heading-6 bold">C++ Master Track</div>
-              </div>
-              <div class="mt-10 t-align-r bold">
-                05 Courses
-              </div>
-            </div>
-            <div class="track-button p-30 bg-gradient-orange-light white">
-              <div class="row no-gutters align-items-center">
-                <img
-                  src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/java_white.svg"
-                />
-                <div class="flex-1 pl-20 heading-6 bold">Java Master Track</div>
-              </div>
-              <div class="mt-10 t-align-r bold">
-                05 Courses
-              </div>
-            </div>
-            <div class="track-button p-30 bg-gradient-pink white active">
-              <div class="row no-gutters align-items-center">
-                <img
-                  src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/js_white.svg"
-                />
-                <div class="flex-1 pl-20 heading-6 bold">
-                  Full Stack Web Dev Track
+            <div
+              v-for="(track, index) in tracks"
+              :key="index"
+              :id="`batch-${index + 1}`"
+            >
+              <div class="track-button p-30 bg-gradient-blue-light white">
+                <div class="row no-gutters align-items-center">
+                  <img
+                    :src="track.logo"
+                  />
+                  <div class="flex-1 pl-20 heading-6 bold">
+                    {{track.name}}
+                  </div>
                 </div>
-              </div>
-              <div class="mt-10 t-align-r bold">
-                05 Courses
-              </div>
-            </div>
-            <div class="track-button p-30 bg-gradient-green-light white">
-              <div class="row no-gutters align-items-center">
-                <img
-                  src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/python_white.svg"
-                />
-                <div class="flex-1 pl-20 heading-6 bold">
-                  Python Master Track
-                </div>
-              </div>
-              <div class="mt-10 t-align-r bold">
-                05 Courses
-              </div>
-            </div>
-            <div class="track-button p-30 bg-gradient-purple-light white">
-              <div class="row no-gutters align-items-center">
-                <img
-                  src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android_white.png"
-                />
-                <div class="flex-1 pl-20 heading-6 bold">
-                  App Development Track
-                </div>
-              </div>
-              <div class="mt-10 t-align-r bold">
-                05 Courses
-              </div>
-            </div>
-            <div class="track-button p-30 bg-gradient-pink white">
-              <div class="row no-gutters align-items-center">
-                <img
-                  src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/ai_white.svg"
-                />
-                <div class="flex-1 pl-20 heading-6 bold">
-                  Machine Learning Track
-                </div>
-              </div>
-              <div class="mt-10 t-align-r bold">
-                05 Courses
-              </div>
-            </div>
-            <div class="track-button p-30 bg-gradient-purple-light white">
-              <div class="row no-gutters align-items-center">
-                <img
-                  src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/competitive_white.svg"
-                />
-                <div class="flex-1 pl-20 heading-6 bold">
-                  Competitive Programming Track
-                </div>
-              </div>
-              <div class="mt-10 t-align-r bold">
-                05 Courses
+                <div class="mt-10 t-align-r bold">{{track.courses}} Courses</div>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-8 col-md-7 mt-md-none mt-50 pl-md-50">
           <div class="pl-4">
-            <div style="border-left: solid 1px #cccccc;">
+            <div style="border-left: solid 1px #cccccc">
               <div class="mb-50 pl-lg-5 pl-md-4 pl-sm-5 pl-4">
                 <div class="t-align-sm-l t-align-c">
                   <div class="heading-4 bold">
@@ -427,3 +357,18 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      tracks: [],
+    }
+  },
+  async fetch() {
+    this.tracks = await this.$repositories.courses.fetchTracks()
+  },
+}
+</script>
+
+<style></style>

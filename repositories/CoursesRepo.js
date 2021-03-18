@@ -9,12 +9,24 @@ export default ($axios, $api) => ({
   },
 
   async fetchLiveCourses() {
-    const response = await $axios.get(`courses`)
+    const response = await $axios.get(`courses?centres=live`)
+    return response.data
+  },
+
+  async fetchClassroomCourses() {
+    const response = await $axios.get(`courses?centres=pitampura,noida`)
     return response.data
   },
 
   async fetchCourseBySlug(slug) {
     const response = await $axios.get(`courses/${slug}`)
     return response.data
+  },
+  async fetchTracks() {
+    const response = await $api.get(`career_tracks`)
+
+    const payload = deserialize(response.data)
+    console.log('', payload)
+    return payload.data
   },
 })

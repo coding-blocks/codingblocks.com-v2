@@ -15,6 +15,7 @@
               v-for="(news, index) in newsArticles"
               :key="index"
               :news="news"
+              :class="`carousel_slide`"
             />
           </CardCarousel>
         </div>

@@ -12,7 +12,11 @@
       </div>
     </div>
     <div>
-      <div class="heading-5 bold mb-1">{{ story.title }}</div>
+      <div
+        class="heading-5 bold mb-1 text-clamp-ellipses text-clamp-ellipses--2"
+      >
+        {{ `${story.name} placed at ${story.company_name}, ${story.lpa}LPA` }}
+      </div>
       <div class="font-3 text-orange mb-20">{{ story.college }}</div>
       <div class="font-4">
         {{ story.body }}

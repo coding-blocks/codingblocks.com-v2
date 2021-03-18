@@ -63,7 +63,6 @@
 
     <SuccessStoriesSection class="bg-white pt-none" />
 
-    <Footer />
   </div>
 </template>
 

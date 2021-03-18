@@ -94,7 +94,6 @@
 
     <SuccessStoriesSection />
 
-    <Footer />
   </div>
 </template>
 

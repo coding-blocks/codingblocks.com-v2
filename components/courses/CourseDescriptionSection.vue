@@ -43,7 +43,6 @@
           </div>
         </div>
         <div class="col-lg-3">
-          {{ course.video_link }}
           <YoutubeVideoPlayer :url="course.video_link" />
         </div>
       </div>

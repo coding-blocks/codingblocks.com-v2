@@ -3,7 +3,7 @@
     <div class="card__header card__header--border-highlight">
       <div class="flex-1">
         <div class="s-80x80 round">
-          <img :src="story.image_link" />
+          <img :src="story.img" />
         </div>
       </div>
       <div class="t-align-r">
@@ -12,10 +12,10 @@
       </div>
     </div>
     <div>
-      <div class="heading-5 bold mb-1">{{ story.student_name }}</div>
-      <div class="font-3 text-orange mb-20">{{ story.student_college }}</div>
+      <div class="heading-5 bold mb-1">{{ story.title }}</div>
+      <div class="font-3 text-orange mb-20">{{ story.college }}</div>
       <div class="font-4">
-        {{ story.description }}
+        {{ story.body }}
       </div>
     </div>
   </div>

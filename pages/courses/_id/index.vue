@@ -12,11 +12,11 @@
         </div>
         <div class="row mt-50">
           <div class="col-lg-8 col-md-7 mb-md-none mb-50">
-            <CourseSyllabus :syllabus="syllabus" />
+            <CourseSyllabus :syllabus="course.syallabus" />
 
-            <CourseProjects :projects="projects" />
+            <CourseProjects :projects="course.projects" />
 
-            <CourseHighlights :highlights="highlights" />
+            <CourseHighlights :highlights="course.highlights" />
           </div>
 
           <div class="col-lg-4 col-md-5">
@@ -60,7 +60,11 @@
         </div>
         <div class="row mt-50">
           <div class="col-lg-4 col-md-5 col-sm-6 mb-25 h-inherit">
-            <!-- <SuccessStoryCard /> -->
+              <SuccessStoryCard
+                :story="story"
+                v-for="(story, index) in stories"
+                :key="index"
+              />
           </div>
         </div>
       </div>
@@ -77,233 +81,11 @@ import CourseHighlights from '@/components/courses/CourseHighlights.vue'
 import CoursePageMentorsSection from '@/components/courses/CoursePageMentorsSection.vue'
 import SuccessStoryCard from '@/components/misc/SuccessStoryCard.vue'
 
+
 export default {
-  mounted() {
-    console.log(this.course.batches)
-  },
   data() {
     return {
-      syllabus: [
-        {
-          name: 'Beginner Section',
-          contents: [
-            {
-              title: 'Networking and Something',
-              videos: [
-                {
-                  title: 'This is a video',
-                  duration: 15,
-                },
-                {
-                  title: 'This is a video',
-                  duration: 15,
-                },
-                {
-                  title: 'This is a video',
-                  duration: 15,
-                },
-                {
-                  title: 'This is a video',
-                  duration: 15,
-                },
-              ],
-            },
-            {
-              title: 'Networking and Something',
-              videos: [
-                {
-                  title: 'This is a video',
-                  duration: 15,
-                },
-                {
-                  title: 'This is a video',
-                  duration: 15,
-                },
-                {
-                  title: 'This is a video',
-                  duration: 15,
-                },
-                {
-                  title: 'This is a video',
-                  duration: 15,
-                },
-              ],
-            },
-          ],
-        },
-        {
-          name: 'Intermediate Section',
-          contents: [
-            {
-              title: 'Networking and Something',
-              videos: [
-                {
-                  title: 'This is a video',
-                  duration: 15,
-                },
-                {
-                  title: 'This is a video',
-                  duration: 15,
-                },
-                {
-                  title: 'This is a video',
-                  duration: 15,
-                },
-                {
-                  title: 'This is a video',
-                  duration: 15,
-                },
-              ],
-            },
-            {
-              title: 'Networking and Something',
-              videos: [
-                {
-                  title: 'This is a video',
-                  duration: 15,
-                },
-                {
-                  title: 'This is a video',
-                  duration: 15,
-                },
-                {
-                  title: 'This is a video',
-                  duration: 15,
-                },
-                {
-                  title: 'This is a video',
-                  duration: 15,
-                },
-              ],
-            },
-          ],
-        },
-        {
-          name: 'Intermediate Section 2',
-          contents: [
-            {
-              title: 'Networking and Something',
-              videos: [
-                {
-                  title: 'This is a video',
-                  duration: 15,
-                },
-                {
-                  title: 'This is a video',
-                  duration: 15,
-                },
-                {
-                  title: 'This is a video',
-                  duration: 15,
-                },
-                {
-                  title: 'This is a video',
-                  duration: 15,
-                },
-              ],
-            },
-            {
-              title: 'Networking and Something',
-              videos: [
-                {
-                  title: 'This is a video',
-                  duration: 15,
-                },
-                {
-                  title: 'This is a video',
-                  duration: 15,
-                },
-                {
-                  title: 'This is a video',
-                  duration: 15,
-                },
-                {
-                  title: 'This is a video',
-                  duration: 15,
-                },
-              ],
-            },
-          ],
-        },
-        {
-          name: 'Final Section',
-          contents: [
-            {
-              title: 'Networking and Something',
-              videos: [
-                {
-                  title: 'This is a video',
-                  duration: 15,
-                },
-                {
-                  title: 'This is a video',
-                  duration: 15,
-                },
-                {
-                  title: 'This is a video',
-                  duration: 15,
-                },
-                {
-                  title: 'This is a video',
-                  duration: 15,
-                },
-              ],
-            },
-            {
-              title: 'Networking and Something',
-              videos: [
-                {
-                  title: 'This is a video',
-                  duration: 15,
-                },
-                {
-                  title: 'This is a video',
-                  duration: 15,
-                },
-                {
-                  title: 'This is a video',
-                  duration: 15,
-                },
-                {
-                  title: 'This is a video',
-                  duration: 15,
-                },
-              ],
-            },
-          ],
-        },
-      ],
-      projects: [
-        {
-          title: 'Some Project',
-          description:
-            "A task manager with features like 'mark as done', 'cear donetasks' and sorting tasks by their status.",
-          img_url: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
-        },
-        {
-          title: 'Some Project',
-          description:
-            "A task manager with features like 'mark as done', 'cear donetasks' and sorting tasks by their status.",
-          img_url: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
-        },
-        {
-          title: 'Some Project',
-          description:
-            "A task manager with features like 'mark as done', 'cear donetasks' and sorting tasks by their status.",
-          img_url: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
-        },
-        {
-          title: 'Some Project',
-          description:
-            "A task manager with features like 'mark as done', 'cear donetasks' and sorting tasks by their status.",
-          img_url: 'https://minio.codingblocks.com/amoeba/arnva-min.webp',
-        },
-      ],
-      highlights: [
-        'Something Something',
-        'Some other highlight',
-        'Some other other highlight',
-      ],
+      stories: [],
     }
   },
   components: {
@@ -318,6 +100,9 @@ export default {
   async asyncData({ params, $repositories }) {
     const course = await $repositories.courses.fetchCourseBySlug(params.id)
     return { course }
+  },
+  async fetch() {
+    this.stories = await this.$repositories.home.successStories()
   },
 }
 </script>

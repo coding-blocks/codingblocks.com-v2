@@ -26,7 +26,7 @@ export default ($axios, $api) => ({
     const response = await $api.get(`career_tracks`)
 
     const payload = deserialize(response.data)
-    console.log('', payload)
+    // console.log('', payload)
     return payload.data
   },
 })

@@ -26,21 +26,28 @@ export default {
       const leftButton = container.querySelector('#move-left')
       const rightButton = container.querySelector('#move-right')
       const carousel = container.querySelector('#carousel')
+      let length = carousel.querySelectorAll('.carousel_slide').length
 
       let counter = 0
 
       leftButton.addEventListener('click', () => {
+        --counter
+        if (counter < 0) counter = length
+
         carousel.scrollTo({
           top: 0,
-          left: --counter * carousel.clientWidth,
+          left: counter * carousel.clientWidth,
           behavior: 'smooth',
         })
       })
 
       rightButton.addEventListener('click', () => {
+        ++counter
+        if (counter > length) counter = 0
+
         carousel.scrollTo({
           top: 0,
-          left: ++counter * carousel.clientWidth,
+          left: counter * carousel.clientWidth,
           behavior: 'smooth',
         })
       })

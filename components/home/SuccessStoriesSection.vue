@@ -17,6 +17,7 @@
             :story="story"
             v-for="(story, index) in stories"
             :key="index"
+            :class="`carousel_slide`"
           />
         </CardCarousel>
       </div>

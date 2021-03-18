@@ -7,6 +7,7 @@
           :story="story"
           v-for="(story, index) in majorStories"
           :key="index"
+          :class="`carousel_slide`"
         />
       </CardCarousel>
 

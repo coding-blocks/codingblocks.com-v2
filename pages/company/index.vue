@@ -1,7 +1,4 @@
 <template>
-  <div class="a-cbm" style="margin-top: -70px">
-    <Navigation />
-
     <div class="landing-page">
       <div class="landing-page__section">
         <div class="width-limiter">
@@ -222,9 +219,6 @@
           </div>
         </div>
       </div>
-
-      <Footer />
-    </div>
   </div>
 </template>
 

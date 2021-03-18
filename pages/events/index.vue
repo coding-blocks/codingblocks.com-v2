@@ -1,7 +1,4 @@
 <template>
-  <div class="a-cbm" style="margin-top: -70px;">
-    <Navigation />
-
     <div class="landing-page">
       <div class="landing-page__section">
         <div class="width-limiter">
@@ -12,9 +9,6 @@
       <UpcomingEventsSection />
 
       <UpcomingCourseSection />
-
-      <Footer />
-    </div>
   </div>
 </template>
 

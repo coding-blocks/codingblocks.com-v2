@@ -7,7 +7,7 @@
           Boost your skills! Stay sharp. Get Ahead!
         </div>
       </div>
-      <div class="mt-50 row align-items-center justify-content-center">
+      <div class="mt-50 row justify-content-center">
         <div class="col-lg-4 col-md-5 col-sm-8">
           <div class="card p-0" id="track-buttons-section">
             <div

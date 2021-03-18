@@ -1,7 +1,7 @@
 <template>
   <div class="pl-4">
     <div style="border-left: solid 1px #cccccc">
-      <div class="mb-50 pl-lg-5 pl-md-4 pl-sm-5 pl-4">
+      <div class="mb-md-50 pl-30">
         <div class="t-align-sm-l t-align-c">
           <div class="heading-4 bold">Full Stack Web Development Track</div>
           <div class="mt-2 text-grey">
@@ -9,9 +9,13 @@
           </div>
         </div>
       </div>
-      <div class="pl-lg-5 pl-md-4 pl-sm-5 pl-4 pt-5 position-relative">
-        <div class="track-indicator complete">•</div>
-        <div>COURSE 1</div>
+      <!-- This part would be in loop for each course -->
+      <!-- <div v-for="(course, index) in courses" :key="index"> -->
+      <div class="pl-30 pt-40 position-relative">
+        <div class="position-relative">
+          <div class="track-indicator complete">•</div>
+          <div class="orange bold">COURSE 1</div>
+        </div>
         <div class="row align-items-center mt-xl-5 mt-4">
           <div class="col-xl-6 col-12 mb-xl-0 mb-4">
             <div class="row no-gutters align-items-center">
@@ -72,225 +76,8 @@
           </div>
         </div>
       </div>
-      <div
-        class="divider-h content-divider mt-5 pl-lg-5 pl-md-4 pl-sm-5 pl-4"
-      ></div>
-
-      <div class="pl-lg-5 pl-md-4 pl-sm-5 pl-4 pt-5 position-relative">
-        <div class="track-indicator complete">•</div>
-        <div>COURSE 2</div>
-        <div class="row align-items-center mt-xl-5 mt-4">
-          <div class="col-xl-6 col-12 mb-xl-0 mb-4">
-            <div class="row no-gutters align-items-center">
-              <div>
-                <img
-                  src="https://minio.codingblocks.com/amoeba/2a7d7b2f-5c23-4d84-9b86-cfa78b1ab722.svg"
-                  alt="COURSE Logo"
-                  class="s-60x60 br-50"
-                />
-              </div>
-              <div class="flex-1 pl-3">
-                <h5 class="bold">Algo++ Data Structures &amp; Algorithms</h5>
-                <div class="font-normal mt-2">Mentor: Prateek Narang</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-6">
-            <div class="mb-2">
-              <img
-                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_filled.svg"
-                class="mr-1"
-              />
-              <img
-                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_filled.svg"
-                class="mr-1"
-              />
-              <img
-                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_filled.svg"
-                class="mr-1"
-              />
-              <img
-                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_filled.svg"
-                class="mr-1"
-              />
-              <img
-                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_unfilled.svg"
-                class="mr-1"
-              />
-            </div>
-            <div class="normal"><strong>4.57/5.0</strong>, 714 Ratings</div>
-          </div>
-          <div class="col-xl-3 col-6">
-            <div class="row no-gutters justify-content-end align-items-center">
-              <a
-                href="/courses/data-structures-and-algorithms-online-course"
-                target="_blank"
-                class="button-tertiary"
-              >
-                Explore
-                <img
-                  src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
-                  class="ml-2"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="divider-h content-divider mt-5 pl-lg-5 pl-md-4 pl-sm-5 pl-4"
-      ></div>
-
-      <div class="pl-lg-5 pl-md-4 pl-sm-5 pl-4 pt-5 position-relative">
-        <div class="track-indicator complete">•</div>
-        <div>COURSE 3</div>
-        <div class="row align-items-center mt-xl-5 mt-4">
-          <div class="col-xl-6 col-12 mb-xl-0 mb-4">
-            <div class="row no-gutters align-items-center">
-              <div>
-                <img
-                  src="https://minio.codingblocks.com/amoeba/55976b77-824a-4300-bc5e-1e8e08a1b72b.png"
-                  alt="COURSE Logo"
-                  class="s-60x60 br-50"
-                />
-              </div>
-              <div class="flex-1 pl-3">
-                <h5 class="bold">Dynamic Programming - Must Do Problem Set!</h5>
-                <div class="font-normal mt-2">Mentor: Kartik Arora</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-6">
-            <div class="mb-2">
-              <img
-                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_filled.svg"
-                class="mr-1"
-              />
-              <img
-                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_filled.svg"
-                class="mr-1"
-              />
-              <img
-                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_filled.svg"
-                class="mr-1"
-              />
-              <img
-                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_filled.svg"
-                class="mr-1"
-              />
-              <img
-                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_unfilled.svg"
-                class="mr-1"
-              />
-            </div>
-            <div class="normal"><strong>4.72/5.0</strong>, 53 Ratings</div>
-          </div>
-          <div class="col-xl-3 col-6">
-            <div class="row no-gutters justify-content-end align-items-center">
-              <a
-                href="/courses/dynamic-programming-courses-problems-tutorials"
-                target="_blank"
-                class="button-tertiary"
-              >
-                Explore
-                <img
-                  src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
-                  class="ml-2"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-        <!---->
-      </div>
-      <div
-        class="divider-h content-divider mt-5 pl-lg-5 pl-md-4 pl-sm-5 pl-4"
-      ></div>
-
-      <div class="pl-lg-5 pl-md-4 pl-sm-5 pl-4 pt-5 position-relative">
-        <div class="track-indicator complete">•</div>
-        <div>COURSE 4</div>
-        <div class="row align-items-center mt-xl-5 mt-4">
-          <div class="col-xl-6 col-12 mb-xl-0 mb-4">
-            <div class="row no-gutters align-items-center">
-              <div>
-                <img
-                  src="https://minio.codingblocks.com/amoeba/0d3af8b9-4842-44fc-841c-ee54b1ec092e.png"
-                  alt="COURSE Logo"
-                  class="s-60x60 br-50"
-                />
-              </div>
-              <div class="flex-1 pl-3">
-                <h5 class="bold">Data Structures in Real Life Projects</h5>
-                <div class="font-normal mt-2">
-                  Mentor: Prateek Narang , Aarnav Jindal
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-6">
-            <div class="mb-2">
-              <img
-                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_filled.svg"
-                class="mr-1"
-              />
-              <img
-                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_filled.svg"
-                class="mr-1"
-              />
-              <img
-                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_filled.svg"
-                class="mr-1"
-              />
-              <img
-                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_filled.svg"
-                class="mr-1"
-              />
-              <img
-                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_unfilled.svg"
-                class="mr-1"
-              />
-            </div>
-            <div class="normal"><strong>4.57/5.0</strong>, 114 Ratings</div>
-          </div>
-          <div class="col-xl-3 col-6">
-            <div class="row no-gutters justify-content-end align-items-center">
-              <a
-                href="/courses/data-structures-projects-using-javascript"
-                target="_blank"
-                class="button-tertiary"
-              >
-                Explore
-                <img
-                  src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
-                  class="ml-2"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="divider-h content-divider mt-5 pl-lg-5 pl-md-4 pl-sm-5 pl-4"
-      ></div>
-
-      <div class="px-5 pt-5 position-relative">
-        <div class="track-indicator complete">•</div>
-        <div class="row no-gutters align-items-center mb-5">
-          <div class="col-md-2 t-align-md-l t-align-c">
-            <img src="https://minio.codingblocks.com/amoeba/badge-orange.svg" />
-          </div>
-          <div class="col-md-10 t-align-md-l t-align-c">
-            <div class="text-gradient-orange-light font-md bold">
-              Certified in C++ Data Structures &amp; Algorithms
-            </div>
-            <div>
-              At the end of the track, you will be job ready and can start
-              applying for jobs!
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="divider-h content-divider mt-40 pl-30"></div>
+      <!-- </div> -->
     </div>
   </div>
 </template>
@@ -300,3 +87,11 @@ export default {
   props: ['id'],
 }
 </script>
+
+<style scoped>
+.track-indicator {
+  top: -12px !important;
+  left: -38px !important;
+  font-size: 30px !important;
+}
+</style>

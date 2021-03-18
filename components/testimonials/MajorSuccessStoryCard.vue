@@ -6,31 +6,31 @@
       <div class="col-12 d-md-none d-block mb-40">
         <div class="row no-gutters align-items-center">
           <div class="col-sm-6 col-12 mb-sm-none mb-40">
-            <img :src="story.image_link" class="success-story__image" />
+            <img :src="story.img" class="success-story__image" />
           </div>
           <div class="flex-1 pl-20">
             <div class="heading-2 bold text-orange mb-3">
-              {{ story.story_title }}
+              {{ story.title }}
             </div>
-            <div class="heading-4 bold">{{ story.story_subtitle }}</div>
+            <div class="heading-4 bold">{{ story.subtitle }}</div>
           </div>
         </div>
       </div>
       <div class="flex-1">
         <div class="d-md-block d-none">
           <div class="heading-2 bold text-orange mb-3">
-            {{ story.story_title }}
+            {{ story.title }}
           </div>
           <div class="heading-4 bold mb-40">
-            {{ story.story_subtitle }}
+            {{ story.subtitle }}
           </div>
         </div>
         <div class="heading-5 text-grey">
-          {{ story.description }}
+          {{ story.body }}
         </div>
       </div>
       <img
-        :src="story.image_link"
+        :src="story.img"
         class="success-story__image d-md-block d-none ml-lg-50 ml-md-30"
       />
     </div>

@@ -51,7 +51,7 @@ export default {
     SuccessStoryCard,
   },
   async fetch() {
-    this.stories = await this.$repositories.home.successStories()
+    this.stories = await this.$repositories.home.fetchSuccessStoriesByPage()
   },
 }
 </script>

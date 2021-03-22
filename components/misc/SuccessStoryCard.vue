@@ -8,14 +8,14 @@
       </div>
       <div class="t-align-r">
         <div class="font-2 text-grey bold mb-10">Placed at</div>
-        <img :src="story.company_logo" style="height: 40px" />
+        <img :src="story.company.logo" style="height: 40px" />
       </div>
     </div>
     <div>
       <div
         class="heading-5 bold mb-1 text-clamp-ellipses text-clamp-ellipses--2"
       >
-        {{ `${story.name} placed at ${story.company_name}, ${story.lpa}LPA` }}
+        {{ `${story.name} placed at ${story.company.name}, ${story.lpa}LPA` }}
       </div>
       <div class="font-3 text-orange mb-20">{{ story.college }}</div>
       <div class="font-4">

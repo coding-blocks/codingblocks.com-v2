@@ -51,4 +51,14 @@ export default ($axios, $api) => ({
     const payload = deserialize(response.data)
     return payload.data
   },
+
+  async fetchSuccessStoriesByPage() {
+    const response = await $axios.get(`successStories`, {
+      params: {
+        limit: 50,
+        offset: 0,
+      },
+    })
+    return response.data.results
+  },
 })

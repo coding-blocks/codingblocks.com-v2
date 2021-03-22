@@ -57,10 +57,7 @@
         <HelpSection :hide_main_section="true" />
 
         <div class="mt-sm-75 mt-50">
-          <CourseList
-            title="Trending Courses"
-            subtitle="Learn and grow as a developer with our project based courses."
-          />
+          <CourseList type="classroom" :courses="coursesPayload" />
         </div>
       </div>
     </div>
@@ -80,6 +77,7 @@ import SuccessStoriesSection from '@/components/home/SuccessStoriesSection.vue'
 export default {
   data() {
     return {
+      coursesPayload: [],
       miniBanner: null,
     }
   },
@@ -93,6 +91,7 @@ export default {
   },
   async fetch() {
     this.miniBanner = await this.$repositories.home.miniBanner()
+    this.coursesPayload = await this.$repositories.courses.fetchClassroomCourses()
   },
 }
 </script>

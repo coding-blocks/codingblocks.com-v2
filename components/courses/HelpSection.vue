@@ -296,11 +296,15 @@ export default {
   data() {
     return {
       showModal: false,
+      professions: {},
     }
   },
   methods: {
     setShowModal(value) {
       this.showModal = value
+    },
+    async fetch() {
+      this.professions = await this.$repositories.courses.fetchProfessions
     },
   },
 }

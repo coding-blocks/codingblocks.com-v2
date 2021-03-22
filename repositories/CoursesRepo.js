@@ -26,7 +26,13 @@ export default ($axios, $api) => ({
     const response = await $api.get(`career_tracks`)
 
     const payload = deserialize(response.data)
-    // console.log('', payload)
+    return payload.data
+  },
+
+  async fetchProfessions() {
+    const response = await $api.get(`professions`)
+
+    const payload = deserialize(response.data)
     return payload.data
   },
 })

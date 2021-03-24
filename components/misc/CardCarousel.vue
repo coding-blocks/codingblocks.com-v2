@@ -5,6 +5,7 @@
       class="pointer"
       style="height: 30px"
       id="move-left"
+      v-on:click="moveLeft()"
     />
     <div class="row mx-sm-40 mx-20 c-card-carousel" id="carousel">
       <slot></slot>
@@ -14,45 +15,47 @@
       class="pointer"
       style="height: 30px"
       id="move-right"
+      v-on:click="moveRight()"
     />
   </div>
 </template>
 
 <script>
 export default {
-  mounted() {
-    const carouselContainers = document.querySelectorAll('.carousel-container')
+  data() {
+    return {
+      counter: 0,
+    }
+  },
+  methods: {
+    moveLeft() {
+      const carouselContainer = document.querySelector('.carousel-container')
+      const carousel = carouselContainer.querySelector('#carousel')
+      const carouselLength = carousel.querySelectorAll('.carousel__slide')
+        .length
+      --this.counter
+      if (this.counter === 0) this.counter = carouselLength
 
-    ;[...carouselContainers].forEach((container) => {
-      const leftButton = container.querySelector('#move-left')
-      const rightButton = container.querySelector('#move-right')
-      const carousel = container.querySelector('#carousel')
-      let length = carousel.querySelectorAll('.carousel__slide').length
-
-      let counter = 0
-
-      leftButton.addEventListener('click', () => {
-        --counter
-        if (counter < 0) counter = length
-
-        carousel.scrollTo({
-          top: 0,
-          left: counter * carousel.clientWidth,
-          behavior: 'smooth',
-        })
+      carousel.scrollTo({
+        top: 0,
+        left: this.counter * carousel.clientWidth,
+        behavior: 'smooth',
       })
+    },
+    moveRight() {
+      const carouselContainer = document.querySelector('.carousel-container')
+      const carousel = carouselContainer.querySelector('#carousel')
+      const carouselLength = carousel.querySelectorAll('.carousel__slide')
+        .length
+      ++this.counter
+      if (this.counter === carouselLength) this.counter = 0
 
-      rightButton.addEventListener('click', () => {
-        ++counter
-        if (counter > length) counter = 0
-
-        carousel.scrollTo({
-          top: 0,
-          left: counter * carousel.clientWidth,
-          behavior: 'smooth',
-        })
+      carousel.scrollTo({
+        top: 0,
+        left: this.counter * carousel.clientWidth,
+        behavior: 'smooth',
       })
-    })
+    },
   },
 }
 </script>

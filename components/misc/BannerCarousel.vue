@@ -50,10 +50,18 @@
       </div>
     </div>
 
-    <a class="slideshow-container__prev pulse" id="move-left">
+    <a
+      class="slideshow-container__prev pulse"
+      id="move-left"
+      v-on:click="moveLeft()"
+    >
       <span>&#10094;</span>
     </a>
-    <a class="slideshow-container__next pulse" id="move-right">
+    <a
+      class="slideshow-container__next pulse"
+      id="move-right"
+      v-on:click="moveRight()"
+    >
       <span>&#10095;</span>
     </a>
   </div>
@@ -61,44 +69,46 @@
 
 <script>
 export default {
-  mounted() {
-    const slideShowContainer = document.querySelector('.slideshow-container')
-    const leftButton = slideShowContainer.querySelector('#move-left')
-    const rightButton = slideShowContainer.querySelector('#move-right')
-    const carousel = slideShowContainer.querySelector('#banner-carousel')
-    let length = carousel.querySelectorAll('.slideshow-container__slide').length
-
-    let counter = 0
-
-    leftButton.addEventListener('click', () => {
-      --counter
-      if (counter < 0) counter = length
-
-      carousel.scrollTo({
-        top: 0,
-        left: counter * carousel.clientWidth,
-        behavior: 'smooth',
-      })
-    })
-
-    rightButton.addEventListener('click', () => {
-      ++counter
-      if (counter > length) counter = 0
-
-      carousel.scrollTo({
-        top: 0,
-        left: counter * carousel.clientWidth,
-        behavior: 'smooth',
-      })
-    })
-  },
   data() {
     return {
       banners: [],
+      counter: 0,
     }
   },
   async fetch() {
     this.banners = await this.$repositories.home.banners()
+  },
+  methods: {
+    moveLeft() {
+      const slideShowContainer = document.querySelector('.slideshow-container')
+      const carousel = slideShowContainer.querySelector('#banner-carousel')
+      const carouselLength = carousel.querySelectorAll(
+        '.slideshow-container__slide'
+      ).length
+      --this.counter
+      if (this.counter === 0) this.counter = carouselLength
+
+      carousel.scrollTo({
+        top: 0,
+        left: this.counter * carousel.clientWidth,
+        behavior: 'smooth',
+      })
+    },
+    moveRight() {
+      const slideShowContainer = document.querySelector('.slideshow-container')
+      const carousel = slideShowContainer.querySelector('#banner-carousel')
+      const carouselLength = carousel.querySelectorAll(
+        '.slideshow-container__slide'
+      ).length
+      ++this.counter
+      if (this.counter === carouselLength) this.counter = 0
+
+      carousel.scrollTo({
+        top: 0,
+        left: this.counter * carousel.clientWidth,
+        behavior: 'smooth',
+      })
+    },
   },
 }
 </script>

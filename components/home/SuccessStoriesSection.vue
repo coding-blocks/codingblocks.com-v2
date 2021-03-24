@@ -15,7 +15,7 @@
         <CardCarousel>
           <SuccessStory
             :story="story"
-            v-for="(story, index) in stories"
+            v-for="(story, index) in stories.slice(0, 5)"
             :key="index"
           />
         </CardCarousel>

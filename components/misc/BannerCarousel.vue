@@ -1,10 +1,6 @@
 <template>
   <div class="slideshow-container mt-50">
-    <div
-      v-if="banners.length != 0"
-      class="row no-gutters c-card-carousel"
-      id="carousel"
-    >
+    <div class="row no-gutters c-card-carousel" id="banner-carousel">
       <div
         v-for="(banner, index) in banners"
         :key="index"
@@ -69,7 +65,7 @@ export default {
     const slideShowContainer = document.querySelector('.slideshow-container')
     const leftButton = slideShowContainer.querySelector('#move-left')
     const rightButton = slideShowContainer.querySelector('#move-right')
-    const carousel = slideShowContainer.querySelector('#carousel')
+    const carousel = slideShowContainer.querySelector('#banner-carousel')
     let length = carousel.querySelectorAll('.slideshow-container__slide').length
 
     let counter = 0

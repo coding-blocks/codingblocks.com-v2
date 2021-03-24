@@ -69,33 +69,6 @@
 
 <script>
 export default {
-  mounted() {
-    // const slideShowContainer = document.querySelector('.slideshow-container')
-    // const leftButton = slideShowContainer.querySelector('#move-left')
-    // const rightButton = slideShowContainer.querySelector('#move-right')
-    // const carousel = slideShowContainer.querySelector('#banner-carousel')
-    // const carouselLength = carousel.querySelectorAll(
-    //   '.slideshow-container__slide'
-    // ).length
-    // leftButton.addEventListener('click', () => {
-    //   --counter
-    //   if (counter < 0) counter = carouselLength
-    //   carousel.scrollTo({
-    //     top: 0,
-    //     left: counter * carousel.clientWidth,
-    //     behavior: 'smooth',
-    //   })
-    // })
-    // rightButton.addEventListener('click', () => {
-    //   ++counter
-    //   if (counter > carouselLength) counter = 0
-    //   carousel.scrollTo({
-    //     top: 0,
-    //     left: counter * carousel.clientWidth,
-    //     behavior: 'smooth',
-    //   })
-    // })
-  },
   data() {
     return {
       banners: [],

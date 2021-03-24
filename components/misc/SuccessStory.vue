@@ -1,5 +1,5 @@
 <template>
-  <div class="col-12">
+  <div class="col-12 carousel__slide">
     <div
       class="success-story row no-gutters align-items-center justify-content-between t-align-sm-l t-align-c h-100"
     >

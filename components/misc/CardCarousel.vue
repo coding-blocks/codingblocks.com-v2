@@ -22,11 +22,12 @@
 export default {
   mounted() {
     const carouselContainers = document.querySelectorAll('.carousel-container')
+
     ;[...carouselContainers].forEach((container) => {
       const leftButton = container.querySelector('#move-left')
       const rightButton = container.querySelector('#move-right')
       const carousel = container.querySelector('#carousel')
-      let length = carousel.querySelectorAll('.carousel_slide').length
+      let length = carousel.querySelectorAll('.carousel__slide').length
 
       let counter = 0
 

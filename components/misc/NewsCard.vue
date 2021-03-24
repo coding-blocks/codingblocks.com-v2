@@ -1,5 +1,5 @@
 <template>
-  <div class="col-6 h-inherit">
+  <div class="col-6 h-inherit carousel__slide">
     <div class="flex-col justify-content-between h-100 align-items-start">
       <img :src="news.news_logo" :style="{ height: '45px' }" />
       <div>

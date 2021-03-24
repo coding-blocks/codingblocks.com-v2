@@ -66,22 +66,32 @@
 <script>
 export default {
   mounted() {
-    const leftButton = document.querySelector('#move-left')
-    const rightButton = document.querySelector('#move-right')
-    const carousel = document.querySelector('#carousel')
+    const slideShowContainer = document.querySelector('.slideshow-container')
+    const leftButton = slideShowContainer.querySelector('#move-left')
+    const rightButton = slideShowContainer.querySelector('#move-right')
+    const carousel = slideShowContainer.querySelector('#carousel')
+    let length = carousel.querySelectorAll('.slideshow-container__slide').length
+
+    let counter = 0
 
     leftButton.addEventListener('click', () => {
+      --counter
+      if (counter < 0) counter = length
+
       carousel.scrollTo({
         top: 0,
-        left: -carousel.clientWidth,
+        left: counter * carousel.clientWidth,
         behavior: 'smooth',
       })
     })
 
     rightButton.addEventListener('click', () => {
+      ++counter
+      if (counter > length) counter = 0
+
       carousel.scrollTo({
         top: 0,
-        left: carousel.clientWidth,
+        left: counter * carousel.clientWidth,
         behavior: 'smooth',
       })
     })

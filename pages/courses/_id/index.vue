@@ -59,12 +59,13 @@
           </div>
         </div>
         <div class="row mt-50">
-          <div class="col-lg-4 col-md-5 col-sm-6 mb-25 h-inherit">
-              <SuccessStoryCard
-                :story="story"
-                v-for="(story, index) in stories"
-                :key="index"
-              />
+          <div
+            class="col-lg-4 col-md-5 col-sm-6 mb-25 h-inherit"
+            :story="story"
+            v-for="(story, index) in stories.slice(0, 3)"
+            :key="index"
+          >
+            <SuccessStoryCard :story="story" />
           </div>
         </div>
       </div>
@@ -80,7 +81,6 @@ import CourseBatch from '@/components/courses/CourseBatch.vue'
 import CourseHighlights from '@/components/courses/CourseHighlights.vue'
 import CoursePageMentorsSection from '@/components/courses/CoursePageMentorsSection.vue'
 import SuccessStoryCard from '@/components/misc/SuccessStoryCard.vue'
-
 
 export default {
   data() {

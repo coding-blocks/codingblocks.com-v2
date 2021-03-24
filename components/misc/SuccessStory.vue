@@ -23,7 +23,7 @@
         <div class="d-md-block d-none">
           <div class="heading-2 bold text-orange mb-3">
             {{
-              `${story.name} placed at ${story.compan.name}, ${story.lpa}LPA`
+              `${story.name} placed at ${story.company.name}, ${story.lpa}LPA`
             }}
           </div>
           <div class="heading-4 bold mb-40">

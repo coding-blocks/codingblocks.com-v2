@@ -17,7 +17,7 @@
     </div>
     <div>
       <div
-        class="heading-5 theme-text bold mb-10 text-clamp-ellipses text-clamp-ellipses--2"
+        class="heading-5 theme-text bold mb-10 text-clamp-ellipses text-clamp-ellipses--2 word-wrap"
       >
         {{ course.title }}
       </div>

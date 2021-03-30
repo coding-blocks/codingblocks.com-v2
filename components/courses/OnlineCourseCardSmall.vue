@@ -13,7 +13,7 @@
       </div>
       <div class="flex-1 px-20">
         <div
-          class="heading-5 bold theme-text text-clamp-ellipses text-clamp-ellipses--2"
+          class="heading-5 bold theme-text text-clamp-ellipses text-clamp-ellipses--2 word-wrap"
         >
           {{ course.title }}
         </div>

@@ -27,7 +27,11 @@
                 />
               </div>
               <div class="flex-1 pl-30">
-                <h5 class="bold">C++ Fundamentals</h5>
+                <h5
+                  class="bold text-clamp-ellipses text-clamp-ellipses--2 word-wrap"
+                >
+                  C++ Fundamentals
+                </h5>
                 <div class="font-normal mt-2">
                   Mentor: Prateek Narang , Kartik Mathur
                 </div>

@@ -43,8 +43,8 @@
           class="mr-xl-10 mr-1"
         />
         <div class="font-3 text-grey ml-xl-10 ml-2 flex-1">
-          <strong>{{ this.course.rating }}/5,</strong>&nbsp;{{
-            this.course['number_ratings']
+          <strong>{{ course.rating }}/5,</strong>&nbsp;{{
+            course['number_ratings']
           }}
           ratings
         </div>

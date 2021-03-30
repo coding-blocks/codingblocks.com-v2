@@ -52,7 +52,7 @@ export default {
       return this.topRun ? this.topRun.mrp : ''
     },
     startDateString() {
-      return this.topRun.startDate
+      return formatTimestamp(this.topRun.startDate)
     },
   },
 }

@@ -17,38 +17,11 @@
         >
           {{ course.title }}
         </div>
-        <div class="row no-gutters align-items-center mt-10">
-          <img
-            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_filled.svg"
-            class="mr-1"
-            style="height: 10px"
+        <div class="mt-10">
+          <RatingsComponent
+            :rating="course.rating"
+            :num_ratings="course['review-count']"
           />
-          <img
-            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_filled.svg"
-            class="mr-1"
-            style="height: 10px"
-          />
-          <img
-            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_filled.svg"
-            class="mr-1"
-            style="height: 10px"
-          />
-          <img
-            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_filled.svg"
-            class="mr-1"
-            style="height: 10px"
-          />
-          <img
-            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_unfilled.svg"
-            class="mr-1"
-            style="height: 10px"
-          />
-          <div class="font-1 text-grey ml-2 flex-1">
-            <strong>{{ this.course.rating }}/5,</strong>&nbsp;{{
-              this.course['review-count']
-            }}
-            ratings
-          </div>
         </div>
       </div>
     </div>
@@ -57,6 +30,8 @@
 
 <script>
 import { formatTimestamp } from '~/utils/date'
+import RatingsComponent from '@/components/misc/RatingsComponent.vue'
+
 import {
   topRunForCourse,
   textForDifficulty,
@@ -69,6 +44,9 @@ export default {
       type: Object,
     },
     type: 'online',
+  },
+  components: {
+    RatingsComponent,
   },
   computed: {
     topRun() {

@@ -7,18 +7,14 @@
     </div>
 
     <div>
-      <div class="row justify-content-center">
+      <div class="row justify-content-center h-100">
         <div
           v-for="course in collapsedCourses"
           :key="course.id"
-          class="col-lg-4 col-md-5 col-sm-6 mb-50"
+          class="col-lg-4 col-md-5 col-sm-6 mb-50 h-inherit"
         >
-          <div v-if="type == 'online'">
-            <OnlineCourseCard :course="course" />
-          </div>
-          <div v-else>
-            <CourseCard :course="course" />
-          </div>
+          <OnlineCourseCard :course="course" v-if="type == 'online'" />
+          <CourseCard :course="course" v-else />
         </div>
       </div>
     </div>

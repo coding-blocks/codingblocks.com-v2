@@ -71,7 +71,13 @@ export default {
       return this.topRun ? this.topRun.mrp : ''
     },
     startDateString() {
-      return this.topRun.startDate
+      const wrongFormatDate = this.topRun.startDate
+      let rightFormatDate = wrongFormatDate.split('-')
+      let temp = rightFormatDate[0]
+      rightFormatDate[0] = rightFormatDate[2]
+      rightFormatDate[2] = temp
+
+      return rightFormatDate.join('/')
     },
   },
 }

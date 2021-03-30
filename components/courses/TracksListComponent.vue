@@ -35,29 +35,12 @@
             </div>
           </div>
           <div class="col-xl-3 col-6">
-            <div class="mb-2">
-              <img
-                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_filled.svg"
-                class="mr-1"
-              />
-              <img
-                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_filled.svg"
-                class="mr-1"
-              />
-              <img
-                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_filled.svg"
-                class="mr-1"
-              />
-              <img
-                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_filled.svg"
-                class="mr-1"
-              />
-              <img
-                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_unfilled.svg"
-                class="mr-1"
-              />
-            </div>
-            <div class="normal"><strong>4.71/5.0</strong>, 371 Ratings</div>
+            <!-- Uncomment this when dynamic data added -->
+
+            <!-- <RatingsComponent
+              :rating="course.rating"
+              :num_ratings="course['review-count']"
+            /> -->
           </div>
           <div class="col-xl-3 col-6">
             <div class="row no-gutters justify-content-end align-items-center">
@@ -83,8 +66,13 @@
 </template>
 
 <script>
+import RatingsComponent from '@/components/misc/RatingsComponent.vue'
+
 export default {
   props: ['id'],
+  components: {
+    RatingsComponent,
+  },
 }
 </script>
 

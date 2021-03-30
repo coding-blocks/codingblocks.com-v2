@@ -57,13 +57,16 @@
         <HelpSection :hide_main_section="true" />
 
         <div class="mt-sm-75 mt-50">
-          <CourseList type="classroom" :courses="coursesPayload" />
+          <CourseList
+            type="classroom"
+            :courses="coursesPayload"
+            :withToggle="true"
+          />
         </div>
       </div>
     </div>
 
     <SuccessStoriesSection class="bg-white pt-none" />
-
   </div>
 </template>
 

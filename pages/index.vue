@@ -1,43 +1,40 @@
 <template>
-    <div class="landing-page">
-      <WelcomeSection />
+  <div class="landing-page">
+    <WelcomeSection />
 
-      <CoursesSection />
+    <CoursesSection />
 
-      <PracticeAndHireSection />
+    <PracticeAndHireSection />
 
-      <div class="landing-page__section">
-        <div class="width-limiter">
-          <div
-            class="row no-gutters justify-content-between align-items-center"
-          >
-            <div class="flex-1 t-align-lg-l t-align-c">
-              <div class="heading-font stroke-font">ALUMNI NETWORK.</div>
-              <div class="heading-font">ALUMNI NETWORK.</div>
-              <img
-                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_news.svg"
-              />
-            </div>
-          </div>
-          <div class="mt-50 row no-gutters justify-content-center">
+    <div class="landing-page__section">
+      <div class="width-limiter">
+        <div class="row no-gutters justify-content-between align-items-center">
+          <div class="flex-1 t-align-lg-l t-align-c">
+            <div class="heading-font stroke-font">ALUMNI NETWORK.</div>
+            <div class="heading-font">ALUMNI NETWORK.</div>
             <img
-              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/company_logos.svg"
-              class="w-100"
+              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_news.svg"
             />
           </div>
         </div>
+        <div class="mt-50 row no-gutters justify-content-center">
+          <img
+            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/company_logos.svg"
+            class="w-100"
+          />
+        </div>
       </div>
+    </div>
 
-      <SuccessStoriesSection />
+    <SuccessStoriesSection />
 
-      <MentorSection />
+    <MentorSection />
 
-      <CollegesAndCompaniesSection />
+    <CollegesAndCompaniesSection />
 
-      <BlogsSection />
+    <BlogsSection />
 
-      <NewsSection />
-
+    <NewsSection />
   </div>
 </template>
 
@@ -80,3 +77,9 @@ export default {
   },
 }
 </script>
+
+<style>
+.word-wrap {
+  word-break: break-word !important;
+}
+</style>

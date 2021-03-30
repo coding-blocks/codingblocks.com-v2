@@ -14,20 +14,20 @@
               v-for="(track, index) in tracks"
               :key="index"
               :id="`batch-${index + 1}`"
-              v-on:click="setSelectedTrack(track.id, index)"
+              v-on:click="setSelectedTrack(track.attributes.id, index)"
             >
               <div
                 class="track-button p-30 bg-gradient-blue-light white br-10"
-                :style="{ background: `url(${track.background})` }"
+                :style="{ background: `url(${track.attributes.background})` }"
               >
                 <div class="row no-gutters align-items-center">
-                  <img :src="track.logo" class="s-60x60" />
+                  <img :src="track.attributes.logo" class="s-60x60" />
                   <div class="flex-1 pl-20 heading-6 bold">
-                    {{ track.name }}
+                    {{ track.attributes.name }}
                   </div>
                 </div>
                 <div class="mt-10 t-align-r bold">
-                  {{ track.courses }} Courses
+                  {{ track.relationships.courses.data.length }} Courses
                 </div>
               </div>
             </div>
@@ -55,7 +55,9 @@ export default {
     }
   },
   async fetch() {
-    this.tracks = await this.$repositories.courses.fetchTracks()
+    const response = await this.$repositories.courses.fetchTracks()
+    this.tracks  = response.data
+
   },
   methods: {
     setSelectedTrack(trackID, trackIndex) {

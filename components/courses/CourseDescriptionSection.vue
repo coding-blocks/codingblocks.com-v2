@@ -6,20 +6,22 @@
           <div class="row no-gutters align-items-center">
             <div
               class="card bg-gradient-pink all-center d-md-flex d-none"
+              :class="course.theme"
               style="height: 250px; width: 250px"
             >
               <img :src="course.logo" />
             </div>
             <div class="flex-1 pl-lg-50 pl-md-30 t-align-md-l t-align-c">
               <div
-                class="card bg-gradient-pink all-center d-md-none d-flex mx-auto mb-30 s-150x150"
+                class="card all-center d-md-none d-flex mx-auto mb-30 s-150x150"
+                :class="course.theme"
               >
                 <img :src="course.logo" />
               </div>
               <div
                 class="br-5 d-inline-block p-2 bg-gradient-orange-light mb-15 font-2 white"
               >
-                Beginner
+                {{ course.difficulty }}
               </div>
               <div class="heading-3 mb-20 bold">{{ course.title }}</div>
               <div class="font-4 mb-20">

@@ -17,38 +17,14 @@
     </div>
     <div>
       <div
-        class="heading-5 theme-text bold mb-10 text-clamp-ellipses text-clamp-ellipses--2"
+        class="heading-5 theme-text bold mb-10 text-clamp-ellipses text-clamp-ellipses--2 word-wrap"
       >
         {{ course.title }}
       </div>
-      <div class="row no-gutters align-items-center">
-        <img
-          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_filled.svg"
-          class="mr-xl-10 mr-1"
-        />
-        <img
-          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_filled.svg"
-          class="mr-xl-10 mr-1"
-        />
-        <img
-          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_filled.svg"
-          class="mr-xl-10 mr-1"
-        />
-        <img
-          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_filled.svg"
-          class="mr-xl-10 mr-1"
-        />
-        <img
-          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/star_unfilled.svg"
-          class="mr-xl-10 mr-1"
-        />
-        <div class="font-3 text-grey ml-xl-10 ml-2 flex-1">
-          <strong>{{ this.course.rating }}/5,</strong>&nbsp;{{
-            this.course['number_ratings']
-          }}
-          ratings
-        </div>
-      </div>
+      <RatingsComponent
+        :rating="course.rating"
+        :num_ratings="course.number_ratings"
+      />
     </div>
     <div class="mt-50">
       <div class="row no-gutters">
@@ -73,12 +49,16 @@
 
 <script>
 import { formatTimestamp } from '~/utils/date'
+import RatingsComponent from '@/components/misc/RatingsComponent.vue'
 
 export default {
   props: {
     course: {
       type: Object,
     },
+  },
+  components: {
+    RatingsComponent,
   },
   computed: {
     topRun() {
@@ -91,7 +71,7 @@ export default {
       return this.topRun ? this.topRun.mrp : ''
     },
     startDateString() {
-      return this.topRun.startDate
+      return formatTimestamp(this.topRun.startDate)
     },
   },
 }

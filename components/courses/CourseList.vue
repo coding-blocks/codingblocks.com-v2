@@ -1,13 +1,20 @@
 <template>
   <div>
-    <div class="t-align-sm-l t-align-c mb-50">
-      <div class="heading-4 bold">
+    <div
+      class="mb-sm-50 mb-30 row no-gutters align-items-center justify-content-between"
+    >
+      <div class="heading-4 bold flex-1 pr-20">
         {{ featuredTag ? featuredTag.name : 'Courses' }}
       </div>
+      <button class="button-secondary" id="center-selector" v-if="withToggle">
+        All
+      </button>
     </div>
 
     <div>
-      <div class="row justify-content-center h-100">
+      <div
+        class="row justify-content-lg-start justify-content-md-center justify-content-start h-100"
+      >
         <div
           v-for="course in collapsedCourses"
           :key="course.id"
@@ -41,6 +48,10 @@ export default {
       type: String,
       default: 'online',
     },
+    withToggle: {
+      type: Boolean,
+      default: false,
+    },
   },
   computed: {
     sortedCourses() {
@@ -49,7 +60,7 @@ export default {
       )
     },
     collapsedCourses() {
-      return this.featuredTag ? this.sortedCourses.slice(0, 3) : this.courses
+      return this.featuredTag ? this.sortedCourses : this.courses
     },
   },
 }

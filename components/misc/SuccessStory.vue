@@ -9,7 +9,9 @@
             <img :src="story.img" class="success-story__image" />
           </div>
           <div class="flex-1 pl-20">
-            <div class="heading-2 bold text-orange mb-3">
+            <div
+              class="heading-2 bold text-orange mb-3 text-clamp-ellipses text-clamp-ellipses--3"
+            >
               {{
                 `${story.name} placed at ${story.company.name}, ${story.lpa}LPA`
               }}
@@ -21,7 +23,9 @@
       <img :src="story.img" class="success-story__image d-md-block d-none" />
       <div class="flex-1">
         <div class="d-md-block d-none">
-          <div class="heading-2 bold text-orange mb-3">
+          <div
+            class="heading-2 bold text-orange mb-3 text-clamp-ellipses text-clamp-ellipses--3"
+          >
             {{
               `${story.name} placed at ${story.company.name}, ${story.lpa}LPA`
             }}

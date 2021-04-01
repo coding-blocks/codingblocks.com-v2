@@ -21,15 +21,21 @@
         id="help-section"
       >
         <div v-if="hide_main_section === false">
-          <div class="">
+          <div id="help-section">
             <div class="row">
-              <div class="col-lg-3 flex-col justify-content-between h-inherit">
+              <div
+                class="col-lg-3 flex-col justify-content-between h-inherit"
+                id="help-section-status"
+              >
                 <div class="heading-5 bold mb-50 w-100">I am a ...</div>
                 <div class="row">
                   <div
                     class="col-lg-12 col-md-3 col-6 h-inherit mb-lg-40 pb-md-none pb-40"
                   >
-                    <div class="h-100 option-div option-div--rect selected">
+                    <div
+                      class="h-100 option-div option-div--rect"
+                      v-on:click="setCurrentStatus($event)"
+                    >
                       <div class="font-5 bold flex-1 pr-2">
                         High School Student
                       </div>
@@ -42,7 +48,10 @@
                   <div
                     class="col-lg-12 col-md-3 col-6 h-inherit mb-lg-40 pb-md-none pb-40"
                   >
-                    <div class="h-100 option-div option-div--rect">
+                    <div
+                      class="h-100 option-div option-div--rect"
+                      v-on:click="setCurrentStatus($event)"
+                    >
                       <div class="font-5 bold flex-1 pr-2">College Fresher</div>
                       <img
                         src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/option-div-icon-orange.svg"
@@ -51,7 +60,10 @@
                     </div>
                   </div>
                   <div class="col-lg-12 col-md-3 col-6 h-inherit mb-lg-40">
-                    <div class="h-100 option-div option-div--rect">
+                    <div
+                      class="h-100 option-div option-div--rect"
+                      v-on:click="setCurrentStatus($event)"
+                    >
                       <div class="font-5 bold flex-1 pr-2">Recent Graduate</div>
                       <img
                         src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/option-div-icon-orange.svg"
@@ -60,7 +72,10 @@
                     </div>
                   </div>
                   <div class="col-lg-12 col-md-3 col-6 h-inherit">
-                    <div class="h-100 option-div option-div--rect">
+                    <div
+                      class="h-100 option-div option-div--rect"
+                      v-on:click="setCurrentStatus($event)"
+                    >
                       <div class="font-5 bold flex-1 pr-2">
                         Working Professional
                       </div>
@@ -74,6 +89,7 @@
               </div>
               <div
                 class="col-lg-9 flex-col justify-content-between h-inherit mt-lg-none mt-50"
+                id="help-section-role"
               >
                 <div class="row justify-content-between mb-50 no-gutters w-100">
                   <div class="heading-5 bold col-md-7 col-12 mb-sm-none mb-20">
@@ -89,7 +105,10 @@
                 </div>
                 <div class="row">
                   <div class="col-md-3 col-sm-4 col-6 h-inherit mb-40">
-                    <div class="option-div option-div--square selected h-100">
+                    <div
+                      class="option-div option-div--square h-100"
+                      v-on:click="setRole($event)"
+                    >
                       <div>
                         <img
                           src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/ai-grey.svg"
@@ -105,7 +124,10 @@
                     </div>
                   </div>
                   <div class="col-md-3 col-sm-4 col-6 h-inherit mb-40">
-                    <div class="option-div option-div--square h-100">
+                    <div
+                      class="option-div option-div--square h-100"
+                      v-on:click="setRole($event)"
+                    >
                       <div>
                         <img
                           src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/node-grey.svg"
@@ -121,7 +143,10 @@
                     </div>
                   </div>
                   <div class="col-md-3 col-sm-4 col-6 h-inherit mb-40">
-                    <div class="option-div option-div--square h-100">
+                    <div
+                      class="option-div option-div--square h-100"
+                      v-on:click="setRole($event)"
+                    >
                       <div>
                         <img
                           src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/android-grey.svg"
@@ -137,7 +162,10 @@
                     </div>
                   </div>
                   <div class="col-md-3 col-sm-4 col-6 h-inherit mb-40">
-                    <div class="option-div option-div--square h-100">
+                    <div
+                      class="option-div option-div--square h-100"
+                      v-on:click="setRole($event)"
+                    >
                       <div>
                         <img
                           src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/java-grey.svg"
@@ -155,7 +183,10 @@
                   <div
                     class="col-md-3 col-sm-4 col-6 h-inherit pb-md-none pb-40"
                   >
-                    <div class="option-div option-div--square h-100">
+                    <div
+                      class="option-div option-div--square h-100"
+                      v-on:click="setRole($event)"
+                    >
                       <div>
                         <img
                           src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/cpp-grey.svg"
@@ -173,7 +204,10 @@
                   <div
                     class="col-md-3 col-sm-4 col-6 h-inherit pb-md-none pb-40"
                   >
-                    <div class="option-div option-div--square h-100">
+                    <div
+                      class="option-div option-div--square h-100"
+                      v-on:click="setRole($event)"
+                    >
                       <div>
                         <img
                           src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/js-grey.svg"
@@ -189,7 +223,10 @@
                     </div>
                   </div>
                   <div class="col-md-3 col-sm-4 col-6 h-inherit">
-                    <div class="option-div option-div--square h-100">
+                    <div
+                      class="option-div option-div--square h-100"
+                      v-on:click="setRole($event)"
+                    >
                       <div>
                         <img
                           src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/competitive-grey.svg"
@@ -205,7 +242,10 @@
                     </div>
                   </div>
                   <div class="col-md-3 col-sm-4 col-6 h-inherit">
-                    <div class="option-div option-div--square h-100">
+                    <div
+                      class="option-div option-div--square h-100"
+                      v-on:click="setRole($event)"
+                    >
                       <div>
                         <img
                           src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/python-grey.svg"
@@ -302,6 +342,22 @@ export default {
   methods: {
     setShowModal(value) {
       this.showModal = value
+    },
+    setCurrentStatus(event) {
+      const helpStatusSection = document.querySelector('#help-section-status')
+      helpStatusSection.querySelectorAll('.option-div').forEach((optionDiv) => {
+        optionDiv.classList.remove('selected')
+      })
+
+      event.currentTarget.classList.add('selected')
+    },
+    setRole(event) {
+      const helpRoleSection = document.querySelector('#help-section-role')
+      helpRoleSection.querySelectorAll('.option-div').forEach((optionDiv) => {
+        optionDiv.classList.remove('selected')
+      })
+
+      event.currentTarget.classList.add('selected')
     },
     async fetch() {
       this.professions = await this.$repositories.courses.fetchProfessions

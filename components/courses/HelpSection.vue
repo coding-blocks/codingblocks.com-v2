@@ -337,8 +337,6 @@ export default {
     return {
       showModal: false,
       professions: {},
-      // helpSectionStatus: null,
-      // helpSectionRole: null,
     }
   },
   methods: {
@@ -351,11 +349,16 @@ export default {
         optionDiv.classList.remove('selected')
       })
 
-      // console.log(event.currentTarget)
+      event.currentTarget.classList.add('selected')
+    },
+    setRole(event) {
+      const helpRoleSection = document.querySelector('#help-section-role')
+      helpRoleSection.querySelectorAll('.option-div').forEach((optionDiv) => {
+        optionDiv.classList.remove('selected')
+      })
 
       event.currentTarget.classList.add('selected')
     },
-    setRole(event) {},
     async fetch() {
       this.professions = await this.$repositories.courses.fetchProfessions
     },

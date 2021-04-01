@@ -34,7 +34,7 @@
                   >
                     <div
                       class="h-100 option-div option-div--rect"
-                      v-on:click="setCurrentStatus()"
+                      v-on:click="setCurrentStatus($event)"
                     >
                       <div class="font-5 bold flex-1 pr-2">
                         High School Student
@@ -50,7 +50,7 @@
                   >
                     <div
                       class="h-100 option-div option-div--rect"
-                      v-on:click="setCurrentStatus()"
+                      v-on:click="setCurrentStatus($event)"
                     >
                       <div class="font-5 bold flex-1 pr-2">College Fresher</div>
                       <img
@@ -62,7 +62,7 @@
                   <div class="col-lg-12 col-md-3 col-6 h-inherit mb-lg-40">
                     <div
                       class="h-100 option-div option-div--rect"
-                      v-on:click="setCurrentStatus()"
+                      v-on:click="setCurrentStatus($event)"
                     >
                       <div class="font-5 bold flex-1 pr-2">Recent Graduate</div>
                       <img
@@ -74,7 +74,7 @@
                   <div class="col-lg-12 col-md-3 col-6 h-inherit">
                     <div
                       class="h-100 option-div option-div--rect"
-                      v-on:click="setCurrentStatus()"
+                      v-on:click="setCurrentStatus($event)"
                     >
                       <div class="font-5 bold flex-1 pr-2">
                         Working Professional
@@ -107,7 +107,7 @@
                   <div class="col-md-3 col-sm-4 col-6 h-inherit mb-40">
                     <div
                       class="option-div option-div--square h-100"
-                      v-on:click="selectRole()"
+                      v-on:click="setRole($event)"
                     >
                       <div>
                         <img
@@ -126,7 +126,7 @@
                   <div class="col-md-3 col-sm-4 col-6 h-inherit mb-40">
                     <div
                       class="option-div option-div--square h-100"
-                      v-on:click="selectRole()"
+                      v-on:click="setRole($event)"
                     >
                       <div>
                         <img
@@ -145,7 +145,7 @@
                   <div class="col-md-3 col-sm-4 col-6 h-inherit mb-40">
                     <div
                       class="option-div option-div--square h-100"
-                      v-on:click="selectRole()"
+                      v-on:click="setRole($event)"
                     >
                       <div>
                         <img
@@ -164,7 +164,7 @@
                   <div class="col-md-3 col-sm-4 col-6 h-inherit mb-40">
                     <div
                       class="option-div option-div--square h-100"
-                      v-on:click="selectRole()"
+                      v-on:click="setRole($event)"
                     >
                       <div>
                         <img
@@ -185,7 +185,7 @@
                   >
                     <div
                       class="option-div option-div--square h-100"
-                      v-on:click="selectRole()"
+                      v-on:click="setRole($event)"
                     >
                       <div>
                         <img
@@ -206,7 +206,7 @@
                   >
                     <div
                       class="option-div option-div--square h-100"
-                      v-on:click="selectRole()"
+                      v-on:click="setRole($event)"
                     >
                       <div>
                         <img
@@ -225,7 +225,7 @@
                   <div class="col-md-3 col-sm-4 col-6 h-inherit">
                     <div
                       class="option-div option-div--square h-100"
-                      v-on:click="selectRole()"
+                      v-on:click="setRole($event)"
                     >
                       <div>
                         <img
@@ -244,7 +244,7 @@
                   <div class="col-md-3 col-sm-4 col-6 h-inherit">
                     <div
                       class="option-div option-div--square h-100"
-                      v-on:click="selectRole()"
+                      v-on:click="setRole($event)"
                     >
                       <div>
                         <img
@@ -337,14 +337,25 @@ export default {
     return {
       showModal: false,
       professions: {},
-      helpSectionStatus: null,
-      helpSectionRole: null,
+      // helpSectionStatus: null,
+      // helpSectionRole: null,
     }
   },
   methods: {
     setShowModal(value) {
       this.showModal = value
     },
+    setCurrentStatus(event) {
+      const helpStatusSection = document.querySelector('#help-section-status')
+      helpStatusSection.querySelectorAll('.option-div').forEach((optionDiv) => {
+        optionDiv.classList.remove('selected')
+      })
+
+      // console.log(event.currentTarget)
+
+      event.currentTarget.classList.add('selected')
+    },
+    setRole(event) {},
     async fetch() {
       this.professions = await this.$repositories.courses.fetchProfessions
     },

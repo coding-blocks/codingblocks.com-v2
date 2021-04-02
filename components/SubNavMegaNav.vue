@@ -15,12 +15,12 @@
               style="height: 15px"
             />
           </div>
-          <div
+          <!-- <div
             class="row no-gutters align-items-center mr-30 font-4 text-grey pointer"
           >
             <div>Events</div>
-            <!-- <NuxtLink to="/events"> Events </NuxtLink> -->
-          </div>
+            <NuxtLink to="/events"> Events </NuxtLink>
+          </div> -->
           <div
             class="row no-gutters align-items-center mr-30 font-4 text-grey pointer"
           >
@@ -136,35 +136,17 @@
               CLASSROOM COURSES
             </div>
             <div class="mt-35 mb-15">
-              <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#"> C++ Master Course </a>
-              </div>
-              <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#"> JAVA Master Course </a>
-              </div>
-              <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#">
-                  Python for Developers
-                </a>
-              </div>
-              <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#">
-                  Web Dev with Python - Django
-                </a>
-              </div>
-              <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer mr-20" href="#"> Data Science </a>
-                <div
-                  class="bg-gradient-yellow white font-1 p-1 d-inline-block"
-                  style="border-radius: 2px"
+              <div
+                class="mb-20 row no-gutters align-items-center"
+                v-for="(course, index) in classroomCoursesPayload"
+                :key="index"
+              >
+                <NuxtLink
+                  class="font-4 bold pointer"
+                  :to="`/courses/${course.slug}`"
                 >
-                  NEW
-                </div>
-              </div>
-              <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#">
-                  Competitive Programming
-                </a>
+                  {{ course.title }}
+                </NuxtLink>
               </div>
             </div>
             <NuxtLink
@@ -185,29 +167,17 @@
             />
             <div class="font-3 bold mt-15 text-grey-light-1">LIVE COURSES</div>
             <div class="mt-35 mb-15">
-              <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#"> C++ Master Course </a>
-              </div>
-              <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#"> JAVA Master Course </a>
-              </div>
-              <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#">
-                  Python for Developers
-                </a>
-              </div>
-              <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#">
-                  Web Dev with Python - Django
-                </a>
-              </div>
-              <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#"> Data Science </a>
-              </div>
-              <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#">
-                  Competitive Programming
-                </a>
+              <div
+                class="mb-20 row no-gutters align-items-center"
+                v-for="(course, index) in liveCoursesPayload"
+                :key="index"
+              >
+                <NuxtLink
+                  class="font-4 bold pointer"
+                  :to="`/courses/${course.slug}`"
+                >
+                  {{ course.title }}
+                </NuxtLink>
               </div>
             </div>
             <NuxtLink
@@ -259,6 +229,12 @@
 
 <script>
 export default {
+  data() {
+    return {
+      classroomCoursesPayload: [],
+      liveCoursesPayload: [],
+    }
+  },
   mounted() {
     document.querySelector('#mega-nav-toggle').addEventListener('click', () => {
       const meganav = document.querySelector('#mega-nav')
@@ -269,6 +245,10 @@ export default {
         meganav.classList.add('d-none')
       }
     })
+  },
+  async fetch() {
+    this.classroomCoursesPayload = await this.$repositories.courses.fetchClassroomCourses()
+    this.liveCoursesPayload = await this.$repositories.courses.fetchLiveCourses()
   },
 }
 </script>

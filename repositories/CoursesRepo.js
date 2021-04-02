@@ -30,7 +30,13 @@ export default ($axios, $api) => ({
 
   async fetchTrackById(id) {
     const response = await $api.get(`career_tracks/${id}`)
-    const payload = deserialize(response)
+    const payload = deserialize(response.data)
+    return payload.data
+  },
+
+  async fetchCourseForTrack(trackId){
+    const response = await $api.get(`career_tracks/${trackId}/relationships/courses`)
+    const payload = deserialize(response.data)
     return payload.data
   },
 

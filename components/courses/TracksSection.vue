@@ -57,7 +57,6 @@ export default {
   async fetch() {
     const response = await this.$repositories.courses.fetchTracks()
     this.tracks  = response.data
-
   },
   methods: {
     setSelectedTrack(trackID, trackIndex) {

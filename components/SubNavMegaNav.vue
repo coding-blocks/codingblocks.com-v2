@@ -136,6 +136,18 @@
               CLASSROOM COURSES
             </div>
             <div class="mt-35 mb-15">
+              <div
+                class="mb-20 row no-gutters align-items-center"
+                v-for="(course, index) in coursesPayload"
+                :key="index"
+              >
+                <NuxtLink
+                  class="font-4 bold pointer"
+                  :to="`/courses/${course.slug}`"
+                >
+                  {{ course.title }}
+                </NuxtLink>
+              </div>
               <div class="mb-20 row no-gutters align-items-center">
                 <a class="font-4 bold pointer" href="#"> C++ Master Course </a>
               </div>
@@ -259,6 +271,11 @@
 
 <script>
 export default {
+  data() {
+    return {
+      coursesPayload: [],
+    }
+  },
   mounted() {
     document.querySelector('#mega-nav-toggle').addEventListener('click', () => {
       const meganav = document.querySelector('#mega-nav')
@@ -269,6 +286,9 @@ export default {
         meganav.classList.add('d-none')
       }
     })
+  },
+  async fetch() {
+    this.coursesPayload = await this.$repositories.courses.fetchClassroomCourses()
   },
 }
 </script>

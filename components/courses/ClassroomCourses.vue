@@ -57,11 +57,15 @@
         <HelpSection :hide_main_section="true" />
 
         <div class="mt-sm-75 mt-50">
-          <CourseList
-            type="classroom"
-            :courses="coursesPayload"
-            :withToggle="true"
-          />
+          <button
+            class="button-secondary mb-50"
+            id="center-selector"
+            v-on:click="updateCenterCounter()"
+          >
+            {{ selectedCenter }}
+          </button>
+
+          <CourseList type="classroom" :courses="coursesPayload" />
         </div>
       </div>
     </div>
@@ -82,6 +86,8 @@ export default {
     return {
       coursesPayload: [],
       miniBanner: null,
+      centersArray: ['All', 'Pitampura', 'Noida'],
+      centerCounter: 0,
     }
   },
   components: {
@@ -95,6 +101,18 @@ export default {
   async fetch() {
     this.miniBanner = await this.$repositories.home.miniBanner()
     this.coursesPayload = await this.$repositories.courses.fetchClassroomCourses()
+  },
+  computed: {
+    selectedCenter() {
+      return this.centersArray[this.centerCounter]
+    },
+  },
+  methods: {
+    updateCenterCounter() {
+      if (this.centerCounter === this.centersArray.length - 1)
+        this.centerCounter = 0
+      else this.centerCounter++
+    },
   },
 }
 </script>

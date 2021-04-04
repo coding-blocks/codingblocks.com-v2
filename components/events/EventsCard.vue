@@ -57,7 +57,7 @@
         <div class="font-4">{{ eventTimeString }} Onwards</div>
       </div>
       <NuxtLink class="button-tertiary" :to="`/events/${event.slug}`">
-        Register Now
+        Explore
         <img
           src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
           class="ml-2"

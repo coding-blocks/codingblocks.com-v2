@@ -34,22 +34,32 @@
                 <img
                   src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/time_small.svg"
                 />
-                <div class="flex-1 heading-5 pl-30">8:00 PM Onwards</div>
+                <div class="flex-1 heading-5 pl-30">
+                  {{ eventTimeString }} Onwards
+                </div>
               </div>
               <div class="row no-gutters align-items-center">
                 <img
                   src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/venue_small.svg"
                 />
-                <div class="flex-1 heading-5 pl-30">Hackerblocks</div>
+                <div class="flex-1 heading-5 pl-30">{{ event.venue }}</div>
               </div>
             </div>
             <div class="row no-gutters align-items-center">
-              <button class="button-primary">Register Now</button>
+              <!-- Reroute this to form / login for registration -->
+              <NuxtLink class="button-primary" :to="`/events/${event.slug}`">
+                Register Now
+                <img
+                  src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg"
+                  class="ml-2"
+                />
+              </NuxtLink>
               <div class="flex-1 pl-40">
                 <div class="row no-gutters align-items-center">
                   <img
                     src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/users_small.svg"
                   />
+                  <!-- Number of registered here -->
                   <div class="flex-1 pl-15 heading-6">245 Registered</div>
                 </div>
               </div>
@@ -64,40 +74,22 @@
           <div class="col-md-6 mb-md-none mb-40 pr-md-60">
             <div class="heading-4 mb-md-50 mb-30 bold">About the Workshop</div>
             <div class="font-4 t-align-j">
-              Machine learning is the science of getting computers to act
-              without being explicitly programmed. In the past decade, machine
-              learning has given us self-driving cars, practical speech
-              recognition, effective web search, and very vastly improved
-              understanding of the human genome. Machine learning is so
-              pervasive today that you probably use it dozens of times a day
-              without knowing it. Many researchers also think it is the best way
-              to make progress towards human-level AI. In this class, you will
-              learn about the most effective machine learning techniques, and
-              gain practice implementing them and...more
+              {{ event.description }}
             </div>
           </div>
           <div class="col-md-6">
             <div class="heading-4 bold mb-md-50 mb-30">Mentors</div>
-            <div class="mb-md-50 mb-30 row no-gutters align-items-center">
+            <div
+              class="row no-gutters align-items-center mb-30"
+              v-for="(mentor, index) in event.mentors"
+              :key="index"
+            >
               <div class="s-100x100 round">
-                <img
-                  src="https://minio.codingblocks.com/amoeba/arnva-min.webp"
-                />
+                <img :src="mentor.img" />
               </div>
               <div class="flex-1 pl-30">
-                <div class="font-5 bold">Arnav Gupta</div>
-                <div class="mt-10 font-4 orange">Designation Here</div>
-              </div>
-            </div>
-            <div class="row no-gutters align-items-center">
-              <div class="s-100x100 round">
-                <img
-                  src="https://minio.codingblocks.com/amoeba/arnva-min.webp"
-                />
-              </div>
-              <div class="flex-1 pl-30">
-                <div class="font-5 bold">Arnav Gupta</div>
-                <div class="mt-10 font-4 orange">Designation Here</div>
+                <div class="font-5 bold">{{ mentor.name }}</div>
+                <div class="mt-10 font-4 orange">{{ mentor.designation }}</div>
               </div>
             </div>
           </div>
@@ -135,18 +127,6 @@ export default {
         return timeValue === '00' ? '12 AM' : `${timeValue} AM`
       }
     },
-    methods: {
-      getDateString(dateValue) {
-        return getDate(dateValue)
-      },
-      getMonthString(dateValue) {
-        return getMonth(dateValue)
-      },
-      getYearString(dateValue) {
-        return getYear(dateValue)
-      },
-    },
   },
 }
 </script>
-``

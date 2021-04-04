@@ -22,7 +22,8 @@
               CLASSROOM
             </div>
             <div class="mt-2 font-2 text-grey">
-              Batch starting <strong>{{ batch.startDate }}</strong>
+              Batch starting
+              <strong>{{ getDateString(batch.startDate) }}</strong>
             </div>
           </div>
         </div>
@@ -34,7 +35,7 @@
             <del class="text-grey bold">&#8377;&nbsp;{{ batch.mrp }}</del>
           </div>
           <div class="mt-10 text-grey font-2">
-            Enrollment ends {{ batch.enrollmentEndDate }}
+            Enrollment ends {{ getDateString(batch.enrollmentEndDate) }}
           </div>
         </div>
         <a :href="batch.buyLink" class="button-primary d-block t-align-c">
@@ -46,6 +47,8 @@
 </template>
 
 <script>
+import { formatTimestamp } from '~/utils/date'
+
 export default {
   props: {
     batches: {
@@ -101,6 +104,11 @@ export default {
         batch_1.classList.remove('active')
       })
     }
+  },
+  methods: {
+    getDateString(dateString) {
+      return formatTimestamp(dateString)
+    },
   },
 }
 </script>

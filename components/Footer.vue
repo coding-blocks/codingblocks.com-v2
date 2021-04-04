@@ -89,7 +89,9 @@
                     </a>
                   </div>
                   <div class="mb-30">
-                    <a href="#" class="font-4">Telegram Channel</a>
+                    <a href="https://t.me/CodingBlocksIN" class="font-4">
+                      Telegram Channel
+                    </a>
                   </div>
                   <div class="mb-30">
                     <a href="#" class="font-4">Study Material</a>
@@ -109,9 +111,12 @@
                 <div class="font-4 bold w-100">COMMUNITY</div>
                 <div class="w-100 mt-50">
                   <div class="mb-30">
-                    <a href="https://superhero.codingblocks.com/" class="font-4"
-                      >Campus Ambassador</a
+                    <a
+                      href="https://superhero.codingblocks.com/"
+                      class="font-4"
                     >
+                      Campus Ambassador
+                    </a>
                   </div>
                   <div class="mb-30">
                     <NuxtLink to="/events" class="font-4">
@@ -122,9 +127,9 @@
                     <a href="#" class="font-4">BOSS 2020</a>
                   </div>
                   <div>
-                    <a href="https://ide.codingblocks.com/" class="font-4"
-                      >Online IDE</a
-                    >
+                    <a href="https://ide.codingblocks.com/" class="font-4">
+                      Online IDE
+                    </a>
                   </div>
                 </div>
               </div>
@@ -154,7 +159,8 @@
         class="row no-gutters align-items-center justify-content-sm-between justify-content-center mt-50"
       >
         <img
-          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/blocks-footer-logo.svg"
+          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/cblogo-black.png"
+          style="height: 90px"
         />
         <div
           class="flex-1 t-align-xl-c t-align-r pl-xl-none pl-20 d-sm-block d-none"
@@ -169,37 +175,37 @@
         <div
           class="row no-gutters align-items-center justify-content-end d-xl-flex d-none"
         >
-          <a href="#">
+          <a href="https://cb.lk/twon">
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/twitter-black.svg"
               class="mr-20"
             />
           </a>
-          <a href="#">
+          <a href="https://cb.lk/fbon">
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/facebook-black.svg"
               class="mr-20"
             />
           </a>
-          <a href="#">
+          <a href="https://cb.lk/inon">
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/instagram-black.svg"
               class="mr-20"
             />
           </a>
-          <a href="#">
+          <a href="https://cb.lk/lion">
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/linkedin-black.svg"
               class="mr-20"
             />
           </a>
-          <a href="#">
+          <a href="https://cb.lk/yton">
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/youtube-black.svg"
               class="mr-20"
             />
           </a>
-          <a href="#">
+          <a href="https://cb.lk/ghon">
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/github-black.svg"
               class="mr-20"
@@ -210,37 +216,37 @@
       <div
         class="row no-gutters align-items-center justify-content-center d-xl-none d-flex mt-50"
       >
-        <a href="#">
+        <a href="https://cb.lk/twon">
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/twitter-black.svg"
             class="mr-20"
           />
         </a>
-        <a href="#">
+        <a href="https://cb.lk/fbon">
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/facebook-black.svg"
             class="mr-20"
           />
         </a>
-        <a href="#">
+        <a href="https://cb.lk/inon">
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/instagram-black.svg"
             class="mr-20"
           />
         </a>
-        <a href="#">
+        <a href="https://cb.lk/lion">
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/linkedin-black.svg"
             class="mr-20"
           />
         </a>
-        <a href="#">
+        <a href="https://cb.lk/yton">
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/youtube-black.svg"
             class="mr-20"
           />
         </a>
-        <a href="#">
+        <a href="https://cb.lk/ghon">
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/github-black.svg"
             class="mr-20"

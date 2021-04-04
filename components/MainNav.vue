@@ -343,7 +343,8 @@
       >
         <NuxtLink to="/">
           <img
-            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-logo.svg"
+            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/cblogo-black.png"
+            style="height: 60px"
           />
         </NuxtLink>
         <div class="flex-1 h-100">

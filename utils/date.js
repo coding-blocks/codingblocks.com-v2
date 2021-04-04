@@ -9,6 +9,9 @@ export const getDate = (timestampInSec, formatString = 'dd') =>
 export const getMonth = (timestampInSec, formatString = 'MMM') =>
   format(new Date(timestampInSec * 1000), formatString)
 
+export const getYear = (timestampInSec, formatString = 'yyyy') =>
+  format(new Date(timestampInSec * 1000), formatString)
+
 export const formatMonthFromTimestamp = (timestampInSec) =>
   formatTimestamp(timestampInSec, 'MMM yy')
 

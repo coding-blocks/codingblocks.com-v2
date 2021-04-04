@@ -7,7 +7,9 @@
             <img :src="event.img_link" class="w-90" />
           </div>
           <div class="col-md-6">
-            <div class="heading-6 mb-15">{{ event.eventType }}</div>
+            <div class="heading-6 mb-15">
+              {{ event.eventType.toUpperCase() }}
+            </div>
             <div class="heading-1 mb-10">{{ event.title }}</div>
             <div class="row no-gutters align-items-center">
               <img
@@ -15,11 +17,7 @@
               />
               <div class="heading-5 orange bold flex-1 pl-15">
                 Registration Closes on
-                {{
-                  `${getDateString(event.registrationEndDate)} ${getMonthString(
-                    event.registrationEndDate
-                  )}`
-                }}
+                {{ registrationDateStringComplete }}
               </div>
             </div>
             <img :src="event.img_link" class="d-md-none d-block my-30" />
@@ -28,7 +26,9 @@
                 <img
                   src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/date_small.svg"
                 />
-                <div class="flex-1 heading-5 pl-30">25th July 2020</div>
+                <div class="flex-1 heading-5 pl-30">
+                  {{ eventDateStringComplete }}
+                </div>
               </div>
               <div class="row no-gutters align-items-center mb-md-40 mb-20">
                 <img
@@ -108,7 +108,7 @@
 </template>
 
 <script>
-import { getDate, getMonth } from '~/utils/date'
+import { getDate, getMonth, getYear } from '~/utils/date'
 
 export default {
   async asyncData({ params, $repositories }) {
@@ -116,6 +116,16 @@ export default {
     return { event }
   },
   computed: {
+    eventDateStringComplete() {
+      return `${getDate(this.event.eventDate)} ${getMonth(
+        this.event.eventDate
+      )} ${getYear(this.event.eventDate)}`
+    },
+    registrationDateStringComplete() {
+      return `${getDate(this.event.registrationEndDate)} ${getMonth(
+        this.event.registrationEndDate
+      )} ${getYear(this.event.registrationEndDate)}`
+    },
     eventTimeString() {
       const timeValue = String(this.event.time).split(':')[0]
 
@@ -126,11 +136,14 @@ export default {
       }
     },
     methods: {
-      getDateString(dateVaue) {
+      getDateString(dateValue) {
         return getDate(dateValue)
       },
-      getMonthString(dateVaue) {
+      getMonthString(dateValue) {
         return getMonth(dateValue)
+      },
+      getYearString(dateValue) {
+        return getYear(dateValue)
       },
     },
   },

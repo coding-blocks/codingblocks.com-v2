@@ -42,7 +42,7 @@
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_events.svg"
             />
             <img
-              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/light-theme-vector.svg"
+              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/online-courses-vector.svg"
               class="d-lg-none d-block mt-50 mx-auto"
             />
             <!-- <div
@@ -70,9 +70,9 @@
               </div>
             </div> -->
           </div>
-          <div class="col-6 d-lg-block d-none">
+          <div class="d-lg-block d-none">
             <img
-              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/light-theme-vector.svg"
+              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/online-courses-vector.svg"
             />
           </div>
         </div>
@@ -93,7 +93,6 @@
     <TracksSection />
 
     <SuccessStoriesSection />
-
   </div>
 </template>
 

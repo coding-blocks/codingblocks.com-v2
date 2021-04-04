@@ -7,10 +7,24 @@
             <img :src="event.img_link" class="w-90" />
           </div>
           <div class="col-md-6">
-            <div class="heading-6 mb-15">
-              {{ event.eventType.toUpperCase() }}
+            <div class="row no-gutters align-items-center mb-15">
+              <img
+                :src="
+                  event.eventType === 'workshop'
+                    ? 'https://cb-thumbnails.s3.ap-south-1.amazonaws.com/workshop.svg'
+                    : 'https://cb-thumbnails.s3.ap-south-1.amazonaws.com/contest.svg'
+                "
+                alt=""
+              />
+              <div class="heading-6 ml-10">
+                {{ event.eventType.toUpperCase() }}
+              </div>
             </div>
-            <div class="heading-1 mb-10">{{ event.title }}</div>
+            <div
+              class="heading-1 mb-10 text-clamp-ellipses text-clamp-ellipses--3 word-wrap"
+            >
+              {{ event.title }}
+            </div>
             <div class="row no-gutters align-items-center">
               <img
                 src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/orange-disc.svg"
@@ -78,7 +92,7 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div class="heading-4 bold mb-md-50 mb-30">Mentors</div>
+            <div class="heading-4 bold mb-md-50 mb-30">Speakers</div>
             <div
               class="row no-gutters align-items-center mb-30"
               v-for="(mentor, index) in event.mentors"

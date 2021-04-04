@@ -2,7 +2,17 @@
   <div class="card card--equal-height">
     <div class="card__header card__header--border-highlight">
       <div class="flex-1">
-        <div class="heading-6">{{ event.eventType.toUpperCase() }}</div>
+        <div class="row no-gutters align-items-center">
+          <img
+            :src="
+              event.eventType === 'workshop'
+                ? 'https://cb-thumbnails.s3.ap-south-1.amazonaws.com/workshop.svg'
+                : 'https://cb-thumbnails.s3.ap-south-1.amazonaws.com/contest.svg'
+            "
+            alt=""
+          />
+          <div class="heading-6 ml-10">{{ event.eventType.toUpperCase() }}</div>
+        </div>
       </div>
       <div class="t-align-c">
         <div class="heading-4 bold">{{ eventDateString }}</div>
@@ -10,7 +20,9 @@
       </div>
     </div>
     <div>
-      <div class="heading-5 text-orange-dark-1 bold mb-10">
+      <div
+        class="heading-5 text-orange-dark-1 bold mb-10 text-clamp-ellipses text-clamp-ellipses--2 word-wrap"
+      >
         {{ event.title }}
       </div>
       <div class="font-4">
@@ -43,7 +55,7 @@
       <div class="row no-gutters">
         <div class="pr-40">
           <div>LEVEL</div>
-          <div class="font-5 bold mt-10">{{ event.level }}</div>
+          <div class="font-5 bold mt-10">{{ event.level.toUpperCase() }}</div>
         </div>
         <div>
           <div>QUESTIONS</div>

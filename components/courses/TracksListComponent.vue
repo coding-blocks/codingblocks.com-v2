@@ -67,6 +67,16 @@
       </div>
     </div>
   </div>
+  <div class="h-100 all-center" v-else>
+    <div>
+      <img
+        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/select-track-removebg-preview.png"
+      />
+      <div class="heading-5 t-align-c bold text-gradient-orange mt-10">
+        PLEASE SELECT A TRACK TO GET GOING!
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>

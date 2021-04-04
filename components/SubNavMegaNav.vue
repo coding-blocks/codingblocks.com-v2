@@ -15,12 +15,11 @@
               style="height: 15px"
             />
           </div>
-          <!-- <div
+          <div
             class="row no-gutters align-items-center mr-30 font-4 text-grey pointer"
           >
-            <div>Events</div>
             <NuxtLink to="/events"> Events </NuxtLink>
-          </div> -->
+          </div>
           <div
             class="row no-gutters align-items-center mr-30 font-4 text-grey pointer"
           >

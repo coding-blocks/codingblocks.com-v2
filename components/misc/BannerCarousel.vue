@@ -8,7 +8,7 @@
         :class="`bg-gradient-${banner.bg_color}`"
       >
         <div class="row align-items-center no-gutters">
-          <div class="col-xl-6 col-lg-8 z-pos t-align-lg-l t-align-c">
+          <div class="flex-1 z-pos t-align-lg-l t-align-c pl-lg-20">
             <div
               class="br-5 d-inline-block p-2 bg-gradient-orange-light mb-10 font-4 white"
             >
@@ -42,11 +42,8 @@
               </a>
             </div>
           </div>
+          <img :src="banner.img_url" class="d-lg-block d-none" />
         </div>
-        <img
-          :src="banner.img_url"
-          class="landing-page__section__vector d-lg-block d-none"
-        />
       </div>
     </div>
 

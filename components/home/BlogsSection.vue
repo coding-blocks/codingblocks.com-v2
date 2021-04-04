@@ -10,25 +10,25 @@
           />
         </div>
         <div class="col-3 d-md-block d-none t-align-r">
-          <button class="button-secondary">
+          <button class="button-primary">
             Read All Blogs
             <img
-              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
+              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg"
               class="ml-2"
             />
           </button>
         </div>
       </div>
-      <div class="mt-sm-50 mt-25">
+      <!-- <div class="mt-sm-50 mt-25">
         <div class="row no-gutters c-card-carousel-md">
           <BlogCard v-for="(blog, index) in blogs" :key="index" :blog="blog" />
         </div>
-      </div>
+      </div> -->
       <div class="d-md-none d-block mt-25 t-align-c">
-        <button class="button-secondary">
+        <button class="button-primary">
           Read All Blogs
           <img
-            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
+            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg"
             class="ml-2"
           />
         </button>
@@ -38,24 +38,24 @@
 </template>
 
 <script>
-import BlogCard from '@/components/home/BlogCard.vue'
+// import BlogCard from '@/components/home/BlogCard.vue'
 
-export default {
-  data() {
-    return {
-      blogs: [
-        {
-          title: 'AI to take over jobs?',
-          body:
-            'Something just like this is hampering my head space and fucking up! Something just like this is hampering my head space and fucking up! Something just like this is hampering my head space and fucking up! Something just like this is hampering my head space and fucking up!',
-          image: 'https://scx1.b-cdn.net/csz/news/800/2018/hack.jpg',
-          link: '',
-        },
-      ],
-    }
-  },
-  components: {
-    BlogCard,
-  },
-}
+// export default {
+//   data() {
+//     return {
+//       blogs: [
+//         {
+//           title: 'AI to take over jobs?',
+//           body:
+//             'Something just like this is hampering my head space and fucking up! Something just like this is hampering my head space and fucking up! Something just like this is hampering my head space and fucking up! Something just like this is hampering my head space and fucking up!',
+//           image: 'https://scx1.b-cdn.net/csz/news/800/2018/hack.jpg',
+//           link: '',
+//         },
+//       ],
+//     }
+//   },
+//   components: {
+//     BlogCard,
+//   },
+// }
 </script>

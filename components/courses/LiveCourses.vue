@@ -42,13 +42,13 @@
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_blog.svg"
             />
             <img
-              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/light-theme-vector.svg"
+              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/live-courses-vector.svg"
               class="d-lg-none d-block mt-50 mx-auto"
             />
           </div>
-          <div class="col-6 d-lg-block d-none">
+          <div class="d-lg-block d-none">
             <img
-              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/light-theme-vector.svg"
+              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/live-courses-vector.svg"
             />
           </div>
         </div>
@@ -62,7 +62,6 @@
     </div>
 
     <SuccessStoriesSection class="bg-white pt-none" />
-
   </div>
 </template>
 

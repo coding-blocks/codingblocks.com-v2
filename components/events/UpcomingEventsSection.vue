@@ -1,151 +1,76 @@
 <template>
-  <div class="landing-page__section">
+  <div class="landing-page__section pb-none">
     <div class="width-limiter">
       <div
         class="row no-gutters align-items-center justify-content-between mb-50"
       >
-        <h2 class="col-md-5 col-12 mb-md-none mb-25">Upcoming Events</h2>
+        <div class="col-md-5 col-12 mb-md-none mb-25 heading-4 bold">
+          Upcoming Events
+        </div>
         <div class="tabs-secondary">
-          <div class="tab active">All Events</div>
-          <div class="tab">Workshops</div>
-          <div class="tab">Contests</div>
+          <div
+            class="tab active"
+            v-on:click="updateEventsType($event)"
+            id="all"
+          >
+            All Events
+          </div>
+          <div class="tab" v-on:click="updateEventsType($event)" id="workshop">
+            Workshops
+          </div>
+          <div class="tab" v-on:click="updateEventsType($event)" id="contest">
+            Contests
+          </div>
         </div>
       </div>
       <div class="row no-gutters c-card-carousel-lg">
-        <div class="col-lg-4 col-md-7 col-sm-8 col-11 pr-xl-40 pr-sm-30 pr-20">
-          <div class="card card--equal-height">
-            <div class="card__header card__header--border-highlight">
-              <div class="flex-1">
-                <div class="heading-6">WORKSHOP</div>
-              </div>
-              <div class="t-align-c">
-                <div class="heading-4 bold">12</div>
-                <div class="font-4">MAR</div>
-              </div>
-            </div>
-            <div>
-              <div class="heading-5 text-orange-dark-1 bold mb-10">
-                Machine Learning
-              </div>
-              <div class="font-4">
-                Learn how to build apps like spotify, netflix and more.
-              </div>
-            </div>
-            <div class="card__mentor-container">
-              <div class="mentor-row my-50">
-                <div
-                  class="mentor-row__text-container align-self-center pr-100"
-                >
-                  <div>MENTOR</div>
-                  <div class="font-5 bold mt-10">Arnav G, Prateek N</div>
-                </div>
-                <div
-                  class="mentor-row__image-container mentor-row__image-container--mentor-2"
-                >
-                  <img
-                    src="https://minio.codingblocks.com/amoeba/4078be4e-72e1-451a-9c4e-9223d2bbcc2c"
-                    alt="photo ofRishab Kapoor"
-                    class="mentor-row__image-container__mentor-image s-80x80"
-                  />
-                  <img
-                    src="https://minio.codingblocks.com/amoeba/4078be4e-72e1-451a-9c4e-9223d2bbcc2c"
-                    alt="photo ofRishab Kapoor"
-                    class="mentor-row__image-container__mentor-image s-80x80"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="card__footer card__footer--border-highlight">
-              <div class="flex-1">
-                <div class="font-4">8:00 PM Onwards</div>
-              </div>
-              <div class="button-tertiary">
-                Register Now
-                <img
-                  src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
-                  class="ml-2"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-7 col-sm-8 col-11 px-xl-20 px-sm-15 px-10">
-          <div class="card card--equal-height">
-            <div class="card__header card__header--border-highlight">
-              <div class="flex-1">
-                <div class="heading-6">CONTEST</div>
-              </div>
-              <div class="t-align-c">
-                <div class="heading-4 bold">28</div>
-                <div class="font-4">JAN</div>
-              </div>
-            </div>
-            <div>
-              <div class="heading-5 text-orange-dark-1 bold mb-10">
-                CODEWARS
-              </div>
-              <div class="font-4">
-                Build apps like spotify, netflix and win amazing prizes.
-              </div>
-            </div>
-            <div class="mt-50">
-              <div class="row no-gutters">
-                <div class="pr-40">
-                  <div>LEVEL</div>
-                  <div class="font-5 bold mt-10">Medium</div>
-                </div>
-                <div>
-                  <div>QUESTIONS</div>
-                  <div class="font-5 bold mt-10">10</div>
-                </div>
-              </div>
-            </div>
-            <div class="card__footer card__footer--border-highlight">
-              <div class="flex-1">
-                <div class="font-4">8:00 PM Onwards</div>
-              </div>
-              <div class="button-tertiary">
-                Register Now
-                <img
-                  src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
-                  class="ml-2"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-7 col-sm-8 col-11 pl-xl-40 pl-sm-30 pl-20">
-          <div class="card card--equal-height">
-            <div class="card__header">
-              <img
-                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/hourglass.svg"
-              />
-            </div>
-            <div>
-              <h5 class="text-yellow">Stay tuned!!</h5>
-              <div class="mt-10">
-                <div class="font-4">
-                  We will be coming up with more contests and workshops.
-                  <br />
-                  <br />
-                  Meanwhile, improve your skills on hackerblocks.
-                </div>
-              </div>
-            </div>
-            <div
-              class="card__footer card__footer--border-highlight justify-content-end"
-            >
-              <div class="button-tertiary">
-                Visit HackerBlocks
-                <img
-                  src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
-                  class="ml-2"
-                />
-              </div>
-            </div>
-          </div>
+        <div
+          class="col-lg-4 col-md-7 col-sm-8 col-11 pr-xl-40 pr-sm-30 pr-20 mb-50"
+          v-for="(event, index) in finalEventsPayload"
+          :key="index"
+        >
+          <EventsCard :event="event" />
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+import EventsCard from '@/components/events/EventsCard.vue'
+
+export default {
+  data() {
+    return {
+      eventsPayload: [],
+      selectedEventType: 'all',
+    }
+  },
+  components: {
+    EventsCard,
+  },
+  async fetch() {
+    this.eventsPayload = await this.$repositories.events.fetchEvents()
+  },
+  computed: {
+    finalEventsPayload() {
+      return this.eventsPayload.filter(
+        (event) =>
+          event.eventType === this.selectedEventType ||
+          this.selectedEventType === 'all'
+      )
+    },
+  },
+  methods: {
+    updateEventsType(event) {
+      document.querySelectorAll('.tab').forEach((tab) => {
+        tab.classList.remove('active')
+      })
+
+      event.currentTarget.classList.add('active')
+
+      this.selectedEventType = event.currentTarget.id
+    },
+  },
+}
+</script>

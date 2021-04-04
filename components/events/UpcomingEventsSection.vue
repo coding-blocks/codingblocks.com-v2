@@ -1,5 +1,5 @@
 <template>
-  <div class="landing-page__section">
+  <div class="landing-page__section pb-none">
     <div class="width-limiter">
       <div
         class="row no-gutters align-items-center justify-content-between mb-50"
@@ -25,7 +25,7 @@
       </div>
       <div class="row no-gutters c-card-carousel-lg">
         <div
-          class="col-lg-4 col-md-7 col-sm-8 col-11 pr-xl-40 pr-sm-30 pr-20"
+          class="col-lg-4 col-md-7 col-sm-8 col-11 pr-xl-40 pr-sm-30 pr-20 mb-50"
           v-for="(event, index) in finalEventsPayload"
           :key="index"
         >

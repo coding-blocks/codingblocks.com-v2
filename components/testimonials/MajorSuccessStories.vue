@@ -38,10 +38,10 @@ export default {
   },
   computed: {
     majorStories() {
-      return this.stories.slice(0, 3)
+      return this.stories.slice(0, 5)
     },
     otherStories() {
-      return this.stories.slice(3)
+      return this.stories.slice(5)
     },
   },
   components: {

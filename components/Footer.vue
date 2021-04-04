@@ -95,7 +95,9 @@
                     <a href="#" class="font-4">Study Material</a>
                   </div>
                   <div>
-                    <a href="#" class="font-4">Career Advice</a>
+                    <a href="#" class="font-4" v-on:click="setShowModal(true)">
+                      Career Advice
+                    </a>
                   </div>
                 </div>
               </div>
@@ -171,5 +173,37 @@
         />
       </div>
     </div>
+    <ModalForm v-if="showModal" @close="setShowModal(false)">
+      <ConsultationForm />
+    </ModalForm>
   </div>
 </template>
+
+<script>
+import ModalForm from '@/components/misc/ModalForm.vue'
+import ConsultationForm from '@/components/misc/ConsultationForm.vue'
+
+export default {
+  data() {
+    return {
+      showModal: false,
+    }
+  },
+  components: {
+    ModalForm,
+    ConsultationForm,
+  },
+  methods: {
+    setShowModal(value) {
+      this.showModal = value
+    },
+  },
+}
+</script>
+
+<style scoped>
+fieldset {
+  border: none !important;
+  margin: 0 !important;
+}
+</style>

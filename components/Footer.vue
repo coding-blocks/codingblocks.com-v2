@@ -109,10 +109,14 @@
                 <div class="font-4 bold w-100">COMMUNITY</div>
                 <div class="w-100 mt-50">
                   <div class="mb-30">
-                    <a href="#" class="font-4">Campus Ambassador</a>
+                    <a href="https://superhero.codingblocks.com/" class="font-4"
+                      >Campus Ambassador</a
+                    >
                   </div>
                   <div class="mb-30">
-                    <a href="#" class="font-4">Events and Workshops</a>
+                    <NuxtLink to="/events" class="font-4">
+                      Events and Workshops
+                    </NuxtLink>
                   </div>
                   <div class="mb-30">
                     <a href="#" class="font-4">BOSS 2020</a>
@@ -162,15 +166,86 @@
           <div class="font-4 mb-10">Privacy Policy | Terms of Service</div>
           <div class="font-4">Copyright 2020 - Coding Blocks Pvt. Ltd.</div>
         </div>
-        <img
-          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/socials.svg"
-          class="d-xl-block d-none"
-        />
+        <div
+          class="row no-gutters align-items-center justify-content-end d-xl-flex d-none"
+        >
+          <a href="#">
+            <img
+              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/twitter-black.svg"
+              class="mr-20"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/facebook-black.svg"
+              class="mr-20"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/instagram-black.svg"
+              class="mr-20"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/linkedin-black.svg"
+              class="mr-20"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/youtube-black.svg"
+              class="mr-20"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/github-black.svg"
+              class="mr-20"
+            />
+          </a>
+        </div>
       </div>
-      <div class="mt-50 d-xl-none d-block t-align-c">
-        <img
-          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/socials.svg"
-        />
+      <div
+        class="row no-gutters align-items-center justify-content-center d-xl-none d-flex mt-50"
+      >
+        <a href="#">
+          <img
+            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/twitter-black.svg"
+            class="mr-20"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/facebook-black.svg"
+            class="mr-20"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/instagram-black.svg"
+            class="mr-20"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/linkedin-black.svg"
+            class="mr-20"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/youtube-black.svg"
+            class="mr-20"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/github-black.svg"
+            class="mr-20"
+          />
+        </a>
       </div>
     </div>
     <ModalForm v-if="showModal" @close="setShowModal(false)">

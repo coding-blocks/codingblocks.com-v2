@@ -5,8 +5,8 @@
         <div class="heading-6">{{ event.eventType.toUpperCase() }}</div>
       </div>
       <div class="t-align-c">
-        <div class="heading-4 bold">{{ event.eventDate }}</div>
-        <div class="font-4">MAR</div>
+        <div class="heading-4 bold">{{ eventDateString }}</div>
+        <div class="font-4">{{ eventMonthString }}</div>
       </div>
     </div>
     <div>
@@ -54,7 +54,7 @@
 
     <div class="card__footer card__footer--border-highlight">
       <div class="flex-1">
-        <div class="font-4">{{ event.time }} Onwards</div>
+        <div class="font-4">{{ eventTimeString }} Onwards</div>
       </div>
       <NuxtLink class="button-tertiary" :to="`/events/${event.slug}`">
         Register Now
@@ -68,7 +68,26 @@
 </template>
 
 <script>
+import { getDate, getMonth } from '~/utils/date'
+
 export default {
   props: ['event'],
+  computed: {
+    eventDateString() {
+      return getDate(this.event.eventDate)
+    },
+    eventMonthString() {
+      return getMonth(this.event.eventDate)
+    },
+    eventTimeString() {
+      const timeValue = String(this.event.time).split(':')[0]
+
+      if (timeValue >= '12') {
+        return timeValue === '12' ? '12 PM' : `${timeValue - 12} PM`
+      } else {
+        return timeValue === '00' ? '12 AM' : `${timeValue} AM`
+      }
+    },
+  },
 }
 </script>

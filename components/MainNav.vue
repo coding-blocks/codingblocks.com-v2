@@ -169,35 +169,17 @@
               CLASSROOM COURSES
             </div>
             <div class="mt-35 mb-15">
-              <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#"> C++ Master Course </a>
-              </div>
-              <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#"> JAVA Master Course </a>
-              </div>
-              <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#">
-                  Python for Developers
-                </a>
-              </div>
-              <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#">
-                  Web Dev with Python - Django
-                </a>
-              </div>
-              <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer mr-20" href="#"> Data Science </a>
-                <div
-                  class="bg-gradient-yellow white font-1 p-1 d-inline-block"
-                  style="border-radius: 2px"
+              <div
+                class="mb-20 row no-gutters align-items-center"
+                v-for="(course, index) in classroomCoursesPayload"
+                :key="index"
+              >
+                <NuxtLink
+                  class="font-4 bold pointer"
+                  :to="`/courses/${course.slug}`"
                 >
-                  NEW
-                </div>
-              </div>
-              <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#">
-                  Competitive Programming
-                </a>
+                  {{ course.title }}
+                </NuxtLink>
               </div>
             </div>
             <NuxtLink
@@ -218,29 +200,17 @@
             />
             <div class="font-3 bold mt-15 text-grey-light-1">LIVE COURSES</div>
             <div class="mt-35 mb-15">
-              <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#"> C++ Master Course </a>
-              </div>
-              <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#"> JAVA Master Course </a>
-              </div>
-              <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#">
-                  Python for Developers
-                </a>
-              </div>
-              <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#">
-                  Web Dev with Python - Django
-                </a>
-              </div>
-              <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#"> Data Science </a>
-              </div>
-              <div class="mb-20 row no-gutters align-items-center">
-                <a class="font-4 bold pointer" href="#">
-                  Competitive Programming
-                </a>
+              <div
+                class="mb-20 row no-gutters align-items-center"
+                v-for="(course, index) in liveCoursesPayload"
+                :key="index"
+              >
+                <NuxtLink
+                  class="font-4 bold pointer"
+                  :to="`/courses/${course.slug}`"
+                >
+                  {{ course.title }}
+                </NuxtLink>
               </div>
             </div>
             <NuxtLink
@@ -287,16 +257,18 @@
         </div>
       </div>
       <div class="hamburger-nav__accordion-menu-element">
-        <input type="checkbox" id="check2" />
-        <label
-          class="hamburger-nav__accordion-menu-element__header"
-          for="check2"
-        >
-          <div class="flex-1 pr-20 font-5">Events</div>
-          <!-- <img
+        <NuxtLink to="/events">
+          <input type="checkbox" id="check2" />
+          <label
+            class="hamburger-nav__accordion-menu-element__header"
+            for="check2"
+          >
+            <div class="flex-1 pr-20 font-5">Events</div>
+            <!-- <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/accordion-open-grey.svg"
           /> -->
-        </label>
+          </label>
+        </NuxtLink>
       </div>
       <a href="https://blog.codingblocks.com/" target="_blank">
         <div class="hamburger-nav__accordion-menu-element">
@@ -343,7 +315,8 @@
       >
         <NuxtLink to="/">
           <img
-            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-logo.svg"
+            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/cblogo-black.png"
+            style="height: 60px"
           />
         </NuxtLink>
         <div class="flex-1 h-100">
@@ -413,6 +386,12 @@
 
 <script>
 export default {
+  data() {
+    return {
+      classroomCoursesPayload: [],
+      liveCoursesPayload: [],
+    }
+  },
   mounted() {
     const hamburgerOpenToggle = document.querySelector('#hamburger-open')
     const hamburgerCloseToggle = document.querySelector('#hamburger-close')
@@ -425,6 +404,10 @@ export default {
     hamburgerCloseToggle.addEventListener('click', () => {
       hamburgerNav.classList.add('hamburger-nav--hidden')
     })
+  },
+  async fetch() {
+    this.classroomCoursesPayload = await this.$repositories.courses.fetchClassroomCourses()
+    this.liveCoursesPayload = await this.$repositories.courses.fetchLiveCourses()
   },
 }
 </script>

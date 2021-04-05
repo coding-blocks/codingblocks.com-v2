@@ -4,7 +4,7 @@
       <div
         class="row no-gutters align-items-center justify-content-between pb-sm-50 pb-30"
       >
-        <div class="heading-4 bold flex-1">
+        <div class="heading-4 bold flex-1 pr-20">
           Confused about which course to pick?
         </div>
         <button class="button-secondary" id="help-section-toggle">

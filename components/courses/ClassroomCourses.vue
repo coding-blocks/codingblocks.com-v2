@@ -3,7 +3,7 @@
     <div class="landing-page__section">
       <div class="width-limiter">
         <div class="row no-gutters align-items-center justify-content-between">
-          <div class="col-lg-6 t-align-lg-l t-align-c">
+          <div class="flex-1 pr-20 t-align-lg-l t-align-c">
             <!-- Banner for smaller screens -->
             <div
               v-if="miniBanner"

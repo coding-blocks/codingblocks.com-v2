@@ -1,5 +1,5 @@
 <template>
-  <div>s
+  <div>
     <div class="mt-50 px-xl-100 px-lg-85 px-md-60 px-sm-50 px-25">
       <div class="width-limiter">
         <div class="tabs-primary w-100 justify-content-between">

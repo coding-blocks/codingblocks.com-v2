@@ -8,7 +8,7 @@
         :class="`bg-gradient-${banner.bg_color}`"
       >
         <div class="row align-items-center no-gutters">
-          <div class="flex-1 z-pos t-align-lg-l t-align-c pl-lg-20">
+          <div class="flex-1 z-pos t-align-lg-l t-align-c pr-lg-20">
             <div
               class="br-5 d-inline-block p-2 bg-gradient-orange-light mb-10 font-4 white"
             >

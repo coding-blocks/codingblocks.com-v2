@@ -42,7 +42,9 @@
               </a>
             </div>
           </div>
-          <img :src="banner.img_url" class="d-lg-block d-none" />
+          <div class="col-5 d-lg-block d-none">
+            <img :src="banner.img_url" />
+          </div>
         </div>
       </div>
     </div>

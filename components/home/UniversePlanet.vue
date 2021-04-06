@@ -5,7 +5,7 @@
       transform: transformStyle,
     }"
   >
-    <img :src="planet[counter]" />
+    <img :src="planet.img" />
   </div>
 </template>
 

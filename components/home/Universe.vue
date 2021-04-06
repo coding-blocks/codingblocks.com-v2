@@ -1,14 +1,15 @@
 <template>
   <client-only>
     <div
+      v-if="stars"
       class="universe"
       :class="[size === 'small' ? 'universe--small mx-auto' : '']"
     >
       <div class="universe__star p-20">
-        <img :src="star[counter]" />
+        <img :src="stars[counter].logo" />
       </div>
-      <div v-for="(orbit, index) in orbits" :key="index">
-        <UniverseOrbit :orbit="orbit" />
+      <div v-for="(star, index) in stars" :key="index">
+        <UniverseOrbit :stories="star.success_stories" :index="index" />
       </div>
     </div>
   </client-only>
@@ -21,87 +22,25 @@ export default {
   components: {
     UniverseOrbit,
   },
+  props: ['size'],
   data() {
     return {
       counter: 0,
-      star: [
-        'https://cb-thumbnails.s3.ap-south-1.amazonaws.com/js-cyan.svg',
-        'https://www.freepnglogos.com/uploads/target-png/target-logo-png-transparent-svg-vector-bie-supply-35.png',
-        'https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png',
-      ],
-      orbits: [
-        {
-          index: 0,
-          planets: [
-            [
-              'https://minio.codingblocks.com/img/pulkit-min.webp',
-              'https://minio.codingblocks.com/amoeba/arnva-min.webp',
-              'https://minio.codingblocks.com/amoeba/prateek-min.webp',
-            ],
-            [
-              'https://minio.codingblocks.com/img/pulkit-min.webp',
-              'https://minio.codingblocks.com/amoeba/arnva-min.webp',
-              'https://minio.codingblocks.com/amoeba/prateek-min.webp',
-            ],
-          ],
-        },
-        {
-          index: 1,
-          planets: [
-            [
-              'https://minio.codingblocks.com/img/pulkit-min.webp',
-              'https://minio.codingblocks.com/amoeba/arnva-min.webp',
-              'https://minio.codingblocks.com/amoeba/prateek-min.webp',
-            ],
-            [
-              'https://minio.codingblocks.com/img/pulkit-min.webp',
-              'https://minio.codingblocks.com/amoeba/arnva-min.webp',
-              'https://minio.codingblocks.com/amoeba/prateek-min.webp',
-            ],
-            [
-              'https://minio.codingblocks.com/img/pulkit-min.webp',
-              'https://minio.codingblocks.com/amoeba/arnva-min.webp',
-              'https://minio.codingblocks.com/amoeba/prateek-min.webp',
-            ],
-          ],
-        },
-        {
-          index: 2,
-          planets: [
-            [
-              'https://minio.codingblocks.com/img/pulkit-min.webp',
-              'https://minio.codingblocks.com/amoeba/arnva-min.webp',
-              'https://minio.codingblocks.com/amoeba/prateek-min.webp',
-            ],
-            [
-              'https://minio.codingblocks.com/img/pulkit-min.webp',
-              'https://minio.codingblocks.com/amoeba/arnva-min.webp',
-              'https://minio.codingblocks.com/amoeba/prateek-min.webp',
-            ],
-            [
-              'https://minio.codingblocks.com/img/pulkit-min.webp',
-              'https://minio.codingblocks.com/amoeba/arnva-min.webp',
-              'https://minio.codingblocks.com/amoeba/prateek-min.webp',
-            ],
-            [
-              'https://minio.codingblocks.com/img/pulkit-min.webp',
-              'https://minio.codingblocks.com/amoeba/arnva-min.webp',
-              'https://minio.codingblocks.com/amoeba/prateek-min.webp',
-            ],
-          ],
-        },
-      ],
+      stars: null,
     }
   },
   mounted() {
     setInterval(() => {
-      if (this.counter < this.star.length - 1) {
+      if (this.counter < this.stars.length - 1) {
         this.counter++
       } else {
         this.counter = 0
       }
     }, 4000)
   },
-  props: ['size'],
+
+  async fetch() {
+    this.stars = await this.$repositories.home.fetchUniverse()
+  },
 }
 </script>

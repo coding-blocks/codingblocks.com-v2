@@ -12,7 +12,7 @@ export default ($axios, $api) => ({
   },
 
   async successStories() {
-    const response = await $axios.get(`successStories`)
+    const response = await $axios.get(`topStories`)
     return response.data
   },
 
@@ -60,5 +60,10 @@ export default ($axios, $api) => ({
       },
     })
     return response.data.results
+  },
+
+  async fetchUniverse() {
+    const response = await $axios.get(`universe`)
+    return response.data
   },
 })

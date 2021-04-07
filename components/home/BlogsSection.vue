@@ -10,13 +10,17 @@
           />
         </div>
         <div class="col-3 d-md-block d-none t-align-r">
-          <button class="button-primary">
+          <a
+            class="button-primary"
+            href="https://blog.codingblocks.com/"
+            target="_blank"
+          >
             Read All Blogs
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg"
               class="ml-2"
             />
-          </button>
+          </a>
         </div>
       </div>
       <!-- <div class="mt-sm-50 mt-25">
@@ -25,13 +29,17 @@
         </div>
       </div> -->
       <div class="d-md-none d-block mt-25 t-align-c">
-        <button class="button-primary">
+        <a
+          class="button-primary"
+          href="https://blog.codingblocks.com/"
+          target="_blank"
+        >
           Read All Blogs
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg"
             class="ml-2"
           />
-        </button>
+        </a>
       </div>
     </div>
   </div>

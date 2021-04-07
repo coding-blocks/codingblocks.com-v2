@@ -12,9 +12,7 @@
             <div
               class="heading-2 bold text-orange mb-3 text-clamp-ellipses text-clamp-ellipses--3"
             >
-              {{
-                `${story.name} placed at ${story.company.name}, ${story.lpa}LPA`
-              }}
+              {{ `${story.name} placed at ${story.company.name}` }}
             </div>
             <div class="heading-4 bold">{{ story.subTitle }}</div>
           </div>
@@ -26,9 +24,7 @@
           <div
             class="heading-2 bold text-orange mb-3 text-clamp-ellipses text-clamp-ellipses--3"
           >
-            {{
-              `${story.name} placed at ${story.company.name}, ${story.lpa}LPA`
-            }}
+            {{ `${story.name} placed at ${story.company.name}` }}
           </div>
           <div class="heading-4 bold mb-40">
             {{ story.subTitle }}

@@ -15,7 +15,7 @@
       <div
         class="heading-5 bold mb-1 text-clamp-ellipses text-clamp-ellipses--2"
       >
-        {{ `${story.name} placed at ${story.company.name}, ${story.lpa}LPA` }}
+        {{ `${story.name} placed at ${story.company.name}` }}
       </div>
       <div class="font-3 text-orange mb-20">{{ story.college }}</div>
       <div class="font-4">

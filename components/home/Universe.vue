@@ -8,8 +8,8 @@
       <div class="universe__star p-20">
         <img :src="stars[counter].logo" />
       </div>
-      <div v-for="(star, index) in stars" :key="index">
-        <UniverseOrbit :stories="star.success_stories" :index="index" />
+      <div v-for="(star, index) in currentStar" :key="index">
+        <UniverseOrbit :orbit="star" :index="index" />
       </div>
     </div>
   </client-only>
@@ -27,6 +27,7 @@ export default {
     return {
       counter: 0,
       stars: null,
+      currentStar: null,
     }
   },
   mounted() {
@@ -37,6 +38,16 @@ export default {
         this.counter = 0
       }
     }, 4000)
+  },
+  watch: {
+    counter: async function (val) {
+      let star = this.stars[val].success_stories
+      var arrayOfArrays = []
+      arrayOfArrays.push(star.slice(0, 2))
+      arrayOfArrays.push(star.slice(2, 5))
+      arrayOfArrays.push(star.slice(5))
+      this.currentStar = arrayOfArrays
+    },
   },
 
   async fetch() {

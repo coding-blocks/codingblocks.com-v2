@@ -18,7 +18,7 @@
 import UniversePlanet from '@/components/home/UniversePlanet.vue'
 
 export default {
-  props: ['stories', 'index'],
+  props: ['orbit', 'index'],
   components: {
     UniversePlanet,
   },
@@ -36,15 +36,6 @@ export default {
     }, 20)
   },
   computed: {
-    orbit() {
-      if (this.index == 0) {
-        return this.stories.slice(0, 3)
-      }else if (this.index == 1) {
-        return this.stories.slice(0, 5)
-      }else {
-        return this.stories
-      }
-    },
     difference() {
       return 360 / this.orbit.length
     },

@@ -375,7 +375,7 @@
               class="button-primary ml-20 d-md-block d-none"
               target="_blank"
             >
-             {{ user?   "Login / Signup":user.name }}
+             {{ user? user.firstname :  "Login / Signup" }}
             </a>
           </div>
         </div>
@@ -412,7 +412,6 @@ export default {
     this.user = await fetch(
         'https://account.codingblocks.com/api/users/me',  { credentials: 'include' }
       ).then(res => res.json())
-      debugger;
   },
 }
 </script>

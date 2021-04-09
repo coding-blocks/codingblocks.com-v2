@@ -85,7 +85,7 @@ export default {
         '.slideshow-container__slide'
       ).length
       --this.counter
-      if (this.counter === 0) this.counter = carouselLength
+      if (this.counter < 0) this.counter = carouselLength - 1
 
       carousel.scrollTo({
         top: 0,
@@ -100,7 +100,7 @@ export default {
         '.slideshow-container__slide'
       ).length
       ++this.counter
-      if (this.counter === carouselLength) this.counter = 0
+      if (this.counter > carouselLength - 1) this.counter = 0
 
       carousel.scrollTo({
         top: 0,

@@ -1,19 +1,21 @@
 <template>
   <div>
-    <MainNav />
+    <client-only>
+      <MainNav />
 
-    <SubNavMegaNav />
+      <SubNavMegaNav />
+    </client-only>
   </div>
 </template>
 
 <script>
-import MainNav from "@/components/MainNav.vue";
-import SubNavMegaNav from "@/components/SubNavMegaNav.vue";
+import MainNav from '@/components/MainNav.vue'
+import SubNavMegaNav from '@/components/SubNavMegaNav.vue'
 
 export default {
   components: {
     MainNav,
     SubNavMegaNav,
   },
-};
+}
 </script>

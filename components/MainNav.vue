@@ -16,7 +16,16 @@
           id="hamburger-close"
         />
       </div>
-      <div class="t-align-c py-20">
+      <div v-if="user" class="t-align-c py-20">
+        <a
+          href="https://account.codingblocks.com/login"
+          target="_blank"
+          class="button-primary"
+        >
+          {{ user.firstname }}
+        </a>
+      </div>
+      <div v-else class="t-align-c py-20">
         <a
           href="https://account.codingblocks.com/login"
           target="_blank"
@@ -370,13 +379,18 @@
                 </div>
               </div>
             </div>
-            <a
-              href="https://account.codingblocks.com/login"
-              class="button-primary ml-20 d-md-block d-none"
-              target="_blank"
-            >
-             {{ user? user.firstname :  "Login / Signup" }}
-            </a>
+            <div v-if="user">
+              {{ user.firstname }}
+            </div>
+            <div v-else>
+              <a
+                href="https://account.codingblocks.com/login"
+                class="button-primary ml-20 d-md-block d-none"
+                target="_blank"
+              >
+                Login / Signup
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -390,7 +404,7 @@ export default {
     return {
       classroomCoursesPayload: [],
       liveCoursesPayload: [],
-      user:null
+      user: null,
     }
   },
   mounted() {
@@ -409,9 +423,9 @@ export default {
   async fetch() {
     this.classroomCoursesPayload = await this.$repositories.courses.fetchClassroomCourses()
     this.liveCoursesPayload = await this.$repositories.courses.fetchLiveCourses()
-    this.user = await fetch(
-        'https://account.codingblocks.com/api/users/me',  { credentials: 'include' }
-      ).then(res => res.json())
+    this.user = await fetch('https://account.codingblocks.com/api/users/me', {
+      credentials: 'include',
+    }).then((res) => res.json())
   },
 }
 </script>

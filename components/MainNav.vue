@@ -375,7 +375,7 @@
               class="button-primary ml-20 d-md-block d-none"
               target="_blank"
             >
-              Login / Signup
+             {{ user?   "Login / Signup":user.name }}
             </a>
           </div>
         </div>
@@ -390,6 +390,7 @@ export default {
     return {
       classroomCoursesPayload: [],
       liveCoursesPayload: [],
+      user:null
     }
   },
   mounted() {
@@ -408,6 +409,10 @@ export default {
   async fetch() {
     this.classroomCoursesPayload = await this.$repositories.courses.fetchClassroomCourses()
     this.liveCoursesPayload = await this.$repositories.courses.fetchLiveCourses()
+    this.user = await fetch(
+        'https://account.codingblocks.com/api/users/me',  { credentials: 'include' }
+      ).then(res => res.json())
+      debugger;
   },
 }
 </script>

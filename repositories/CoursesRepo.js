@@ -13,8 +13,16 @@ export default ($axios, $api) => ({
     return response.data
   },
 
-  async fetchClassroomCourses() {
-    const response = await $axios.get(`courses?centres=pitampura,noida`)
+  async fetchClassroomCourses(selectedCenter = 'all') {
+    const response = await $axios.get(
+      `courses?centres=${
+        selectedCenter == 'all'
+          ? 'pitampura,noida'
+          : selectedCenter == 'pitampura'
+          ? 'pitampura'
+          : 'noida'
+      }`
+    )
     return response.data
   },
 
@@ -34,8 +42,10 @@ export default ($axios, $api) => ({
     return payload.data
   },
 
-  async fetchCourseForTrack(trackId){
-    const response = await $api.get(`career_tracks/${trackId}/relationships/courses`)
+  async fetchCourseForTrack(trackId) {
+    const response = await $api.get(
+      `career_tracks/${trackId}/relationships/courses`
+    )
     const payload = deserialize(response.data)
     return payload.data
   },

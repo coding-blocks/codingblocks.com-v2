@@ -61,8 +61,9 @@
             class="button-secondary mb-50"
             id="center-selector"
             v-on:click="updateCenterCounter()"
+            @click="$fetch"
           >
-            {{ selectedCenter }}
+            {{ selectedCenter.toUpperCase() }}
           </button>
 
           <CourseList type="classroom" :courses="coursesPayload" />
@@ -86,7 +87,7 @@ export default {
     return {
       coursesPayload: [],
       miniBanner: null,
-      centersArray: ['All', 'Pitampura', 'Noida'],
+      centersArray: ['all', 'pitampura', 'noida'],
       centerCounter: 0,
     }
   },
@@ -100,7 +101,9 @@ export default {
   },
   async fetch() {
     this.miniBanner = await this.$repositories.home.miniBanner()
-    this.coursesPayload = await this.$repositories.courses.fetchClassroomCourses()
+    this.coursesPayload = await this.$repositories.courses.fetchClassroomCourses(
+      this.selectedCenter
+    )
   },
   computed: {
     selectedCenter() {

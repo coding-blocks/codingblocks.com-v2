@@ -13,16 +13,8 @@ export default ($axios, $api) => ({
     return response.data
   },
 
-  async fetchClassroomCourses(selectedCenter = 'all') {
-    const response = await $axios.get(
-      `courses?centres=${
-        selectedCenter == 'all'
-          ? 'pitampura,noida'
-          : selectedCenter == 'pitampura'
-          ? 'pitampura'
-          : 'noida'
-      }`
-    )
+  async fetchClassroomCourses(selectedCenter = 'pitampura,noida') {
+    const response = await $axios.get(`courses?centres=${selectedCenter}`)
     return response.data
   },
 

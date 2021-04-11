@@ -102,12 +102,19 @@ export default {
   async fetch() {
     this.miniBanner = await this.$repositories.home.miniBanner()
     this.coursesPayload = await this.$repositories.courses.fetchClassroomCourses(
-      this.selectedCenter
+      this.centerQuery
     )
   },
   computed: {
     selectedCenter() {
       return this.centersArray[this.centerCounter]
+    },
+    centerQuery() {
+      return this.selectedCenter == 'all'
+        ? 'pitampura,noida'
+        : this.selectedCenter == 'pitampura'
+        ? 'pitampura'
+        : 'noida'
     },
   },
   methods: {

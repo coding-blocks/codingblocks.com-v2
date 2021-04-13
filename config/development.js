@@ -4,4 +4,7 @@ module.exports = {
     port: 8000,
     prefix: '/api',
   },
+  REDIRECT_URI:'http://localhost:3000',
+  REDIRECT_BACKEND_URI:'http://localhost:8000'
+
 }

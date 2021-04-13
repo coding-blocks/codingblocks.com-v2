@@ -115,6 +115,7 @@
 
 <script>
 import { getDate, getMonth, getYear } from '~/utils/date'
+const config = require('/./config')
 
 export default {
   async asyncData({ params, $repositories }) {
@@ -123,7 +124,7 @@ export default {
   },
   methods: {
     handleRegister() {
-      const redirect_uri = encodeURI(`http://localhost:3000/events/callback?event=${this.event.slug}`);
+      const redirect_uri = encodeURI(`${config.REDIRECT_URI}/events/callback?event=${this.event.slug}`);
       location.href=`http://account.codingblocks.com/oauth/authorize?response_type=code&client_id=2387689957&redirect_uri=${redirect_uri}`;
     }
   },

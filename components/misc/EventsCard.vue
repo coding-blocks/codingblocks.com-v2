@@ -42,13 +42,13 @@
         <div class="flex-1">
           <div class="font-4">8:00 PM Onwards</div>
         </div>
-        <div class="button-tertiary">
+        <button class="button-tertiary" @click="handleRegister">
           Register Now
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
             class="ml-2"
           />
-        </div>
+        </button>
       </div>
     </div>
   </div>
@@ -64,5 +64,11 @@ export default {
     "mentor_logo_2",
     "event_time",
   ],
+  methods: {
+    handleRegister() {
+      const redirect_uri = encodeURI("http://localhost:3000/events/callback?event=")
+      location.href="http://account.codingblocks.com/oauth/authorize?response_type=code&client_id=2387689957&redirect_uri=https://test.codingblocks.com/events/callback%3Fevent%3Dlegit-contest"
+    }
+  }
 };
 </script>

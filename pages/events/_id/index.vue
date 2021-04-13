@@ -61,13 +61,13 @@
             </div>
             <div class="row no-gutters align-items-center">
               <!-- Reroute this to form / login for registration -->
-              <NuxtLink class="button-primary" :to="`/events/${event.slug}`">
+              <button class="button-primary" @click="handleRegister">
                 Register Now
                 <img
                   src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg"
                   class="ml-2"
                 />
-              </NuxtLink>
+              </button>
               <div class="flex-1 pl-40">
                 <div class="row no-gutters align-items-center">
                   <img
@@ -120,6 +120,12 @@ export default {
   async asyncData({ params, $repositories }) {
     const event = await $repositories.events.fetchEventBySlug(params.id)
     return { event }
+  },
+  methods: {
+    handleRegister() {
+      const redirect_uri = encodeURI(`http://localhost:3000/events/callback?event=${this.event.slug}`);
+      location.href=`http://account.codingblocks.com/oauth/authorize?response_type=code&client_id=2387689957&redirect_uri=${redirect_uri}`;
+    }
   },
   computed: {
     eventDateStringComplete() {

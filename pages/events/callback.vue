@@ -1,6 +1,6 @@
 <template></template>
 <script>
-const config = require('/././config')
+const config = require('./../../config')
 
 export default {
   async mounted() {

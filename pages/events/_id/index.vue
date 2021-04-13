@@ -115,7 +115,7 @@
 
 <script>
 import { getDate, getMonth, getYear } from '~/utils/date'
-const config = require('/./config')
+const config = require('../../../config')
 
 export default {
   async asyncData({ params, $repositories }) {

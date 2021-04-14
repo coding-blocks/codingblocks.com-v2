@@ -62,16 +62,24 @@
             <div class="row no-gutters align-items-center">
               <!-- Reroute this to form / login for registration -->
               <div v-if="status.isRegistered">
-                <button class="button-primary">Already Registered</button>
+                <div class="font-4 bold text-gradient-orange">
+                  Already Registered
+                </div>
               </div>
-              <div v-else>
+              <div v-else class="position-relative tooltip-container">
                 <button class="button-primary" @click="handleRegister">
-                  Register Now
+                  Register using Oneauth
                   <img
                     src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg"
                     class="ml-2"
                   />
                 </button>
+                <div
+                  class="card p-10 font-2 text-grey-light-1 tooltip-body bg-white"
+                >
+                  You will be redirected to Oneauth for <br />
+                  Login / Account creation (if you dont have one).
+                </div>
               </div>
               <div class="flex-1 pl-40">
                 <div class="row no-gutters align-items-center">
@@ -167,3 +175,15 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.tooltip-body {
+  position: absolute !important;
+  display: none;
+}
+
+.tooltip-container:hover .tooltip-body {
+  display: block;
+  bottom: -80px;
+}
+</style>

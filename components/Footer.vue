@@ -58,9 +58,9 @@
                       Success Stories
                     </NuxtLink>
                   </div>
-                  <div class="mb-30">
+                  <!-- <div class="mb-30">
                     <a href="#" class="font-4">Become a TA/Mentor</a>
-                  </div>
+                  </div> -->
                   <div>
                     <a href="https://blog.codingblocks.com/" class="font-4">
                       Blog
@@ -124,7 +124,13 @@
                     </NuxtLink>
                   </div>
                   <div class="mb-30">
-                    <a href="#" class="font-4">BOSS 2020</a>
+                    <a
+                      href="http://boss.codingblocks.com/"
+                      target="_blank"
+                      class="font-4"
+                    >
+                      BOSS 2020
+                    </a>
                   </div>
                   <div>
                     <a href="https://ide.codingblocks.com/" class="font-4">

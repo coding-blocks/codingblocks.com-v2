@@ -83,6 +83,7 @@
     <HamburgerNav
       :show="displayHamburgerNav"
       @closeHamburger="displayHamburgerNav = false"
+      :user="user"
     />
   </div>
 </template>

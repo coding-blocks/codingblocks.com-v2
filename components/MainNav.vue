@@ -419,8 +419,6 @@ export default {
     hamburgerCloseToggle.addEventListener('click', () => {
       hamburgerNav.classList.add('hamburger-nav--hidden')
     })
-
-    console.log(this.user)
   },
   async fetch() {
     this.classroomCoursesPayload = await this.$repositories.courses.fetchClassroomCourses()

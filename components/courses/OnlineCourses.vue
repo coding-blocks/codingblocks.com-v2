@@ -10,7 +10,7 @@
               class="mini-banner position-relative br-5 mb-30 mx-auto d-lg-none d-block"
               style="width: fit-content"
             >
-              <a href="mini-banner.cta">
+              <a :href="miniBanner.cta">
                 <div class="bg-purple br-5 all-center mt-30">
                   <img :src="miniBanner.img_url" class="br-5" />
                 </div>
@@ -26,7 +26,7 @@
               class="mini-banner position-relative br-5 mb-30 d-lg-block d-none"
               style="width: fit-content"
             >
-              <a href="mini-banner.cta">
+              <a :href="miniBanner.cta">
                 <div class="bg-purple br-5 all-center mt-30">
                   <img :src="miniBanner.img_url" class="br-5" />
                 </div>

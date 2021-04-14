@@ -177,7 +177,10 @@
             <div class="font-3 bold mt-15 text-grey-light-1">
               CLASSROOM COURSES
             </div>
-            <div class="mt-35 mb-15">
+            <div
+              v-if="classroomCoursesPayload.length !== 0"
+              class="mt-35 mb-15"
+            >
               <div
                 class="mb-20 row no-gutters align-items-center"
                 v-for="(course, index) in classroomCoursesPayload"
@@ -191,6 +194,12 @@
                 </NuxtLink>
               </div>
             </div>
+            <div v-else class="my-35">
+              <div class="font-4 bold text-gradient-orange">
+                Releasing dates for new Classroom Courses soon! <br />
+                STAY TUNED!
+              </div>
+            </div>
             <NuxtLink
               class="button-tertiary mt-15"
               :to="{ path: '/courses', query: { type: 'classroom' } }"
@@ -202,13 +211,13 @@
               />
             </NuxtLink>
           </div>
-          <div class="mb-50">
+          <div>
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/live-courses.svg"
               style="height: 40px"
             />
             <div class="font-3 bold mt-15 text-grey-light-1">LIVE COURSES</div>
-            <div class="mt-35 mb-15">
+            <div v-if="liveCoursesPayload.length !== 0" class="mt-35 mb-15">
               <div
                 class="mb-20 row no-gutters align-items-center"
                 v-for="(course, index) in liveCoursesPayload"
@@ -220,6 +229,12 @@
                 >
                   {{ course.title }}
                 </NuxtLink>
+              </div>
+            </div>
+            <div v-else class="my-35">
+              <div class="font-4 bold text-gradient-orange">
+                Releasing dates for new Live Courses soon! <br />
+                STAY TUNED!
               </div>
             </div>
             <NuxtLink

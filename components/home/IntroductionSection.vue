@@ -25,7 +25,7 @@
         class="mini-banner position-relative br-5"
         style="max-width: 100%; width: fit-content"
       >
-        <a href="mini-banner.cta">
+        <a :href="miniBanner.cta">
           <div class="br-5">
             <img :src="miniBanner.img_url" class="br-5" />
           </div>

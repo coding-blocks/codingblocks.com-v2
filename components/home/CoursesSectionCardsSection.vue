@@ -1,6 +1,6 @@
 <template>
   <div
-    class="col-12 course-section__cards pt-lg-60 pt-30 h-100 flex-col justify-content-between"
+    class="col-12 course-section__cards pt-lg-60 pt-30 h-100 flex-col justify-content-xl-between"
     :id="courseType"
   >
     <div class="w-100">

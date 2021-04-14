@@ -7,7 +7,7 @@
       id="move-left"
       v-on:click="moveLeft()"
     />
-    <div class="row mx-sm-40 mx-20 c-card-carousel" id="carousel">
+    <div class="row mx-sm-30 mx-10 c-card-carousel" id="carousel">
       <slot></slot>
     </div>
     <img

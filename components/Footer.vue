@@ -208,7 +208,6 @@
           <a href="https://cb.lk/ghon">
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/github-black.svg"
-              class="mr-20"
             />
           </a>
         </div>
@@ -249,7 +248,6 @@
         <a href="https://cb.lk/ghon">
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/github-black.svg"
-            class="mr-20"
           />
         </a>
       </div>

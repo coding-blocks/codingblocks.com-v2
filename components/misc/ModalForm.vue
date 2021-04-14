@@ -72,8 +72,8 @@
 
 @media (max-width: 576px) {
   .modal-container {
-    width: 100vw;
-    height: 100vh;
+    width: 90vw;
+    height: fit-content;
   }
 }
 

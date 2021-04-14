@@ -4,10 +4,10 @@
       <div
         v-for="(banner, index) in banners"
         :key="index"
-        class="slideshow-container__slide col-12 p-xl-100 p-lg-75 p-md-50 p-sm-40 p-25 pb-100 d-block"
+        class="slideshow-container__slide col-12 p-xl-100 p-lg-75 p-md-50 p-40 d-block"
         :class="`bg-gradient-${banner.bg_color}`"
       >
-        <div class="row align-items-center no-gutters">
+        <div class="row align-items-center no-gutters h-100">
           <div class="flex-1 z-pos t-align-lg-l t-align-c pr-lg-20">
             <div
               class="br-5 d-inline-block p-2 bg-gradient-orange-light mb-10 font-4 white"
@@ -23,8 +23,8 @@
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_welcome.svg"
             />
-            <img :src="banner.img_url" class="d-lg-none d-block" />
-            <div class="my-50">
+            <img :src="banner.img_url" class="d-lg-none d-block mt-30" />
+            <div class="my-sm-50 my-30">
               <div class="heading-2 bold text-orange">
                 {{ banner.tagline }}
               </div>

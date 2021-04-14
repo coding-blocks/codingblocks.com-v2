@@ -12,8 +12,8 @@
             color: #3e4d5c;
             mso-fareast-language: EN-GB;
           "
-          >Disclaimer<o:p></o:p
-        ></span>
+          >Disclaimer</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -30,8 +30,8 @@
           to be bound by these terms and conditions (also referred to as an
           &quot;agreement&quot; here). Your agreement shown by accessing and
           using this website is legally binding. If you do not agree to all
-          these terms and conditions, do not access this website.<o:p></o:p
-        ></span>
+          these terms and conditions, do not access this website.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -48,8 +48,8 @@
           change these terms and conditions, and you are responsible for
           regularly reviewing and complying with them. Your continued use of
           this website constitutes your agreement to all those terms and
-          conditions.<o:p></o:p
-        ></span>
+          conditions.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -96,9 +96,8 @@
           and up to date information, Coding Blocks does not warrant the
           accuracy, completeness and timely availability of the information
           provided on the Site and accepts no responsibility or liability for
-          any error or omission in any information provided on the Site.<o:p
-          ></o:p
-        ></span>
+          any error or omission in any information provided on the Site.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -132,8 +131,8 @@
           Examination, oral or written, in which the Subscriber may subsequently
           appear, nor does a high score necessarily guarantee success in such
           subsequent examinations. Codingblocks.com accepts no liability on this
-          account.<o:p></o:p
-        ></span>
+          account.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -157,8 +156,8 @@
           that the material submitted by them complies with national and
           international law. Codingblocks.com at its absolute discretion
           reserves the right to change, suspend or omit any advertisement
-          without any prior notice.<o:p></o:p
-        ></span>
+          without any prior notice.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -183,8 +182,8 @@
           time as it may in its absolute discretion find to be expedient, and
           without giving any notice. It is the user's responsibility to refer to
           the currently prevalent terms and/or any change or addition to the
-          same while accessing the Site.<o:p></o:p
-        ></span>
+          same while accessing the Site.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt; mso-outline-level: 4">
@@ -198,8 +197,8 @@
             color: #3e4d5c;
             mso-fareast-language: EN-GB;
           "
-          >Terms And Conditions Acceptance<o:p></o:p
-        ></span>
+          >Terms And Conditions Acceptance</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -235,8 +234,8 @@
             mso-fareast-language: EN-GB;
           "
           >&nbsp;service by any Subscriber is subject to the following Terms and
-          Conditions mentioned hereunder.<o:p></o:p
-        ></span>
+          Conditions mentioned hereunder.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -256,8 +255,8 @@
           the end of each session by signing out. CodingBlocks.com takes no
           responsibility and shall stand totally indemnified by the Subscriber
           for any or all consequences caused by any unauthorized use of the
-          Subscriber's account by any third-party.<o:p></o:p
-        ></span>
+          Subscriber's account by any third-party.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -274,8 +273,8 @@
           breach of security, The Subscriber agrees to provide CodingBlocks.com
           current, complete, and accurate registration information as prompted
           by The Site and to maintain and update this information at all times
-          as required to keep it current, complete and accurate.<o:p></o:p
-        ></span>
+          as required to keep it current, complete and accurate.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -292,8 +291,8 @@
           making (or refraining from making) any decision. Any specific advice
           or replies to queries in any part of the Service is/are the personal
           opinion of such experts/consultants/persons and are not subscribed to
-          by Codingblocks.com.<o:p></o:p
-        ></span>
+          by Codingblocks.com.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -313,8 +312,8 @@
           only after due realization of payment. While every endeavour shall be
           made to start the Service to the Subscriber as early as possible upon
           realisation of the full payment, Vidyamandir.com shall not be liable
-          for any damages should a delay inevitably occurs<o:p></o:p
-        ></span>
+          for any damages should a delay inevitably occurs</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -329,8 +328,8 @@
           >Codingblocks.com reserves the right, to suspend or terminate the
           Services at any time in its sole discretion in case any difficulty is
           encountered in its realisation of the full value of the Fees
-          payable.<o:p></o:p
-        ></span>
+          payable.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -347,8 +346,8 @@
           liability shall befall Vidyamandir.com to refund the fees already
           paid, either in full or in part. Once the payment has been realized
           and students asks for refund/ cancellation, then fee refund will be as
-          per Coding Blocks� Fee Refund Policy.<o:p></o:p
-        ></span>
+          per Coding Blocks� Fee Refund Policy.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -382,8 +381,8 @@
           transmitted by the Service, and that no compensation is or shall be
           payable whatsoever with respect to the aforesaid by codingblocks.com.
           Codingblocks.com MAKES NO WARRANTY THAT THE SERVICE WILL BE
-          UNINTERRUPTED, TIMELY, SECURE OR ERROR-FREE.<o:p></o:p
-        ></span>
+          UNINTERRUPTED, TIMELY, SECURE OR ERROR-FREE.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -405,8 +404,8 @@
           availability of any of the goods or services or for any damage, loss
           or harm, direct or consequential or any violation of local or
           international laws that may be incurred by the Subscriber's visiting
-          or transacting on these services.<o:p></o:p
-        ></span>
+          or transacting on these services.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -425,22 +424,7 @@
           any other format. Further, the Subscriber is advised to install such
           other software in the Subscriber's Computer software as demanded by
           the changing technologies, in order to be able to download the
-          contents from the Site from time to time.<o:p></o:p
-        ></span>
-      </p>
-
-      <p class="MsoNormal" style="margin-bottom: 7.5pt">
-        <b style="mso-bidi-font-weight: normal"
-          ><span
-            lang="EN-GB"
-            style="
-              font-size: 10pt;
-              font-family: Arial;
-              color: #3e4d5c;
-              mso-fareast-language: EN-GB;
-            "
-            ><o:p>&nbsp;</o:p></span
-          ></b
+          contents from the Site from time to time.</span
         >
       </p>
 
@@ -454,53 +438,65 @@
               color: #3e4d5c;
               mso-fareast-language: EN-GB;
             "
-            ><o:p>&nbsp;</o:p></span
-          ></b
-        >
-      </p>
-
-      <p class="MsoNormal" style="margin-bottom: 7.5pt">
-        <b style="mso-bidi-font-weight: normal"
-          ><span
-            lang="EN-GB"
-            style="
-              font-size: 10pt;
-              font-family: Arial;
-              color: #3e4d5c;
-              mso-fareast-language: EN-GB;
-            "
-            ><o:p>&nbsp;</o:p></span
-          ></b
-        >
-      </p>
-
-      <p class="MsoNormal" style="margin-bottom: 7.5pt">
-        <b style="mso-bidi-font-weight: normal"
-          ><span
-            lang="EN-GB"
-            style="
-              font-size: 10pt;
-              font-family: Arial;
-              color: #3e4d5c;
-              mso-fareast-language: EN-GB;
-            "
-            ><o:p>&nbsp;</o:p></span
-          ></b
-        >
-      </p>
-
-      <p class="MsoNormal" style="margin-bottom: 7.5pt">
-        <b style="mso-bidi-font-weight: normal"
-          ><span
-            lang="EN-GB"
-            style="
-              font-size: 10pt;
-              font-family: Arial;
-              color: #3e4d5c;
-              mso-fareast-language: EN-GB;
-            "
-            >Fee Refund Policy<o:p></o:p></span
+          ></span
         ></b>
+      </p>
+
+      <p class="MsoNormal" style="margin-bottom: 7.5pt">
+        <b style="mso-bidi-font-weight: normal"
+          ><span
+            lang="EN-GB"
+            style="
+              font-size: 10pt;
+              font-family: Arial;
+              color: #3e4d5c;
+              mso-fareast-language: EN-GB;
+            "
+          ></span
+        ></b>
+      </p>
+
+      <p class="MsoNormal" style="margin-bottom: 7.5pt">
+        <b style="mso-bidi-font-weight: normal"
+          ><span
+            lang="EN-GB"
+            style="
+              font-size: 10pt;
+              font-family: Arial;
+              color: #3e4d5c;
+              mso-fareast-language: EN-GB;
+            "
+          ></span
+        ></b>
+      </p>
+
+      <p class="MsoNormal" style="margin-bottom: 7.5pt">
+        <b style="mso-bidi-font-weight: normal"
+          ><span
+            lang="EN-GB"
+            style="
+              font-size: 10pt;
+              font-family: Arial;
+              color: #3e4d5c;
+              mso-fareast-language: EN-GB;
+            "
+          ></span
+        ></b>
+      </p>
+
+      <p class="MsoNormal" style="margin-bottom: 7.5pt">
+        <b style="mso-bidi-font-weight: normal"
+          ><span
+            lang="EN-GB"
+            style="
+              font-size: 10pt;
+              font-family: Arial;
+              color: #3e4d5c;
+              mso-fareast-language: EN-GB;
+            "
+            >Fee Refund Policy</span
+          ></b
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -513,8 +509,8 @@
             mso-fareast-language: EN-GB;
           "
           >Coding Blocks courses have a registration fee of Rs. 3000 which is
-          non-refundable<o:p></o:p
-        ></span>
+          non-refundable</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -527,8 +523,8 @@
             mso-fareast-language: EN-GB;
           "
           >If a student withdraws from the course within the first 5 classes,
-          50% of the course fees will be refunded <o:p></o:p
-        ></span>
+          50% of the course fees will be refunded
+        </span>
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -541,8 +537,8 @@
             mso-fareast-language: EN-GB;
           "
           >If a student withdraws from a course after the first 5 classes,
-          course fees will NOT be refunded.<o:p></o:p
-        ></span>
+          course fees will NOT be refunded.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -554,8 +550,7 @@
             color: #3e4d5c;
             mso-fareast-language: EN-GB;
           "
-          ><o:p>&nbsp;</o:p></span
-        >
+        ></span>
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -568,8 +563,9 @@
               color: #3e4d5c;
               mso-fareast-language: EN-GB;
             "
-            >Goodies<o:p></o:p></span
-        ></b>
+            >Goodies</span
+          ></b
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -581,9 +577,8 @@
             color: #3e4d5c;
             mso-fareast-language: EN-GB;
           "
-          >Providing Goodies will be at sole discretion of Coding Blocks.<o:p
-          ></o:p
-        ></span>
+          >Providing Goodies will be at sole discretion of Coding Blocks.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -596,22 +591,7 @@
             mso-fareast-language: EN-GB;
           "
           >No Goodies can be availed for the course which has been bought for
-          free in sale, contest, as prize or otherwise.<o:p></o:p
-        ></span>
-      </p>
-
-      <p class="MsoNormal" style="margin-bottom: 7.5pt">
-        <b style="mso-bidi-font-weight: normal"
-          ><span
-            lang="EN-GB"
-            style="
-              font-size: 10pt;
-              font-family: Arial;
-              color: #3e4d5c;
-              mso-fareast-language: EN-GB;
-            "
-            ><o:p>&nbsp;</o:p></span
-          ></b
+          free in sale, contest, as prize or otherwise.</span
         >
       </p>
 
@@ -625,9 +605,22 @@
               color: #3e4d5c;
               mso-fareast-language: EN-GB;
             "
-            ><o:p>&nbsp;</o:p></span
-          ></b
-        >
+          ></span
+        ></b>
+      </p>
+
+      <p class="MsoNormal" style="margin-bottom: 7.5pt">
+        <b style="mso-bidi-font-weight: normal"
+          ><span
+            lang="EN-GB"
+            style="
+              font-size: 10pt;
+              font-family: Arial;
+              color: #3e4d5c;
+              mso-fareast-language: EN-GB;
+            "
+          ></span
+        ></b>
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -645,8 +638,8 @@
           INCIDENTAL, CONSEQUENTIAL, SPECIAL OR EXEMPLARY DAMAGES ARISING FROM
           THE SUBJECT MATTER OF THIS AGREEMENT, REGARDLESS OF THE TYPE OF CLAIM
           AND EVEN IF Codingblocks.com HAS BEEN ADVISED OF THE POSSIBILITY OF
-          SUCH DAMAGES.<o:p></o:p
-        ></span>
+          SUCH DAMAGES.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -668,12 +661,12 @@
           the terms of this Agreement. Such Changes / Modifications would be
           made by Codingblocks.com after the first posting them at the Site .
           The Subscriber shall be deemed to have accepted them if the Subscriber
-          continues to access the Site thereafter.<o:p></o:p
-        ></span>
+          continues to access the Site thereafter.</span
+        >
       </p>
 
       <p class="MsoNormal">
-        <span lang="EN-GB"><o:p>&nbsp;</o:p></span>
+        <span lang="EN-GB"></span>
       </p>
     </div>
   </div>
@@ -683,7 +676,7 @@
 export default {
   head() {
     return {
-      title: 'Tesms Of Service',
+      title: 'Terms Of Service',
       meta: [
         {
           name: 'Title',

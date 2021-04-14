@@ -23,7 +23,10 @@
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_welcome.svg"
             />
-            <img :src="banner.img_url" class="d-lg-none d-block mt-30" />
+            <img
+              :src="banner.img_url"
+              class="d-lg-none d-block mt-30 mx-auto"
+            />
             <div class="my-sm-50 my-30">
               <div class="heading-2 bold text-orange">
                 {{ banner.tagline }}

@@ -17,8 +17,8 @@
           Privacy Policy, that all business or personal information provided to
           Coding Blocks Pvt. Ltd. is on a voluntary basis, and that information
           provided will be protected to the extent permitted by the Privacy Act
-          of 1974 and the dom of Information Act of 1966.<o:p></o:p
-        ></span>
+          of 1974 and the dom of Information Act of 1966.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -35,8 +35,8 @@
           &quot;services&quot;). Coding Blocks Pvt. Ltd. adheres to the US safe
           harbor privacy principles of Notice, Choice, Onward Transfer,
           Security, Data Integrity, Access and Enforcement, and is registered
-          with the U.S. Department of Commerce's safe harbor program.<o:p></o:p
-        ></span>
+          with the U.S. Department of Commerce's safe harbor program.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt; mso-outline-level: 4">
@@ -49,8 +49,8 @@
             color: #3e4d5c;
             mso-ansi-language: EN-US;
           "
-          >Information we collect and how we use it:<o:p></o:p
-        ></span>
+          >Information we collect and how we use it:</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -73,8 +73,8 @@
           "
         >
           provide our services, we may collect the following types of
-          information:<o:p></o:p
-        ></span>
+          information:</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -97,9 +97,8 @@
           "
           >&nbsp;We may ask you for personal information (such as your name,
           email address, phone number and company) for certain services that we
-          provide through our website, for eg., downloading white papers.<o:p
-          ></o:p
-        ></span>
+          provide through our website, for eg., downloading white papers.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -127,8 +126,8 @@
           preferences and tracking user trends, such as how people search. Most
           browsers are initially set up to accept cookies, but you can reset
           your browser to refuse all cookies or to indicate when a cookie is
-          being sent.<o:p></o:p
-        ></span>
+          being sent.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -154,8 +153,8 @@
           visit our website. These server logs may include information such as
           your web request, Internet Protocol address, browser type, browser
           language, the date and time of your request and one or more cookies
-          that may uniquely identify your browser.<o:p></o:p
-        ></span>
+          that may uniquely identify your browser.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -179,8 +178,8 @@
           >&nbsp;When you send email or other communication to Coding Blocks
           Pvt. Ltd., we may retain those communications
           <span class="GramE">in order to</span> process your inquiries, respond
-          to your requests and improve our services.<o:p></o:p
-        ></span>
+          to your requests and improve our services.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -206,8 +205,8 @@
           those sites may be sent to Coding Blocks Pvt. Ltd. and vice versa. We
           process such information in accordance with this Policy. The
           affiliated sites may have different privacy practices and we encourage
-          you to read their privacy policies.<o:p></o:p
-        ></span>
+          you to read their privacy policies.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -230,8 +229,8 @@
           "
           >&nbsp;Coding Blocks Pvt. Ltd. may present links in a format that
           enables us to keep track of whether these links have been
-          followed.<o:p></o:p
-        ></span>
+          followed.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -247,8 +246,8 @@
           notice for specific services. In addition to the above, such purposes
           include: Providing our products and services to users; Auditing,
           research and analysis <span class="GramE">in order to</span> maintain,
-          protect and improve our services; Developing new services.<o:p></o:p
-        ></span>
+          protect and improve our services; Developing new services.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -262,8 +261,8 @@
           >Coding Blocks Pvt. Ltd. processes personal information on our servers
           in the United States of America and in other countries. In some cases,
           we process personal information on a server outside your own
-          country.<o:p></o:p
-        ></span>
+          country.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt; mso-outline-level: 4">
@@ -276,8 +275,8 @@
             color: #3e4d5c;
             mso-ansi-language: EN-US;
           "
-          >Choices for personal information<o:p></o:p
-        ></span>
+          >Choices for personal information</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -293,8 +292,8 @@
           registration, we ask you to provide personal information. If we use
           this information in a manner different than the purpose for which it
           was collected, then we will ask for your consent prior to such
-          use.<o:p></o:p
-        ></span>
+          use.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -312,9 +311,9 @@
           information for purposes other than those described in this Policy
           unless we have obtained your prior consent. You can decline to submit
           personal information to any of our services, in which case Coding
-          Blocks Pvt. Ltd. may not be able to provide those services to you.<o:p
-          ></o:p
-        ></span>
+          Blocks Pvt. Ltd. may not be able to provide those services to
+          you.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt; mso-outline-level: 4">
@@ -327,8 +326,8 @@
             color: #3e4d5c;
             mso-ansi-language: EN-US;
           "
-          >Opt-Out Policy:<o:p></o:p
-        ></span>
+          >Opt-Out Policy:</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -367,8 +366,8 @@
             color: #3e4d5c;
             mso-ansi-language: EN-US;
           "
-          >.<o:p></o:p
-        ></span>
+          >.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt; mso-outline-level: 4">
@@ -381,8 +380,8 @@
             color: #3e4d5c;
             mso-ansi-language: EN-US;
           "
-          >Information sharing:<o:p></o:p
-        ></span>
+          >Information sharing:</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -395,8 +394,8 @@
           "
           >Coding Blocks Pvt. Ltd. only shares personal information with other
           companies or individuals outside of Coding Blocks Pvt. Ltd. in the
-          following limited circumstances:<o:p></o:p
-        ></span>
+          following limited circumstances:</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -408,8 +407,8 @@
             mso-ansi-language: EN-US;
           "
           >We have your consent. We require opt-in consent for the sharing of
-          any sensitive personal information.<o:p></o:p
-        ></span>
+          any sensitive personal information.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -426,8 +425,8 @@
           information on our behalf. We require that these parties agree to
           process such information based on our instructions and in compliance
           with this Policy and any other appropriate confidentiality and
-          security measures.<o:p></o:p
-        ></span>
+          security measures.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -444,8 +443,8 @@
           governmental request (b) detect, prevent, or otherwise address fraud,
           security or technical issues, or (c) protect against imminent harm to
           the rights, property or safety of Coding Blocks Pvt. Ltd., its users
-          or the public as required or permitted by law.<o:p></o:p
-        ></span>
+          or the public as required or permitted by law.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -459,9 +458,8 @@
           >If Coding Blocks Pvt. Ltd. becomes involved in a merger, acquisition,
           or any form of sale of some or <span class="GramE">all of</span> its
           assets, we will provide notice before personal information is
-          transferred and becomes subject to a different privacy policy.<o:p
-          ></o:p
-        ></span>
+          transferred and becomes subject to a different privacy policy.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -474,8 +472,8 @@
           "
           >Please contact us at the address below for any additional questions
           about the management or use of personal data or as to what classifies
-          as Sensitive Information.<o:p></o:p
-        ></span>
+          as Sensitive Information.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt; mso-outline-level: 4">
@@ -488,8 +486,8 @@
             color: #3e4d5c;
             mso-ansi-language: EN-US;
           "
-          >Information security:<o:p></o:p
-        ></span>
+          >Information security:</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -505,8 +503,8 @@
           data. These include internal reviews of our data collection, storage
           and processing practices and security measures, as well as physical
           security measures to guard against unauthorized access to systems
-          where we store personal data.<o:p></o:p
-        ></span>
+          where we store personal data.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -522,8 +520,8 @@
           <span class="GramE">in order to</span> operate, develop or improve our
           services. These individuals are bound by confidentiality obligations
           and may be subject to discipline, including termination and criminal
-          prosecution, if they fail to meet these obligations.<o:p></o:p
-        ></span>
+          prosecution, if they fail to meet these obligations.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt; mso-outline-level: 4">
@@ -536,8 +534,8 @@
             color: #3e4d5c;
             mso-ansi-language: EN-US;
           "
-          >Data integrity<o:p></o:p
-        ></span>
+          >Data integrity</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -556,8 +554,8 @@
           or improve our services. We take reasonable steps to ensure that the
           personal information we process is accurate, complete, and current,
           but we depend on our users to update or correct their personal
-          information whenever necessary.<o:p></o:p
-        ></span>
+          information whenever necessary.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt; mso-outline-level: 4">
@@ -570,8 +568,8 @@
             color: #3e4d5c;
             mso-ansi-language: EN-US;
           "
-          >Accessing and updating personal information<o:p></o:p
-        ></span>
+          >Accessing and updating personal information</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -617,8 +615,8 @@
           others, or would be extremely impractical (for instance, requests
           concerning information residing on backup tapes), or for which access
           is not otherwise required. In any case where we provide information
-          access and correction, we perform this service of charge.<o:p></o:p
-        ></span>
+          access and correction, we perform this service of charge.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt; mso-outline-level: 4">
@@ -631,8 +629,8 @@
             color: #3e4d5c;
             mso-ansi-language: EN-US;
           "
-          >Enforcement<o:p></o:p
-        ></span>
+          >Enforcement</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -652,8 +650,8 @@
           cooperate with the appropriate regulatory authorities, including local
           data protection authorities, to resolve any complaints regarding the
           transfer of personal data that cannot be resolved between Coding
-          Blocks Pvt. Ltd. and an individual.<o:p></o:p
-        ></span>
+          Blocks Pvt. Ltd. and an individual.</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt; mso-outline-level: 4">
@@ -666,8 +664,8 @@
             color: #3e4d5c;
             mso-ansi-language: EN-US;
           "
-          >Changes to this policy<o:p></o:p
-        ></span>
+          >Changes to this policy</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -683,8 +681,8 @@
           consent, and we expect most such changes will be minor. Regardless, we
           will post any Policy changes on this page and, if the changes are
           significant, we will provide a more prominent notice (including, for
-          certain services, email notification of Policy changes).<o:p></o:p
-        ></span>
+          certain services, email notification of Policy changes).</span
+        >
       </p>
 
       <p class="MsoNormal" style="margin-bottom: 7.5pt">
@@ -697,12 +695,12 @@
           "
           >If you have any additional questions or concerns about this Policy,
           please feel to mail us at info@codingblocks.com any time through this
-          web site.<o:p></o:p
-        ></span>
+          web site.</span
+        >
       </p>
 
       <p class="MsoNormal">
-        <span lang="EN-IN"><o:p>&nbsp;</o:p></span>
+        <span lang="EN-IN"></span>
       </p>
     </div>
   </div>
@@ -712,7 +710,7 @@
 export default {
   head() {
     return {
-      title: 'Tesms Of Service',
+      title: 'Privacy Policy',
       meta: [
         {
           name: 'Title',

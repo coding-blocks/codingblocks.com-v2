@@ -5,7 +5,7 @@
       class="universe"
       :class="[size === 'small' ? 'universe--small mx-auto' : '']"
     >
-      <div class="universe__star p-20">
+      <div class="universe__star p-lg-20 p-10">
         <img :src="stars[counter].logo" />
       </div>
       <div v-for="(star, index) in currentStar" :key="index">
@@ -55,3 +55,15 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.universe.universe--small .universe__orbit.universe__orbit--1 {
+  height: 130px;
+  width: 130px;
+}
+
+.universe .universe__orbit.universe__orbit--1 {
+  height: 200px;
+  width: 200px;
+}
+</style>

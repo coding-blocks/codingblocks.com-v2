@@ -11,7 +11,7 @@
         Discover our most loved courses!
       </div>
     </div>
-    <div v-if="collapsedCourses" class="w-100">
+    <div v-if="collapsedCourses.length !== 0" class="w-100">
       <div class="row justify-content-center">
         <div
           v-for="course in collapsedCourses"
@@ -51,6 +51,19 @@
             class="ml-2"
           />
         </NuxtLink>
+      </div>
+    </div>
+    <div v-else class="w-100 h-100">
+      <div class="all-center h-100">
+        <div class="t-align-c">
+          <img
+            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/live-courses-vector.svg"
+            class="w-50"
+          />
+          <div class="text-gradient-orange heading-5 bold">
+            New Batches will be announced soon!
+          </div>
+        </div>
       </div>
     </div>
   </div>

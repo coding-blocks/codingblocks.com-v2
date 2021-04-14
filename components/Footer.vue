@@ -171,11 +171,19 @@
         <div
           class="flex-1 t-align-xl-c t-align-r pl-xl-none pl-20 d-sm-block d-none"
         >
-          <div class="font-4 mb-10">Privacy Policy | Terms of Service</div>
+          <div class="font-4 mb-10">
+            <NuxtLink to="/privacy-policy">Privacy Policy</NuxtLink>
+            |
+            <NuxtLink to="/tos">Terms of Service</NuxtLink>
+          </div>
           <div class="font-4">Copyright 2020 - Coding Blocks Pvt. Ltd.</div>
         </div>
         <div class="col-12 t-align-c d-sm-none d-block mt-50">
-          <div class="font-4 mb-10">Privacy Policy | Terms of Service</div>
+          <div class="font-4 mb-10">
+            <NuxtLink to="/privacy-policy">Privacy Policy</NuxtLink>
+            |
+            <NuxtLink to="/tos">Terms of Service</NuxtLink>
+          </div>
           <div class="font-4">Copyright 2020 - Coding Blocks Pvt. Ltd.</div>
         </div>
         <div

@@ -8,4 +8,10 @@ export default ($axios, $api) => ({
     const response = await $axios.get(`events/${slug}`)
     return response.data
   },
+  async fetchEventStatus(slug, code) {
+    const response = await $axios.get(`registration_status`, {
+      params: { slug, code },
+    })
+    return response.data
+  },
 })

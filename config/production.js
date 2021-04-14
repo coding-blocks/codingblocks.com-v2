@@ -5,6 +5,6 @@ module.exports = {
     https: true,
     prefix: '/api'
   },
-  REDIRECT_URI:'https://test.codingblocks.com',
-  REDIRECT_BACKEND_URI:'https://api.codingblocks.xyz'
+  CALLBACK_URL:'https://test.codingblocks.com',
+  ONEAUTH_CLIENT_ID:'2387689957'
 }

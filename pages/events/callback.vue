@@ -7,7 +7,7 @@ export default {
     const code = this.$route.query.code;
     const event = this.$route.query.event;
 
-    const response = await fetch(`${config.REDIRECT_BACKEND_URI}/api/events_callback`, {
+    const response = await fetch(`${config.axios.host}/api/events_callback`, {
       method: 'POST',
       headers: {
       'Content-Type': 'application/json'

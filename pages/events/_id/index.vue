@@ -61,20 +61,27 @@
             </div>
             <div class="row no-gutters align-items-center">
               <!-- Reroute this to form / login for registration -->
-              <button class="button-primary" @click="handleRegister">
-                Register Now
-                <img
-                  src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg"
-                  class="ml-2"
-                />
-              </button>
+              <div v-if="status.isRegistered">
+                <button class="button-primary">Already Registered</button>
+              </div>
+              <div v-else>
+                <button class="button-primary" @click="handleRegister">
+                  Register Now
+                  <img
+                    src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg"
+                    class="ml-2"
+                  />
+                </button>
+              </div>
               <div class="flex-1 pl-40">
                 <div class="row no-gutters align-items-center">
                   <img
                     src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/users_small.svg"
                   />
                   <!-- Number of registered here -->
-                  <div class="flex-1 pl-15 heading-6">245 Registered</div>
+                  <div class="flex-1 pl-15 heading-6">
+                    {{ event.registration_count }}
+                  </div>
                 </div>
               </div>
             </div>
@@ -119,14 +126,23 @@ const config = require('../../../config')
 
 export default {
   async asyncData({ params, $repositories }) {
+    const user = await fetch('https://account.codingblocks.com/api/users/me', {
+      credentials: 'include',
+    }).then((res) => res.json())
     const event = await $repositories.events.fetchEventBySlug(params.id)
-    return { event }
+    const status = await $repositories.events.fetchEventStatus(
+      params.id,
+      user.id
+    )
+    return { event, user, status }
   },
   methods: {
     handleRegister() {
-      const redirect_uri = encodeURI(`${config.REDIRECT_URI}/events/callback?event=${this.event.slug}`);
-      location.href=`http://account.codingblocks.com/oauth/authorize?response_type=code&client_id=2387689957&redirect_uri=${redirect_uri}`;
-    }
+      const redirect_uri = encodeURI(
+        `${config.CALLBACK_URL}/events/callback?event=${this.event.slug}`
+      )
+      location.href = `http://account.codingblocks.com/oauth/authorize?response_type=code&client_id=${config.ONEAUTH_CLIENT_ID}&redirect_uri=${redirect_uri}`
+    },
   },
   computed: {
     eventDateStringComplete() {

@@ -50,7 +50,7 @@
         src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_welcome.svg"
       />
       <div class="t-align-c" style="margin: 0 -2.5rem">
-        <Universe size="small" />
+        <Universe size="small" :stars="stars" v-if="stars.length != 0" />
         <div class="heading-6 mt-30">Helping people get their dream job.</div>
         <NuxtLink to="/testimonials" class="button-tertiary mt-10">
           View all our Alumni
@@ -91,7 +91,7 @@
       </div>
     </div>
     <div class="t-align-c mx-auto d-lg-block d-none">
-      <Universe />
+      <Universe :stars="stars" v-if="stars.length != 0" />
       <div class="heading-6 mt-30">Helping people get their dream job.</div>
       <NuxtLink to="/testimonials" class="button-tertiary mt-10">
         View all our Alumni
@@ -118,6 +118,7 @@ export default {
         'Competitive Programmer',
       ],
       miniBanner: null,
+      stars: null,
     }
   },
   mounted() {
@@ -134,6 +135,7 @@ export default {
   },
   async fetch() {
     this.miniBanner = await this.$repositories.home.miniBanner()
+    this.stars = await this.$repositories.home.fetchUniverse()
   },
 }
 </script>

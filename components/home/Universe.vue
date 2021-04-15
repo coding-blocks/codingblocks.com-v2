@@ -1,6 +1,5 @@
 <template>
   <div
-    v-if="stars"
     class="universe"
     :class="[size === 'small' ? 'universe--small mx-auto' : '']"
   >
@@ -20,41 +19,32 @@ export default {
   components: {
     UniverseOrbit,
   },
-  props: ['size'],
+  props: ['size', 'stars'],
   data() {
     return {
       counter: 0,
-      stars: null,
       currentStar: null,
     }
   },
   mounted() {
-    if (this.stars) {
-      setInterval(() => {
-        if (this.counter < this.stars.length - 1) {
-          this.counter++
-        } else {
-          this.counter = 0
-        }
-      }, 4000)
-    }
+    setInterval(() => {
+      if (this.counter < this.stars.length - 1) {
+        this.counter++
+      } else {
+        this.counter = 0
+      }
+    }, 4000)
   },
   watch: {
     counter: async function (val) {
-      if (this.stars) {
-        let star = this.stars[val].success_stories
-        var arrayOfArrays = []
-        arrayOfArrays.push(star.slice(0, 2))
-        arrayOfArrays.push(star.slice(2, 5))
-        arrayOfArrays.push(star.slice(5))
-        this.currentStar = arrayOfArrays
-      }
+      let star = this.stars[val].success_stories
+      var arrayOfArrays = []
+      arrayOfArrays.push(star.slice(0, 2))
+      arrayOfArrays.push(star.slice(2, 5))
+      arrayOfArrays.push(star.slice(5))
+      this.currentStar = arrayOfArrays
     },
   },
-
-  // async fetch() {
-  //   this.stars = await this.$repositories.home.fetchUniverse()
-  // },
 }
 </script>
 

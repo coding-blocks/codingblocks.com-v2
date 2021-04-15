@@ -63,7 +63,7 @@
                 </div>
               </div>
             </div>
-            <div v-if="user">
+            <div v-if="user.firstname">
               {{ user.firstname }}
             </div>
             <div v-else>

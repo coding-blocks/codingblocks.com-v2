@@ -1,5 +1,5 @@
 <template>
-  <div class="p-30">
+  <div class="py-50 width-limiter">
     <div class="WordSection1">
       <p class="MsoNormal" style="margin-bottom: 7.5pt; mso-outline-level: 4">
         <span

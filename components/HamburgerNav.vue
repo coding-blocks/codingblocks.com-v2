@@ -17,7 +17,7 @@
       />
     </div>
     <div>
-      <div v-if="user.firstname" class="t-align-c py-20">
+      <div v-if="user" class="t-align-c py-20">
         <a
           href="https://account.codingblocks.com/login"
           target="_blank"

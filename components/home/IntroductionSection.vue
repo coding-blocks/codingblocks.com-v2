@@ -118,7 +118,7 @@ export default {
         'Competitive Programmer',
       ],
       miniBanner: null,
-      stars: null,
+      stars: [],
     }
   },
   mounted() {

@@ -29,22 +29,26 @@ export default {
     }
   },
   mounted() {
-    setInterval(() => {
-      if (this.counter < this.stars.length - 1) {
-        this.counter++
-      } else {
-        this.counter = 0
-      }
-    }, 4000)
+    if (this.stars) {
+      setInterval(() => {
+        if (this.counter < this.stars.length - 1) {
+          this.counter++
+        } else {
+          this.counter = 0
+        }
+      }, 4000)
+    }
   },
   watch: {
     counter: async function (val) {
-      let star = this.stars[val].success_stories
-      var arrayOfArrays = []
-      arrayOfArrays.push(star.slice(0, 2))
-      arrayOfArrays.push(star.slice(2, 5))
-      arrayOfArrays.push(star.slice(5))
-      this.currentStar = arrayOfArrays
+      if (this.stars) {
+        let star = this.stars[val].success_stories
+        var arrayOfArrays = []
+        arrayOfArrays.push(star.slice(0, 2))
+        arrayOfArrays.push(star.slice(2, 5))
+        arrayOfArrays.push(star.slice(5))
+        this.currentStar = arrayOfArrays
+      }
     },
   },
 

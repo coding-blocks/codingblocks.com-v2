@@ -100,10 +100,14 @@ export default {
     HelpSection,
   },
   async fetch() {
-    this.miniBanner = await this.$repositories.home.miniBanner()
-    this.coursesPayload = await this.$repositories.courses.fetchClassroomCourses(
-      this.centerQuery
-    )
+    try {
+      this.miniBanner = await this.$repositories.home.miniBanner()
+    } catch (err) {
+    } finally {
+      this.coursesPayload = await this.$repositories.courses.fetchClassroomCourses(
+        this.centerQuery
+      )
+    }
   },
   computed: {
     selectedCenter() {

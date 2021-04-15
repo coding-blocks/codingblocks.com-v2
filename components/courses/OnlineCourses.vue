@@ -125,8 +125,12 @@ export default {
     },
   },
   async fetch() {
-    this.miniBanner = await this.$repositories.home.miniBanner()
-    this.featuredTagsPayload = await this.$repositories.courses.fetchOnlineFeaturedCourses()
+    try {
+      this.miniBanner = await this.$repositories.home.miniBanner()
+    } catch (err) {
+    } finally {
+      this.featuredTagsPayload = await this.$repositories.courses.fetchOnlineFeaturedCourses()
+    }
   },
 }
 </script>

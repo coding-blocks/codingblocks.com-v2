@@ -88,8 +88,12 @@ export default {
   },
 
   async fetch() {
-    this.miniBanner = await this.$repositories.home.miniBanner()
-    this.coursesPayload = await this.$repositories.courses.fetchLiveCourses()
+    try {
+      this.miniBanner = await this.$repositories.home.miniBanner()
+    } catch (err) {
+    } finally {
+      this.coursesPayload = await this.$repositories.courses.fetchLiveCourses()
+    }
   },
 }
 </script>

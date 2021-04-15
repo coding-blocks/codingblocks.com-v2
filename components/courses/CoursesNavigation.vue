@@ -33,15 +33,14 @@ export default {
   },
   computed: {
     tabPanelSlotName() {
-      let tabName = this.activeTab.toLowerCase().split(' ').join('-')
+      let tabName = (this.activeTab ?? 'online')
+        .toLowerCase()
+        .split(' ')
+        .join('-')
       return `body-${tabName}`
     },
   },
   methods: {
-    // tabHeadSlotName(tabName) {
-    //   let tabNameSorted = tabName.toLowerCase().split(' ').join('-')
-    //   return `tab-${tabNameSorted}`
-    // },
     switchTab(tabName) {
       this.activeTab = tabName
     },

@@ -93,6 +93,11 @@
                 </div>
               </div>
             </div>
+            <div v-if="user.error">
+              <div class="font-4 text-gradient-orange mt-10">
+                An error occured during registration. Kindly Try Again.
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -142,6 +147,7 @@ export default {
       params.id,
       user.id
     )
+
     return { event, user, status }
   },
   methods: {

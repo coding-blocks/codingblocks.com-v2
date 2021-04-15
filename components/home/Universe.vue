@@ -1,6 +1,5 @@
 <template>
   <div
-    v-if="stars"
     class="universe"
     :class="[size === 'small' ? 'universe--small mx-auto' : '']"
   >
@@ -20,11 +19,10 @@ export default {
   components: {
     UniverseOrbit,
   },
-  props: ['size'],
+  props: ['size', 'stars'],
   data() {
     return {
       counter: 0,
-      stars: null,
       currentStar: null,
     }
   },
@@ -47,10 +45,6 @@ export default {
       this.currentStar = arrayOfArrays
     },
   },
-
-  // async fetch() {
-  //   this.stars = await this.$repositories.home.fetchUniverse()
-  // },
 }
 </script>
 

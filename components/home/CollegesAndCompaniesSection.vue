@@ -72,7 +72,7 @@
         <img
           src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_colleges.svg"
         />
-        <div class="my-50">
+        <div class="my-sm-50 my-25">
           <div class="row">
             <div class="col-sm-4 pr-sm-40 mb-sm-none mb-40">
               <div class="row no-gutters align-items-center">

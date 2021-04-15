@@ -119,12 +119,13 @@ export default {
   async fetch() {
     this.classroomCoursesPayload = await this.$repositories.courses.fetchClassroomCourses()
     this.liveCoursesPayload = await this.$repositories.courses.fetchLiveCourses()
-    const res =  await fetch('https://account.codingblocks.com/api/users/me', {
+    this.user = await fetch('https://account.codingblocks.com/api/users/me', {
       credentials: 'include',
-    }).then((res) => res.json())
-    if(res && !res.error){
-      this.user = res;
-    }
+    }).then((res) => {
+      if (res.status === 200) {
+        res.json()
+      }
+    })
   },
 }
 </script>

@@ -123,7 +123,7 @@ export default {
       credentials: 'include',
     }).then((res) => {
       if (res.status === 200) {
-        res.json()
+        return res.json()
       }
     })
   },

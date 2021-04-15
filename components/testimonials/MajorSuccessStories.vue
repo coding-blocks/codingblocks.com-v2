@@ -2,7 +2,7 @@
   <!-- Success Stories Section -->
   <div class="landing-page__section">
     <div class="width-limiter">
-      <CardCarousel class="card align-items-center">
+      <CardCarousel class="card p-sm-30 p-10 align-items-center">
         <MajorSuccessStoryCard
           :story="story"
           v-for="(story, index) in majorStories"

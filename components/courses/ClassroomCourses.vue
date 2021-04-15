@@ -3,7 +3,7 @@
     <div class="landing-page__section">
       <div class="width-limiter">
         <div class="row no-gutters align-items-center justify-content-between">
-          <div class="flex-1 pr-20 t-align-lg-l t-align-c">
+          <div class="flex-1 pr-lg-20 t-align-lg-l t-align-c">
             <!-- Banner for smaller screens -->
             <div
               v-if="miniBanner"
@@ -11,7 +11,7 @@
               style="width: fit-content"
             >
               <!-- Just convert this to :href once added from backend -->
-              <a href="mini-banner.cta">
+              <a :href="miniBanner.cta">
                 <div class="bg-purple br-5 all-center mt-30">
                   <img :src="miniBanner.img_url" class="br-5" />
                 </div>
@@ -27,7 +27,7 @@
               class="mini-banner position-relative br-5 mb-30 d-lg-block d-none"
               style="width: fit-content"
             >
-              <a href="mini-banner.cta">
+              <a :href="miniBanner.cta">
                 <div class="bg-purple br-5 all-center mt-30">
                   <img :src="miniBanner.img_url" class="br-5" />
                 </div>
@@ -47,7 +47,7 @@
               class="d-lg-none d-block mt-50 mx-auto"
             />
           </div>
-          <div class="d-lg-block d-none">
+          <div class="col-6 d-lg-block d-none t-align-r">
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/classroom-courses-vector.svg"
             />

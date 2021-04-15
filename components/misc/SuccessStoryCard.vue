@@ -1,5 +1,5 @@
 <template>
-  <div class="card card--equal-height">
+  <div class="card card--equal-height justify-content-start">
     <div class="card__header card__header--border-highlight">
       <div class="flex-1">
         <div class="s-80x80 round">

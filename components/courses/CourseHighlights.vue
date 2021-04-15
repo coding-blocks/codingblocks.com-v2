@@ -1,5 +1,5 @@
 <template>
-  <div class="card p-none mb-50">
+  <div class="card p-none">
     <div class="row no-gutters align-items-center p-30 border-bottom">
       <img
         src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/highlights-grey-orange.svg"

@@ -25,7 +25,7 @@
         class="mini-banner position-relative br-5"
         style="max-width: 100%; width: fit-content"
       >
-        <a href="mini-banner.cta">
+        <a :href="miniBanner.cta">
           <div class="br-5">
             <img :src="miniBanner.img_url" class="br-5" />
           </div>
@@ -52,13 +52,13 @@
       <div class="t-align-c" style="margin: 0 -2.5rem">
         <Universe size="small" />
         <div class="heading-6 mt-30">Helping people get their dream job.</div>
-        <button class="button-tertiary mt-10">
+        <NuxtLink to="/testimonials" class="button-tertiary mt-10">
           View all our Alumni
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
             class="ml-2"
           />
-        </button>
+        </NuxtLink>
       </div>
       <div class="mt-30 mb-40">
         <div class="mb-15">
@@ -79,7 +79,7 @@
           class="mini-banner position-relative br-5"
           style="max-width: 100%; width: fit-content"
         >
-          <a href="mini-banner.cta">
+          <a :href="miniBanner.cta">
             <div class="br-5">
               <img :src="miniBanner.img_url" class="br-5" />
             </div>

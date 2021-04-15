@@ -1,18 +1,16 @@
 <template>
-  <client-only>
-    <div
-      v-if="stars"
-      class="universe"
-      :class="[size === 'small' ? 'universe--small mx-auto' : '']"
-    >
-      <div class="universe__star p-20">
-        <img :src="stars[counter].logo" />
-      </div>
-      <div v-for="(star, index) in currentStar" :key="index">
-        <UniverseOrbit :orbit="star" :index="index" />
-      </div>
+  <div
+    v-if="stars"
+    class="universe"
+    :class="[size === 'small' ? 'universe--small mx-auto' : '']"
+  >
+    <div class="universe__star p-lg-20 p-10">
+      <img :src="stars[counter].logo" />
     </div>
-  </client-only>
+    <div v-for="(star, index) in currentStar" :key="index">
+      <UniverseOrbit :orbit="star" :index="index" />
+    </div>
+  </div>
 </template>
 
 <script>
@@ -50,8 +48,20 @@ export default {
     },
   },
 
-  async fetch() {
-    this.stars = await this.$repositories.home.fetchUniverse()
-  },
+  // async fetch() {
+  //   this.stars = await this.$repositories.home.fetchUniverse()
+  // },
 }
 </script>
+
+<style scoped>
+.universe.universe--small .universe__orbit.universe__orbit--1 {
+  height: 130px;
+  width: 130px;
+}
+
+.universe .universe__orbit.universe__orbit--1 {
+  height: 200px;
+  width: 200px;
+}
+</style>

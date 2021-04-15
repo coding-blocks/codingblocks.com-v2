@@ -1,6 +1,6 @@
 <template>
   <div
-    class="col-12 course-section__cards pt-lg-60 pt-30 h-100 flex-col justify-content-between"
+    class="col-12 course-section__cards pt-lg-60 pt-30 h-100 flex-col justify-content-xl-between"
     :id="courseType"
   >
     <div class="w-100">
@@ -11,7 +11,7 @@
         Discover our most loved courses!
       </div>
     </div>
-    <div v-if="collapsedCourses" class="w-100">
+    <div v-if="collapsedCourses.length !== 0" class="w-100">
       <div class="row justify-content-center">
         <div
           v-for="course in collapsedCourses"
@@ -51,6 +51,23 @@
             class="ml-2"
           />
         </NuxtLink>
+      </div>
+    </div>
+    <div v-else class="w-100 h-100">
+      <div class="all-center h-100">
+        <div class="t-align-c">
+          <img
+            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/live-courses-vector.svg"
+            class="w-50 d-md-block d-none mx-auto"
+          />
+          <img
+            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/live-courses-vector.svg"
+            class="w-80 mx-auto d-md-none d-block"
+          />
+          <div class="text-gradient-orange heading-5 bold">
+            New Batches will be announced soon!
+          </div>
+        </div>
       </div>
     </div>
   </div>

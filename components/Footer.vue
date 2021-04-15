@@ -58,9 +58,9 @@
                       Success Stories
                     </NuxtLink>
                   </div>
-                  <div class="mb-30">
+                  <!-- <div class="mb-30">
                     <a href="#" class="font-4">Become a TA/Mentor</a>
-                  </div>
+                  </div> -->
                   <div>
                     <a href="https://blog.codingblocks.com/" class="font-4">
                       Blog
@@ -124,7 +124,13 @@
                     </NuxtLink>
                   </div>
                   <div class="mb-30">
-                    <a href="#" class="font-4">BOSS 2020</a>
+                    <a
+                      href="http://boss.codingblocks.com/"
+                      target="_blank"
+                      class="font-4"
+                    >
+                      BOSS 2020
+                    </a>
                   </div>
                   <div>
                     <a href="https://ide.codingblocks.com/" class="font-4">
@@ -165,11 +171,19 @@
         <div
           class="flex-1 t-align-xl-c t-align-r pl-xl-none pl-20 d-sm-block d-none"
         >
-          <div class="font-4 mb-10">Privacy Policy | Terms of Service</div>
+          <div class="font-4 mb-10">
+            <NuxtLink to="/privacy-policy">Privacy Policy</NuxtLink>
+            |
+            <NuxtLink to="/tos">Terms of Service</NuxtLink>
+          </div>
           <div class="font-4">Copyright 2020 - Coding Blocks Pvt. Ltd.</div>
         </div>
         <div class="col-12 t-align-c d-sm-none d-block mt-50">
-          <div class="font-4 mb-10">Privacy Policy | Terms of Service</div>
+          <div class="font-4 mb-10">
+            <NuxtLink to="/privacy-policy">Privacy Policy</NuxtLink>
+            |
+            <NuxtLink to="/tos">Terms of Service</NuxtLink>
+          </div>
           <div class="font-4">Copyright 2020 - Coding Blocks Pvt. Ltd.</div>
         </div>
         <div
@@ -208,7 +222,6 @@
           <a href="https://cb.lk/ghon">
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/github-black.svg"
-              class="mr-20"
             />
           </a>
         </div>
@@ -249,7 +262,6 @@
         <a href="https://cb.lk/ghon">
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/github-black.svg"
-            class="mr-20"
           />
         </a>
       </div>

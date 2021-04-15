@@ -1,10 +1,8 @@
 <template>
   <div>
-    <client-only>
-      <MainNav />
+    <MainNav />
 
-      <SubNavMegaNav />
-    </client-only>
+    <SubNavMegaNav />
   </div>
 </template>
 

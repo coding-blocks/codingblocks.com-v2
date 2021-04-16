@@ -1,6 +1,9 @@
 <template>
   <client-only>
-    <div v-if="user" :class="hamburgerMenu ? 't-align-c py-20' : 'ml-20'">
+    <div
+      v-if="user"
+      :class="hamburgerMenu ? 't-align-c py-20' : 'ml-20 d-md-block d-none'"
+    >
       <a
         class="user-text position-relative bold font-4"
         href="https://account.codingblocks.com/logout"

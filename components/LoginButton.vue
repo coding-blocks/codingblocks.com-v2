@@ -2,14 +2,14 @@
   <client-only>
     <div v-if="user" :class="hamburgerMenu ? 't-align-c py-20' : 'ml-20'">
       <a
-        class="user-text position-relative bold font-4 text-gradient-orange"
+        class="user-text position-relative bold font-4"
         href="https://account.codingblocks.com/logout"
       >
-        Hi, {{ user.firstname }}
+        <div class="text-gradient-orange">Hi, {{ user.firstname }}</div>
         <div
-          class="card p-10 font-2 text-grey-light-1 user-text-tooltip bg-white"
+          class="card p-10 font-2 text-grey-light-1 user-text-tooltip bg-white t-align-c"
         >
-          Click to Logout
+          <div>Click to Logout</div>
         </div>
       </a>
     </div>
@@ -51,13 +51,29 @@ export default {
 </script>
 
 <style scoped>
-.user-text {
+.user-text-tooltip {
   position: absolute !important;
   display: none;
 }
 
 .user-text:hover .user-text-tooltip {
   display: block;
-  bottom: -80px;
+  bottom: -100px;
 }
+
+/* .user-text::after {
+  content: 'Click To Logout';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  display: none;
+}
+
+.user-text:hover .user-text::after {
+  display: block;
+} */
 </style>

@@ -11,6 +11,7 @@
     <div>
       <div
         class="row justify-content-lg-start justify-content-md-center justify-content-start h-100"
+        v-if="collapsedCourses.length !== 0"
       >
         <div
           v-for="course in collapsedCourses"
@@ -19,6 +20,16 @@
         >
           <OnlineCourseCard :course="course" v-if="type == 'online'" />
           <CourseCard :course="course" v-else />
+        </div>
+      </div>
+      <div class="all-center h-100" v-else>
+        <div>
+          <img
+            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/no-courses.svg"
+          />
+          <div class="text-gradient-orange heading-5 bold t-align-c">
+            New Batches will be announced soon!
+          </div>
         </div>
       </div>
     </div>

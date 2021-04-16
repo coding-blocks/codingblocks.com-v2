@@ -63,18 +63,7 @@
                 </div>
               </div>
             </div>
-            <div v-if="user">
-              {{ user.firstname }}
-            </div>
-            <div v-else>
-              <a
-                href="https://account.codingblocks.com/login"
-                class="button-primary ml-20 d-md-block d-none"
-                target="_blank"
-              >
-                Login / Signup
-              </a>
-            </div>
+            <LoginButton />
           </div>
         </div>
       </div>
@@ -83,25 +72,26 @@
     <HamburgerNav
       :show="displayHamburgerNav"
       @closeHamburger="displayHamburgerNav = false"
-      :user="user"
     />
   </div>
 </template>
 
 <script>
 import HamburgerNav from '@/components/HamburgerNav.vue'
+import LoginButton from '@/components/LoginButton.vue'
 
 export default {
   data() {
     return {
       classroomCoursesPayload: [],
       liveCoursesPayload: [],
-      user: null,
+      // user: null,
       displayHamburgerNav: false,
     }
   },
   components: {
     HamburgerNav,
+    LoginButton,
   },
   mounted() {
     const hamburgerOpenToggle = document.querySelector('#hamburger-open')
@@ -119,13 +109,13 @@ export default {
   async fetch() {
     this.classroomCoursesPayload = await this.$repositories.courses.fetchClassroomCourses()
     this.liveCoursesPayload = await this.$repositories.courses.fetchLiveCourses()
-    this.user = await fetch('https://account.codingblocks.com/api/users/me', {
-      credentials: 'include',
-    }).then((res) => {
-      if (res.status === 200) {
-        return res.json()
-      }
-    })
+    // this.user = await fetch('https://account.codingblocks.com/api/users/me', {
+    //   credentials: 'include',
+    // }).then((res) => {
+    //   if (res.status === 200) {
+    //     return res.json()
+    //   }
+    // })
   },
 }
 </script>

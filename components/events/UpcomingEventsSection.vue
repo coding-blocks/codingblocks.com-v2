@@ -1,5 +1,5 @@
 <template>
-  <div class="landing-page__section pb-none">
+  <div class="landing-page__section pb-xl-50 pb-lg-35">
     <div class="width-limiter">
       <div
         class="row no-gutters align-items-center justify-content-between mb-50"
@@ -23,13 +23,26 @@
           </div>
         </div>
       </div>
-      <div class="row no-gutters c-card-carousel-lg">
+      <div
+        class="row no-gutters c-card-carousel-lg"
+        v-if="finalEventsPayload.length !== 0"
+      >
         <div
-          class="col-lg-4 col-md-7 col-sm-8 col-11 pr-xl-40 pr-sm-30 pr-20 mb-50"
+          class="col-lg-4 col-md-7 col-sm-8 col-11 pr-xl-40 pr-sm-30 pr-20 pb-lg-50"
           v-for="(event, index) in finalEventsPayload"
           :key="index"
         >
           <EventsCard :event="event" />
+        </div>
+      </div>
+      <div class="all-center h-100" v-else>
+        <div>
+          <img
+            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/no-courses.svg"
+          />
+          <div class="text-gradient-orange heading-5 bold t-align-c">
+            New Events will be announced soon!
+          </div>
         </div>
       </div>
     </div>

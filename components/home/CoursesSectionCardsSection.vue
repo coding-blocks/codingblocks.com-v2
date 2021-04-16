@@ -57,11 +57,11 @@
       <div class="all-center h-100">
         <div class="t-align-c">
           <img
-            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/live-courses-vector.svg"
+            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/no-courses.svg"
             class="w-50 d-md-block d-none mx-auto"
           />
           <img
-            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/live-courses-vector.svg"
+            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/no-courses.svg"
             class="w-80 mx-auto d-md-none d-block"
           />
           <div class="text-gradient-orange heading-5 bold">

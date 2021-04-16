@@ -17,26 +17,7 @@
       />
     </div>
     <div>
-      <div v-if="user" class="t-align-c py-20">
-        <a
-          href="https://account.codingblocks.com/login"
-          target="_blank"
-          class="button-primary"
-          @click="$emit('closeHamburger')"
-        >
-          {{ user.firstname }}
-        </a>
-      </div>
-      <div v-else class="t-align-c py-20">
-        <a
-          href="https://account.codingblocks.com/login"
-          target="_blank"
-          class="button-primary"
-          @click="$emit('closeHamburger')"
-        >
-          Login / Signup
-        </a>
-      </div>
+      <LoginButton :hamburgerMenu="true" @click="$emit('closeHamburger')" />
       <div class="px-40" @click="$emit('closeHamburger')">
         <a href="https://online.codingblocks.com" target="_blank">
           <div class="mb-15 hamburger-nav__menu-element">
@@ -355,15 +336,17 @@
 </template>
 
 <script>
+import LoginButton from '@/components/LoginButton.vue'
+
 export default {
   props: {
     show: {
       type: Boolean,
       required: true,
     },
-    user: {
-      type: Object,
-    },
+  },
+  components: {
+    LoginButton,
   },
   data() {
     return {

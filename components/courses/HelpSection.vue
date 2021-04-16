@@ -34,7 +34,7 @@
                   >
                     <div
                       class="h-100 option-div option-div--rect"
-                      v-on:click="setCurrentStatus($event)"
+                      v-on:click="setCurrentStatus($event, `student`)"
                     >
                       <div class="font-5 bold flex-1 pr-2">
                         High School Student
@@ -50,7 +50,7 @@
                   >
                     <div
                       class="h-100 option-div option-div--rect"
-                      v-on:click="setCurrentStatus($event)"
+                      v-on:click="setCurrentStatus($event, `student`)"
                     >
                       <div class="font-5 bold flex-1 pr-2">College Fresher</div>
                       <img
@@ -62,7 +62,7 @@
                   <div class="col-lg-12 col-md-3 col-6 h-inherit mb-lg-40">
                     <div
                       class="h-100 option-div option-div--rect"
-                      v-on:click="setCurrentStatus($event)"
+                      v-on:click="setCurrentStatus($event, `student`)"
                     >
                       <div class="font-5 bold flex-1 pr-2">Recent Graduate</div>
                       <img
@@ -74,7 +74,7 @@
                   <div class="col-lg-12 col-md-3 col-6 h-inherit">
                     <div
                       class="h-100 option-div option-div--rect"
-                      v-on:click="setCurrentStatus($event)"
+                      v-on:click="setCurrentStatus($event, `professional`)"
                     >
                       <div class="font-5 bold flex-1 pr-2">
                         Working Professional
@@ -95,7 +95,7 @@
                   <div class="heading-5 bold col-md-7 col-12 mb-sm-none mb-20">
                     ... &amp; I want to become a
                   </div>
-                  <button class="button-primary d-md-block d-none">
+                  <button class="button-primary d-md-block d-none"                   @click="fetchRecommened">
                     Show me results
                     <img
                       src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg"
@@ -107,7 +107,7 @@
                   <div class="col-md-3 col-sm-4 col-6 h-inherit mb-40">
                     <div
                       class="option-div option-div--square h-100"
-                      v-on:click="setRole($event)"
+                      v-on:click="setRole($event,3)"
                     >
                       <div>
                         <img
@@ -126,7 +126,7 @@
                   <div class="col-md-3 col-sm-4 col-6 h-inherit mb-40">
                     <div
                       class="option-div option-div--square h-100"
-                      v-on:click="setRole($event)"
+                      v-on:click="setRole($event,7)"
                     >
                       <div>
                         <img
@@ -145,7 +145,7 @@
                   <div class="col-md-3 col-sm-4 col-6 h-inherit mb-40">
                     <div
                       class="option-div option-div--square h-100"
-                      v-on:click="setRole($event)"
+                      v-on:click="setRole($event,8)"
                     >
                       <div>
                         <img
@@ -164,7 +164,7 @@
                   <div class="col-md-3 col-sm-4 col-6 h-inherit mb-40">
                     <div
                       class="option-div option-div--square h-100"
-                      v-on:click="setRole($event)"
+                      v-on:click="setRole($event,2)"
                     >
                       <div>
                         <img
@@ -172,7 +172,7 @@
                         />
                       </div>
                       <div class="font-5 bold mt-4 t-align-c">
-                        Software Developer
+                        Java Developer
                       </div>
                       <img
                         src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/option-div-icon-orange.svg"
@@ -185,7 +185,7 @@
                   >
                     <div
                       class="option-div option-div--square h-100"
-                      v-on:click="setRole($event)"
+                      v-on:click="setRole($event,1)"
                     >
                       <div>
                         <img
@@ -206,7 +206,7 @@
                   >
                     <div
                       class="option-div option-div--square h-100"
-                      v-on:click="setRole($event)"
+                      v-on:click="setRole($event,6)"
                     >
                       <div>
                         <img
@@ -225,7 +225,7 @@
                   <div class="col-md-3 col-sm-4 col-6 h-inherit">
                     <div
                       class="option-div option-div--square h-100"
-                      v-on:click="setRole($event)"
+                      v-on:click="setRole($event,9)"
                     >
                       <div>
                         <img
@@ -244,7 +244,7 @@
                   <div class="col-md-3 col-sm-4 col-6 h-inherit">
                     <div
                       class="option-div option-div--square h-100"
-                      v-on:click="setRole($event)"
+                      v-on:click="setRole($event,6)"
                     >
                       <div>
                         <img
@@ -263,7 +263,8 @@
                 </div>
               </div>
               <div class="col-12 d-md-none d-block mt-40">
-                <button class="button-primary">
+                <button class="button-primary"
+                  @click="fetchRecommened">
                   Show me results
                   <img
                     src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg"
@@ -336,31 +337,36 @@ export default {
   data() {
     return {
       showModal: false,
-      professions: {},
+      professions: [],
+      type: null,
+      selectedProfession:null
     }
   },
   methods: {
     setShowModal(value) {
       this.showModal = value
     },
-    setCurrentStatus(event) {
+    setCurrentStatus(event, profession) {
       const helpStatusSection = document.querySelector('#help-section-status')
       helpStatusSection.querySelectorAll('.option-div').forEach((optionDiv) => {
         optionDiv.classList.remove('selected')
       })
 
       event.currentTarget.classList.add('selected')
+      this.type = profession
     },
-    setRole(event) {
+    setRole(event,id) {
       const helpRoleSection = document.querySelector('#help-section-role')
       helpRoleSection.querySelectorAll('.option-div').forEach((optionDiv) => {
         optionDiv.classList.remove('selected')
       })
 
       event.currentTarget.classList.add('selected')
+      this.selectedProfession = id
     },
-    async fetch() {
-      this.professions = await this.$repositories.courses.fetchProfessions
+    async fetchRecommened() {
+     const response = await this.$repositories.courses.fetchRecommened(this.selectedProfession, this.type)
+     window.open(`https://online.codingblocks.com/app/tracks/${response.slug}`)
     },
   },
 }

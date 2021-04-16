@@ -48,4 +48,14 @@ export default ($axios, $api) => ({
     const payload = deserialize(response.data)
     return payload.data
   },
+
+  async fetchRecommened(profession, status) {
+    const response = await $api.post(`career_tracks/recommend`, {
+      professionId: profession,
+      status,
+    })
+
+    const payload = deserialize(response.data)
+    return payload.data
+  },
 })

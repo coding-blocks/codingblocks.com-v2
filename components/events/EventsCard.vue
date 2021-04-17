@@ -42,12 +42,13 @@
         <div
           class="mentor-row__image-container mentor-row__image-container--mentor-2"
         >
-          <img
-            :src="mentor.img"
+          <div
             v-for="(mentor, index) in event.mentors"
             :key="index"
             class="mentor-row__image-container__mentor-image s-80x80"
-          />
+          >
+            <img :src="mentor.img" class="w-100 h-100" />
+          </div>
         </div>
       </div>
     </div>
@@ -103,3 +104,10 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.mentor-row__image-container__mentor-image {
+  border: 1px solid #f26a3e;
+  overflow: hidden;
+}
+</style>

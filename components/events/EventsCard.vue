@@ -34,7 +34,11 @@
         <div class="mentor-row__text-container align-self-center pr-100">
           <div>MENTOR</div>
           <div class="font-5 bold mt-10">
-            <span v-for="(mentor, index) in event.mentors" :key="index">
+            <span
+              v-for="(mentor, index) in event.mentors"
+              :key="index"
+              class="mentor-name"
+            >
               {{ mentor.name.split(' ')[0] }}
             </span>
           </div>
@@ -109,5 +113,9 @@ export default {
 .mentor-row__image-container__mentor-image {
   border: 1px solid #f26a3e;
   overflow: hidden;
+}
+
+.mentor-name:not(:last-child)::after {
+  content: ', ';
 }
 </style>

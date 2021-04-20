@@ -4,7 +4,7 @@
       <div
         v-for="(banner, index) in banners"
         :key="index"
-        class="slideshow-container__slide col-12 p-xl-100 p-lg-75 p-md-50 p-40 d-block"
+        class="slideshow-container__slide col-12 p-lg-60 p-md-50 p-40 d-block"
         :class="`bg-gradient-${banner.bg_color}`"
       >
         <div class="row align-items-center no-gutters h-100">

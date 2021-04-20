@@ -3,54 +3,77 @@
     class="col-12 course-section__cards pt-lg-60 pt-30 h-100 flex-col justify-content-xl-between"
     :id="courseType"
   >
-    <div class="w-100">
-      <div class="heading-4 bold">
-        Learn to code professionally in the industry!
-      </div>
-      <div class="heading-6 text-blue mb-40 mt-2">
-        Discover our most loved courses!
-      </div>
-    </div>
-    <div v-if="collapsedCourses.length !== 0" class="w-100">
-      <div class="row justify-content-center">
-        <div
-          v-for="course in collapsedCourses"
-          :key="course.id"
-          class="col-md-6 col-sm-8 col-12 mb-30"
-        >
-          <div v-if="courseType == 'online'">
-            <a
-              :href="`https://online.codingblocks.com/courses/${course.slug}`"
-              target="_blank"
-            >
-              <OnlineCourseCardSmall :course="course" />
-            </a>
+    <div
+      class="w-100 h-100 flex-col justify-content-xl-between"
+      v-if="collapsedCourses.length !== 0"
+    >
+      <div
+        class="w-100 row no-gutters align-items-center justify-content-between mb-40"
+      >
+        <div class="flex-1 pr-20">
+          <div class="heading-4 bold">
+            Learn to code professionally in the industry!
           </div>
-          <div v-else>
-            <NuxtLink
-              :to="{
-                path: `/courses/${course.slug}`,
-                query: {
-                  batch: `${courseType}`,
-                },
-              }"
-            >
-              <CourseCardSmall :course="course" />
-            </NuxtLink>
+          <div class="heading-6 text-blue mt-2">
+            Discover our most loved courses!
           </div>
         </div>
-      </div>
-      <div class="t-align-c">
         <NuxtLink
-          class="button-tertiary"
+          class="button-secondary d-sm-block d-none"
           :to="{ path: '/courses', query: { type: `${courseType}` } }"
         >
-          Explore All {{ courseType }} Courses
+          Explore All&nbsp;
+          <strong>{{ courseType.toUpperCase() }}</strong>
+          &nbsp;Courses
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
             class="ml-2"
           />
         </NuxtLink>
+      </div>
+      <div class="w-100">
+        <div class="row justify-content-center">
+          <div
+            v-for="course in collapsedCourses"
+            :key="course.id"
+            class="col-md-6 col-sm-8 col-12 mb-30"
+          >
+            <div v-if="courseType == 'online'">
+              <a
+                :href="`https://online.codingblocks.com/courses/${course.slug}`"
+                target="_blank"
+              >
+                <OnlineCourseCardSmall :course="course" />
+              </a>
+            </div>
+            <div v-else>
+              <NuxtLink
+                :to="{
+                  path: `/courses/${course.slug}`,
+                  query: {
+                    batch: `${courseType}`,
+                  },
+                }"
+              >
+                <CourseCardSmall :course="course" />
+              </NuxtLink>
+            </div>
+          </div>
+        </div>
+        <div class="d-sm-none d-block t-align-c">
+          <NuxtLink
+            class="button-secondary"
+            :to="{ path: '/courses', query: { type: `${courseType}` } }"
+          >
+            Explore All&nbsp;
+            <strong>{{ courseType.toUpperCase() }}</strong>
+            &nbsp;Courses
+            <img
+              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
+              class="ml-2"
+            />
+          </NuxtLink>
+        </div>
       </div>
     </div>
     <div v-else class="w-100 h-100">

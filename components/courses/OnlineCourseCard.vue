@@ -1,5 +1,8 @@
 <template>
-  <div class="card card--equal-height card--course theme-pink">
+  <div
+    class="card card--equal-height card--course theme-pink"
+    :class="themes[Math.floor(Math.random() * (5 + 1))]"
+  >
     <div class="card__header card__header--border-highlight">
       <div class="flex-1">
         <div
@@ -64,6 +67,17 @@ export default {
     course: {
       type: Object,
     },
+  },
+  data() {
+    return {
+      themes: [
+        'theme-pink',
+        'theme-blue',
+        'theme-orange',
+        'theme-green',
+        'theme-purple',
+      ],
+    }
   },
   components: {
     RatingsComponent,

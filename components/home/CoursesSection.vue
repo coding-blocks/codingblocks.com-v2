@@ -4,11 +4,11 @@
     id="course-section"
   >
     <div class="width-limiter">
-      <div class="row no-gutters mb-60">
+      <div class="row no-gutters">
         <div
           class="col-xl-4 bg-grey-light-3 pt-xl-60 pt-30 t-align-c course-section__navigation z-pos h-inherit"
         >
-          <div class="heading-font stroke-font">LEARN.</div>
+          <div class="heading-font stroke-font">LETS.</div>
           <div class="heading-font">LEARN.</div>
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_learn.svg"
@@ -79,7 +79,7 @@
           </div>
         </div>
       </div>
-      <div class="card bg-grey-light-3">
+      <!-- <div class="card bg-grey-light-3">
         <div
           class="row no-gutters justify-content-between align-items-center side-tag"
         >
@@ -99,27 +99,27 @@
             </button>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
-    <ModalForm v-if="showModal" @close="setShowModal(false)">
+    <!-- <ModalForm v-if="showModal" @close="setShowModal(false)">
       <ConsultationForm />
-    </ModalForm>
+    </ModalForm> -->
   </div>
 </template>
 
 <script>
 import CourseCardSmall from '@/components/courses/CourseCardSmall.vue'
 import CoursesSectionCardsSection from '@/components/home/CoursesSectionCardsSection.vue'
-import ModalForm from '@/components/misc/ModalForm.vue'
-import ConsultationForm from '@/components/misc/ConsultationForm.vue'
+// import ModalForm from '@/components/misc/ModalForm.vue'
+// import ConsultationForm from '@/components/misc/ConsultationForm.vue'
 
 export default {
   components: {
     CourseCardSmall,
     CoursesSectionCardsSection,
-    ModalForm,
-    ConsultationForm,
+    // ModalForm,
+    // ConsultationForm,
   },
   mounted() {
     const onlineButton = document.querySelector('#online-courses')
@@ -169,15 +169,15 @@ export default {
       onlineButton.classList.remove('active')
     })
   },
-  data() {
-    return {
-      showModal: false,
-    }
-  },
-  methods: {
-    setShowModal(value) {
-      this.showModal = value
-    },
-  },
+  // data() {
+  //   return {
+  //     showModal: false,
+  //   }
+  // },
+  // methods: {
+  //   setShowModal(value) {
+  //     this.showModal = value
+  //   },
+  // },
 }
 </script>

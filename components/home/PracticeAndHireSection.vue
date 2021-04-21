@@ -1,20 +1,14 @@
 <template>
-  <DividedSection>
+  <DividedSection :showFormCard="true">
     <template v-slot:left_section>
       <div class="t-align-lg-l t-align-c">
-        <div class="heading-font stroke-font">
-          PRACTICE.
-        </div>
-        <div class="heading-font">
-          PRACTICE.
-        </div>
+        <div class="heading-font stroke-font">AND.</div>
+        <div class="heading-font">PRACTICE.</div>
         <img
           src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_events.svg"
         />
         <div class="my-50">
-          <div class="heading-2 bold">
-            Practice real interview Questions!
-          </div>
+          <div class="heading-2 bold">Practice real interview Questions!</div>
           <div class="mt-2 text-pink heading-4">
             Over <strong>50m+</strong> Code submissions done.
           </div>
@@ -35,19 +29,13 @@
 
     <template v-slot:right_section>
       <div class="t-align-lg-l t-align-c">
-        <div class="heading-font stroke-font">
-          GET HIRED.
-        </div>
-        <div class="heading-font">
-          GET HIRED.
-        </div>
+        <div class="heading-font stroke-font">TO GET.</div>
+        <div class="heading-font">HIRED.</div>
         <img
           src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_news.svg"
         />
         <div class="my-50">
-          <div class="heading-2 bold">
-            Land your dream job!
-          </div>
+          <div class="heading-2 bold">Land your dream job!</div>
           <div class="mt-2 text-blue-light-1 heading-4">
             Apply to the dream job with more than <strong>400+</strong> hiring
             partners
@@ -70,11 +58,11 @@
 </template>
 
 <script>
-import DividedSection from "@/components/misc/DividedSection.vue";
+import DividedSection from '@/components/misc/DividedSection.vue'
 
 export default {
   components: {
     DividedSection,
   },
-};
+}
 </script>

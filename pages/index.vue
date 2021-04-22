@@ -10,8 +10,8 @@
       <div class="width-limiter">
         <div class="row no-gutters justify-content-between align-items-center">
           <div class="flex-1 t-align-lg-l t-align-c">
-            <div class="heading-font stroke-font">ALUMNI NETWORK.</div>
-            <div class="heading-font">ALUMNI NETWORK.</div>
+            <div class="heading-font stroke-font">ALUMNI.</div>
+            <div class="heading-font">NETWORK.</div>
             <img
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_news.svg"
             />

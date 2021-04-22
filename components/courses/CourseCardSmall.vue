@@ -1,6 +1,7 @@
 <template>
   <div
-    class="card card--equal-height card--course theme-pink justify-content-center"
+    class="card card--equal-height card--course justify-content-center theme-pink"
+    :class="course.theme"
   >
     <div class="card__header card__header--border-highlight mb-none">
       <div>

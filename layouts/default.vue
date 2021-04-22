@@ -1,5 +1,5 @@
 <template>
-  <div class="a-cbm" style="margin-top: -70px">
+  <div class="a-cbm main-website" style="margin-top: -70px">
     <Navigation />
     <Nuxt />
     <Footer />

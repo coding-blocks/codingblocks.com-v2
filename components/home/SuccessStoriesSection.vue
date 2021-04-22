@@ -13,11 +13,13 @@
       </div>
       <div class="mt-sm-50 mt-25">
         <CardCarousel>
-          <SuccessStory
-            :story="story"
-            v-for="(story, index) in stories.slice(0, 5)"
+          <div
+            class="col-lg-4 col-md-6 h-inherit carousel__slide"
+            v-for="(story, index) in stories.slice(0, 9)"
             :key="index"
-          />
+          >
+            <SuccessStoryCard :story="story" />
+          </div>
         </CardCarousel>
       </div>
     </div>
@@ -26,12 +28,12 @@
 
 <script>
 import CardCarousel from '@/components/misc/CardCarousel.vue'
-import SuccessStory from '@/components/misc/SuccessStory.vue'
+import SuccessStoryCard from '@/components/misc/SuccessStoryCard.vue'
 
 export default {
   components: {
     CardCarousel,
-    SuccessStory,
+    SuccessStoryCard,
   },
   data() {
     return {
@@ -39,7 +41,7 @@ export default {
     }
   },
   async fetch() {
-    this.stories = await this.$repositories.home.successStories()
+    this.stories = await this.$repositories.home.fetchSuccessStoriesByPage()
   },
 }
 </script>

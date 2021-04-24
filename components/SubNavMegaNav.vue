@@ -36,7 +36,7 @@
           <div
             class="row no-gutters align-items-center font-4 text-grey pointer"
           >
-            <NuxtLink to="/company"> Contact </NuxtLink>
+            <NuxtLink to="/contact"> Contact </NuxtLink>
           </div>
         </div>
       </div>

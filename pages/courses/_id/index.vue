@@ -70,6 +70,8 @@
         </div>
       </div>
     </div>
+
+    <FAQSection :faqs="course.faqs" />
   </div>
 </template>
 
@@ -81,6 +83,7 @@ import CourseBatch from '@/components/courses/CourseBatch.vue'
 import CourseHighlights from '@/components/courses/CourseHighlights.vue'
 import CoursePageMentorsSection from '@/components/courses/CoursePageMentorsSection.vue'
 import SuccessStoryCard from '@/components/misc/SuccessStoryCard.vue'
+import FAQSection from '@/components/courses/FAQSection.vue'
 
 export default {
   data() {
@@ -96,6 +99,16 @@ export default {
     CourseHighlights,
     CoursePageMentorsSection,
     SuccessStoryCard,
+    FAQSection,
+  },
+  mounted() {
+    document.querySelectorAll('.buy-scroll-button').forEach((button) => {
+      button.addEventListener('click', () => {
+        document
+          .querySelector('#buy-card-section')
+          .scrollIntoView({ behavior: 'smooth' })
+      })
+    })
   },
   async asyncData({ params, $repositories }) {
     const course = await $repositories.courses.fetchCourseBySlug(params.id)

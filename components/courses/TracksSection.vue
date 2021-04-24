@@ -76,6 +76,11 @@ export default {
       trackButton.querySelector('.track-button').classList.add('active')
     },
   },
+  mounted() {
+    const trackButtonDefault = document.getElementById(`batch-1`)
+    if (trackButtonDefault === null) return
+    trackButtonDefault.querySelector('.track-button').classList.add('active')
+  },
 }
 </script>
 

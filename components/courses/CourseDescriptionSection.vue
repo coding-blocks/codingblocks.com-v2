@@ -29,25 +29,30 @@
               >
                 {{ course.description }}
               </div>
-              <div
-                class="row no-gutters justify-content-lg-start justify-content-center t-align-lg-l t-align-c"
-              >
-                <div
-                  class="br-5 d-inline-block p-2 bg-gradient-orange-light mr-30 font-2 white"
-                >
-                  <span class="v-align-m">
-                    {{ course.difficulty.toUpperCase() }}
-                  </span>
-                </div>
-                <div class="mr-30">
-                  <div class="font-2">Course Language</div>
-                  <div class="font-4 bold mt-1">
-                    {{ course.languages.join() }}
+              <div class="row no-gutters justify-content-between">
+                <div class="row no-gutters align-items-center">
+                  <div
+                    class="br-5 d-inline-block p-2 bg-gradient-orange-light mr-20 font-2 white"
+                  >
+                    <span class="v-align-m">
+                      {{ course.difficulty.toUpperCase() }}
+                    </span>
+                  </div>
+                  <div class="mr-20">
+                    <div class="font-2">Course Language</div>
+                    <div class="font-4 bold mt-1">
+                      {{ course.languages.join() }}
+                    </div>
+                  </div>
+                  <div>
+                    <div class="font-2">Course Duration</div>
+                    <div class="font-4 bold mt-1">{{ course.duration }}</div>
                   </div>
                 </div>
-                <div>
-                  <div class="font-2">Course Duration</div>
-                  <div class="font-4 bold mt-1">{{ course.duration }}</div>
+                <div class="flex-1 row no-gutters justify-content-end ml-10">
+                  <button class="button-primary" id="buy-scroll-button">
+                    Buy Course
+                  </button>
                 </div>
               </div>
             </div>

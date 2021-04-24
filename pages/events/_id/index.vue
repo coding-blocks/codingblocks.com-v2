@@ -68,7 +68,7 @@
               </div>
               <div v-else class="position-relative tooltip-container">
                 <button class="button-primary" @click="handleRegister">
-                  Register using Oneauth
+                  Register
                   <img
                     src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg"
                     class="ml-2"

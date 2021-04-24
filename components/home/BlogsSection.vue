@@ -23,11 +23,11 @@
           </a>
         </div>
       </div>
-      <!-- <div class="mt-sm-50 mt-25">
+      <div class="mt-sm-50 mt-25">
         <div class="row no-gutters c-card-carousel-md">
           <BlogCard v-for="(blog, index) in blogs" :key="index" :blog="blog" />
         </div>
-      </div> -->
+      </div>
       <div class="d-md-none d-block mt-25 t-align-c">
         <a
           class="button-primary"
@@ -46,24 +46,44 @@
 </template>
 
 <script>
-// import BlogCard from '@/components/home/BlogCard.vue'
+import BlogCard from '@/components/home/BlogCard.vue'
 
-// export default {
-//   data() {
-//     return {
-//       blogs: [
-//         {
-//           title: 'AI to take over jobs?',
-//           body:
-//             'Something just like this is hampering my head space and fucking up! Something just like this is hampering my head space and fucking up! Something just like this is hampering my head space and fucking up! Something just like this is hampering my head space and fucking up!',
-//           image: 'https://scx1.b-cdn.net/csz/news/800/2018/hack.jpg',
-//           link: '',
-//         },
-//       ],
-//     }
-//   },
-//   components: {
-//     BlogCard,
-//   },
-// }
+export default {
+  data() {
+    return {
+      blogs: [
+        {
+          title: 'Machine Learning Predictions for 2021',
+          body:
+            'The greatest benefit of machine learning may ultimately be not what the machines learn but what we learn by teaching them.',
+          image:
+            'https://blog.codingblocks.com/content/images/size/w2000/2021/04/ml-predictions-2021.jpg',
+          link:
+            'https://blog.codingblocks.com/2021/machine-learning-predictions-for-2021/',
+        },
+        {
+          title: 'A thorough guide to Android Development for Beginners',
+          body:
+            'In the 21st century, mobile applications have become quite a significant enabler of global engagement in various creative ways.',
+          image:
+            'https://blog.codingblocks.com/content/images/size/w2000/2020/08/Android-Blog.jpg',
+          link:
+            'https://blog.codingblocks.com/2020/a-thorough-guide-to-android-development-for-beginners/',
+        },
+        {
+          title: 'A thorough guide to C++ for Beginners',
+          body:
+            'Whenever a tech-enthusiast thinks of exploring the field of programming, the first major question is about the language s/he should learn.',
+          image:
+            'https://blog.codingblocks.com/content/images/size/w2000/2020/07/c---guide.jpg',
+          link:
+            'https://blog.codingblocks.com/2020/a-thorough-guide-to-c-for-beginners/',
+        },
+      ],
+    }
+  },
+  components: {
+    BlogCard,
+  },
+}
 </script>

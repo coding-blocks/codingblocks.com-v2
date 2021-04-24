@@ -95,7 +95,10 @@
                   <div class="heading-5 bold col-md-7 col-12 mb-sm-none mb-20">
                     ... &amp; I want to become a
                   </div>
-                  <button class="button-primary d-md-block d-none"                   @click="fetchRecommened">
+                  <button
+                    class="button-primary d-md-block d-none"
+                    @click="fetchRecommened"
+                  >
                     Show me results
                     <img
                       src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg"
@@ -107,7 +110,7 @@
                   <div class="col-md-3 col-sm-4 col-6 h-inherit mb-40">
                     <div
                       class="option-div option-div--square h-100"
-                      v-on:click="setRole($event,3)"
+                      v-on:click="setRole($event, 3)"
                     >
                       <div>
                         <img
@@ -126,7 +129,7 @@
                   <div class="col-md-3 col-sm-4 col-6 h-inherit mb-40">
                     <div
                       class="option-div option-div--square h-100"
-                      v-on:click="setRole($event,7)"
+                      v-on:click="setRole($event, 7)"
                     >
                       <div>
                         <img
@@ -145,7 +148,7 @@
                   <div class="col-md-3 col-sm-4 col-6 h-inherit mb-40">
                     <div
                       class="option-div option-div--square h-100"
-                      v-on:click="setRole($event,8)"
+                      v-on:click="setRole($event, 8)"
                     >
                       <div>
                         <img
@@ -164,7 +167,7 @@
                   <div class="col-md-3 col-sm-4 col-6 h-inherit mb-40">
                     <div
                       class="option-div option-div--square h-100"
-                      v-on:click="setRole($event,2)"
+                      v-on:click="setRole($event, 2)"
                     >
                       <div>
                         <img
@@ -185,7 +188,7 @@
                   >
                     <div
                       class="option-div option-div--square h-100"
-                      v-on:click="setRole($event,1)"
+                      v-on:click="setRole($event, 1)"
                     >
                       <div>
                         <img
@@ -206,7 +209,7 @@
                   >
                     <div
                       class="option-div option-div--square h-100"
-                      v-on:click="setRole($event,6)"
+                      v-on:click="setRole($event, 6)"
                     >
                       <div>
                         <img
@@ -225,7 +228,7 @@
                   <div class="col-md-3 col-sm-4 col-6 h-inherit">
                     <div
                       class="option-div option-div--square h-100"
-                      v-on:click="setRole($event,9)"
+                      v-on:click="setRole($event, 9)"
                     >
                       <div>
                         <img
@@ -244,7 +247,7 @@
                   <div class="col-md-3 col-sm-4 col-6 h-inherit">
                     <div
                       class="option-div option-div--square h-100"
-                      v-on:click="setRole($event,6)"
+                      v-on:click="setRole($event, 6)"
                     >
                       <div>
                         <img
@@ -263,8 +266,7 @@
                 </div>
               </div>
               <div class="col-12 d-md-none d-block mt-40">
-                <button class="button-primary"
-                  @click="fetchRecommened">
+                <button class="button-primary" @click="fetchRecommened">
                   Show me results
                   <img
                     src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon.svg"
@@ -339,7 +341,7 @@ export default {
       showModal: false,
       professions: [],
       type: null,
-      selectedProfession:null
+      selectedProfession: null,
     }
   },
   methods: {
@@ -355,7 +357,7 @@ export default {
       event.currentTarget.classList.add('selected')
       this.type = profession
     },
-    setRole(event,id) {
+    setRole(event, id) {
       const helpRoleSection = document.querySelector('#help-section-role')
       helpRoleSection.querySelectorAll('.option-div').forEach((optionDiv) => {
         optionDiv.classList.remove('selected')
@@ -365,8 +367,11 @@ export default {
       this.selectedProfession = id
     },
     async fetchRecommened() {
-     const response = await this.$repositories.courses.fetchRecommened(this.selectedProfession, this.type)
-     window.open(`https://online.codingblocks.com/app/tracks/${response.slug}`)
+      const response = await this.$repositories.courses.fetchRecommened(
+        this.selectedProfession,
+        this.type
+      )
+      window.open(`https://online.codingblocks.com/app/tracks/${response.slug}`)
     },
   },
 }

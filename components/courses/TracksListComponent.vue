@@ -70,11 +70,9 @@
   <div class="h-100 all-center" v-else>
     <div>
       <img
-        src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/select-track-removebg-preview.png"
+        src="https://minio.codingblocks.com/amoeba/online-loader.gif"
+        alt="loading..."
       />
-      <div class="heading-5 t-align-c bold text-gradient-orange mt-10">
-        PLEASE SELECT A TRACK TO GET GOING!
-      </div>
     </div>
   </div>
 </template>
@@ -83,7 +81,12 @@
 import RatingsComponent from '@/components/misc/RatingsComponent.vue'
 
 export default {
-  props: ['id'],
+  props: {
+    id: {
+      type: String,
+      default: 1,
+    },
+  },
   components: {
     RatingsComponent,
   },
@@ -91,15 +94,23 @@ export default {
     return {
       track: null,
       courses: [],
+      loading: false,
     }
   },
   watch: {
-    id: async function (val) {
-      let response = await this.$repositories.courses.fetchTrackById(val ?? 1)
-      this.track = response
-
-      response = await this.$repositories.courses.fetchCourseForTrack(val ?? 1)
-      this.courses = response
+    id: {
+      async handler(newVal, oldVal) {
+        this.loading = true
+        this.track = null
+        let [track, courses] = await Promise.all([
+          this.$repositories.courses.fetchTrackById(newVal?? 1),
+          this.$repositories.courses.fetchCourseForTrack(newVal?? 1),
+        ])
+        this.track = track
+        this.courses = courses
+        this.loading = false
+      },
+      immediate: true,
     },
   },
 }

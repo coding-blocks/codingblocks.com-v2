@@ -102,13 +102,13 @@ export default {
     FAQSection,
   },
   mounted() {
-    document
-      .querySelector('#buy-scroll-button')
-      .addEventListener('click', () => {
+    document.querySelectorAll('.buy-scroll-button').forEach((button) => {
+      button.addEventListener('click', () => {
         document
           .querySelector('#buy-card-section')
           .scrollIntoView({ behavior: 'smooth' })
       })
+    })
   },
   async asyncData({ params, $repositories }) {
     const course = await $repositories.courses.fetchCourseBySlug(params.id)

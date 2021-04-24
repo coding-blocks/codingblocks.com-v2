@@ -1,5 +1,5 @@
 <template>
-  <div class="landing-page__section">
+  <div class="landing-page__section" v-if="faqs">
     <div class="width-limiter">
       <div class="t-align-sm-l t-align-c mb-50">
         <div class="heading-4 bold mb-10">Frequently Asked Questions</div>

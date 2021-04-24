@@ -29,7 +29,9 @@
               >
                 {{ course.description }}
               </div>
-              <div class="row no-gutters justify-content-between">
+              <div
+                class="row no-gutters justify-content-sm-between justify-content-center"
+              >
                 <div class="row no-gutters align-items-center">
                   <div
                     class="br-5 d-inline-block p-2 bg-gradient-orange-light mr-20 font-2 white"
@@ -38,19 +40,19 @@
                       {{ course.difficulty.toUpperCase() }}
                     </span>
                   </div>
-                  <div class="mr-20">
+                  <div class="mr-20 t-align-sm-l t-align-c">
                     <div class="font-2">Course Language</div>
                     <div class="font-4 bold mt-1">
                       {{ course.languages.join() }}
                     </div>
                   </div>
-                  <div>
+                  <div class="t-align-sm-l t-align-c">
                     <div class="font-2">Course Duration</div>
                     <div class="font-4 bold mt-1">{{ course.duration }}</div>
                   </div>
                 </div>
-                <div class="flex-1 row no-gutters justify-content-end ml-10">
-                  <button class="button-primary" id="buy-scroll-button">
+                <div class="d-sm-block d-none">
+                  <button class="button-primary buy-scroll-button">
                     Buy Course
                   </button>
                 </div>
@@ -64,6 +66,9 @@
       </div>
       <div class="d-lg-none d-flex justify-content-center mt-40">
         <YoutubeVideoPlayer :url="course.video_link" />
+      </div>
+      <div class="d-sm-none d-block mt-30 t-align-c">
+        <button class="button-primary buy-scroll-button">Buy Course</button>
       </div>
     </div>
   </div>

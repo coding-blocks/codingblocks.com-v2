@@ -13,10 +13,13 @@
           v-for="(mentor, index) in mentors"
           :key="index"
         >
-          <div class="s-150x150 round">
+          <div class="s-150x150 round d-sm-block d-none">
             <img :src="mentor.img" />
           </div>
-          <div class="flex-1 pl-30">
+          <div class="flex-1 pl-sm-30">
+            <div class="s-100x100 round mb-20 d-sm-none d-block">
+              <img :src="mentor.img" />
+            </div>
             <div class="heading-6 bold">{{ mentor.name }}</div>
             <div class="mt-10 mb-20 font-2 orange">{{ mentor.contact }}</div>
             <div class="font-4">

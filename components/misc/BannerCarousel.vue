@@ -25,7 +25,7 @@
             />
             <img
               :src="banner.img_url"
-              class="d-lg-none d-block mt-30 mx-auto"
+              class="d-lg-none d-block mt-30 mx-auto banner-image"
             />
             <div class="my-sm-50 my-30">
               <div class="heading-2 bold text-orange">
@@ -45,8 +45,8 @@
               </a>
             </div>
           </div>
-          <div class="col-5 d-lg-block d-none">
-            <img :src="banner.img_url" />
+          <div class="col-5 d-lg-flex d-none justify-content-end">
+            <img :src="banner.img_url" class="banner-image" />
           </div>
         </div>
       </div>
@@ -114,3 +114,9 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.banner-image {
+  max-height: 450px;
+}
+</style>

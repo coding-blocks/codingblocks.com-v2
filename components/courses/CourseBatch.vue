@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card" id="buy-card-section">
     <div class="heading-6 bold mb-30">Choose Batch</div>
     <div class="tabs-primary mb-20">
       <div

@@ -202,7 +202,7 @@
               <div class="mt-sm-25 mt-15 d-sm-block d-none">
                 <div class="bold heading-4">{{ member.name }}</div>
                 <div class="mt-2 orange heading-6">
-                  {{ member.member_type }}
+                  {{ member.designation }}
                 </div>
               </div>
               <div class="mt-sm-25 mt-15 d-sm-none d-block">

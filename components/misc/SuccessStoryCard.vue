@@ -8,7 +8,7 @@
       </div>
       <div class="t-align-r">
         <div class="font-2 text-grey bold mb-10">Placed at</div>
-        <img :src="story.company.logo" style="height: 40px" />
+        <img :src="story.company.logo" style="width: 60px" />
       </div>
     </div>
     <div>
@@ -18,7 +18,7 @@
         {{ `${story.name} placed at ${story.company.name}` }}
       </div>
       <div class="font-3 text-orange mb-20">{{ story.college }}</div>
-      <div class="font-4">
+      <div class="font-4 text-clamp-ellipses-description">
         {{ story.body }}
       </div>
     </div>
@@ -30,3 +30,12 @@ export default {
   props: ['story'],
 }
 </script>
+
+<style scoped>
+.text-clamp-ellipses-description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 8;
+}
+</style>

@@ -4,11 +4,35 @@
     id="course-section"
   >
     <div class="width-limiter">
+      <div class="card bg-grey-light-3 my-sm-50 my-30">
+        <div
+          class="row no-gutters justify-content-between align-items-center side-tag"
+        >
+          <div class="flex-1 pr-25">
+            <div class="heading-5">SIGN UP TO OUR PLATFORM</div>
+            <div class="text-orange heading-2 bold mt-1">
+              FOR A JOURNEY WHERE &#8675;
+            </div>
+          </div>
+          <div class="col-md-4 t-align-md-r t-align-l mt-md-none mt-40">
+            <a
+              class="button-secondary"
+              href="https://account.codingblocks.com/login"
+            >
+              SIGN UP
+              <img
+                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
+                class="ml-2"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
       <div class="row no-gutters">
         <div
           class="col-xl-4 bg-grey-light-3 pt-xl-60 pt-30 t-align-c course-section__navigation z-pos h-inherit"
         >
-          <div class="heading-font stroke-font">LETS.</div>
+          <div class="heading-font stroke-font">YOU.</div>
           <div class="heading-font">LEARN.</div>
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_learn.svg"
@@ -79,57 +103,24 @@
           </div>
         </div>
       </div>
-      <!-- <div class="card bg-grey-light-3">
-        <div
-          class="row no-gutters justify-content-between align-items-center side-tag"
-        >
-          <div class="flex-1 pr-25">
-            <div class="heading-5">CONTACT OUT TECH EXPERTS FOR</div>
-            <div class="text-orange heading-2 bold mt-1">
-              FREE COUNSELLING SESSION
-            </div>
-          </div>
-          <div class="col-md-4 t-align-md-r t-align-l mt-md-none mt-40">
-            <button class="button-secondary" v-on:click="setShowModal(true)">
-              Schedule a Session
-              <img
-                src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/button-icon-orange.svg"
-                class="ml-2"
-              />
-            </button>
-          </div>
-        </div>
-      </div> -->
     </div>
-
-    <!-- <ModalForm v-if="showModal" @close="setShowModal(false)">
-      <ConsultationForm />
-    </ModalForm> -->
   </div>
 </template>
 
 <script>
 import CourseCardSmall from '@/components/courses/CourseCardSmall.vue'
 import CoursesSectionCardsSection from '@/components/home/CoursesSectionCardsSection.vue'
-// import ModalForm from '@/components/misc/ModalForm.vue'
-// import ConsultationForm from '@/components/misc/ConsultationForm.vue'
 
 export default {
   components: {
     CourseCardSmall,
     CoursesSectionCardsSection,
-    // ModalForm,
-    // ConsultationForm,
   },
   mounted() {
     const onlineButton = document.querySelector('#online-courses')
     const classroomButton = document.querySelector('#classroom-courses')
     const liveButton = document.querySelector('#live-courses')
     const carousel = document.querySelector('#course-sections-carousel')
-
-    // [onlineButton, classroomButton, liveButton].forEach((courseButton) => {
-    //   courseButton.classList.remove("active");
-    // });
 
     onlineButton.classList.add('active')
 

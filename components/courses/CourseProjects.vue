@@ -25,7 +25,7 @@
                     {{ project.description }}
                   </div>
                 </div>
-                <img :src="project.img_url" class="s-60x60 br-5" />
+                <img :src="project.img_url" class="s-100x100 br-5" />
               </div>
             </div>
           </div>

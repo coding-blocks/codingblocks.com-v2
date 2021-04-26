@@ -14,7 +14,7 @@
       <div class="mt-sm-50 mt-25">
         <CardCarousel>
           <div
-            class="col-lg-4 col-md-6 h-inherit carousel__slide"
+            class="col-lg-4 col-md-6 col-12 h-inherit carousel__slide"
             v-for="(story, index) in stories.slice(0, 9)"
             :key="index"
           >

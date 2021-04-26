@@ -21,6 +21,8 @@
 
           <div class="col-lg-4 col-md-5">
             <CourseBatch :batches="course.batches" />
+
+            <CertificateCard />
           </div>
         </div>
       </div>
@@ -84,6 +86,7 @@ import CourseHighlights from '@/components/courses/CourseHighlights.vue'
 import CoursePageMentorsSection from '@/components/courses/CoursePageMentorsSection.vue'
 import SuccessStoryCard from '@/components/misc/SuccessStoryCard.vue'
 import FAQSection from '@/components/courses/FAQSection.vue'
+import CertificateCard from '@/components/courses/CertificateCard.vue'
 
 export default {
   data() {
@@ -100,6 +103,7 @@ export default {
     CoursePageMentorsSection,
     SuccessStoryCard,
     FAQSection,
+    CertificateCard,
   },
   mounted() {
     document.querySelectorAll('.buy-scroll-button').forEach((button) => {

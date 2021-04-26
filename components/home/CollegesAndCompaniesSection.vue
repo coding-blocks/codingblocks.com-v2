@@ -33,7 +33,7 @@
                     />
                   </div>
                   <div class="flex-1">
-                    <div class="heading-5">Placement Training</div>
+                    <div class="heading-5 mt-10">Placement Training</div>
                   </div>
                 </div>
               </div>
@@ -48,7 +48,7 @@
                     />
                   </div>
                   <div class="flex-1">
-                    <div class="heading-5">Online Exam Platform</div>
+                    <div class="heading-5 mt-10">Online Exam Platform</div>
                   </div>
                 </div>
               </div>
@@ -63,7 +63,7 @@
                     />
                   </div>
                   <div class="flex-1">
-                    <div class="heading-5">Workshops &amp; More</div>
+                    <div class="heading-5 mt-10">Workshops &amp; More</div>
                   </div>
                 </div>
               </div>
@@ -124,7 +124,7 @@
                     />
                   </div>
                   <div class="flex-1">
-                    <div class="heading-5">Training Programs</div>
+                    <div class="heading-5 mt-10">Training Programs</div>
                   </div>
                 </div>
               </div>
@@ -139,7 +139,7 @@
                     />
                   </div>
                   <div class="flex-1">
-                    <div class="heading-5">Hire Students</div>
+                    <div class="heading-5 mt-10">Hire Students</div>
                   </div>
                 </div>
               </div>
@@ -154,7 +154,7 @@
                     />
                   </div>
                   <div class="flex-1">
-                    <div class="heading-5">Evaluations &amp; More</div>
+                    <div class="heading-5 mt-10">Evaluations &amp; More</div>
                   </div>
                 </div>
               </div>
@@ -212,7 +212,7 @@
                     />
                   </div>
                   <div class="flex-1">
-                    <div class="heading-5">Training Programs</div>
+                    <div class="heading-5 mt-10">Training Programs</div>
                   </div>
                 </div>
               </div>
@@ -227,7 +227,7 @@
                     />
                   </div>
                   <div class="flex-1">
-                    <div class="heading-5">Hire Students</div>
+                    <div class="heading-5 mt-10">Hire Students</div>
                   </div>
                 </div>
               </div>
@@ -242,7 +242,7 @@
                     />
                   </div>
                   <div class="flex-1">
-                    <div class="heading-5">Evaluations &amp; More</div>
+                    <div class="heading-5 mt-10">Evaluations &amp; More</div>
                   </div>
                 </div>
               </div>

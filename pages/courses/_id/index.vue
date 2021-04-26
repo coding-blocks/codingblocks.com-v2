@@ -12,7 +12,10 @@
         </div>
         <div class="row mt-50">
           <div class="col-lg-8 col-md-7 mb-md-none mb-50">
-            <CourseSyllabus :syllabus="course.syallabus" />
+            <CourseSyllabus
+              :syllabus="course.syallabus"
+              :syllabus_link="course.syllabus_link"
+            />
 
             <CourseProjects :projects="course.projects" />
 

@@ -2,12 +2,30 @@
   <div class="card p-none mb-50">
     <div class="p-30 border-bottom">
       <div class="row no-gutters align-items-center">
-        <img
-          src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/syllabus-grey-orange.svg"
-        />
-        <div class="flex-1 pl-15">
-          <div class="heading-6 bold">Course Syllabus</div>
+        <div class="flex-1 pr-20">
+          <div class="row no-gutters align-items-center">
+            <img
+              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/syllabus-grey-orange.svg"
+            />
+            <div class="flex-1 pl-15">
+              <div class="heading-6 bold">Course Syllabus</div>
+            </div>
+          </div>
         </div>
+        <a
+          :href="syllabus_link"
+          class="download-text position-relative pointer"
+        >
+          <img
+            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/download.svg"
+            style="width: 20px"
+          />
+          <div
+            class="card p-10 font-2 text-grey-light-1 download-text-tooltip bg-white t-align-c"
+          >
+            <div>Download Syllabus</div>
+          </div>
+        </a>
       </div>
       <div class="mt-30">
         <div class="card p-none overflow-hidden">
@@ -74,7 +92,7 @@
 
 <script>
 export default {
-  props: ['syllabus'],
+  props: ['syllabus', 'syllabus_link'],
   mounted() {
     document.querySelectorAll('.accordion-container').forEach((accordion) => {
       const accordionBody = accordion.querySelector(
@@ -181,5 +199,16 @@ export default {
 .syllabus-section-button.active {
   color: white;
   background: linear-gradient(90deg, #fb8133, #ffba08);
+}
+
+.download-text-tooltip {
+  position: absolute !important;
+  display: none;
+}
+
+.download-text:hover .download-text-tooltip {
+  display: block;
+  top: -60px;
+  left: -30px;
 }
 </style>

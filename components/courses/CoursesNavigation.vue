@@ -1,16 +1,20 @@
 <template>
   <div>
-    <div class="mt-50 px-xl-100 px-lg-85 px-md-60 px-sm-50 px-25">
+    <div class="mt-50 px-xl-75 px-lg-60 px-md-50 px-sm-40 px-25">
       <div class="width-limiter">
-        <div class="tabs-secondary w-100 justify-content-end">
-          <div
-            class="tab"
-            v-for="tab in tabs"
-            :key="tab"
-            :class="{ active: activeTab === tab }"
-            v-on:click="switchTab(tab)"
-          >
-            {{ tab.toUpperCase() }}
+        <div
+          class="row no-gutters align-items-center justify-content-sm-end justify-content-center pb-30 navigation-row"
+        >
+          <div class="tabs-secondary justify-content-end">
+            <div
+              class="tab"
+              v-for="tab in tabs"
+              :key="tab"
+              :class="{ active: activeTab === tab }"
+              v-on:click="switchTab(tab)"
+            >
+              {{ tab.toUpperCase() }}
+            </div>
           </div>
         </div>
       </div>
@@ -47,3 +51,9 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.navigation-row {
+  border-bottom: 1px solid #cccccc;
+}
+</style>

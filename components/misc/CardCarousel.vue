@@ -31,28 +31,48 @@ export default {
     moveLeft() {
       const carouselContainer = document.querySelector('.carousel-container')
       const carousel = carouselContainer.querySelector('#carousel')
+      const carouselSlideWidth = carousel.querySelectorAll(
+        '.carousel__slide'
+      )[0].clientWidth
       const carouselLength = carousel.querySelectorAll('.carousel__slide')
         .length
+      const widthRatio = Math.floor(carousel.clientWidth / carouselSlideWidth)
+
       --this.counter
-      if (this.counter < 0) this.counter = carouselLength - 1
+
+      if (widthRatio !== 1) {
+        if (this.counter < 0) this.counter = carouselLength - widthRatio
+      } else {
+        if (this.counter < 0) this.counter = carouselLength - 1
+      }
 
       carousel.scrollTo({
         top: 0,
-        left: this.counter * carousel.clientWidth,
+        left: this.counter * carouselSlideWidth,
         behavior: 'smooth',
       })
     },
     moveRight() {
       const carouselContainer = document.querySelector('.carousel-container')
       const carousel = carouselContainer.querySelector('#carousel')
+      const carouselSlideWidth = carousel.querySelectorAll(
+        '.carousel__slide'
+      )[0].clientWidth
       const carouselLength = carousel.querySelectorAll('.carousel__slide')
         .length
+      const widthRatio = Math.floor(carousel.clientWidth / carouselSlideWidth)
+
       ++this.counter
-      if (this.counter > carouselLength - 1) this.counter = 0
+
+      if (widthRatio !== 1) {
+        if (this.counter > carouselLength - widthRatio) this.counter = 0
+      } else {
+        if (this.counter > carouselLength - 1) this.counter = 0
+      }
 
       carousel.scrollTo({
         top: 0,
-        left: this.counter * carousel.clientWidth,
+        left: this.counter * carouselSlideWidth,
         behavior: 'smooth',
       })
     },

@@ -4,5 +4,5 @@ services:
     image: codingblocks/main-website
     build: .
     ports:
-      - "3000:3000"
+      - "3000:80"
 

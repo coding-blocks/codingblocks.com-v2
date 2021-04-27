@@ -43,13 +43,13 @@
               src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/underline_news.svg"
             />
             <img
-              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/classroom-courses-vector.svg"
+              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/classroom-courses-updated-vector.svg"
               class="d-lg-none d-block mt-50 mx-auto"
             />
           </div>
           <div class="col-6 d-lg-block d-none t-align-r">
             <img
-              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/classroom-courses-vector.svg"
+              src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/classroom-courses-updated-vector.svg"
             />
           </div>
         </div>

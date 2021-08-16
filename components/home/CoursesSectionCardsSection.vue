@@ -116,7 +116,7 @@ export default {
     sortedCourses() {
       return this.featuredTags.map(
         (featuredTag) =>
-          featuredTag.tag.courses.sort(
+          featuredTag.courses.sort(
             (a, b) => a.runs[0].price - b.runs[0].price
           )[0]
       )

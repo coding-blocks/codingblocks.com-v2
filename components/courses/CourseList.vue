@@ -60,7 +60,7 @@ export default {
   },
   computed: {
     sortedCourses() {
-      return this.featuredTag.tag.courses.sort(
+      return this.featuredTag.courses.sort(
         (a, b) => a.runs[0].price - b.runs[0].price
       )
     },

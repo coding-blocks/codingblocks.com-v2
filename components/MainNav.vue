@@ -7,7 +7,7 @@
       >
         <NuxtLink to="/">
           <img
-            src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/cblogo-black.png"
+            src="https://minio.codingblocks.com/public/cb-logo-white-2.png"
             style="height: 60px"
           />
         </NuxtLink>
@@ -18,7 +18,7 @@
             <div class="super-navbar__link">
               <a href="https://online.codingblocks.com/" target="_blank">
                 <img
-                  src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-learn.svg"
+                  src="https://minio.codingblocks.com/img/learn.png"
                 />
                 <div class="font-3 mt-10 d-md-block d-none">Learn</div>
               </a>
@@ -26,7 +26,7 @@
             <div class="super-navbar__link">
               <a href="https://hack.codingblocks.com/" target="_blank">
                 <img
-                  src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-practice.svg"
+                  src="https://minio.codingblocks.com/img/practice.png"
                 />
                 <div class="font-3 mt-10 d-md-block d-none">Practice</div>
               </a>
@@ -37,7 +37,7 @@
                 target="_blank"
               >
                 <img
-                  src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-hire.svg"
+                  src="https://minio.codingblocks.com/img/hire.png"
                 />
                 <div class="font-3 mt-10 d-md-block d-none">Get<br />Hired</div>
               </a>
@@ -45,7 +45,7 @@
             <div class="super-navbar__link">
               <a href="https://ide.codingblocks.com/" target="_blank">
                 <img
-                  src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/navbar-ide.svg"
+                  src="https://minio.codingblocks.com/img/ide.png"
                 />
                 <div class="font-3 mt-10 d-md-block d-none">IDE</div>
               </a>

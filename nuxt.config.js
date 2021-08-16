@@ -10,18 +10,14 @@ export default {
       { hid: 'description', name: 'description', content: '' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicons/favicon.ico' },
-      {
-        rel: 'stylesheet',
-        type: 'text/css',
-        href:
-          'https://unpkg.com/@coding-blocks/motley@2.8.3/dist/coding-blocks/app.min.css',
-      },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicons/favicon.ico' }
     ],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: [],
+  css: [
+    { src: '@coding-blocks/motley/dist/coding-blocks/app.min.css' }
+  ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: ['~/plugins/api.js', '~/plugins/repositories.js'],

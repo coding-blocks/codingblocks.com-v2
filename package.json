@@ -29,6 +29,7 @@
     "vue-form-generator": "^2.3.4"
   },
   "devDependencies": {
+    "@coding-blocks/motley": "^2.9.0",
     "prettier": "^2.2.1"
   }
 }

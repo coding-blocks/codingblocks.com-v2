@@ -10,7 +10,7 @@
       >
         <div class="text-gradient-orange">Hi, {{ user.firstname }}</div>
         <div
-          class="card p-10 font-2  user-text-tooltip bg-white t-align-c"
+          class="card p-10 font-2  user-text-tooltip  t-align-c"
         >
           <div>Click to Logout</div>
         </div>

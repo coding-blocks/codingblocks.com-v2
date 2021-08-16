@@ -61,7 +61,7 @@
       </div>
     </div>
 
-    <SuccessStoriesSection class="bg-white pt-none" />
+    <SuccessStoriesSection class=" pt-none" />
   </div>
 </template>
 

@@ -21,7 +21,7 @@
             style="width: 20px"
           />
           <div
-            class="card p-10 font-2  download-text-tooltip bg-white t-align-c"
+            class="card p-10 font-2  download-text-tooltip  t-align-c"
           >
             <div>Download Syllabus</div>
           </div>

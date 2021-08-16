@@ -16,7 +16,7 @@
       </div>
 
       <div v-if="showFormCard">
-        <div class="card bg-grey-light-3">
+        <div class="card">
           <div
             class="row no-gutters justify-content-between align-items-center side-tag"
           >

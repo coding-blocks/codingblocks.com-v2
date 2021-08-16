@@ -1,10 +1,10 @@
 <template>
   <div
-    class="landing-page__section bg-white py-none course-section"
+    class="landing-page__section  py-none course-section"
     id="course-section"
   >
     <div class="width-limiter">
-      <div class="card bg-grey-light-3 my-sm-50 my-30">
+      <div class="card my-sm-50 my-30">
         <div
           class="row no-gutters justify-content-between align-items-center side-tag"
         >

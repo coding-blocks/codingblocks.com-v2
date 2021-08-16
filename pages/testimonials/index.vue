@@ -2,7 +2,7 @@
   <div class="landing-page">
     <MajorSuccessStories />
 
-    <div class="landing-page__section bg-white pt-none">
+    <div class="landing-page__section  pt-none">
       <div class="width-limiter">
         <div class="t-align-c">
           <div class="heading-4 bold mb-50">Students got placed at</div>

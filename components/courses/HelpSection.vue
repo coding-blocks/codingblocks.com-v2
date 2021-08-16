@@ -278,7 +278,7 @@
           </div>
           <div class="heading-6 bold my-sm-50 my-30 t-align-c">OR</div>
         </div>
-        <div class="card bg-white">
+        <div class="card ">
           <div
             class="row no-gutters justify-content-between align-items-center side-tag"
           >

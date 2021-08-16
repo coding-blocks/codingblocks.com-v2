@@ -5,7 +5,7 @@
     id="hamburger-nav"
   >
     <div
-      class="row no-gutters justify-content-end align-items-center border-bottom position-sticky tl bg-white z-pos"
+      class="row no-gutters justify-content-end align-items-center border-bottom position-sticky tl  z-pos"
       style="height: 89px"
     >
       <img

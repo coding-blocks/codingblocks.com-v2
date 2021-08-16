@@ -38,7 +38,7 @@
                   class="mt-10 row no-gutters align-items-center justify-content-center"
                 >
                   <a
-                    class="round mentor-highlight bg-white p-2 all-center"
+                    class="round mentor-highlight  p-2 all-center"
                     v-for="(highlight, highlightIndex) in mentor.highlights"
                     :key="highlightIndex"
                     :href="highlight.link"

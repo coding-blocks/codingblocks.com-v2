@@ -1,6 +1,6 @@
 <template>
   <transition name="slide-side">
-    <div v-if="show" class="py-50 border-bottom px-25 bg-white" id="mega-nav">
+    <div v-if="show" class="py-50 border-bottom px-25 " id="mega-nav">
       <div class="width-limiter">
         <div class="row" @click="$emit('close')">
           <div class="col-4">

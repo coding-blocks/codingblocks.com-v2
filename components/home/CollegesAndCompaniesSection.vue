@@ -2,8 +2,7 @@
   <div class="landing-page__section">
     <div class="width-limiter">
       <div
-        class="mb-lg-50 mb-30 pb-lg-50 pb-30"
-        style="border-bottom: 1px solid #e5e5e5"
+        class="mb-lg-50 mb-30 pb-lg-50 pb-30 border-bottom"
       >
         <div class="d-md-none d-block t-align-c mb-30">
           <div class="heading-font stroke-font">FOR</div>
@@ -93,8 +92,7 @@
         </div>
       </div>
       <div
-        class="mb-lg-50 mb-30 pb-lg-50 pb-30"
-        style="border-bottom: 1px solid #e5e5e5"
+        class="mb-lg-50 mb-30 pb-lg-50 pb-30 border-bottom"
       >
         <div class="d-md-none d-block t-align-c mb-30">
           <div class="heading-font stroke-font">FOR</div>

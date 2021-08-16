@@ -1,12 +1,10 @@
 <template>
   <div
-    class="landing-page__section landing-page__section--footer "
-    style="border-top: 1px solid #cccccc"
+    class="landing-page__section landing-page__section--footer border-top"
   >
     <div class="width-limiter">
       <div
-        class="row no-gutters pb-50 mb-50"
-        style="border-bottom: 1px solid #cccccc"
+        class="row no-gutters pb-50 mb-50 border-bottom"
       >
         <div
           class="col-lg-9 col-12 pr-lg-20 pb-lg-none pb-50 landing-page__section--footer__main-section"
@@ -178,7 +176,7 @@
           </div>
         </div>
       </div>
-      <div class="row pb-50" style="border-bottom: 1px solid #cccccc">
+      <div class="row pb-50 border-bottom">
         <div class="col-4">
           <img
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/online-courses.svg"

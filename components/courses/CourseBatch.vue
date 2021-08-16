@@ -21,7 +21,7 @@
             <div class="heading-6 bold text-gradient-orange-light">
               CLASSROOM
             </div>
-            <div class="mt-2 font-2 text-grey">
+            <div class="mt-2 font-2 ">
               Batch starting
               <strong>{{ getDateString(batch.startDate) }}</strong>
             </div>
@@ -32,9 +32,9 @@
             <div class="heading-6 bold mr-10">
               &#8377;&nbsp;{{ batch.price }}
             </div>
-            <del class="text-grey bold">&#8377;&nbsp;{{ batch.mrp }}</del>
+            <del class=" bold">&#8377;&nbsp;{{ batch.mrp }}</del>
           </div>
-          <div class="mt-10 text-grey font-2">
+          <div class="mt-10  font-2">
             Enrollment ends {{ getDateString(batch.enrollmentEndDate) }}
           </div>
         </div>

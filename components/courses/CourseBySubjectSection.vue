@@ -3,7 +3,7 @@
     <div class="width-limiter">
       <div class="t-align-sm-l t-align-c">
         <div class="heading-4 bold">Courses based on subjects</div>
-        <div class="mt-2 text-grey">
+        <div class="mt-2 ">
           Learn and grow as a developer with our project based courses.
         </div>
       </div>

@@ -75,7 +75,7 @@
                   />
                 </button>
                 <div
-                  class="card p-10 font-2 text-grey-light-1 tooltip-body bg-white t-align-c"
+                  class="card p-10 font-2  tooltip-body bg-white t-align-c"
                 >
                   You will be redirected to Oneauth for <br />
                   Login / Account creation (if you dont have one).

@@ -4,7 +4,7 @@
       <div class="mb-md-50 pl-30">
         <div class="t-align-sm-l t-align-c">
           <div class="heading-4 bold">{{ track.name }} Track</div>
-          <div class="mt-2 text-grey">
+          <div class="mt-2 ">
             {{ track.description }}
           </div>
         </div>

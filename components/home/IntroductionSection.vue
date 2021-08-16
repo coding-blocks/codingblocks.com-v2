@@ -1,7 +1,7 @@
 <template>
   <div class="row align-items-center justify-content-between no-gutters">
     <div class="flex-1 pr-xl-75 pr-25 d-lg-block d-none">
-      <div class="heading-3 bold text-grey mb-30">
+      <div class="heading-3 bold  mb-30">
         Become a
         <div
           class="d-inline-block text-black underline-highlight underline-highlight--gradient-orange"
@@ -17,7 +17,7 @@
       <div class="mt-30 mb-40">
         <div class="row no-gutters align-items-center">
           <button class="button-primary get-started-button">Get Started</button>
-          <div class="ml-30 heading-5 text-grey">Learn. Practice. Ace.</div>
+          <div class="ml-30 heading-5 ">Learn. Practice. Ace.</div>
         </div>
       </div>
       <div
@@ -36,7 +36,7 @@
       </div>
     </div>
     <div class="col-12 d-lg-none d-block t-align-c">
-      <div class="heading-3 bold text-grey mb-30">
+      <div class="heading-3 bold  mb-30">
         Become a
         <div
           class="d-inline-block text-black underline-highlight underline-highlight--gradient-orange"
@@ -62,13 +62,13 @@
       </div>
       <div class="mt-30 mb-40">
         <div class="mb-15">
-          <div class="heading-5 text-grey d-xl-none d-block">
+          <div class="heading-5  d-xl-none d-block">
             Learn. Practice. Ace.
           </div>
         </div>
         <div class="row no-gutters align-items-center justify-content-center">
           <button class="button-primary get-started-button">Get Started</button>
-          <div class="ml-30 heading-5 text-grey d-xl-block d-none">
+          <div class="ml-30 heading-5  d-xl-block d-none">
             Learn. Practice. Ace.
           </div>
         </div>

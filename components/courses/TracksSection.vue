@@ -3,7 +3,7 @@
     <div class="width-limiter">
       <div class="t-align-sm-l t-align-c">
         <div class="heading-4 bold">Learning Tracks</div>
-        <div class="mt-2 text-grey">
+        <div class="mt-2 ">
           Boost your skills! Stay sharp. Get Ahead!
         </div>
       </div>

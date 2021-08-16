@@ -7,7 +7,7 @@
         </div>
       </div>
       <div class="t-align-r">
-        <div class="font-2 text-grey bold mb-10">Placed at</div>
+        <div class="font-2  bold mb-10">Placed at</div>
         <img :src="story.company.logo" style="width: 60px" />
       </div>
     </div>

@@ -5,7 +5,7 @@
       <div class="width-limiter">
         <div class="row no-gutters justify-content-end">
           <div
-            class="row no-gutters align-items-center mr-30 font-4 text-grey pointer"
+            class="row no-gutters align-items-center mr-30 font-4  pointer"
             id="mega-nav-toggle"
             @click="displayMegaNav = !displayMegaNav"
           >
@@ -17,24 +17,24 @@
             />
           </div>
           <div
-            class="row no-gutters align-items-center mr-30 font-4 text-grey pointer"
+            class="row no-gutters align-items-center mr-30 font-4  pointer"
           >
             <NuxtLink to="/events"> Events </NuxtLink>
           </div>
           <div
-            class="row no-gutters align-items-center mr-30 font-4 text-grey pointer"
+            class="row no-gutters align-items-center mr-30 font-4  pointer"
           >
             <a href="https://blog.codingblocks.com/" target="_blank">Blogs</a>
           </div>
           <div
-            class="row no-gutters align-items-center mr-30 font-4 text-grey pointer"
+            class="row no-gutters align-items-center mr-30 font-4  pointer"
           >
             <a href="https://superhero.codingblocks.com/" target="_blank"
               >Campus Superheroes</a
             >
           </div>
           <div
-            class="row no-gutters align-items-center font-4 text-grey pointer"
+            class="row no-gutters align-items-center font-4  pointer"
           >
             <NuxtLink to="/contact"> Contact </NuxtLink>
           </div>

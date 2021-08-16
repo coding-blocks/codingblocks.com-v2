@@ -29,7 +29,7 @@
             {{ story.subtitle }}
           </div>
         </div>
-        <div class="heading-5 text-grey">
+        <div class="heading-5 ">
           {{ story.body }}
         </div>
       </div>

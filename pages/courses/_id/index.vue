@@ -6,7 +6,7 @@
       <div class="width-limiter">
         <div class="t-align-sm-l t-align-c">
           <div class="heading-4 bold mb-10">Course Insights</div>
-          <div class="font-4 text-grey">
+          <div class="font-4 ">
             Learn and grow as a developer with our project based courses.
           </div>
         </div>
@@ -46,7 +46,7 @@
               <div class="heading-5 mb-10 bold">
                 Try our Full Stack Web Development Track
               </div>
-              <div class="font-4 text-grey">
+              <div class="font-4 ">
                 Learn full-stack web development using JavaScript &amp; NodeJS
               </div>
             </div>
@@ -59,7 +59,7 @@
       <div class="width-limiter">
         <div class="t-align-sm-l t-align-c">
           <div class="heading-4 bold mb-10">Testimonials</div>
-          <div class="font-4 text-grey">
+          <div class="font-4 ">
             Learn and grow as a developer with our project based courses.
           </div>
         </div>

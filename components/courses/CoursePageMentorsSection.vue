@@ -3,7 +3,7 @@
     <div class="width-limiter">
       <div class="t-align-sm-l t-align-c mb-50">
         <div class="heading-4 bold mb-10">Mentors</div>
-        <div class="font-4 text-grey">
+        <div class="font-4 ">
           About the mentors that will guide you through this course
         </div>
       </div>

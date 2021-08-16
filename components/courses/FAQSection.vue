@@ -3,7 +3,7 @@
     <div class="width-limiter">
       <div class="t-align-sm-l t-align-c mb-50">
         <div class="heading-4 bold mb-10">Frequently Asked Questions</div>
-        <div class="font-4 text-grey">
+        <div class="font-4 ">
           Find answers to the questions popping up in your head here.
         </div>
       </div>

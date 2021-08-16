@@ -19,7 +19,7 @@
               </div>
             </div>
           </a>
-          <div class="heading-6 text-grey">
+          <div class="heading-6 ">
             1st Floor, 47 - Nishant Kunj, Main Pitampura Road, New Delhi <br />
             Near Kohat Enclave Metro Station - Exit from Gate #2 (Opposite
             Pillar #337)
@@ -32,7 +32,7 @@
             />
             <div class="heading-4 bold text-gradient-orange px-10">Contact</div>
           </div>
-          <div class="heading-6 text-grey">
+          <div class="heading-6 ">
             +91&nbsp;-&nbsp;9599586446<br />
             +91&nbsp;-&nbsp;9643339705<br />
             011&nbsp;-&nbsp;47052584<br />
@@ -67,7 +67,7 @@
               </div>
             </div>
           </a>
-          <div class="heading-6 text-grey">
+          <div class="heading-6 ">
             1st Floor, A - 73, Sector - 2, Noida - 201301<br />
             Near Noida Sector - 15 Metro Station
           </div>
@@ -79,7 +79,7 @@
             />
             <div class="heading-4 bold text-gradient-orange px-10">Contact</div>
           </div>
-          <div class="heading-6 text-grey">
+          <div class="heading-6 ">
             +91&nbsp;-&nbsp;9999579111<br />
             +91&nbsp;-&nbsp;9999579222<br />
           </div>

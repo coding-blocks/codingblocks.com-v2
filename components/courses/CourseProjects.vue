@@ -21,7 +21,7 @@
               >
                 <div class="flex-1 pr-20">
                   <div class="font-4 bold">{{ project.title }}</div>
-                  <div class="font-2 text-grey mt-10">
+                  <div class="font-2  mt-10">
                     {{ project.description }}
                   </div>
                 </div>

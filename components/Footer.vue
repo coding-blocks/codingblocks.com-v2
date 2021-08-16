@@ -184,7 +184,7 @@
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/online-courses.svg"
             style="height: 40px"
           />
-          <div class="font-3 bold mt-15 text-grey-light-1">ONLINE COURSES</div>
+          <div class="font-3 bold mt-15 ">ONLINE COURSES</div>
           <div class="mt-35 mb-15">
             <div class="mb-20 row no-gutters align-items-center">
               <a
@@ -263,7 +263,7 @@
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/classroom-courses.svg"
             style="height: 40px"
           />
-          <div class="font-3 bold mt-15 text-grey-light-1">
+          <div class="font-3 bold mt-15 ">
             CLASSROOM COURSES
           </div>
           <div v-if="classroomCoursesPayload.length !== 0" class="mt-35 mb-15">
@@ -302,7 +302,7 @@
             src="https://cb-thumbnails.s3.ap-south-1.amazonaws.com/live-courses.svg"
             style="height: 40px"
           />
-          <div class="font-3 bold mt-15 text-grey-light-1">LIVE COURSES</div>
+          <div class="font-3 bold mt-15 ">LIVE COURSES</div>
           <div v-if="liveCoursesPayload.length !== 0" class="mt-35 mb-15">
             <div
               class="mb-20 row no-gutters align-items-center"

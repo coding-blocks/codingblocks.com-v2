@@ -21,7 +21,7 @@
             style="width: 20px"
           />
           <div
-            class="card p-10 font-2 text-grey-light-1 download-text-tooltip bg-white t-align-c"
+            class="card p-10 font-2  download-text-tooltip bg-white t-align-c"
           >
             <div>Download Syllabus</div>
           </div>
@@ -60,7 +60,7 @@
                 >
                   <div class="flex-1">
                     <div class="font-4 bold">{{ content.title }}</div>
-                    <div class="font-2 text-grey mt-10">
+                    <div class="font-2  mt-10">
                       {{ `${content.videos.length} Items | Duration : ` }}
                     </div>
                   </div>

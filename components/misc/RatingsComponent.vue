@@ -11,7 +11,7 @@
       class="mr-xl-10 mr-1"
       v-for="num in numberNegativeStars"   
       />
-    <div class="font-3 text-grey ml-xl-10 ml-2 flex-1">
+    <div class="font-3  ml-xl-10 ml-2 flex-1">
       <strong>{{ rating }}/5,</strong>
       &nbsp;
       {{ num_ratings }}

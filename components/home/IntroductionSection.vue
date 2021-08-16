@@ -4,7 +4,7 @@
       <div class="heading-3 bold  mb-30">
         Become a
         <div
-          class="d-inline-block  underline-highlight underline-highlight--gradient-orange"
+          class="d-inline-block text-blue underline-highlight underline-highlight--gradient-orange"
         >
           {{ goalsList[careerNumber] }}
         </div>
@@ -39,7 +39,7 @@
       <div class="heading-3 bold  mb-30">
         Become a
         <div
-          class="d-inline-block  underline-highlight underline-highlight--gradient-orange"
+          class="d-inline-block text-blue underline-highlight underline-highlight--gradient-orange"
         >
           {{ goalsList[careerNumber] }}
         </div>

@@ -30,7 +30,7 @@
       </div>
       <div class="row no-gutters">
         <div
-          class="col-xl-4  pt-xl-60 pt-30 t-align-c course-section__navigation z-pos h-inherit"
+          class="col-xl-4 bg-background-main-3 pt-xl-60 pt-30 t-align-c course-section__navigation z-pos h-inherit"
         >
           <div class="heading-font stroke-font">YOU.</div>
           <div class="heading-font">LEARN.</div>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Sub Nav -->
-    <div class="py-15 border-bottom px-25 d-md-block d-none">
+    <div class="py-15 border-bottom bg-background-main-2 px-25 d-md-block d-none">
       <div class="width-limiter">
         <div class="row no-gutters justify-content-end">
           <div

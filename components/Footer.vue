@@ -1,6 +1,6 @@
 <template>
   <div
-    class="landing-page__section landing-page__section--footer bg-grey-light-3"
+    class="landing-page__section landing-page__section--footer "
     style="border-top: 1px solid #cccccc"
   >
     <div class="width-limiter">

@@ -1,6 +1,6 @@
 <template>
   <div class="landing-page">
-    <div class="landing-page__section bg-grey-light-3">
+    <div class="landing-page__section ">
       <div class="width-limiter">
         <div class="row align-items-center">
           <div class="col-6 d-md-block d-none">

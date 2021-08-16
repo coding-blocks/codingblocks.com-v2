@@ -19,7 +19,7 @@
               <div class="font-4">{{ highlight }}</div>
             </div>
           </div>
-          <div class="divider-h content-divider px-30 bg-grey-light-3"></div>
+          <div class="divider-h content-divider px-30 "></div>
         </div>
       </div>
     </div>

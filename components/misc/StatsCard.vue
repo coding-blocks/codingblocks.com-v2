@@ -1,5 +1,5 @@
 <template>
-  <div class="card card--equal-height bg-grey-light-3">
+  <div class="card card--equal-height">
     <div class="row no-gutters align-items-center">
       <img :src="icon" class="mb-sm-3" style="height: 50px" />
       <div class="flex-1 d-sm-none d-block pl-20">

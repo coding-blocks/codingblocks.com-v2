@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="card p-sm-50 p-30 bg-grey-light-3 mt-sm-75 mt-50 pb-none">
+    <div class="card p-sm-50 p-30  mt-sm-75 mt-50 pb-none">
       <div
         class="row no-gutters align-items-center justify-content-between pb-sm-50 pb-30"
       >
